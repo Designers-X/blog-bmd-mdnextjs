@@ -176,6 +176,54 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <Section className={styles.navSection}>
+        <div id="mySidepanel" className="sidepanel" >
+          <a href="/search/" className="css-3uwsu9 epl65fo4" ><span className=" eqt11jm0 css-f7rgu6 e1s64tyo0"><svg height="15px" width="15px" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" title="Search"><path d="M492.5 457.5 380 345c27.5-35 45-82.5 45-132.5C425 95 330 0 212.5 0S0 95 0 212.5 95 425 212.5 425c50 0 95-17.5 132.5-45l112.5 112.5c5 5 12.5 7.5 17.5 7.5s12.5-2.5 17.5-7.5c10-10 10-25 0-35zM50 212.5C50 122.5 122.5 50 212.5 50S375 122.5 375 212.5c0 45-17.5 85-47.5 115s-70 47.5-115 47.5C122.5 375 50 302.5 50 212.5z"></path></svg></span><span className="css-14mkolt eqt11jm14">Search</span></a>
+          <a href="javascript:void(0)" className="closebtn" onclick="closeNav()">×</a>
+          <hr />
+          <a href="#">State of Black Beauty</a>
+          <a href="#">Subscribe</a>
+          <a href="#">Fashion</a>
+          <a href="#">Beauty</a>
+          <a href="#">Features</a>
+          <a href="#">Life & Love</a>
+          <a href="#">Horoscopes</a>
+          <a href="#">In the Magazine</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <nav>
+          <div className="container">
+            <button className="openbtn" onclick="openNav()">☰</button>
+          </div>
+        </nav>
+        <section>
+          <div className="container">
+            <h2>Collapsed Sidepanel</h2>
+          </div>
+        </section>
+        <div id="mySidepanel" className="sidepanel">
+          <a href="/search/" className="css-3uwsu9 epl65fo4"><span className=" eqt11jm0 css-f7rgu6 e1s64tyo0"><svg height="15px" width="15px" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" role="img" title="Search"><path d="M492.5 457.5 380 345c27.5-35 45-82.5 45-132.5C425 95 330 0 212.5 0S0 95 0 212.5 95 425 212.5 425c50 0 95-17.5 132.5-45l112.5 112.5c5 5 12.5 7.5 17.5 7.5s12.5-2.5 17.5-7.5c10-10 10-25 0-35zM50 212.5C50 122.5 122.5 50 212.5 50S375 122.5 375 212.5c0 45-17.5 85-47.5 115s-70 47.5-115 47.5C122.5 375 50 302.5 50 212.5z"></path></svg></span><span className="css-14mkolt eqt11jm14">Search</span></a>
+          <a href="javascript:void(0)" className="closebtn" onclick="closeNav()">×</a>
+          <hr />
+          <a href="#">State of Black Beauty</a>
+          <a href="#">Subscribe</a>
+          <a href="#">Fashion</a>
+          <a href="#">Beauty</a>
+          <a href="#">Features</a>
+          <a href="#">Life & Love</a>
+          <a href="#">Horoscopes</a>
+          <a href="#">In the Magazine</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <nav>
+          <div className="container">
+            <button className="openbtn" onclick="openNav()">☰</button>
+          </div>
+        </nav>
+        <section>
+          <div className="container">
+            <h2>Collapsed Sidepanel</h2>
+          </div>
+        </section>
         <p className={styles.navName}>
           <Link href="/">
             <a>{title}</a>
