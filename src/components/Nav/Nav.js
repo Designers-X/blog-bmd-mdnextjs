@@ -187,8 +187,8 @@ const Nav = () => {
           })}
         </ul>
         <ul>
-          <li>Subscribe</li> 
-          <li>Sign In</li>
+          <li>Subscribe</li>
+          <li>Sign In/ Sign Up</li>
         </ul>
         <div className={styles.navSearch}>
           {searchVisibility === SEARCH_HIDDEN && (
