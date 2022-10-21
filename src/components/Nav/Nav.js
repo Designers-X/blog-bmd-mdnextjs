@@ -17,7 +17,6 @@ const SEARCH_HIDDEN = 'hidden';
 
 const Nav = () => {
   const formRef = useRef();
-
   const [searchVisibility, setSearchVisibility] = useState(SEARCH_HIDDEN);
 
   const { metadata = {}, menus } = useSite();
