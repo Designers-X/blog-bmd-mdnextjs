@@ -186,6 +186,10 @@ const Nav = () => {
             return <NavListItem key={listItem.id} className={styles.navSubMenu} item={listItem} />;
           })}
         </ul>
+        <ul>
+          <li>Subscribe</li>
+          <li>Sign In</li>
+        </ul>
         <div className={styles.navSearch}>
           {searchVisibility === SEARCH_HIDDEN && (
             <button onClick={handleOnToggleSearch} disabled={!searchIsLoaded}>
