@@ -187,7 +187,7 @@ const Nav = () => {
           })}
         </ul>
         <ul>
-          <li>Subscribe</li>
+          <li>Subscribe</li> 
           <li>Sign In</li>
         </ul>
         <div className={styles.navSearch}>
