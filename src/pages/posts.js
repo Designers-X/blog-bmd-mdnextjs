@@ -29,7 +29,7 @@ export async function getStaticProps() {
         ...pagination,
         basePath: '/posts',
       },
-	  revalidate: 10,
+	  ....revalidate: 10,
     },
   };
 }
