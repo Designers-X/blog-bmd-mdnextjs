@@ -76,3 +76,117 @@
     margin: 0;
   }
 }
+
+.footerSpicl {
+  background-color: #000000;
+  color: #fff;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-size: 0.70003rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4;
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.middelSection {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 2.5rem;
+}
+
+.InRow {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.LogoSection {
+  display: block;
+  width: 25%;
+}
+
+.SocialIcon {
+  display: flex;
+}
+
+.paddingIcon {
+  padding: 0.8125rem 1rem;
+}
+
+.footerMenu {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  margin-bottom: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.footerMenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 0;
+}
+.footerMenu a:hover {
+  color: #fff;
+  text-decoration: underline;
+  padding: 0.6rem 0;
+}
+
+.Newsletter {
+  padding: 0.6rem 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.DigitalTextFooter {
+  padding-top: 0.9375rem;
+  margin: 0.3125rem 0;
+}
+
+.footerLegalMenu {
+  padding-top: 0.9375rem;
+  line-height: 2;
+}
+.footerLegalMenu a {
+  color: #fff;
+  padding: 0.625rem 0.625rem 0.625rem 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-right: 1.25rem;
+}
+.footerLegalMenu a:hover {
+  text-decoration: underline;
+}
+
+.footerButton {
+  border: thin solid white;
+  display: inline-block;
+  margin: 1.875rem 0.9375rem 1.25rem 0;
+  color: #fff;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-size: 0.70003rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4;
+  padding: 0.625rem;
+  text-transform: uppercase;
+}
+.footerButton a {
+  text-decoration: unset;
+}
+.footerButton a:hover {
+  background-color: #cdcdcd;
+  color: #000;
+}
+.footerButton:hover {
+  background-color: #cdcdcd;
+  color: #000;
+}
+
+.lastBtn {
+  color: #fff;
+}

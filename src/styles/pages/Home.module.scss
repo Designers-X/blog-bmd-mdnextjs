@@ -1,0 +1,466 @@
+@import "styles/settings/__settings";
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.posts {
+  list-style: none;
+  padding-left: 0;
+  margin: -1rem 0;
+
+  & > li {
+    margin: 4em 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.TopNavBarCustom {
+  display: flex;
+  justify-content: space-between;
+}
+.containerfluid {
+  width: 100%;
+}
+.boxGrayTop {
+  background-color: #e8e8e8;
+  color: #000;
+  min-height: 121px;
+  min-width: 45.5rem;
+  padding: 0.9375rem 0 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+.width50 {
+  width: 50%;
+  display: contents;
+  text-align: center;
+}
+.dflex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "item_content item_image";
+}
+.ShoppingSec {
+  padding: 0 96px;
+  margin: auto;
+}
+.ShoppingText {
+  margin: 0 auto 2rem;
+  padding-bottom: 0.25rem;
+  -webkit-text-stroke: 0;
+  font-size: 0.70003rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+}
+.FashionNew {
+  border-bottom: thin solid #cccccc;
+  border-top: thin solid #cccccc;
+  padding: 2.5rem 0 1.5rem;
+  margin: 0.6rem 0;
+}
+.textCenter {
+  text-align: center;
+}
+.fashiontext a {
+  font-family: SaolDisplay, Georgia, Times, serif;
+  font-size: 88px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: unset;
+  color: #000;
+}
+.OutFits {
+  font-family: SaolDisplay, Georgia, Times, serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+.fashiontext a:hover {
+  font-style: italic;
+  text-decoration: unset;
+  color: #000;
+}
+.WhatNew {
+  font-size: 26px;
+  font-family: SaolText, Georgia, Times, serif;
+  font-style: italic;
+  font-weight: 300;
+}
+.AllTheBest {
+  text-decoration: none;
+  grid-area: content;
+  display: block;
+  text-align: center;
+}
+.imgfluid {
+  max-width: 100%;
+  height: auto;
+}
+.fashionCompaigns {
+  font-size: 38px;
+  font-family: SaolDisplay, Georgia, Times, serif;
+  color: #000;
+}
+.winterComing {
+  font-size: 18px;
+  font-family: SaolText, Georgia, Times, serif;
+  letter-spacing: 0.02rem;
+  color: #000;
+}
+.AddressLeBlanc {
+  font-size: 12px;
+  display: inline-block;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  color: #000;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.card {
+  max-width: 280px;
+  margin: auto;
+  text-align: left;
+  width: 25%;
+}
+.card a {
+  text-decoration: unset;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+.inlineflex {
+  display: inline-flex;
+  grid-gap: 1.25rem;
+}
+.gridgap {
+  grid-gap: 1.5625rem;
+}
+.CreatedBy {
+  text-transform: none;
+  font-family: Inter, Helvetica, Arial, Sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.card a {
+  color: #000;
+}
+.width70 {
+  width: 70%;
+}
+.width30 {
+  width: 30%;
+}
+.img225 {
+  height: 125px;
+  width: 125px;
+  object-fit: var(--object-fit, cover);
+  overflow: hidden;
+  display: inline-block;
+  background-size: cover;
+}
+.rightBeauty a {
+  color: #000;
+  text-decoration: unset;
+}
+.marginAuto {
+  margin: auto;
+}
+.ByTextStyle {
+  font-size: 12px;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  color: #000;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.PresentedBy {
+  font-size: 11px;
+  margin: 8px 0px;
+}
+.marginT5 {
+  margin-top: 40px;
+}
+.marginB5 {
+  margin-bottom: 40px;
+}
+.HeightWidth360 {
+  height: 185px;
+  width: 185px;
+  background-size: cover;
+  align-items: center;
+  overflow: hidden;
+}
+.CultureCard .card {
+  display: contents;
+}
+.ShoppingSec a {
+  color: #000;
+  text-decoration: unset;
+}
+.PointsHoursLives {
+  display: grid;
+  grid-column-gap: 1.25rem;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  grid-area: content;
+}
+.StylePoints {
+  margin-bottom: 0.3125rem;
+  padding: 0rem;
+}
+.PointsStyle {
+  font-size: 1.5rem;
+  line-height: 1;
+  border-top: 1.5rem solid #000000;
+  text-align: left;
+  font-family: SaolText, Georgia, Times, serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin: 0rem;
+  padding: 1rem 0.2rem 0.375rem;
+  text-transform: uppercase;
+}
+.PointsStyle a {
+  color: #000;
+  text-decoration: unset;
+}
+.PointsStyle a:hover {
+  color: #000;
+  text-decoration: unset;
+  font-style: italic;
+}
+.img195 {
+  height: 195px;
+  width: 195px;
+}
+.PointsHoursLives .rightBeauty {
+  margin-bottom: 1.25rem;
+}
+.VideoSection {
+  margin-bottom: 2rem;
+}
+.SongAssociation {
+  padding: 1.875rem 0 0;
+  color: #000;
+  text-decoration: unset;
+}
+.GouldingSings {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  display: block;
+  font-family: SaolDisplay, Georgia, Times, serif;
+  font-weight: normal;
+  margin-bottom: 0.3125rem;
+  text-align: center;
+}
+.NowTrending {
+  font-size: 87px;
+  font-family: SaolDisplay, Georgia, Times, serif;
+  font-weight: 400;
+  letter-spacing: -0.15rem;
+}
+.HeightWidth282 {
+  height: 282px;
+  width: 282px;
+}
+.TrendingTextStyle {
+  font-weight: bold;
+}
+.InRow {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.cardTrending {
+  max-width: 280px;
+  margin: 0px 12px;
+  text-align: left;
+  width: 25%;
+  color: #000;
+}
+.cardTrending a {
+  color: #000;
+}
+
+.footerSpicl {
+  background-color: #000000;
+  color: #fff;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-size: 0.70003rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4;
+  padding-bottom: 1.875rem;
+  padding-top: 1.875rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.middelSection {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 2.5rem;
+}
+.LogoSection {
+  display: block;
+  width: 25%;
+}
+.SocialIcon {
+  display: flex;
+}
+.paddingIcon {
+  padding: 0.8125rem 1rem;
+}
+.footerMenu {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  margin-bottom: 0.875rem;
+  margin-top: 0.5rem;
+}
+.Newsletter {
+  padding: 0.6rem 0;
+  text-decoration: none;
+  color: #fff;
+}
+.footerMenu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 0;
+}
+.footerMenu a:hover {
+  color: #fff;
+  text-decoration: underline;
+  padding: 0.6rem 0;
+}
+.DigitalTextFooter {
+  padding-top: 0.9375rem;
+  margin: 0.3125rem 0;
+}
+.footerLegalMenu {
+  padding-top: 0.9375rem;
+  line-height: 2;
+}
+.footerLegalMenu a {
+  color: #fff;
+  padding: 0.625rem 0.625rem 0.625rem 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-right: 1.25rem;
+}
+.footerLegalMenu a:hover {
+  text-decoration: underline;
+}
+.footerButton {
+  border: thin solid white;
+  display: inline-block;
+  margin: 1.875rem 0.9375rem 1.25rem 0;
+  color: #fff;
+  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-size: 0.70003rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4;
+  padding: 0.625rem;
+  text-transform: uppercase;
+}
+.footerButton a {
+  text-decoration: unset;
+}
+.footerButton a:hover {
+  background-color: #cdcdcd;
+  color: #000;
+}
+.footerButton:hover {
+  background-color: #cdcdcd;
+  color: #000;
+}
+.lastBtn {
+  color: #fff;
+}
+
+.containerfluid_boxGrayTop {
+  background-color: #e8e8e8;
+  color: #000;
+  min-height: 121px;
+  min-width: 45.5rem;
+  padding: 0.9375rem 0 1.25rem;
+  text-align: center;
+  width: 100%;
+}
+
+.FashionNew_textCenter {
+  border-bottom: thin solid #cccccc;
+  border-top: thin solid #cccccc;
+  padding: 2.5rem 0 1.5rem;
+  margin: 0.6rem 0;
+  text-align: center;
+}
+.container_textcenter {
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.inlineflex_gridgap {
+  display: inline-flex;
+  grid-gap: 1.25rem;
+  grid-gap: 1.5625rem;
+}
+
+.imgfluid_img225 {
+  max-width: 100%;
+  height: auto;
+  height: 125px;
+  width: 125px;
+  object-fit: var(--object-fit, cover);
+  overflow: hidden;
+  display: inline-block;
+  background-size: cover;
+}
+
+.textCenter_CultureCard_marginT5_marginB5 {
+  text-align: center;
+  display: contents;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container_marginT5_marginB5 {
+  width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
