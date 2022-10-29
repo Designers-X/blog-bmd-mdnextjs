@@ -1,14 +1,10 @@
-// import ClassName from 'models/classname';
-// import styles from './NavListItem.module.scss';
 import Link from 'next/link';
 
-const NavListItem = ({ className, item }) => {
+const LeftbarItem = ({ className, item }) => {
   const nestedItems = (item.children || []).map((item) => {
-    return <NavListItem key={item.id} item={item} />;
+    return <LeftbarItem key={item.id} item={item} />;
   });
-
   const catUrl = item.path.replace('category', 'categories');
-
   return (
     <span key={item.id}>
       {!item.path.includes('http') && !item.target && (
@@ -21,10 +17,9 @@ const NavListItem = ({ className, item }) => {
           {item.label}
         </a>
       )}
-
       {nestedItems.length > 0 && <ul className={className}>{nestedItems}</ul>}
     </span>
   );
 };
 
-export default NavListItem;
+export default LeftbarItem;
