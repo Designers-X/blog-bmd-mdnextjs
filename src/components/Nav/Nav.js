@@ -11,7 +11,6 @@ import Leftsidebar from 'components/Leftsidebar';
 
 const Nav = () => {
   const { menus } = useSite();
-
   const navigationLocation = process.env.WORDPRESS_MENU_LOCATION_NAVIGATION || MENU_LOCATION_NAVIGATION_DEFAULT;
   const navigation = findMenuByLocation(menus, navigationLocation);
 
