@@ -36,6 +36,7 @@ const nextConfig = {
 };
 
 module.exports = () => {
+	
   const plugins = [indexSearch, feed, sitemap];
   return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
 };
