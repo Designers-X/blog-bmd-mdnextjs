@@ -1,5 +1,6 @@
 import useSite from 'hooks/use-site';
-import { getPaginatedPosts } from 'lib/posts';
+// import { getPaginatedPosts } from 'lib/posts';
+import { getFashionPosts } from 'lib/posts';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
@@ -76,6 +77,21 @@ export default function Home({ posts, pagination }) {
                 <a className={styles.AllTheBest} href="#">
                   <img className={styles.imgfluid} src="/img/all-the-best.jpg" />
                   <div className={styles.BestResortText}>
+                    <Container>
+                      {Array.isArray(posts) && (
+                        <>
+                          <ul className={styles.posts}>
+                            {posts.map((post) => {
+                              return (
+                                <li key={post.slug}>
+                                  <PostCard post={post} />
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </>
+                      )}
+                    </Container>
                     <span className={styles.fashionCompaigns}>All the Best Resort 2023 Fashion Campaigns</span>
                     <div className={styles.winterComing}>
                       <p>Winter is coming...</p>
@@ -661,9 +677,23 @@ export default function Home({ posts, pagination }) {
   );
 }
 
+// export async function getStaticProps() {
+//   const { posts, pagination } = await getPaginatedPosts({
+//     queryIncludes: 'archive',
+//   });
+//   return {
+//     props: {
+//       posts,
+//       pagination: {
+//         ...pagination,
+//         basePath: '/posts',
+//       },
+//     },
+//   };
+// }
 export async function getStaticProps() {
-  const { posts, pagination } = await getPaginatedPosts({
-    queryIncludes: 'archive',
+  const { posts, pagination } = await getFashionPosts({
+    queryIncludes: 'fashion',
   });
   return {
     props: {

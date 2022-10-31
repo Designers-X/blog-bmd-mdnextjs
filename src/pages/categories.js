@@ -30,7 +30,6 @@ export default function Categories({ categories }) {
       </Helmet>
 
       <WebpageJsonLd title={title} description={metaDescription} siteTitle={siteTitle} slug={slug} />
-
       <Header>
         <Container>
           <h1>Categories</h1>
@@ -38,6 +37,7 @@ export default function Categories({ categories }) {
       </Header>
 
       <Section>
+        <h1></h1>
         <Container>
           <SectionTitle>All Categories</SectionTitle>
           <ul className={styles.categories}>

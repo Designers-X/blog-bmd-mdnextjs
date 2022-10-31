@@ -323,3 +323,33 @@ export const QUERY_POST_PER_PAGE = gql`
     }
   }
 `;
+
+export const QUERY_FASHIOH_POSTS = gql`
+  query PostsByCategoryId {
+    posts(where: { categoryId: 3, orderby: { field: AUTHOR, order: DESC } }) {
+      edges {
+        node {
+          author {
+            node {
+              name
+              slug
+            }
+          }
+          content
+          featuredImage {
+            node {
+              altText
+              caption
+              id
+              sizes
+              sourceUrl
+              srcSet
+            }
+          }
+          modified
+          title
+        }
+      }
+    }
+  }
+`;

@@ -7,6 +7,7 @@ import {
   QUERY_ALL_POSTS_INDEX,
   QUERY_ALL_POSTS_ARCHIVE,
   QUERY_ALL_POSTS,
+  QUERY_FASHIOH_POSTS,
   QUERY_POST_BY_SLUG,
   QUERY_POSTS_BY_AUTHOR_SLUG_INDEX,
   QUERY_POSTS_BY_AUTHOR_SLUG_ARCHIVE,
@@ -128,6 +129,7 @@ const allPostsIncludesTypes = {
   all: QUERY_ALL_POSTS,
   archive: QUERY_ALL_POSTS_ARCHIVE,
   index: QUERY_ALL_POSTS_INDEX,
+  fashion: QUERY_FASHIOH_POSTS,
 };
 
 export async function getAllPosts(options = {}) {
@@ -412,5 +414,21 @@ export async function getPaginatedPosts({ currentPage = 1, ...options } = {}) {
       currentPage: page,
       pagesCount,
     },
+  };
+}
+
+export async function getFashionPosts(options = {}) {
+  const { queryIncludes = 'fashion' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const posts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    posts: Array.isArray(posts) && posts.map(mapPostData),
   };
 }
