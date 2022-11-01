@@ -1,6 +1,11 @@
 import { getApolloClient } from 'lib/apollo-client';
 
-import { QUERY_ALL_CATEGORIES, QUERY_CATEGORY_BY_SLUG, QUERY_CATEGORY_SEO_BY_SLUG } from 'data/categories';
+import {
+  QUERY_ALL_CATEGORIES,
+  QUERY_CATEGORY_BY_ID,
+  QUERY_CATEGORY_BY_SLUG,
+  QUERY_CATEGORY_SEO_BY_SLUG,
+} from 'data/categories';
 
 /**
  * categoryPathBySlug
@@ -139,4 +144,18 @@ export async function getCategories({ count } = {}) {
 export function mapCategoryData(category = {}) {
   const data = { ...category };
   return data;
+}
+
+export async function getCategory() {
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: QUERY_CATEGORY_BY_ID,
+  });
+
+  const category = data;
+
+  return {
+    category,
+  };
 }

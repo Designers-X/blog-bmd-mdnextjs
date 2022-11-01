@@ -8,7 +8,7 @@ import { FaMapPin } from 'react-icons/fa';
 import styles from './PostCard.module.scss';
 
 const PostCard = ({ post, options = {} }) => {
-  const { title, excerpt, slug, date, author, categories, isSticky = false } = post;
+  const { title, content, excerpt, slug, date, author, categories, isSticky = false } = post;
   const { excludeMetadata = [] } = options;
 
   const metadata = {};
@@ -37,13 +37,19 @@ const PostCard = ({ post, options = {} }) => {
       <Link href={postPathBySlug(slug)}>
         <a>
           <h3
-            className={styles.postCardTitle}
+            className={styles.fashionCompaigns}
             dangerouslySetInnerHTML={{
               __html: title,
             }}
           />
         </a>
       </Link>
+      <h5
+        className={styles.postCardTitle}
+        dangerouslySetInnerHTML={{
+          __html: content,
+        }}
+      />
       <Metadata className={styles.postCardMetadata} {...metadata} />
       {excerpt && (
         <div

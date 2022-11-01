@@ -94,7 +94,7 @@ export default function Home({ posts, pagination }) {
                     </Container>
                     <span className={styles.fashionCompaigns}>All the Best Resort 2023 Fashion Campaigns</span>
                     <div className={styles.winterComing}>
-                      <p>Winter is coming...</p>
+                      <p>Winter is coming... </p>
                     </div>
                     <div className={styles.AddressLeBlanc}>
                       <p>By Kevin LeBlanc and Claire Stern</p>

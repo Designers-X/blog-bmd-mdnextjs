@@ -28,6 +28,16 @@ export const QUERY_CATEGORY_BY_SLUG = gql`
   }
 `;
 
+export const QUERY_CATEGORY_BY_ID = gql`
+  query CategoryById {
+    category(id: "3", idType: DATABASE_ID) {
+      id
+      name
+      link
+    }
+  }
+`;
+
 export const QUERY_CATEGORY_SEO_BY_SLUG = gql`
   query CategorySEOBySlug($slug: ID!) {
     category(id: $slug, idType: SLUG) {
