@@ -1,18 +1,12 @@
 import useSite from 'hooks/use-site';
-// import { getPaginatedPosts } from 'lib/posts';
-import { getFashionPosts } from 'lib/posts';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
 import Header from 'components/Header';
-import Section from 'components/Section';
-import Container from 'components/Container';
-import PostCard from 'components/PostCard';
-import Pagination from 'components/Pagination';
 
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home({ posts, pagination }) {
+export default function Home() {
   const { metadata = {} } = useSite();
   const { title, description } = metadata;
 
@@ -77,21 +71,6 @@ export default function Home({ posts, pagination }) {
                 <a className={styles.AllTheBest} href="#">
                   <img className={styles.imgfluid} src="/img/all-the-best.jpg" />
                   <div className={styles.BestResortText}>
-                    <Container>
-                      {Array.isArray(posts) && (
-                        <>
-                          <ul className={styles.posts}>
-                            {posts.map((post) => {
-                              return (
-                                <li key={post.slug}>
-                                  <PostCard post={post} />
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </>
-                      )}
-                    </Container>
                     <span className={styles.fashionCompaigns}>All the Best Resort 2023 Fashion Campaigns</span>
                     <div className={styles.winterComing}>
                       <p>Winter is coming... </p>
@@ -651,57 +630,6 @@ export default function Home({ posts, pagination }) {
           </div>
         </section>
       </main>
-      <Section>
-        <Container>
-          <h2 className="sr-only">Posts</h2>
-          <ul className={styles.posts}>
-            {posts.map((post) => {
-              return (
-                <li key={post.slug}>
-                  <PostCard post={post} />
-                </li>
-              );
-            })}
-          </ul>
-          {pagination && (
-            <Pagination
-              addCanonical={false}
-              currentPage={pagination?.currentPage}
-              pagesCount={pagination?.pagesCount}
-              basePath={pagination?.basePath}
-            />
-          )}
-        </Container>
-      </Section>
     </Layout>
   );
-}
-
-// export async function getStaticProps() {
-//   const { posts, pagination } = await getPaginatedPosts({
-//     queryIncludes: 'archive',
-//   });
-//   return {
-//     props: {
-//       posts,
-//       pagination: {
-//         ...pagination,
-//         basePath: '/posts',
-//       },
-//     },
-//   };
-// }
-export async function getStaticProps() {
-  const { posts, pagination } = await getFashionPosts({
-    queryIncludes: 'fashion',
-  });
-  return {
-    props: {
-      posts,
-      pagination: {
-        ...pagination,
-        basePath: '/posts',
-      },
-    },
-  };
 }
