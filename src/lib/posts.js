@@ -7,7 +7,18 @@ import {
   QUERY_ALL_POSTS_INDEX,
   QUERY_ALL_POSTS_ARCHIVE,
   QUERY_ALL_POSTS,
+  QUERY_LATEST_POST,
   QUERY_FASHIOH_POSTS,
+  QUERY_FASHIOH_POST_BY_ID,
+  QUERY_BEAUTY_POSTS,
+  QUERY_FRUIT_AND_WINE_POSTS,
+  QUERY_CATNOT_MISS_READS_POSTS,
+  QUERY_CULTURE_POSTS,
+  QUERY_TRAVEL_AND_LEISURE_BY_ID1,
+  QUERY_TRAVEL_AND_LEISURE_BY_ID2,
+  QUERY_TRAVEL_AND_LEISURE_BY_ID3,
+  QUERY_HEALTH_WELLNESS_POSTS,
+  QUERY_ART_HISTORY_POSTS,
   QUERY_POST_BY_SLUG,
   QUERY_POSTS_BY_AUTHOR_SLUG_INDEX,
   QUERY_POSTS_BY_AUTHOR_SLUG_ARCHIVE,
@@ -130,6 +141,17 @@ const allPostsIncludesTypes = {
   archive: QUERY_ALL_POSTS_ARCHIVE,
   index: QUERY_ALL_POSTS_INDEX,
   fashion: QUERY_FASHIOH_POSTS,
+  fashionbyid: QUERY_FASHIOH_POST_BY_ID,
+  beauty: QUERY_BEAUTY_POSTS,
+  latestpost: QUERY_LATEST_POST,
+  fruitandwine: QUERY_FRUIT_AND_WINE_POSTS,
+  cantmissreads: QUERY_CATNOT_MISS_READS_POSTS,
+  culture: QUERY_CULTURE_POSTS,
+  travelandleisurebyid1: QUERY_TRAVEL_AND_LEISURE_BY_ID1,
+  travelandleisurebyid2: QUERY_TRAVEL_AND_LEISURE_BY_ID2,
+  travelandleisurebyid3: QUERY_TRAVEL_AND_LEISURE_BY_ID3,
+  healthwellness: QUERY_HEALTH_WELLNESS_POSTS,
+  artandhistory: QUERY_ART_HISTORY_POSTS,
 };
 
 export async function getAllPosts(options = {}) {
@@ -417,6 +439,22 @@ export async function getPaginatedPosts({ currentPage = 1, ...options } = {}) {
   };
 }
 
+export async function getLatestPosts(options = {}) {
+  const { queryIncludes = 'latestpost' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const latestposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    latestpost: Array.isArray(latestposts) && latestposts.map(mapPostData),
+  };
+}
+
 export async function getFashionPosts(options = {}) {
   const { queryIncludes = 'fashion' } = options;
 
@@ -426,9 +464,169 @@ export async function getFashionPosts(options = {}) {
     query: allPostsIncludesTypes[queryIncludes],
   });
 
-  const posts = data?.data.posts.edges.map(({ node = {} }) => node);
+  const feshionposts = data?.data.posts.edges.map(({ node = {} }) => node);
 
   return {
-    posts: Array.isArray(posts) && posts.map(mapPostData),
+    feshionpost: Array.isArray(feshionposts) && feshionposts.map(mapPostData),
+  };
+}
+
+export async function getTravelandLeisureById1(options = {}) {
+  const { queryIncludes = 'travelandleisurebyid1' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const travelandleisurepost1 = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    travelandleisure1: Array.isArray(travelandleisurepost1) && travelandleisurepost1.map(mapPostData),
+  };
+}
+
+export async function getTravelandLeisureById2(options = {}) {
+  const { queryIncludes = 'travelandleisurebyid2' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const travelandleisurepost2 = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    travelandleisure2: Array.isArray(travelandleisurepost2) && travelandleisurepost2.map(mapPostData),
+  };
+}
+
+export async function getTravelandLeisureById3(options = {}) {
+  const { queryIncludes = 'travelandleisurebyid3' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const travelandleisurepost3 = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    travelandleisure3: Array.isArray(travelandleisurepost3) && travelandleisurepost3.map(mapPostData),
+  };
+}
+
+export async function getCulturePosts(options = {}) {
+  const { queryIncludes = 'culture' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const cultureposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    culturepost: Array.isArray(cultureposts) && cultureposts.map(mapPostData),
+  };
+}
+
+export async function getBeautyPosts(options = {}) {
+  const { queryIncludes = 'beauty' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const beautyposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    beautypost: Array.isArray(beautyposts) && beautyposts.map(mapPostData),
+  };
+}
+
+export async function getFruitAndWinePosts(options = {}) {
+  const { queryIncludes = 'fruitandwine' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const fruitandwineposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    fruitandwinepost: Array.isArray(fruitandwineposts) && fruitandwineposts.map(mapPostData),
+  };
+}
+
+export async function getCantMissReadsPosts(options = {}) {
+  const { queryIncludes = 'cantmissreads' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const cantmissreadsposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    cantmissreadspost: Array.isArray(cantmissreadsposts) && cantmissreadsposts.map(mapPostData),
+  };
+}
+
+export async function getHealthWellnessPosts(options = {}) {
+  const { queryIncludes = 'healthwellness' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const healthwellnessposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    healthwellnesspost: Array.isArray(healthwellnessposts) && healthwellnessposts.map(mapPostData),
+  };
+}
+
+export async function getArtHistoryPosts(options = {}) {
+  const { queryIncludes = 'artandhistory' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const arthistoryposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    arthistorypost: Array.isArray(arthistoryposts) && arthistoryposts.map(mapPostData),
+  };
+}
+
+export async function getFeshionPostById(options = {}) {
+  const { queryIncludes = 'fashionbyid' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const fashionbyidposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    fashionbyidpost: Array.isArray(fashionbyidposts) && fashionbyidposts.map(mapPostData),
   };
 }

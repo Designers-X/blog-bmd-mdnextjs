@@ -1,4 +1,16 @@
 import useSite from 'hooks/use-site';
+import {
+  getFashionPosts,
+  getFeshionPostById,
+  getFruitAndWinePosts,
+  getCantMissReadsPosts,
+  getCulturePosts,
+  getTravelandLeisureById1,
+  getHealthWellnessPosts,
+  getArtHistoryPosts,
+  getTravelandLeisureById2,
+  getTravelandLeisureById3,
+} from 'lib/posts';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
@@ -6,630 +18,470 @@ import Header from 'components/Header';
 
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home() {
+export default function Home({
+  fruitandwinepost,
+  cantmissreadspost,
+  feshionpost,
+  culturepost,
+  travelandleisure1,
+  travelandleisure2,
+  travelandleisure3,
+  healthwellnesspost,
+  arthistorypost,
+  fashionbyidpost,
+}) {
   const { metadata = {} } = useSite();
   const { title, description } = metadata;
 
+  console.log(cantmissreadspost);
   return (
     <Layout>
       <WebsiteJsonLd siteTitle={title} />
       <Header>
-        <h1
+        <div
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        />
+        ></div>
 
-        <p
+        <div
           className={styles.description}
           dangerouslySetInnerHTML={{
             __html: description,
           }}
-        />
+        ></div>
       </Header>
-      <main>
-        <section>
-          <div className={styles.containerfluid_boxGrayTop}></div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.dflex}>
-              <div className={styles.width50}>
-                <div className={styles.ShoppingSec}>
-                  <div className={styles.ShoppingText}>Shopping</div>
-                  <h2 className="">
-                    <span className={styles.OutFits}>13 Chic Sweater Vest Outfits to Inspire You This Fall</span>
-                  </h2>
+
+      <section className="latestPost">
+        <div className="container">
+          {fashionbyidpost.map((nodes, index1) => {
+            const htmlStr = nodes.excerpt;
+            const authorname = nodes.author.name;
+            const featuredimage = nodes.featuredImage.sourceUrl;
+
+            return (
+              <div className="row" key={index1}>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
+                  <div className="text-center">
+                    <div className={styles.pLR96}>
+                      {nodes.categories.map((ele, index) => {
+                        return <div key={index}>{ele.name}</div>;
+                      })}
+                      <h2 className="">{nodes.title}</h2>
+                      <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
+                      <div className={styles.ShoppingText}>{authorname}</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <img className="img-fluid" src={featuredimage} alt="fluid" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="fashionCatPost">
+        <div className="container text-center">
+          <div className={styles.FashionNew}>
+            <div>
+              <h2 className={styles.fashionText}>
+                <a href="#" className={styles.fashiHyperLink}>
+                  Food & Wine
+                </a>
+              </h2>
+            </div>
+            <div className={styles.WhatNew}>Life&apos;s Simple Pleasures</div>
+          </div>
+        </div>
+        {fruitandwinepost.map((nodes, index) => {
+          const posttitle = nodes.title;
+          const subtitle = nodes.excerpt;
+          const featuredimage = nodes.featuredImage.sourceUrl;
+          const authorname = nodes.author.name;
+          return (
+            <div className="container" key={index}>
+              <div className="row">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   <div>
-                    <p>Straight from your favorite celebrities and street style stars.</p>
+                    <a href="#">
+                      <img className="img-fluid" src={featuredimage} alt="fluid" />
+                    </a>
                   </div>
-                  <div className={styles.ShoppingText}>By Sam Peters</div>
+                  <div className="text-center">
+                    <a href="#" className={styles.TextHoverEffect}>
+                      <span className={styles.fashionCompaigns}>{posttitle}</span>
+                    </a>
+                  </div>
+                  <div className={styles.winterComing}>
+                    <div className="text-center" dangerouslySetInnerHTML={{ __html: subtitle }} />
+                  </div>
+                  <div className={styles.AddressLeBlanc}>
+                    <p className="text-center">{authorname}</p>
+                  </div>
                 </div>
               </div>
-              <div className={styles.width50}>
-                <img className={styles.imgfluid} src="/img/sweater-vests-outfit.jpg" />
-              </div>
             </div>
+          );
+        })}
+      </section>
+      <section className="shopTilYouDrop container">
+        <div className="row ">
+          <div className="text-center">
+            <h6 className={styles.fashionText}>
+              <a href="#" className={styles.fashiHyperLink}>
+                Can&apos;t Miss Reads
+              </a>
+            </h6>
           </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span>
-                  <a href=""> Fashion </a>
-                </span>
-                <div className={styles.WhatNew}>What`s New</div>
+          {cantmissreadspost.map((nodes, index) => {
+            const posttitle = nodes.title;
+            const featuredimage = nodes.featuredImage.sourceUrl;
+            return (
+              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
+                <a href="#" className={styles.CardHoverEffect}>
+                  <div className={styles.cardBorder}>
+                    <div className="card">
+                      <img src={featuredimage} className="card-img-top" alt="..." />
+                      <div className={styles.cardText}>
+                        <p className="card-text">{posttitle}</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="fashionCatPost">
+        <div className="container text-center">
+          <div className={styles.FashionNew}>
+            <div>
+              <h2 className={styles.fashionText}>
+                <a href="#" className={styles.fashiHyperLink}>
+                  Travel & Leisure
+                </a>
               </h2>
             </div>
+            <div className={styles.WhatNew}>Life Without Compromise</div>
           </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.inlineflex}>
-              <div className={styles.width70}>
-                <a className={styles.AllTheBest} href="#">
-                  <img className={styles.imgfluid} src="/img/all-the-best.jpg" />
-                  <div className={styles.BestResortText}>
-                    <span className={styles.fashionCompaigns}>All the Best Resort 2023 Fashion Campaigns</span>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+              {travelandleisure2.map((nodes, index) => {
+                const posttitle = nodes.title;
+                const subtitle = nodes.excerpt;
+                const featuredimage = nodes.featuredImage.sourceUrl;
+                const authorname = nodes.author.name;
+                return (
+                  <div key={index}>
+                    <div>
+                      <a href="#">
+                        <img className="img-fluid" src={featuredimage} alt="fluid" />
+                      </a>
+                    </div>
+                    <div className="text-center">
+                      <a href="#" className={styles.TextHoverEffect}>
+                        <span className={styles.fashionCompaigns}>{posttitle}</span>
+                      </a>
+                    </div>
                     <div className={styles.winterComing}>
-                      <p>Winter is coming... </p>
+                      <div className="text-center" dangerouslySetInnerHTML={{ __html: subtitle }} />
                     </div>
                     <div className={styles.AddressLeBlanc}>
-                      <p>By Kevin LeBlanc and Claire Stern</p>
+                      <p className="text-center">{authorname}</p>
                     </div>
                   </div>
-                </a>
-              </div>
-              <div className={styles.width30}>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <span className={styles.marginAuto}>
-                        {' '}
-                        Take a Look at the World`s Most Luxurious Island Properties{' '}
-                        <p className={styles.ByTextStyle}>Advertisement</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                );
+              })}
             </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span>
-                  <a href=""> SHOP `TIL YOU DROP </a>
-                </span>
-              </h2>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container_textcenter}>
-            <div className={styles.inlineflex_gridgap}>
-              <div className={styles.card}>
-                <a href="">
-                  <img src="img/product-01.jpg" alt="" style={{ width: 260 }} />
-                  <p>15 Must-Buy Finds From Nordstrom`s Fall Sale Event</p>
-                </a>
-              </div>
-              <div className={styles.card}>
-                <a href="">
-                  <img src="/img/product-02.jpg" alt="" style={{ width: 260 }} />
-                  <p>The 18 Coolest Clogs to Shop Now</p>
-                </a>
-              </div>
-              <div className={styles.card}>
-                <a href="">
-                  <img src="img/product-03.jpg" alt="" style={{ width: 260 }} />
-                  <p>The 25 Best Fall Hats to Wear Well Into Winter</p>
-                </a>
-              </div>
-              <div className={styles.card}>
-                <a href="">
-                  <img src="/img/product-04.jpg" alt="" style={{ width: 260 }} />
-                  <p className={styles.CreatedBy}>Created By Elle For</p>
-                  <p>9 Fall Jackets From Amazon</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span>
-                  <a href=""> Beauty </a>
-                </span>
-                <div className={styles.WhatNew}>fresh Finds</div>
-              </h2>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.inlineflex}>
-              <div className={styles.width70}>
-                <a className={styles.AllTheBest} href="#">
-                  <img className={styles.imgfluid} src="/img/beauty.jpg" />
-                  <div className={styles.BestResortText}>
-                    <span className={styles.fashionCompaigns}>The 10 Best Curling Irons for Every Hair Type</span>
-                    <div className={styles.AddressLeBlanc}>
-                      <p>By Tatjana Freund</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.width30}>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.imgfluid_img225} src="/img/beautyRight01.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        The 11 Best Colorful Mascaras to Shop Now <p className="ByTextStyle">By Tatjana Freund</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.imgfluid_img225} src="/img/beautyRight02.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Finding Beauty in Breast Cancer Survivors` Scars{' '}
-                        <p className="ByTextStyle">By Rose Minutaglio</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.imgfluid_img225} src="/img/beautyRight03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        It`s My Hair and I`ll Do Whatever I Want To It <p className="ByTextStyle">By Nerisha Penrose</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.imgfluid_img225} src="/img/beautyRight04.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        <p className={styles.PresentedBy}>By Nerisha Penrose</p> How to Get Taylor Swift`s `Bejeweled`
-                        Look <p className="ByTextStyle">By Nerisha Penrose</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span>
-                  <a href=""> Culture </a>
-                </span>
-                <div className={styles.WhatNew}>Books, Movies, TV & More</div>
-              </h2>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.inlineflex}>
-              <div className={styles.width70}>
-                <a className={styles.AllTheBest} href="#">
-                  <img className={styles.imgfluid} src="/img/culture.jpg" />
-                  <div className={styles.BestResortText}>
-                    <span className={styles.fashionCompaigns}>
-                      Shonda Rhimes and Betsy Beers on Michelle Obama, <i> Little Women</i>, and the Books They
-                      Recommend{' '}
-                    </span>
-                  </div>
-                </a>
-                <section>
-                  <div className={styles.textCenter_CultureCard_marginT5_marginB5}>
-                    <div className={styles.inlineflex_gridgap}>
-                      <div className={styles.card}>
-                        <a href="">
-                          <img className={styles.HeightWidth360} src="/img/culture-product-01.jpeg" alt="" />
-                          <div>
-                            <p>Regina Hall`s Most Iconic Movie Roles</p>
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+              <div>
+                <div className={styles.ThreeDivHoverEffect}>
+                  {travelandleisure3.map((nodes, index) => {
+                    const posttitle = nodes.title;
+                    const featuredimage = nodes.featuredImage.sourceUrl;
+                    const authorname = nodes.author.name;
+                    return (
+                      <a href="#" className=" " key={index}>
+                        <div className="d-flex mb-4">
+                          <div className="">
+                            <img className={styles.img195} src={featuredimage} alt="fluid" />
                           </div>
-                        </a>
-                      </div>
-                      <div className={styles.card}>
-                        <a href="">
-                          <img className={styles.HeightWidth360} src="/img/culture-product-02.jpg" alt="" />
-                          <div>
-                            <p>Carly Rae Jepsen`s Lonely Hearts Club Playlist</p>
+                          <div className="m-auto">
+                            <div className={styles.gridGap}>
+                              {posttitle}
+                              <p className={styles.ByTextStyle}>By {authorname}</p>
+                            </div>
                           </div>
-                        </a>
-                      </div>
-                      <div className={styles.card}>
-                        <a href="">
-                          <img className={styles.HeightWidth360} src="/img/culture-product-03.png" alt="" />
-                          <p>The 23 Best Vampire Shows and Films </p>
-                        </a>
-                      </div>
-                      <div className={styles.card}>
-                        <a href="">
-                          <img className={styles.HeightWidth360} src="/img/culture-product-04.jpg" alt="" />
-                          <p>I`m in My Costume Era</p>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div className={styles.width30}>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <span className={styles.marginAuto}>
-                        {' '}
-                        Take a Look at the World`s Most Luxurious Island Properties{' '}
-                        <p className="ByTextStyle">Advertisement</p>
-                      </span>
-                    </div>
-                  </a>
+                        </div>
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span>
-                  <a href=""> NEWS & POLITICS </a>
-                </span>
-                <div className={styles.WhatNew}>Power & Influence</div>
+        </div>
+      </section>
+      <section className="fashionCatPost">
+        <div className="container text-center">
+          <div className={styles.FashionNew}>
+            <div>
+              <h2 className={styles.fashionText}>
+                <a href="#" className={styles.fashiHyperLink}>
+                  Fashion
+                </a>
               </h2>
             </div>
+            <div className={styles.WhatNew}>What&apos;s New</div>
           </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.dflex}>
-              <div className={styles.width50}>
-                <div className={styles.ShoppingSec}>
-                  <a href="">
-                    <h2 className="">
-                      <span className={styles.OutFits}>
-                        Michelle Obama, Amal Clooney, and Melinda French Gates on the Dire Need to Support Girls`
-                        Education
-                      </span>
-                    </h2>
-                  </a>
-                  <div className={styles.ShoppingText}>By Madison Feller</div>
+        </div>
+        {feshionpost.map((nodes, index) => {
+          const posttitle = nodes.title;
+          const subtitle = nodes.excerpt;
+          const featuredimage = nodes.featuredImage.sourceUrl;
+          return (
+            <div className="container text-center" key={index}>
+              <div className={styles.videoHeight}>
+                <div class="ratio ratio-16x9">
+                  <img className="img-fluid" src={featuredimage} alt="fluid" />
                 </div>
               </div>
-              <div className={styles.width50}>
-                <img className={styles.imgfluid} src="/img/news-polities.jpg" />
+              <div className="text-center">
+                <a href="#" className={styles.TextHoverEffect}>
+                  <span className={styles.fashionCompaigns}>{posttitle}</span>
+                </a>
+              </div>
+              <div className={styles.winterComing}>
+                <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: subtitle }} />
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container_marginT5_marginB5}>
-            <div className={styles.PointsHoursLives}>
-              <div className={styles.width33}>
-                <div className={styles.StylePoints}>
-                  <h2 className={styles.PointsStyle}>
-                    <a href=""> Style Points</a>
-                  </h2>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-01.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Alyssa Hardy on Her New Book <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
+          );
+        })}
+      </section>
+      <section className="fashionCatPost">
+        <div className="container">
+          {culturepost.map((nodes, index) => {
+            const authorname = nodes.author.name;
+            const featuredimage = nodes.featuredImage.sourceUrl;
+            return (
+              <div className="row" key={index}>
+                <div className="container text-center">
+                  <div className={styles.FashionNew}>
+                    <div>
+                      <h2 className={styles.fashionText}>
+                        <a href="#" className={styles.fashiHyperLink}>
+                          Culture
+                        </a>
+                      </h2>
                     </div>
-                  </a>
+                    <div className={styles.WhatNew}>CURATED COLLECTIONS & CONNECTIONS</div>
+                  </div>
                 </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-02.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Where Were the Political Statements at NYFW? <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
+                  <div className="text-center">
+                    <div className={styles.pLR96}>
+                      <h2 className="">{nodes.title}</h2>
+                      <div className={styles.ShoppingText}>{authorname}</div>
                     </div>
-                  </a>
+                  </div>
                 </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Gianluca Russo on The Power of Being Plus Size{' '}
-                        <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Gianluca Russo on The Power of Being Plus Size{' '}
-                        <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <img className="img-fluid" src={featuredimage} alt="fluid" />
                 </div>
               </div>
-              <div className={styles.width33}>
-                <div className={styles.StylePoints}>
-                  <h2 className={styles.PointsStyle}>
-                    <a href=""> Office Hours</a>
-                  </h2>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-01.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Alyssa Hardy on Her New Book <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-02.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Where Were the Political Statements at NYFW? <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Gianluca Russo on The Power of Being Plus Size{' '}
-                        <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Gianluca Russo on The Power of Being Plus Size{' '}
-                        <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
+            );
+          })}
+        </div>
+      </section>
+      <section className="videosection mt-5">
+        {travelandleisure1.map((nodes, index) => {
+          const posttitle = nodes.title;
+          const subtitle = nodes.excerpt;
+          return (
+            <div className="container text-center" key={index}>
+              <div className={styles.videoHeight}>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
-              <div className={styles.width33}>
-                <div className={styles.StylePoints}>
-                  <h2 className={styles.PointsStyle}>
-                    <a href=""> Clothes of Our Lives </a>
-                  </h2>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-01.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Alyssa Hardy on Her New Book <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-02.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Where Were the Political Statements at NYFW? <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-01.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Alyssa Hardy on Her New Book <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div className={styles.rightBeauty}>
-                  <a href="#">
-                    <div className={styles.inlineflex}>
-                      <div className="">
-                        <img className={styles.img195} src="/img/StylePoint-03.jpg" />
-                      </div>
-                      <span className={styles.marginAuto}>
-                        Gianluca Russo on The Power of Being Plus Size{' '}
-                        <p className="ByTextStyle">By Véronique Hyland</p>
-                      </span>
-                    </div>
-                  </a>
-                </div>
+              <div className={styles.AddressLeBlanc}>
+                <p className="text-center">{posttitle}</p>
+              </div>
+              <div className="text-center">
+                <a href="#" className={styles.TextHoverEffect}>
+                  <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: subtitle }} />
+                </a>
               </div>
             </div>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <video className={styles.VideoSection} width="100%" controls>
-              <source src="/mov_bbb.mp4" type="video/mp4" />
-              <source src="/mov_bbb.ogg" type="video/ogg" />
-            </video>
-          </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <a href="#" className={styles.SongAssociation}>
-              <div className={styles.ShoppingText}>SONG ASSOCIATION</div>
-              <div className={styles.GouldingSings}>
-                Ellie Goulding Sings Selena Gomez, Mariah Carey, Beyoncé, and More for Song Association
+          );
+        })}
+      </section>
+      <section className="nowTrending">
+        <div className="text-center">
+          <h6 className={styles.fashionText}>
+            <a href="#" className={styles.fashiHyperLink}>
+              Now Trending
+            </a>
+          </h6>
+        </div>
+        <div className="container">
+          {healthwellnesspost.map((nodes, index) => {
+            const title = nodes.title;
+            const subtitle = nodes.excerpt;
+            const authorname = nodes.author.name;
+            const featuredimage = nodes.featuredImage.sourceUrl;
+            return (
+              <div className="row" key={index}>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
+                  <div className="text-center">
+                    <div className={styles.pLR96}>
+                      <div className={styles.ShoppingText}>Shopping</div>
+                      <h2 class="">
+                        <span>{title}</span>
+                      </h2>
+                      <div dangerouslySetInnerHTML={{ __html: subtitle }}></div>
+                      <div className={styles.ShoppingText}>{authorname}</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <img className="img-fluid" src={featuredimage} alt="fluid" />
+                </div>
               </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="videosection mt-5">
+        {arthistorypost.map((nodes, index) => {
+          const posttitle = nodes.title;
+          const subtitle = nodes.excerpt;
+          return (
+            <div className="container text-center" key={index}>
+              <div className={styles.videoHeight}>
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <div className={styles.AddressLeBlanc}>
+                <p className="text-center">{posttitle}</p>
+              </div>
+              <div className="text-center">
+                <a href="#" className={styles.TextHoverEffect}>
+                  <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: subtitle }} />
+                </a>
+              </div>
+            </div>
+          );
+        })}
+      </section>
+      <hr />
+      <section className="container text-center">
+        <div className={styles.FashionNew}>
+          <div>
+            <h2 className={styles.fashionText}>
+              <a href="#" className={styles.fashiHyperLink}>
+                Travel & Leisure
+              </a>
+            </h2>
+          </div>
+
+          <div className={styles.WhatNew}>What’s New</div>
+        </div>
+        <div className="container text-center">
+          <div className={styles.videoHeight}>
+            <div class="ratio ratio-16x9">
+              <img
+                src="https://fast.wistia.com/embed/medias/tf3z4aj6wm/swatch"
+                alt=""
+                aria-hidden="true"
+                onload="this.parentNode.style.opacity=1;"
+              />
+            </div>
+          </div>
+          <div className={styles.AddressLeBlanc}>
+            <p className="text-center">Grand Hotel Victoria, Sorrento</p>
+          </div>
+          <div className="text-center">
+            <a href="#" className={styles.TextHoverEffect}>
+              <span className={styles.fashionCompaigns}>A song, and a 5 star hotel, for the ages</span>
             </a>
           </div>
-        </section>
-        <section>
-          <div className={styles.container}>
-            <div className={styles.FashionNew_textCenter}>
-              <h2 className={styles.fashiontext}>
-                <span className={styles.NowTrending}> Now Trending </span>
-              </h2>
-            </div>
+        </div>
+        <div className="row ">
+          <div className="text-center">
+            <h6 className={styles.fashionText}></h6>
           </div>
-        </section>
-        <section>
-          <div className={styles.container_marginT5_marginB5}>
-            <div className={styles.InRow}>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-01.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>A New Rihanna Song Is Finally Here</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-02.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>Who Is the Real `Good Nurse,` Amy Loughren?</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-02.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>Who Is the Real `Good Nurse,` Amy Loughren?</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-01.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>A New Rihanna Song Is Finally Here</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-03.jpg" alt="" />
-                  <p className={styles.TrendingTextStyle}>People Swear This Is Hailey Bieber`s Nail Dupe</p>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-02.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>Who Is the Real `Good Nurse,` Amy Loughren?</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-01.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>A New Rihanna Song Is Finally Here</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-01.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>A New Rihanna Song Is Finally Here</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-04.jpg" alt="" />
-                  <p className={styles.TrendingTextStyle}>15 Products for a Sleek, Smooth Blowout</p>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-01.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>A New Rihanna Song Is Finally Here</p>
-                  </div>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-04.jpg" alt="" />
-                  <p className={styles.TrendingTextStyle}>15 Products for a Sleek, Smooth Blowout</p>
-                </a>
-              </div>
-              <div className={styles.cardTrending}>
-                <a href="">
-                  <img className={styles.HeightWidth282} src="/img/now-trending-02.jpg" alt="" />
-                  <div>
-                    <p className={styles.TrendingTextStyle}>Who Is the Real `Good Nurse,` Amy Loughren?</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const { feshionpost } = await getFashionPosts({
+    queryIncludes: 'fashion',
+  });
+
+  const { fashionbyidpost } = await getFeshionPostById({
+    queryIncludes: 'fashionbyid',
+  });
+
+  const { fruitandwinepost } = await getFruitAndWinePosts({
+    queryIncludes: 'fruitandwine',
+  });
+
+  const { cantmissreadspost } = await getCantMissReadsPosts({
+    queryIncludes: 'cantmissreads',
+  });
+  const { culturepost } = await getCulturePosts({
+    queryIncludes: 'culture',
+  });
+
+  const { travelandleisure1 } = await getTravelandLeisureById1({
+    queryIncludes: 'travelandleisurebyid1',
+  });
+
+  const { travelandleisure2 } = await getTravelandLeisureById2({
+    queryIncludes: 'travelandleisurebyid2',
+  });
+
+  const { travelandleisure3 } = await getTravelandLeisureById3({
+    queryIncludes: 'travelandleisurebyid3',
+  });
+
+  const { healthwellnesspost } = await getHealthWellnessPosts({
+    queryIncludes: 'healthwellness',
+  });
+
+  const { arthistorypost } = await getArtHistoryPosts({
+    queryIncludes: 'artandhistory',
+  });
+
+  return {
+    props: {
+      feshionpost,
+      fashionbyidpost,
+      fruitandwinepost,
+      cantmissreadspost,
+      culturepost,
+      travelandleisure1,
+      travelandleisure2,
+      travelandleisure3,
+      healthwellnesspost,
+      arthistorypost,
+    },
+  };
 }

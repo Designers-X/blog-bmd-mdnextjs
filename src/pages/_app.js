@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import NextApp from 'next/app';
-
+import 'bootstrap/dist/css/bootstrap.css';
 import { SiteContext, useSiteContext } from 'hooks/use-site';
 import { SearchProvider } from 'hooks/use-search';
 
@@ -14,6 +15,10 @@ import 'styles/wordpress.scss';
 import variables from 'styles/_variables.module.scss';
 
 function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
+  useEffect(() => {
+    require('bootstrap/dist/js/bootstrap.bundle.min.js');
+  }, []);
+
   const site = useSiteContext({
     metadata,
     recentPosts,
