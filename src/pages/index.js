@@ -81,7 +81,6 @@ export default function Home({
           })}
         </div>
       </section>
-
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
@@ -126,7 +125,6 @@ export default function Home({
           );
         })}
       </section>
-
       <section className="shopTilYouDrop container">
         <div className="row ">
           <div className="text-center">
@@ -144,7 +142,7 @@ export default function Home({
                 <a href="#" className={styles.CardHoverEffect}>
                   <div className={styles.cardBorder}>
                     <div className="card">
-                      <img src={featuredimage} className="card-img-top" alt="..." />
+                      <img src={featuredimage} className="card-img-top" alt="" />
                       <div className={styles.cardText}>
                         <p className="card-text">{posttitle}</p>
                       </div>
@@ -156,7 +154,6 @@ export default function Home({
           })}
         </div>
       </section>
-
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
@@ -229,7 +226,6 @@ export default function Home({
           </div>
         </div>
       </section>
-
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
@@ -266,7 +262,6 @@ export default function Home({
           );
         })}
       </section>
-
       <section className="fashionCatPost">
         <div className="container">
           {culturepost.map((nodes, index) => {
@@ -302,7 +297,6 @@ export default function Home({
           })}
         </div>
       </section>
-
       <section className="videosection mt-5">
         {travelandleisure1.map((nodes, index) => {
           const posttitle = nodes.title;
@@ -330,7 +324,6 @@ export default function Home({
           );
         })}
       </section>
-      
       <section className="nowTrending">
         <div className="text-center">
           <h6 className={styles.fashionText}>
