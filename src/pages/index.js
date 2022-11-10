@@ -81,6 +81,7 @@ export default function Home({
           })}
         </div>
       </section>
+
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
@@ -125,6 +126,7 @@ export default function Home({
           );
         })}
       </section>
+
       <section className="shopTilYouDrop container">
         <div className="row ">
           <div className="text-center">
@@ -154,6 +156,7 @@ export default function Home({
           })}
         </div>
       </section>
+      
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
