@@ -81,6 +81,7 @@ export default function Home({
           })}
         </div>
       </section>
+	  
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
