@@ -38,23 +38,6 @@
   text-decoration: underline;
   text-align: center;
 }
-
-// 15-11-2022
-.Atag{
-  color: #000;
-  text-decoration: unset;
-}
-.textStleShop a{
-  color: #000;
-  text-decoration: unset;
-}
-.Atag span:hover {
-  color: #808080;
-  text-decoration: unset;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-
 .FashionNew {
   border-bottom: thin solid #cccccc;
   border-top: thin solid #cccccc;
@@ -246,23 +229,4 @@
   color: #808080;
 
   text-decoration: unset;
-}
-.ahover a:hover{
-  text-decoration: unset;
-}
-.img120{
-  height: 120px;
-  width: 120px;
-}
-.inlineBox {
-  display: -webkit-inline-box;
-}
-.underlinetext{
-  border-bottom: thin solid black;
-    font-family: NeueHaasUnica,Arial,sans-serif;
-     text-transform: uppercase; 
-     width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: auto;
 }
