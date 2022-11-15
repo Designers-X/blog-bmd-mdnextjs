@@ -62,6 +62,7 @@ export default function Home({
                         return <div key={index}>{ele.name}</div>;
                       })}
                       <h2 className="">{nodes.title}</h2>
+					  <h3 className="">{nodes.title}</h3>
                       <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
                       <div className={styles.ShoppingText}>{authorname}</div>
                     </div>
