@@ -337,14 +337,6 @@ export const QUERY_FASHIOH_POSTS = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -357,7 +349,6 @@ export const QUERY_FASHIOH_POSTS = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -376,14 +367,6 @@ export const QUERY_FASHIOH_POST_BY_ID = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -396,12 +379,10 @@ export const QUERY_FASHIOH_POST_BY_ID = gql`
           }
           modified
           title
-          slug
           categories {
             edges {
               node {
                 name
-                slug
               }
             }
           }
@@ -423,14 +404,6 @@ export const QUERY_BEAUTY_POSTS = gql`
             }
           }
           content
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -458,7 +431,6 @@ export const QUERY_LATEST_POST = gql`
             edges {
               node {
                 name
-                slug
               }
             }
           }
@@ -499,14 +471,6 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -519,7 +483,6 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -551,7 +514,6 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -571,14 +533,6 @@ export const QUERY_CULTURE_POSTS = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -591,7 +545,6 @@ export const QUERY_CULTURE_POSTS = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -611,14 +564,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -631,7 +576,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -651,14 +595,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -671,7 +607,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -691,14 +626,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
           }
           content
           excerpt
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -711,7 +638,6 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
           }
           modified
           title
-          slug
         }
       }
     }
@@ -730,14 +656,6 @@ export const QUERY_HEALTH_WELLNESS_POSTS = gql`
             }
           }
           content
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -750,7 +668,6 @@ export const QUERY_HEALTH_WELLNESS_POSTS = gql`
           }
           modified
           title
-          slug
           excerpt
         }
       }
@@ -770,14 +687,6 @@ export const QUERY_ART_HISTORY_POSTS = gql`
             }
           }
           content
-          categories {
-            edges {
-              node {
-                name
-                slug
-              }
-            }
-          }
           featuredImage {
             node {
               altText
@@ -790,7 +699,6 @@ export const QUERY_ART_HISTORY_POSTS = gql`
           }
           modified
           title
-          slug
           excerpt
         }
       }
