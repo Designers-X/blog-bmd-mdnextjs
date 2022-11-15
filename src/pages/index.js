@@ -1,4 +1,3 @@
-import useSite from 'hooks/use-site';
 import Link from 'next/link';
 import {
   getFashionPosts,
@@ -45,7 +44,7 @@ export default function Home({
                   <div className="text-center">
                     <div className={styles.pLR96}>
                       {nodes.categories.map((ele, index) => {
-                        return <div key={index}>{ele.name}</div>;
+                        return <div key={index}>{ele.name}</div>;	
                       })}
                     <h2 className="">{nodes.title}</h2>
                       <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
@@ -56,7 +55,6 @@ export default function Home({
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <img className="img-fluid" src={featuredimage} alt="fluid" />
                 </div>
-                
               </div>
             );
           })}
