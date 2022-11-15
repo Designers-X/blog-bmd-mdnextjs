@@ -42,7 +42,7 @@ export default function Home({
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        ></div> 
+        ></div>
         <div
           className={styles.description}
           dangerouslySetInnerHTML={{
@@ -53,6 +53,7 @@ export default function Home({
 
       <section className="latestPost">
         <div className="container">
+		<p>boooo</p>
           {fashionbyidpost.map((nodes, index1) => {
             const htmlStr = nodes.excerpt;
             const authorname = nodes.author.name;
