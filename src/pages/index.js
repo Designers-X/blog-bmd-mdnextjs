@@ -42,7 +42,7 @@ export default function Home({
           dangerouslySetInnerHTML={{
             __html: title,
           }}
-        ></div>
+        ></div> 
         <div
           className={styles.description}
           dangerouslySetInnerHTML={{
