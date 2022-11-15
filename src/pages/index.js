@@ -53,7 +53,6 @@ export default function Home({
 
       <section className="latestPost">
         <div className="container">
-		<p>boooo</p>
           {fashionbyidpost.map((nodes, index1) => {
             const htmlStr = nodes.excerpt;
             const authorname = nodes.author.name;
@@ -68,6 +67,7 @@ export default function Home({
                         return <div key={index}>{ele.name}</div>;
                       })}
                       <h2 className="">{nodes.title}</h2>
+					  <h3 className="">{nodes.title}</h3>
                       <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
                       <div className={styles.ShoppingText}>{authorname}</div>
                     </div>
