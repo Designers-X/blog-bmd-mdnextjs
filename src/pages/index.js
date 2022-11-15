@@ -241,8 +241,8 @@ export default function Home({
                   const authorname = nodes.author.name;
                   const postslug = 'posts/' + nodes.slug;
                   return (
-                    <Link href={postslug}>
-                      <a href="#" className=" " key={index}>
+                    <Link href={postslug} key={index}>
+                      <a href="#" className=" ">
                         <div className=" mb-2">
                           <div className={styles.inlineBox}>
                             <div className="">
@@ -332,7 +332,6 @@ export default function Home({
               <div className="row" key={index}>
                 <div className="container text-center">
                   {nodes.categories.map((ele, index1) => {
-                    const categoryslug = '/categories/' + ele.slug;
                     return (
                       <div className={styles.FashionNew} key={index1}>
                         <div>
@@ -435,10 +434,8 @@ export default function Home({
                             {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
-                                <Link href={categoryslug}>
-                                  <div className={styles.ShoppingText} key={index1}>
-                                    {ele.name}
-                                  </div>
+                                <Link href={categoryslug} key={index1}>
+                                  <div className={styles.ShoppingText}>{ele.name}</div>
                                 </Link>
                               );
                             })}
