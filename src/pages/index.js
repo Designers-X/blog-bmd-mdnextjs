@@ -27,6 +27,7 @@ export default function Home({
   fashionbyidpost,
 }) {
   console.log('postPathBySlug', fashionbyidpost);
+  //booo
   return (
     <Layout>
       <Header></Header>
