@@ -11,9 +11,7 @@ import {
   getArtHistoryPosts,
   getTravelandLeisureById2,
   getTravelandLeisureById3,
-  postPathBySlug,
 } from 'lib/posts';
-import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
 import Header from 'components/Header';
@@ -33,15 +31,12 @@ export default function Home({
   fashionbyidpost,
 }) {
   const { metadata = {} } = useSite();
-  const { title, description } = metadata;
 
-  console.log("postPathBySlug", fashionbyidpost);
+  console.log("fashionbyidpost", fashionbyidpost);
   return (
     <Layout>
      
-      <Header>
-       
-      </Header>
+     
 
       <section className="latestPost">
         <div className="container">
@@ -49,7 +44,7 @@ export default function Home({
             const htmlStr = nodes.excerpt;
             const authorname = nodes.author.name;
             const featuredimage = nodes.featuredImage.sourceUrl;
-            const postslug = "posts/"+nodes.slug;
+            const postslug = `posts/${nodes.slug}`;
             return (
               <div className="row" key={index1}>
                 <Link href={postslug}>TestLink</Link>
