@@ -27,6 +27,7 @@ export default function Home({
   fashionbyidpost,
 }) {
   console.log('postPathBySlug', fashionbyidpost);
+  //booo
   return (
     <Layout>
       <Header></Header>
@@ -77,9 +78,9 @@ export default function Home({
       </section>
       <section className="fashionCatPost">
         <div className="container text-center">
-          {fruitandwinepost.map((nodes, index) => {
+          {fruitandwinepost.map((nodes, index1) => {
             return (
-              <div className={styles.FashionNew} key={index}>
+              <div className={styles.FashionNew} key={index1}>
                 <div>
                   <h2 className={styles.fashionText}>
                     {nodes.categories.map((ele, index) => {
@@ -173,9 +174,9 @@ export default function Home({
       </section>
       <section className="fashionCatPost">
         <div className="container text-center">
-          {travelandleisure2.map((nodes, index) => {
+          {travelandleisure2.map((nodes, index1) => {
             return (
-              <div className={styles.FashionNew} key={index}>
+              <div className={styles.FashionNew} key={index1}>
                 <div>
                   {nodes.categories.map((ele, index) => {
                     const categoryslug = '/categories/' + ele.slug;
@@ -270,10 +271,10 @@ export default function Home({
             return (
               <div key={index}>
                 <div className={styles.FashionNew}>
-                  {nodes.categories.map((ele, index) => {
+                  {nodes.categories.map((ele, index1) => {
                     const categoryslug = '/categories/' + ele.slug;
                     return (
-                      <div key={index}>
+                      <div key={index1}>
                         <Link href={categoryslug}>
                           <h2 className={styles.fashionText}>
                             <a href="#" className={styles.fashiHyperLink}>
@@ -331,10 +332,10 @@ export default function Home({
             return (
               <div className="row" key={index}>
                 <div className="container text-center">
-                  {nodes.categories.map((ele, index) => {
+                  {nodes.categories.map((ele, index1) => {
                     const categoryslug = '/categories/' + ele.slug;
                     return (
-                      <div className={styles.FashionNew} key={index}>
+                      <div className={styles.FashionNew} key={index1}>
                         <div>
                           <h2 className={styles.fashionText}>
                             <a href="#" className={styles.fashiHyperLink}>
@@ -432,11 +433,11 @@ export default function Home({
                       <a className={styles.Atag} href="">
                         <div className="text-center">
                           <div className={styles.pLR96}>
-                            {nodes.categories.map((ele, index) => {
+                            {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
                                 <Link href={categoryslug}>
-                                  <div className={styles.ShoppingText} key={index}>
+                                  <div className={styles.ShoppingText} key={index1}>
                                     {ele.name}
                                   </div>
                                 </Link>
@@ -510,7 +511,7 @@ export default function Home({
               </a>
             </h2>
           </div>
-          <div className={styles.WhatNew}>What's New</div>
+          <div className={styles.WhatNew}>What&apos;s New</div>
         </div>
         <div className="container text-center">
           <div className={styles.videoHeight}>
