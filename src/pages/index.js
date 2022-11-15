@@ -14,7 +14,6 @@ import {
 } from 'lib/posts';
 
 import Layout from 'components/Layout';
-import Header from 'components/Header';
 
 import styles from 'styles/pages/Home.module.scss';
 
@@ -30,14 +29,8 @@ export default function Home({
   arthistorypost,
   fashionbyidpost,
 }) {
-  const { metadata = {} } = useSite();
-
-  console.log("fashionbyidpost", fashionbyidpost);
   return (
     <Layout>
-     
-     
-
       <section className="latestPost">
         <div className="container">
           {fashionbyidpost.map((nodes, index1) => {
@@ -69,7 +62,6 @@ export default function Home({
           })}
         </div>
       </section>
-	  
       <section className="fashionCatPost">
         <div className="container text-center">
           <div className={styles.FashionNew}>
@@ -418,7 +410,6 @@ export default function Home({
     </Layout>
   );
 }
-
 export async function getStaticProps() {
   const { feshionpost } = await getFashionPosts({
     queryIncludes: 'fashion',
@@ -458,9 +449,6 @@ export async function getStaticProps() {
   const { arthistorypost } = await getArtHistoryPosts({
     queryIncludes: 'artandhistory',
   });
-
- 
-
   return {
     props: {
       feshionpost,
