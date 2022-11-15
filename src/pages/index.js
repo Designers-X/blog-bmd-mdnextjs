@@ -320,6 +320,7 @@ export default function Home({
           );
         })}
       </section>
+      <h2>Hellow</h2>
       <section className="fashionCatPost">
         <div className="container">
           {culturepost.map((nodes, index) => {
