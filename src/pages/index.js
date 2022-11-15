@@ -43,9 +43,6 @@ export default function Home({
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
                   <div className="text-center">
                     <div className={styles.pLR96}>
-                      {nodes.categories.map((ele, index) => {
-                        return <div key={index}>{ele.name}</div>;	
-                      })}
                     <h2 className="">{nodes.title}</h2>
                       <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
                       <div className={styles.ShoppingText}>{authorname}</div>
