@@ -12,12 +12,9 @@ import {
   getTravelandLeisureById3,
 } from 'lib/posts';
 import { WebsiteJsonLd } from 'lib/json-ld';
-
 import Layout from 'components/Layout';
 import Header from 'components/Header';
-
 import styles from 'styles/pages/Home.module.scss';
-
 export default function Home({
   fruitandwinepost,
   cantmissreadspost,
@@ -32,7 +29,6 @@ export default function Home({
 }) {
   const { metadata = {} } = useSite();
   const { title, description } = metadata;
-
   console.log(cantmissreadspost);
   return (
     <Layout>
@@ -50,10 +46,8 @@ export default function Home({
           }}
         ></div>
       </Header>
-
       <section className="latestPost">
         <div className="container">
-		<p>boooo</p>
           {fashionbyidpost.map((nodes, index1) => {
             const htmlStr = nodes.excerpt;
             const authorname = nodes.author.name;
@@ -262,6 +256,7 @@ export default function Home({
           );
         })}
       </section>
+      <h2>Hellow</h2>
       <section className="fashionCatPost">
         <div className="container">
           {culturepost.map((nodes, index) => {
