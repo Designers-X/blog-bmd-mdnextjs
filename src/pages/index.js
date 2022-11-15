@@ -26,8 +26,6 @@ export default function Home({
   arthistorypost,
   fashionbyidpost,
 }) {
-  console.log('postPathBySlug', fashionbyidpost);
-  //booo
   return (
     <Layout>
       <Header></Header>
