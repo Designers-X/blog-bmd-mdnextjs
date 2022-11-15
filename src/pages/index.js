@@ -52,7 +52,7 @@ export default function Home({
             const postslug = "posts/"+nodes.slug;
             return (
               <div className="row" key={index1}>
-                <Link href={postslug}>vnvm</Link>
+                <Link href={postslug}>TestLink</Link>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
                   <div className="text-center">
                     <div className={styles.pLR96}>
