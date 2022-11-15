@@ -1,5 +1,10 @@
 @import "styles/settings/__settings";
-
+a:active, a:focus, a:hover {
+    text-decoration: none;
+}
+.shopTilYouDrop a:active, .shopTilYouDrop a:focus, .shopTilYouDrop a:hover{
+ text-decoration: none;
+}
 .description {
   text-align: center;
   line-height: 1.5;
