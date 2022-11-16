@@ -10,6 +10,7 @@ import {
   getArtHistoryPosts,
   getTravelandLeisureById2,
   getTravelandLeisureById3,
+  getTravelandLeisureById4,
 } from 'lib/posts';
 import Layout from 'components/Layout';
 import Header from 'components/Header';
@@ -22,10 +23,12 @@ export default function Home({
   travelandleisure1,
   travelandleisure2,
   travelandleisure3,
+  travelandleisure4,
   healthwellnesspost,
   arthistorypost,
   fashionbyidpost,
 }) {
+  console.log('fashionbyidpost', fashionbyidpost);
   return (
     <Layout>
       <Header></Header>
@@ -33,7 +36,8 @@ export default function Home({
         <div className="container">
           {fashionbyidpost.map((nodes, index1) => {
             const htmlStr = nodes.excerpt;
-            const authorname = nodes.author.name;
+            const interviewedBy = nodes.interviewedBy;
+            const writtenBy = nodes.writtenBy;
             const featuredimage = nodes.featuredImage.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
@@ -55,7 +59,14 @@ export default function Home({
                               <span>{nodes.title}</span>
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: htmlStr }}></div>
-                            <div className={styles.ShoppingText}>{authorname}</div>
+                            <div className={styles.AuthorText}>
+                              <p>
+                                Written By: <span>{writtenBy}</span>
+                              </p>
+                              <p>
+                                Interviewed By: <span>{interviewedBy}</span>
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </a>
@@ -79,23 +90,21 @@ export default function Home({
           {fruitandwinepost.map((nodes, index1) => {
             return (
               <div className={styles.FashionNew} key={index1}>
-                <div>
-                  <h2 className={styles.fashionText}>
-                    {nodes.categories.map((ele, index) => {
-                      const categoryslug = '/categories/' + ele.slug;
-                      return (
-                        <div key={index}>
-                          <Link href={categoryslug}>
-                            <a href="#" className={styles.fashiHyperLink}>
-                              {ele.name}
-                            </a>
-                          </Link>
-                        </div>
-                      );
-                    })}
-                  </h2>
-                </div>
-                <div className={styles.WhatNew}>Life&apos;s Simple Pleasures</div>
+                {nodes.categories.map((ele, index) => {
+                  const categoryslug = '/categories/' + ele.slug;
+                  return (
+                    <div key={index}>
+                      <h2 className={styles.fashionText}>
+                        <Link href={categoryslug}>
+                          <a href="#" className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
+                        </Link>
+                      </h2>
+                      <div className={styles.WhatNew}> {ele.description}</div>
+                    </div>
+                  );
+                })}
               </div>
             );
           })}
@@ -104,7 +113,8 @@ export default function Home({
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
           const featuredimage = nodes.featuredImage.sourceUrl;
-          const authorname = nodes.author.name;
+          const writtenBy = nodes.writtenBy;
+          const interviewedBy = nodes.interviewedBy;
           const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container" key={index}>
@@ -127,8 +137,13 @@ export default function Home({
                   <div className={styles.winterComing}>
                     <div className="text-center" dangerouslySetInnerHTML={{ __html: subtitle }} />
                   </div>
-                  <div className={styles.AddressLeBlanc}>
-                    <p className="text-center">{authorname}</p>
+                  <div className={styles.AuthorText}>
+                    <p>
+                      Written By: <span>{writtenBy}</span>
+                    </p>
+                    <p>
+                      Interviewed By: <span>{interviewedBy}</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -175,21 +190,21 @@ export default function Home({
           {travelandleisure2.map((nodes, index1) => {
             return (
               <div className={styles.FashionNew} key={index1}>
-                <div>
-                  {nodes.categories.map((ele, index) => {
-                    const categoryslug = '/categories/' + ele.slug;
-                    return (
-                      <h2 className={styles.fashionText} key={index}>
+                {nodes.categories.map((ele, index) => {
+                  const categoryslug = '/categories/' + ele.slug;
+                  return (
+                    <div key={index}>
+                      <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
                           <a href="#" className={styles.fashiHyperLink}>
                             {ele.name}
                           </a>
                         </Link>
                       </h2>
-                    );
-                  })}
-                </div>
-                <div className={styles.WhatNew}>Life Without Compromise</div>
+                      <div className={styles.WhatNew}>{ele.description}</div>
+                    </div>
+                  );
+                })}
               </div>
             );
           })}
@@ -199,9 +214,9 @@ export default function Home({
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
-                const subtitle = nodes.excerpt;
                 const featuredimage = nodes.featuredImage.sourceUrl;
-                const authorname = nodes.author.name;
+                const writtenBy = nodes.writtenBy;
+                const interviewedBy = nodes.interviewedBy;
                 const postslug = 'posts/' + nodes.slug;
                 return (
                   <div key={index}>
@@ -221,11 +236,13 @@ export default function Home({
                         </div>
                       </Link>
                     </div>
-                    <div className={styles.winterComing}>
-                      <div className="text-center" dangerouslySetInnerHTML={{ __html: subtitle }} />
-                    </div>
-                    <div className={styles.AddressLeBlanc}>
-                      <p className="text-center">{authorname}</p>
+                    <div className={styles.AuthorText}>
+                      <p>
+                        Written By: <span>{writtenBy}</span>
+                      </p>
+                      <p>
+                        Interviewed By: <span>{interviewedBy}</span>
+                      </p>
                     </div>
                   </div>
                 );
@@ -236,7 +253,7 @@ export default function Home({
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
                   const featuredimage = nodes.featuredImage.sourceUrl;
-                  const authorname = nodes.author.name;
+                  const writtenBy = nodes.writtenBy;
                   const postslug = 'posts/' + nodes.slug;
                   return (
                     <Link href={postslug} key={index}>
@@ -249,7 +266,7 @@ export default function Home({
                             <div className="m-auto">
                               <div className={styles.gridGap}>
                                 {posttitle}
-                                <p className={styles.ByTextStyle}>By {authorname}</p>
+                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
                               </div>
                             </div>
                           </div>
@@ -273,17 +290,17 @@ export default function Home({
                     const categoryslug = '/categories/' + ele.slug;
                     return (
                       <div key={index1}>
-                        <Link href={categoryslug}>
-                          <h2 className={styles.fashionText}>
+                        <h2 className={styles.fashionText}>
+                          <Link href={categoryslug}>
                             <a href="#" className={styles.fashiHyperLink}>
                               {ele.name}
                             </a>
-                          </h2>
-                        </Link>
+                          </Link>
+                        </h2>
+                        <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
                     );
                   })}
-                  <div className={styles.WhatNew}>What&apos;s New</div>
                 </div>
               </div>
             );
@@ -322,7 +339,7 @@ export default function Home({
       <section className="fashionCatPost">
         <div className="container">
           {culturepost.map((nodes, index) => {
-            const authorname = nodes.author.name;
+            const writtenBy = nodes.writtenBy;
             const posttitle = nodes.title;
             const featuredimage = nodes.featuredImage.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
@@ -332,15 +349,12 @@ export default function Home({
                   {nodes.categories.map((ele, index1) => {
                     return (
                       <div className={styles.FashionNew} key={index1}>
-                        <div>
-                          <h2 className={styles.fashionText}>
-                            <a href="#" className={styles.fashiHyperLink}>
-                              {ele.name}
-                            </a>
-                          </h2>
-                        </div>
-
-                        <div className={styles.WhatNew}>CURATED COLLECTIONS & CONNECTIONS</div>
+                        <h2 className={styles.fashionText}>
+                          <a href="#" className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
+                        </h2>
+                        <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
                     );
                   })}
@@ -354,7 +368,9 @@ export default function Home({
                             <h2 className="">
                               <span>{posttitle}</span>
                             </h2>
-                            <div className={styles.ShoppingText}>{authorname}</div>
+                            <div className={styles.Author}>
+                              <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                            </div>
                           </div>
                         </div>
                       </a>
@@ -418,7 +434,7 @@ export default function Home({
           {healthwellnesspost.map((nodes, index) => {
             const posttitle = nodes.title;
             const subtitle = nodes.excerpt;
-            const authorname = nodes.author.name;
+            const writtenBy = nodes.writtenBy;
             const featuredimage = nodes.featuredImage.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
@@ -441,7 +457,9 @@ export default function Home({
                               <span>{posttitle}</span>
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: subtitle }}></div>
-                            <div className={styles.ShoppingText}>{authorname}</div>
+                            <div className={styles.Author}>
+                              <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                            </div>
                           </div>
                         </div>
                       </a>
@@ -463,6 +481,21 @@ export default function Home({
           const subtitle = nodes.excerpt;
           return (
             <div className="container text-center" key={index}>
+              <div className="container text-center">
+                {nodes.categories.map((ele, index1) => {
+                  return (
+                    <div className={styles.FashionNew} key={index1}>
+                      <div>
+                        <h2 className={styles.fashionText}>
+                          <a href="#" className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
+                        </h2>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
               <div className={styles.videoHeight}>
                 <div class="ratio ratio-16x9">
                   <iframe
@@ -496,41 +529,56 @@ export default function Home({
           );
         })}
       </section>
-      <section className="container text-center">
-        <div className={styles.FashionNew}>
-          <div>
-            <h2 className={styles.fashionText}>
-              <a href="#" className={styles.fashiHyperLink}>
-                Travel & Leisure
-              </a>
-            </h2>
-          </div>
-          <div className={styles.WhatNew}>What&apos;s New</div>
-        </div>
-        <div className="container text-center">
-          <div className={styles.videoHeight}>
-            <div class="ratio ratio-16x9">
-              <iframe
-                src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                title="YouTube video"
-                allowfullscreen
-              ></iframe>
+      <section className="videosection mt-5">
+        {travelandleisure4.map((nodes, index) => {
+          const posttitle = nodes.title;
+          const postslug = 'posts/' + nodes.slug;
+          const subtitle = nodes.excerpt;
+          return (
+            <div className="container text-center" key={index}>
+              <div className="container text-center">
+                {nodes.categories.map((ele, index1) => {
+                  return (
+                    <div className={styles.FashionNew} key={index1}>
+                      <div>
+                        <h2 className={styles.fashionText}>
+                          <a href="#" className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
+                        </h2>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className={styles.videoHeight}>
+                <div class="ratio ratio-16x9">
+                  <video src="/sample-video.mp4" controls={true} />
+                </div>
+              </div>
+              <Link href={postslug}>
+                <div className={styles.ahover}>
+                  <a href="#" className={styles.TextHoverEffect}>
+                    <div className={styles.AddressLeBlanc}>
+                      <div className={styles.underlinetext}>
+                        <span className="text-center">{posttitle}</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </Link>
+              <div className="text-center">
+                <Link href={postslug}>
+                  <div className={styles.ahover}>
+                    <a href="#" className={styles.TextHoverEffect}>
+                      <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: subtitle }} />
+                    </a>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className={styles.AddressLeBlanc}>
-            <p className="text-center">Grand Hotel Victoria, Sorrento</p>
-          </div>
-          <div className="text-center">
-            <a href="#" className={styles.TextHoverEffect}>
-              <span className={styles.fashionCompaigns}>A song, and a 5 star hotel, for the ages</span>
-            </a>
-          </div>
-        </div>
-        <div className="row">
-          <div className="text-center">
-            <h6 className={styles.fashionText}></h6>
-          </div>
-        </div>
+          );
+        })}
       </section>
     </Layout>
   );
@@ -568,6 +616,10 @@ export async function getStaticProps() {
     queryIncludes: 'travelandleisurebyid3',
   });
 
+  const { travelandleisure4 } = await getTravelandLeisureById4({
+    queryIncludes: 'travelandleisurebyid4',
+  });
+
   const { healthwellnesspost } = await getHealthWellnessPosts({
     queryIncludes: 'healthwellness',
   });
@@ -586,6 +638,7 @@ export async function getStaticProps() {
       travelandleisure1,
       travelandleisure2,
       travelandleisure3,
+      travelandleisure4,
       healthwellnesspost,
       arthistorypost,
     },

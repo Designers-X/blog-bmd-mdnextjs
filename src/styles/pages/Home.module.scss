@@ -37,7 +37,20 @@
   text-decoration: underline;
   text-align: center;
 }
-
+.Author{
+  text-align: center;
+}
+.AuthorText{
+  margin-top: 30px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.AuthorText p{
+  line-height: 1.2;
+} 
+.AuthorText span{
+  text-transform: uppercase;
+} 
 // 15-11-2022
 .Atag{
   color: #000;

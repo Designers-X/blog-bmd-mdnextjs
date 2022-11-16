@@ -17,6 +17,7 @@ import {
   QUERY_TRAVEL_AND_LEISURE_BY_ID1,
   QUERY_TRAVEL_AND_LEISURE_BY_ID2,
   QUERY_TRAVEL_AND_LEISURE_BY_ID3,
+  QUERY_TRAVEL_AND_LEISURE_BY_ID4,
   QUERY_HEALTH_WELLNESS_POSTS,
   QUERY_ART_HISTORY_POSTS,
   QUERY_POST_BY_SLUG,
@@ -150,6 +151,7 @@ const allPostsIncludesTypes = {
   travelandleisurebyid1: QUERY_TRAVEL_AND_LEISURE_BY_ID1,
   travelandleisurebyid2: QUERY_TRAVEL_AND_LEISURE_BY_ID2,
   travelandleisurebyid3: QUERY_TRAVEL_AND_LEISURE_BY_ID3,
+  travelandleisurebyid4: QUERY_TRAVEL_AND_LEISURE_BY_ID4,
   healthwellness: QUERY_HEALTH_WELLNESS_POSTS,
   artandhistory: QUERY_ART_HISTORY_POSTS,
 };
@@ -516,6 +518,22 @@ export async function getTravelandLeisureById3(options = {}) {
 
   return {
     travelandleisure3: Array.isArray(travelandleisurepost3) && travelandleisurepost3.map(mapPostData),
+  };
+}
+
+export async function getTravelandLeisureById4(options = {}) {
+  const { queryIncludes = 'travelandleisurebyid4' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const travelandleisurepost4 = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    travelandleisure4: Array.isArray(travelandleisurepost4) && travelandleisurepost4.map(mapPostData),
   };
 }
 
