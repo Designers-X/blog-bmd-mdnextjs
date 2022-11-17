@@ -172,7 +172,7 @@ export default function Home({
                   <a href="#" className={styles.CardHoverEffect}>
                     <div className={styles.cardBorder}>
                       <div className="card">
-                        <img src={featuredimage} className="card-img-top HW280" alt="" />
+                        <img src={featuredimage} className="card-img-top HW280" alt="Fluid" />
                         <div className={styles.cardText}>
                           <p className="card-text">{posttitle}</p>
                         </div>
