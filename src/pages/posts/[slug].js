@@ -69,17 +69,8 @@ export default function Post({ post, socialImage, related }) {
   return (
     <Layout>
       <Helmet {...helmetSettings} />
-
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
-
       <Header>
-        {featuredImage && (
-          <FeaturedImage
-            {...featuredImage}
-            src={featuredImage.sourceUrl}
-            dangerouslySetInnerHTML={featuredImage.caption}
-          />
-        )}
         <h1
           className={styles.title}
           dangerouslySetInnerHTML={{
@@ -94,19 +85,23 @@ export default function Post({ post, socialImage, related }) {
           options={metadataOptions}
           isSticky={isSticky}
         />
+        {featuredImage && (
+          <FeaturedImage
+            {...featuredImage}
+            src={featuredImage.sourceUrl}
+            dangerouslySetInnerHTML={featuredImage.caption}
+          />
+        )}
       </Header>
-
       <Content>
-        <Section>
-          <Container>
-            <div
-              className={styles.content}
-              dangerouslySetInnerHTML={{
-                __html: content,
-              }}
-            />
-          </Container>
-        </Section>
+        <Container>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{
+              __html: content,
+            }}
+          />
+        </Container>
       </Content>
 
       <Section className={styles.postFooter}>
