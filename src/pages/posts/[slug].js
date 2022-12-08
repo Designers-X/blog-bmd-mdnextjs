@@ -77,15 +77,17 @@ export default function Post({ post, socialImage, related }) {
             __html: title,
           }}
         />
-        {false && <Metadata
-          className={styles.postMetadata}
-          date={date}
-          author={author}
-          categories={categories}
-          options={metadataOptions}
-          isSticky={isSticky}
-        />}
-        
+        {false && (
+          <Metadata
+            className={styles.postMetadata}
+            date={date}
+            author={author}
+            categories={categories}
+            options={metadataOptions}
+            isSticky={isSticky}
+          />
+        )}
+
         {featuredImage && false && (
           <FeaturedImage
             {...featuredImage}
