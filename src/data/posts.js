@@ -362,6 +362,8 @@ export const QUERY_FASHIOH_POSTS = gql`
           slug
           interviewedBy
           writtenBy
+                 pageTitle
+          pageSubtitle
         }
       }
     }
@@ -404,6 +406,8 @@ export const QUERY_FASHIOH_POST_BY_ID = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -445,6 +449,8 @@ export const QUERY_BEAUTY_POSTS = gql`
           title
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -476,6 +482,8 @@ export const QUERY_LATEST_POST = gql`
           excerpt
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
           featuredImage {
             node {
               altText
@@ -528,6 +536,8 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -562,6 +572,8 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -605,6 +617,8 @@ export const QUERY_CULTURE_POSTS = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -648,6 +662,8 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -691,6 +707,8 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -734,6 +752,8 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -777,6 +797,8 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
           slug
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -820,6 +842,8 @@ export const QUERY_HEALTH_WELLNESS_POSTS = gql`
           excerpt
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
@@ -863,6 +887,8 @@ export const QUERY_ART_HISTORY_POSTS = gql`
           excerpt
           interviewedBy
           writtenBy
+          pageTitle
+          pageSubtitle
         }
       }
     }
