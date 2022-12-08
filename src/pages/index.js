@@ -58,7 +58,7 @@ export default function Home({
                             <h2 className="">
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
-                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle|| htmlStr }}></div>
+                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}></div>
                             <div className={styles.AuthorText}>
                               <p>
                                 Written By: <span>{writtenBy}</span>
@@ -412,7 +412,10 @@ export default function Home({
               <div className="text-center">
                 <div className={styles.ahover}>
                   <a href="#" className={styles.TextHoverEffect}>
-                    <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                    <div
+                      className={styles.fashionCompaigns}
+                      dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
+                    />
                   </a>
                 </div>
               </div>
@@ -520,7 +523,10 @@ export default function Home({
                 <Link href={postslug}>
                   <div className={styles.ahover}>
                     <a href="#" className={styles.TextHoverEffect}>
-                      <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                      <div
+                        className={styles.fashionCompaigns}
+                        dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
+                      />
                     </a>
                   </div>
                 </Link>
@@ -571,7 +577,10 @@ export default function Home({
                 <Link href={postslug}>
                   <div className={styles.ahover}>
                     <a href="#" className={styles.TextHoverEffect}>
-                      <div className={styles.fashionCompaigns} dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                      <div
+                        className={styles.fashionCompaigns}
+                        dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
+                      />
                     </a>
                   </div>
                 </Link>

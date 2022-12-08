@@ -362,7 +362,7 @@ export const QUERY_FASHIOH_POSTS = gql`
           slug
           interviewedBy
           writtenBy
-                 pageTitle
+          pageTitle
           pageSubtitle
         }
       }
