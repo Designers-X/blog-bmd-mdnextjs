@@ -85,6 +85,7 @@ export default function Post({ post, socialImage, related }) {
           options={metadataOptions}
           isSticky={isSticky}
         />}
+        
         {featuredImage && false && (
           <FeaturedImage
             {...featuredImage}
