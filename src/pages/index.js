@@ -28,7 +28,7 @@ export default function Home({
   arthistorypost,
   fashionbyidpost,
 }) {
-  console.log('fashionbyidpost', fashionbyidpost);
+  console.log('fashionbyidpost-my', fashionbyidpost);
   return (
     <Layout>
       <Header></Header>
