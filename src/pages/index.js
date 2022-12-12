@@ -37,7 +37,7 @@ export default function Home({
             const htmlStr = nodes.excerpt;
             const interviewedBy = nodes.interviewedBy;
             const writtenBy = nodes.writtenBy;
-            const featuredimage = nodes.featuredImage.sourceUrl;
+            const featuredimage = nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index1}>
@@ -111,7 +111,7 @@ export default function Home({
         {fruitandwinepost.map((nodes, index) => {
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
-          const featuredimage = nodes.featuredImage.sourceUrl;
+          const featuredimage = nodes.featuredImage?.sourceUrl;
           const writtenBy = nodes.writtenBy;
           const interviewedBy = nodes.interviewedBy;
           const postslug = 'posts/' + nodes.slug;
@@ -163,7 +163,7 @@ export default function Home({
           </div>
           {cantmissreadspost.map((nodes, index) => {
             const posttitle = nodes.title;
-            const featuredimage = nodes.featuredImage.sourceUrl;
+            const featuredimage = nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
@@ -213,7 +213,7 @@ export default function Home({
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
-                const featuredimage = nodes.featuredImage.sourceUrl;
+                const featuredimage = nodes.featuredImage?.sourceUrl;
                 const writtenBy = nodes.writtenBy;
                 const interviewedBy = nodes.interviewedBy;
                 const postslug = 'posts/' + nodes.slug;
@@ -251,7 +251,7 @@ export default function Home({
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
-                  const featuredimage = nodes.featuredImage.sourceUrl;
+                  const featuredimage = nodes.featuredImage?.sourceUrl;
                   const writtenBy = nodes.writtenBy;
                   const postslug = 'posts/' + nodes.slug;
                   return (
@@ -308,7 +308,7 @@ export default function Home({
         {feshionpost.map((nodes, index) => {
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
-          const featuredimage = nodes.featuredImage.sourceUrl;
+          const featuredimage = nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container text-center" key={index}>
@@ -340,7 +340,7 @@ export default function Home({
           {culturepost.map((nodes, index) => {
             const writtenBy = nodes.writtenBy;
             const posttitle = nodes.title;
-            const featuredimage = nodes.featuredImage.sourceUrl;
+            const featuredimage = nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index}>
@@ -437,7 +437,7 @@ export default function Home({
             const posttitle = nodes.title;
             const subtitle = nodes.excerpt;
             const writtenBy = nodes.writtenBy;
-            const featuredimage = nodes.featuredImage.sourceUrl;
+            const featuredimage = nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index}>
