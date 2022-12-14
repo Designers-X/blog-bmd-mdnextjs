@@ -126,7 +126,7 @@ export default function Home({
               <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                   {featuredimage && (
-                    <div>
+                    <div className={styles.imgResponsive}>
                       <Link href={postslug}>
                         <a href="#">
                           <img className="img-fluid" src={featuredimage} alt="fluid" />
@@ -232,7 +232,7 @@ export default function Home({
                 return (
                   <div key={index}>
                     {featuredimage && (
-                      <div>
+                      <div className={styles.imgResponsive}>
                         <Link href={postslug}>
                           <a href="#">
                             <img className="img-fluid" src={featuredimage} alt="fluid" />
@@ -334,7 +334,7 @@ export default function Home({
           return (
             <div className="container text-center" key={index}>
               {featuredimage && (
-                <div className={styles.videoHeight}>
+                <div className={styles.imgResponsive}>
                   <Link href={postslug}>
                     <div class="ratio ratio-16x9">
                       <img className="img-fluid" src={featuredimage} alt="fluid" />
@@ -358,6 +358,7 @@ export default function Home({
           );
         })}
       </section>
+      <section className="mt-4"></section>
       {/* code comment here */}
       {/* <section className="fashionCatPost">
         <div className="container">

@@ -272,6 +272,10 @@
   border-top-left-radius: var(--bs-card-inner-border-radius);
   border-top-right-radius: var(--bs-card-inner-border-radius);
 }
+.imgResponsive {
+  display: block;
+  text-align: center;
+}
 .inlineBox {
   display: -webkit-inline-box;
 }
