@@ -19,13 +19,13 @@ export default function Home({
   fruitandwinepost,
   cantmissreadspost,
   feshionpost,
-  culturepost,
-  travelandleisure1,
+  // culturepost,
+  // travelandleisure1,
   travelandleisure2,
   travelandleisure3,
-  travelandleisure4,
-  healthwellnesspost,
-  arthistorypost,
+  // travelandleisure4,
+  // healthwellnesspost,
+  // arthistorypost,
   fashionbyidpost,
 }) {
   return (
@@ -59,12 +59,16 @@ export default function Home({
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}></div>
                             <div className={styles.AuthorText}>
-                              <p>
-                                Written By: <span>{writtenBy}</span>
-                              </p>
-                              <p>
-                                Interviewed By: <span>{interviewedBy}</span>
-                              </p>
+                              {nodes.writtenBy && (
+                                <p>
+                                  Written By: <span>{writtenBy}</span>
+                                </p>
+                              )}
+                              {nodes.interviewedBy && (
+                                <p>
+                                  Interviewed By: <span>{interviewedBy}</span>
+                                </p>
+                              )}
                             </div>
                           </div>
                         </div>
@@ -72,13 +76,15 @@ export default function Home({
                     </Link>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <Link href={postslug}>
-                    <a href="">
-                      <img className="img-fluid" src={featuredimage} alt="fluid" />
-                    </a>
-                  </Link>
-                </div>
+                {featuredimage && (
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <Link href={postslug}>
+                      <a href="">
+                        <img className="img-fluid" src={featuredimage} alt="fluid" />
+                      </a>
+                    </Link>
+                  </div>
+                )}
               </div>
             );
           })}
@@ -119,13 +125,15 @@ export default function Home({
             <div className="container" key={index}>
               <div className="row">
                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <div>
-                    <Link href={postslug}>
-                      <a href="#">
-                        <img className="img-fluid" src={featuredimage} alt="fluid" />
-                      </a>
-                    </Link>
-                  </div>
+                  {featuredimage && (
+                    <div>
+                      <Link href={postslug}>
+                        <a href="#">
+                          <img className="img-fluid" src={featuredimage} alt="fluid" />
+                        </a>
+                      </Link>
+                    </div>
+                  )}
                   <div className="text-center">
                     <Link href={postslug}>
                       <a href="#" className={styles.TextHoverEffect}>
@@ -137,12 +145,16 @@ export default function Home({
                     <div className="text-center" dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
                   </div>
                   <div className={styles.AuthorText}>
-                    <p>
-                      Written By: <span>{writtenBy}</span>
-                    </p>
-                    <p>
-                      Interviewed By: <span>{interviewedBy}</span>
-                    </p>
+                    {nodes.writtenBy && (
+                      <p>
+                        Written By: <span>{writtenBy}</span>
+                      </p>
+                    )}
+                    {nodes.interviewedBy && (
+                      <p>
+                        Interviewed By: <span>{interviewedBy}</span>
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -171,7 +183,7 @@ export default function Home({
                   <a href="#" className={styles.CardHoverEffect}>
                     <div className={styles.cardBorder}>
                       <div className="card">
-                        <img src={featuredimage} className="card-img-top HW280" alt="Fluid" />
+                        {featuredimage && <img src={featuredimage} className={styles.img250} alt="Fluid" />}
                         <div className={styles.cardText}>
                           <p className="card-text">{nodes.pageTitle || posttitle}</p>
                         </div>
@@ -219,13 +231,15 @@ export default function Home({
                 const postslug = 'posts/' + nodes.slug;
                 return (
                   <div key={index}>
-                    <div>
-                      <Link href={postslug}>
-                        <a href="#">
-                          <img className="img-fluid" src={featuredimage} alt="fluid" />
-                        </a>
-                      </Link>
-                    </div>
+                    {featuredimage && (
+                      <div>
+                        <Link href={postslug}>
+                          <a href="#">
+                            <img className="img-fluid" src={featuredimage} alt="fluid" />
+                          </a>
+                        </Link>
+                      </div>
+                    )}
                     <div className="text-center">
                       <Link href={postslug}>
                         <div className={styles.ahover}>
@@ -236,12 +250,16 @@ export default function Home({
                       </Link>
                     </div>
                     <div className={styles.AuthorText}>
-                      <p>
-                        Written By: <span>{writtenBy}</span>
-                      </p>
-                      <p>
-                        Interviewed By: <span>{interviewedBy}</span>
-                      </p>
+                      {writtenBy && (
+                        <p>
+                          Written By: <span>{writtenBy}</span>
+                        </p>
+                      )}
+                      {interviewedBy && (
+                        <p>
+                          Interviewed By: <span>{interviewedBy}</span>
+                        </p>
+                      )}
                     </div>
                   </div>
                 );
@@ -259,13 +277,15 @@ export default function Home({
                       <a href="#" className=" ">
                         <div className=" mb-2">
                           <div className={styles.inlineBox}>
-                            <div className="">
-                              <img className={styles.img120} src={featuredimage} alt="fluid" />
-                            </div>
+                            {featuredimage && (
+                              <div className="">
+                                <img className={styles.img120} src={featuredimage} alt="fluid" />
+                              </div>
+                            )}
                             <div className="m-auto">
                               <div className={styles.gridGap}>
                                 {nodes.pageTitle || posttitle}
-                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                                {writtenBy && <p className={styles.ByTextStyle}>By {writtenBy}</p>}
                               </div>
                             </div>
                           </div>
@@ -305,6 +325,7 @@ export default function Home({
             );
           })}
         </div>
+
         {feshionpost.map((nodes, index) => {
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
@@ -312,13 +333,15 @@ export default function Home({
           const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container text-center" key={index}>
-              <div className={styles.videoHeight}>
-                <Link href={postslug}>
-                  <div class="ratio ratio-16x9">
-                    <img className="img-fluid" src={featuredimage} alt="fluid" />
-                  </div>
-                </Link>
-              </div>
+              {featuredimage && (
+                <div className={styles.videoHeight}>
+                  <Link href={postslug}>
+                    <div class="ratio ratio-16x9">
+                      <img className="img-fluid" src={featuredimage} alt="fluid" />
+                    </div>
+                  </Link>
+                </div>
+              )}
               <div className="text-center">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
@@ -335,7 +358,8 @@ export default function Home({
           );
         })}
       </section>
-      <section className="fashionCatPost">
+      {/* code comment here */}
+      {/* <section className="fashionCatPost">
         <div className="container">
           {culturepost.map((nodes, index) => {
             const writtenBy = nodes.writtenBy;
@@ -367,22 +391,22 @@ export default function Home({
                             <h2 className="">
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                            <div className={styles.Author}>
+                            {writtenBy && <div className={styles.Author}>
                               <p className={styles.ByTextStyle}>By {writtenBy}</p>
-                            </div>
+                            </div>}
                           </div>
                         </div>
                       </a>
                     </Link>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                {featuredimage && <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <Link href={postslug}>
                     <a href="">
                       <img className="img-fluid" src={featuredimage} alt="fluid" />
                     </a>
                   </Link>
-                </div>
+                </div>}
               </div>
             );
           })}
@@ -422,16 +446,7 @@ export default function Home({
           );
         })}
       </section>
-      <section className="nowTrending">
-        <div className="container text-center">
-          <div className={styles.FashionNew}>
-            <h6 className={styles.fashionText}>
-              <a href="#" className={styles.fashiHyperLink}>
-                Now Trending
-              </a>
-            </h6>
-          </div>
-        </div>
+      <section className="nowTrending mt-5">
         <div className="container">
           {healthwellnesspost.map((nodes, index) => {
             const posttitle = nodes.title;
@@ -459,18 +474,18 @@ export default function Home({
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
-                            <div className={styles.Author}>
+                            {writtenBy && <div className={styles.Author}>
                               <p className={styles.ByTextStyle}>By {writtenBy}</p>
-                            </div>
+                            </div>}
                           </div>
                         </div>
                       </a>
                     </Link>
                   </div>
                 </div>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                {featuredimage && <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                   <img className="img-fluid" src={featuredimage} alt="fluid" />
-                </div>
+                </div>}
               </div>
             );
           })}
@@ -587,7 +602,7 @@ export default function Home({
             </div>
           );
         })}
-      </section>
+      </section> */}
     </Layout>
   );
 }

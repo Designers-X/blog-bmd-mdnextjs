@@ -546,7 +546,7 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
 
 export const QUERY_CATNOT_MISS_READS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 3, orderby: { field: AUTHOR, order: DESC } }, first: 4) {
+    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, first: 4) {
       edges {
         node {
           author {
@@ -582,7 +582,7 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
 
 export const QUERY_CULTURE_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 5, orderby: { field: AUTHOR, order: DESC } }, first: 1) {
+    posts(where: { categoryId: 5, orderby: { field: AUTHOR, order: DESC } }, last: 1) {
       edges {
         node {
           author {
@@ -593,7 +593,7 @@ export const QUERY_CULTURE_POSTS = gql`
           }
           content
           excerpt
-          categories {
+          categories(where: { termTaxonomyId: "5" }) {
             edges {
               node {
                 name
@@ -672,7 +672,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
   query PostsById {
-    posts(where: { categoryId: 12, id: 93 }) {
+    posts(where: { categoryId: 12, id: 96 }) {
       edges {
         node {
           author {
@@ -681,9 +681,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
               slug
             }
           }
-          content
-          excerpt
-          categories {
+          categories(where: { termTaxonomyId: "12" }) {
             edges {
               node {
                 name
@@ -692,6 +690,9 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
               }
             }
           }
+          postId
+          content
+          excerpt
           featuredImage {
             node {
               altText
@@ -717,7 +718,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 12, orderby: { field: AUTHOR, order: DESC } }, first: 3) {
+    posts(where: { categoryId: 12 }, first: 3) {
       edges {
         node {
           author {
@@ -726,6 +727,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
               slug
             }
           }
+          postId
           content
           excerpt
           categories {
@@ -807,7 +809,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
 
 export const QUERY_HEALTH_WELLNESS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 13, orderby: { field: AUTHOR, order: DESC } }, first: 5) {
+    posts(where: { categoryId: 13 }, last: 1) {
       edges {
         node {
           author {
