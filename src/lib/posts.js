@@ -601,6 +601,22 @@ export async function getCantMissReadsPosts(options = {}) {
   };
 }
 
+export async function getSection11Post(options = {}) {
+  const { queryIncludes = 'cantmissreads' } = options;
+
+  const apolloClient = getApolloClient();
+
+  const data = await apolloClient.query({
+    query: allPostsIncludesTypes[queryIncludes],
+  });
+
+  const cantmissreadsposts = data?.data.posts.edges.map(({ node = {} }) => node);
+
+  return {
+    cantmissreadspost: Array.isArray(cantmissreadsposts) && cantmissreadsposts.map(mapPostData),
+  };
+}
+
 export async function getHealthWellnessPosts(options = {}) {
   const { queryIncludes = 'healthwellness' } = options;
 

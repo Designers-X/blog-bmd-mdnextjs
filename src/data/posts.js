@@ -664,6 +664,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
           writtenBy
           pageTitle
           pageSubtitle
+          wistiaVideoScriptId
         }
       }
     }
@@ -775,7 +776,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
           }
           content
           excerpt
-          categories {
+          categories(where: { termTaxonomyId: "12" }) {
             edges {
               node {
                 name
@@ -801,6 +802,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
           writtenBy
           pageTitle
           pageSubtitle
+          wistiaVideoScriptId
         }
       }
     }
@@ -854,7 +856,7 @@ export const QUERY_HEALTH_WELLNESS_POSTS = gql`
 
 export const QUERY_ART_HISTORY_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 14, orderby: { field: AUTHOR, order: DESC } }, first: 5) {
+    posts(where: { categoryId: 14, id: 92 }, first: 1) {
       edges {
         node {
           author {
@@ -864,7 +866,7 @@ export const QUERY_ART_HISTORY_POSTS = gql`
             }
           }
           content
-          categories {
+          categories(where: { termTaxonomyId: "14" }) {
             edges {
               node {
                 name
@@ -883,6 +885,7 @@ export const QUERY_ART_HISTORY_POSTS = gql`
               srcSet
             }
           }
+          postId
           modified
           title
           slug
@@ -891,6 +894,7 @@ export const QUERY_ART_HISTORY_POSTS = gql`
           writtenBy
           pageTitle
           pageSubtitle
+          wistiaVideoScriptId
         }
       }
     }

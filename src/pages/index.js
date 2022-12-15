@@ -19,19 +19,19 @@ export default function Home({
   fruitandwinepost,
   cantmissreadspost,
   feshionpost,
-  // culturepost,
-  // travelandleisure1,
+  culturepost,
+  travelandleisure1,
   travelandleisure2,
   travelandleisure3,
-  // travelandleisure4,
-  // healthwellnesspost,
-  // arthistorypost,
+  travelandleisure4,
+  healthwellnesspost,
+  arthistorypost,
   fashionbyidpost,
 }) {
   return (
     <Layout>
       <Header></Header>
-      <section className="latestPost">
+      <section className={styles.section1}>
         <div className="container">
           {fashionbyidpost.map((nodes, index1) => {
             const htmlStr = nodes.excerpt;
@@ -90,7 +90,7 @@ export default function Home({
           })}
         </div>
       </section>
-      <section className="fashionCatPost">
+      <section className={styles.section2}>
         <div className="container text-center">
           {fruitandwinepost.map((nodes, index1) => {
             return (
@@ -162,41 +162,43 @@ export default function Home({
           );
         })}
       </section>
-      <section className="shopTilYouDrop container">
-        <div className="row">
-          <div className="text-center">
-            <div className={styles.FashionNew}>
-              <h6 className={styles.fashionText}>
-                <a href="#" className={styles.fashiHyperLink}>
-                  Can&apos;t Miss Reads
-                </a>
-              </h6>
+      <section className={styles.section3}>
+        <div className="container">
+          <div className="row">
+            <div className="text-center">
+              <div className={styles.FashionNew}>
+                <h6 className={styles.fashionText}>
+                  <a href="#" className={styles.fashiHyperLink}>
+                    Can&apos;t Miss Reads
+                  </a>
+                </h6>
+              </div>
             </div>
-          </div>
-          {cantmissreadspost.map((nodes, index) => {
-            const posttitle = nodes.title;
-            const featuredimage = nodes.featuredImage?.sourceUrl;
-            const postslug = 'posts/' + nodes.slug;
-            return (
-              <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
-                <Link href={postslug}>
-                  <a href="#" className={styles.CardHoverEffect}>
-                    <div className={styles.cardBorder}>
-                      <div className="card">
-                        {featuredimage && <img src={featuredimage} className={styles.img250} alt="Fluid" />}
-                        <div className={styles.cardText}>
-                          <p className="card-text">{nodes.pageTitle || posttitle}</p>
+            {cantmissreadspost.map((nodes, index) => {
+              const posttitle = nodes.title;
+              const featuredimage = nodes.featuredImage?.sourceUrl;
+              const postslug = 'posts/' + nodes.slug;
+              return (
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
+                  <Link href={postslug}>
+                    <a href="#" className={styles.CardHoverEffect}>
+                      <div className={styles.cardBorder}>
+                        <div className="card">
+                          {featuredimage && <img src={featuredimage} className={styles.topRoundImg250} alt="Fluid" />}
+                          <div className={styles.cardText}>
+                            <p className="card-text">{nodes.pageTitle || posttitle}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                </Link>
-              </div>
-            );
-          })}
+                    </a>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
-      <section className="fashionCatPost">
+      <section className={styles.section4}>
         <div className="container text-center">
           {travelandleisure2.map((nodes, index1) => {
             return (
@@ -299,7 +301,7 @@ export default function Home({
           </div>
         </div>
       </section>
-      <section className="fashionCatPost">
+      <section className={styles.section5}>
         <div className="container text-center">
           {feshionpost.map((nodes, index) => {
             return (
@@ -358,9 +360,7 @@ export default function Home({
           );
         })}
       </section>
-      <section className="mt-4"></section>
-      {/* code comment here */}
-      {/* <section className="fashionCatPost">
+      <section className={styles.section6}>
         <div className="container">
           {culturepost.map((nodes, index) => {
             const writtenBy = nodes.writtenBy;
@@ -392,41 +392,56 @@ export default function Home({
                             <h2 className="">
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                            {writtenBy && <div className={styles.Author}>
-                              <p className={styles.ByTextStyle}>By {writtenBy}</p>
-                            </div>}
+                            {writtenBy && (
+                              <div className={styles.Author}>
+                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </a>
                     </Link>
                   </div>
                 </div>
-                {featuredimage && <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <Link href={postslug}>
-                    <a href="">
-                      <img className="img-fluid" src={featuredimage} alt="fluid" />
-                    </a>
-                  </Link>
-                </div>}
+                {featuredimage && (
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <Link href={postslug}>
+                      <a href="">
+                        <img className="img-fluid" src={featuredimage} alt="fluid" />
+                      </a>
+                    </Link>
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
       </section>
-      <section className="videosection mt-5">
+      <section className={styles.section7}>
         {travelandleisure1.map((nodes, index) => {
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
           return (
             <div className="container text-center" key={index}>
               <div className={styles.videoHeight}>
-                <div class="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                    title="YouTube video"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                {nodes.wistiaVideoScriptId && (
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
+                      allowtransparency="true"
+                      frameborder="0"
+                      scrolling="no"
+                      class="wistia_embed"
+                      name="wistia_embed"
+                      autoPlay
+                      allowfullscreen
+                      mozallowfullscreen
+                      webkitallowfullscreen
+                      oallowfullscreen
+                      msallowfullscreen
+                    ></iframe>
+                  </div>
+                )}
               </div>
               <div className={styles.AddressLeBlanc}>
                 <div className={styles.underlinetext}>
@@ -447,7 +462,7 @@ export default function Home({
           );
         })}
       </section>
-      <section className="nowTrending mt-5">
+      <section className={styles.section8}>
         <div className="container">
           {healthwellnesspost.map((nodes, index) => {
             const posttitle = nodes.title;
@@ -475,53 +490,70 @@ export default function Home({
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
-                            {writtenBy && <div className={styles.Author}>
-                              <p className={styles.ByTextStyle}>By {writtenBy}</p>
-                            </div>}
+                            {writtenBy && (
+                              <div className={styles.Author}>
+                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                              </div>
+                            )}
                           </div>
                         </div>
                       </a>
                     </Link>
                   </div>
                 </div>
-                {featuredimage && <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                  <img className="img-fluid" src={featuredimage} alt="fluid" />
-                </div>}
+                {featuredimage && (
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <img className="img-fluid" src={featuredimage} alt="fluid" />
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
       </section>
-      <section className="videosection mt-5">
+      <section className={styles.section9}>
         {arthistorypost.map((nodes, index) => {
+          console.log({ nodes });
           const posttitle = nodes.title;
           const postslug = 'posts/' + nodes.slug;
           const subtitle = nodes.excerpt;
           return (
             <div className="container text-center" key={index}>
               <div className="container text-center">
-                {nodes.categories.map((ele, index1) => {
-                  return (
-                    <div className={styles.FashionNew} key={index1}>
-                      <div>
-                        <h2 className={styles.fashionText}>
-                          <a href="#" className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
-                        </h2>
+                {index == 0 &&
+                  nodes.categories.map((ele, index1) => {
+                    return (
+                      <div className={styles.FashionNew} key={index1}>
+                        <div>
+                          <h2 className={styles.fashionText}>
+                            <a href="#" className={styles.fashiHyperLink}>
+                              {ele.name}
+                            </a>
+                          </h2>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
               </div>
               <div className={styles.videoHeight}>
-                <div class="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                    title="YouTube video"
-                    allowfullscreen
-                  ></iframe>
-                </div>
+                {nodes.wistiaVideoScriptId && (
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
+                      allowtransparency="true"
+                      frameborder="0"
+                      scrolling="no"
+                      class="wistia_embed"
+                      name="wistia_embed"
+                      autoPlay
+                      allowfullscreen
+                      mozallowfullscreen
+                      webkitallowfullscreen
+                      oallowfullscreen
+                      msallowfullscreen
+                    ></iframe>
+                  </div>
+                )}
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
@@ -550,7 +582,7 @@ export default function Home({
           );
         })}
       </section>
-      <section className="videosection mt-5">
+      <section className={styles.section10}>
         {travelandleisure4.map((nodes, index) => {
           const posttitle = nodes.title;
           const postslug = 'posts/' + nodes.slug;
@@ -573,9 +605,24 @@ export default function Home({
                 })}
               </div>
               <div className={styles.videoHeight}>
-                <div class="ratio ratio-16x9">
-                  <video src="/sample-video.mp4" controls={true} />
-                </div>
+                {nodes.wistiaVideoScriptId && (
+                  <div class="ratio ratio-16x9">
+                    <iframe
+                      src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
+                      allowtransparency="true"
+                      frameborder="0"
+                      scrolling="no"
+                      class="wistia_embed"
+                      name="wistia_embed"
+                      autoPlay
+                      allowfullscreen
+                      mozallowfullscreen
+                      webkitallowfullscreen
+                      oallowfullscreen
+                      msallowfullscreen
+                    ></iframe>
+                  </div>
+                )}
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
@@ -603,7 +650,7 @@ export default function Home({
             </div>
           );
         })}
-      </section> */}
+      </section>
     </Layout>
   );
 }
