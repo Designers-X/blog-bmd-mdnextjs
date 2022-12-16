@@ -13,6 +13,7 @@ import {
   QUERY_BEAUTY_POSTS,
   QUERY_FRUIT_AND_WINE_POSTS,
   QUERY_CATNOT_MISS_READS_POSTS,
+  QUERY_SECTION_ELEVEN_POST,
   QUERY_CULTURE_POSTS,
   QUERY_TRAVEL_AND_LEISURE_BY_ID1,
   QUERY_TRAVEL_AND_LEISURE_BY_ID2,
@@ -154,6 +155,7 @@ const allPostsIncludesTypes = {
   travelandleisurebyid4: QUERY_TRAVEL_AND_LEISURE_BY_ID4,
   healthwellness: QUERY_HEALTH_WELLNESS_POSTS,
   artandhistory: QUERY_ART_HISTORY_POSTS,
+  sectionElevenQuery: QUERY_SECTION_ELEVEN_POST,
 };
 
 export async function getAllPosts(options = {}) {
@@ -601,8 +603,8 @@ export async function getCantMissReadsPosts(options = {}) {
   };
 }
 
-export async function getSection11Post(options = {}) {
-  const { queryIncludes = 'cantmissreads' } = options;
+export async function getSectionElevenData(options = {}) {
+  const { queryIncludes = 'sectionElevenQuery' } = options;
 
   const apolloClient = getApolloClient();
 
@@ -610,10 +612,10 @@ export async function getSection11Post(options = {}) {
     query: allPostsIncludesTypes[queryIncludes],
   });
 
-  const cantmissreadsposts = data?.data.posts.edges.map(({ node = {} }) => node);
+  const sectionEleven = data?.data.posts.edges.map(({ node = {} }) => node);
 
   return {
-    cantmissreadspost: Array.isArray(cantmissreadsposts) && cantmissreadsposts.map(mapPostData),
+    sectionEleven: Array.isArray(sectionEleven) && sectionEleven.map(mapPostData),
   };
 }
 

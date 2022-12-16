@@ -4,6 +4,7 @@ import {
   getFeshionPostById,
   getFruitAndWinePosts,
   getCantMissReadsPosts,
+  getSectionElevenData,
   getCulturePosts,
   getTravelandLeisureById1,
   getHealthWellnessPosts,
@@ -19,6 +20,7 @@ export default function Home({
   fruitandwinepost,
   cantmissreadspost,
   feshionpost,
+  sectionEleven,
   culturepost,
   travelandleisure1,
   travelandleisure2,
@@ -651,6 +653,33 @@ export default function Home({
           );
         })}
       </section>
+      <section className={styles.section11}>
+        <div className="container">
+          <div className="row">
+            {sectionEleven.map((nodes, index) => {
+              const posttitle = nodes.title;
+              const featuredimage = nodes.featuredImage?.sourceUrl;
+              const postslug = 'posts/' + nodes.slug;
+              return (
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
+                  <Link href={postslug}>
+                    <a href="#" className={styles.CardHoverEffect}>
+                      <div className={styles.cardBorder}>
+                        <div className="card">
+                          {featuredimage && <img src={featuredimage} className={styles.topRoundImg250} alt="Fluid" />}
+                          <div className={styles.cardText}>
+                            <p className="card-text">{nodes.pageTitle || posttitle}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
@@ -670,6 +699,10 @@ export async function getStaticProps() {
 
   const { cantmissreadspost } = await getCantMissReadsPosts({
     queryIncludes: 'cantmissreads',
+  });
+
+  const { sectionEleven } = await getSectionElevenData({
+    queryIncludes: 'sectionElevenQuery',
   });
   const { culturepost } = await getCulturePosts({
     queryIncludes: 'culture',
@@ -705,6 +738,7 @@ export async function getStaticProps() {
       fashionbyidpost,
       fruitandwinepost,
       cantmissreadspost,
+      sectionEleven,
       culturepost,
       travelandleisure1,
       travelandleisure2,

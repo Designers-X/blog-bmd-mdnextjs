@@ -1,3 +1,18 @@
 .aligncenter {
   text-align: center;
 }
+.layoutFlexDiv {
+  display: flex;
+}
+.layoutOneFirstChild {
+  width: 60%;
+}
+.layoutOneTwoChild {
+  width: 40%;
+}
+.layoutTwoFirstChild {
+  width: 40%;
+}
+.layoutTwoTwoChild {
+  width: 60%;
+}

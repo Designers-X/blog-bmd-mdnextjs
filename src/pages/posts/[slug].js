@@ -8,7 +8,6 @@ import { ArticleJsonLd } from 'lib/json-ld';
 import { helmetSettingsFromMetadata } from 'lib/site';
 import useSite from 'hooks/use-site';
 import usePageMetadata from 'hooks/use-page-metadata';
-
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import Section from 'components/Section';
@@ -16,7 +15,6 @@ import Container from 'components/Container';
 import Content from 'components/Content';
 import Metadata from 'components/Metadata';
 import FeaturedImage from 'components/FeaturedImage';
-
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ post, socialImage, related }) {
@@ -66,8 +64,10 @@ export default function Post({ post, socialImage, related }) {
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
 
+  console.log({ post });
   return (
     <Layout>
+      <link rel="stylesheet" href="mystyle.css"></link>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
       <Header>
@@ -77,6 +77,7 @@ export default function Post({ post, socialImage, related }) {
             __html: title,
           }}
         />
+
         {false && (
           <Metadata
             className={styles.postMetadata}
@@ -141,7 +142,6 @@ export default function Post({ post, socialImage, related }) {
 
 export async function getStaticProps({ params = {} } = {}) {
   const { post } = await getPostBySlug(params?.slug);
-
   if (!post) {
     return {
       props: {},
