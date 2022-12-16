@@ -580,6 +580,42 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
   }
 `;
 
+export const QUERY_SECTION_ELEVEN_POST = gql`
+  query PostsByCategoryId {
+    posts(where: { in: ["169", "91", "178", "182"] }) {
+      edges {
+        node {
+          author {
+            node {
+              name
+              slug
+            }
+          }
+          content
+          excerpt
+          featuredImage {
+            node {
+              altText
+              caption
+              id
+              sizes
+              sourceUrl
+              srcSet
+            }
+          }
+          modified
+          title
+          slug
+          interviewedBy
+          writtenBy
+          pageTitle
+          pageSubtitle
+        }
+      }
+    }
+  }
+`;
+
 export const QUERY_CULTURE_POSTS = gql`
   query PostsByCategoryId {
     posts(where: { categoryId: 5, orderby: { field: AUTHOR, order: DESC } }, last: 1) {
