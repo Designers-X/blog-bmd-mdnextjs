@@ -2,9 +2,9 @@ import Container from 'components/Container';
 
 import styles from './Header.module.scss';
 
-const Header = ({ children }) => {
+const Header = ({ children, isTopMargin }) => {
   return (
-    <header className={styles.header}>
+    <header className={isTopMargin ? styles.headerZeroMargin : styles.header}>
       <Container>{children}</Container>
     </header>
   );

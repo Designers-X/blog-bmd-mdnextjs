@@ -3,15 +3,16 @@
 }
 .layoutFlexDiv {
   display: flex;
+  justify-content: space-between;
 }
 .layoutOneFirstChild {
   width: 60%;
 }
 .layoutOneTwoChild {
-  width: 40%;
+  width: 39%;
 }
 .layoutTwoFirstChild {
-  width: 40%;
+  width: 39%;
 }
 .layoutTwoTwoChild {
   width: 60%;
