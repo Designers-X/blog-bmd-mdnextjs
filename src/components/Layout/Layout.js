@@ -65,7 +65,6 @@ const Layout = ({ children }) => {
       <Helmet {...helmetSettings} />
 
       <Nav />
-
       <Main>{children}</Main>
 
       <Footer />

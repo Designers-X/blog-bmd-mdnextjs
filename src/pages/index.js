@@ -607,7 +607,7 @@ export default function Home({
                 })}
               </div>
               <div className={styles.videoHeight}>
-                {nodes.wistiaVideoScriptId && (
+                {/* {nodes.wistiaVideoScriptId && (
                   <div class="ratio ratio-16x9">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
@@ -624,7 +624,7 @@ export default function Home({
                       msallowfullscreen
                     ></iframe>
                   </div>
-                )}
+                )} */}
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>

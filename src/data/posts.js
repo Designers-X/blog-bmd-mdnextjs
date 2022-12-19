@@ -143,6 +143,7 @@ export const QUERY_POST_BY_SLUG = gql`
       title
       slug
       isSticky
+      mastheadWistiaVideoId
     }
   }
 `;
@@ -501,7 +502,7 @@ export const QUERY_LATEST_POST = gql`
 
 export const QUERY_FRUIT_AND_WINE_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 11, orderby: { field: AUTHOR, order: DESC } }, first: 1) {
+    posts(where: { categoryId: 11, id: 82 }, first: 1) {
       edges {
         node {
           author {

@@ -18,6 +18,7 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ post, socialImage, related }) {
+  console.log({ post });
   const {
     title,
     metaTitle,
@@ -28,11 +29,11 @@ export default function Post({ post, socialImage, related }) {
     categories,
     modified,
     featuredImage,
+    mastheadWistiaVideoId,
     isSticky = false,
   } = post;
 
   const { metadata: siteMetadata = {}, homepage } = useSite();
-
   if (!post.og) {
     post.og = {};
   }
@@ -70,14 +71,33 @@ export default function Post({ post, socialImage, related }) {
       <link rel="stylesheet" href="mystyle.css"></link>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
-      <Header>
-        <h1
-          className={styles.title}
-          dangerouslySetInnerHTML={{
-            __html: title,
-          }}
-        />
-
+      <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
+        {mastheadWistiaVideoId && (
+          <div class="ratio ratio-16x9">
+            <iframe
+              src={`//fast.wistia.net/embed/iframe/${mastheadWistiaVideoId}?videoFoam=true`}
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              class="wistia_embed"
+              name="wistia_embed"
+              autoPlay
+              allowfullscreen
+              mozallowfullscreen
+              webkitallowfullscreen
+              oallowfullscreen
+              msallowfullscreen
+            ></iframe>
+          </div>
+        )}
+        <div className={mastheadWistiaVideoId && 'mt-2'}>
+          <h1
+            className={styles.title}
+            dangerouslySetInnerHTML={{
+              __html: title,
+            }}
+          />
+        </div>
         {false && (
           <Metadata
             className={styles.postMetadata}
@@ -97,7 +117,7 @@ export default function Post({ post, socialImage, related }) {
           />
         )}
       </Header>
-      <Content>
+      <Content className={'mt-4'}>
         <Container>
           <div
             className={styles.content}
