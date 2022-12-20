@@ -18,7 +18,7 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ post, socialImage, related }) {
-  console.log({ post });
+  console.log(post);
   const {
     title,
     metaTitle,
@@ -30,6 +30,7 @@ export default function Post({ post, socialImage, related }) {
     modified,
     featuredImage,
     mastheadWistiaVideoId,
+    seo,
     isSticky = false,
   } = post;
 
@@ -46,8 +47,8 @@ export default function Post({ post, socialImage, related }) {
   const { metadata } = usePageMetadata({
     metadata: {
       ...post,
-      title: metaTitle,
-      description: description || post.og?.description || `Read more about ${title}`,
+      title: seo ? seo.title : metaTitle,
+      description: seo ? seo.metaDesc : description || post.og?.description || `Read more about ${title}`,
     },
   });
 
@@ -65,7 +66,6 @@ export default function Post({ post, socialImage, related }) {
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
 
-  console.log({ post });
   return (
     <Layout>
       <link rel="stylesheet" href="mystyle.css"></link>
@@ -90,7 +90,7 @@ export default function Post({ post, socialImage, related }) {
             ></iframe>
           </div>
         )}
-        <div className={mastheadWistiaVideoId && 'mt-2'}>
+        <div className={mastheadWistiaVideoId && 'mt-4'}>
           <h1
             className={styles.title}
             dangerouslySetInnerHTML={{

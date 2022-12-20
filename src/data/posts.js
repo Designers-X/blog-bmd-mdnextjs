@@ -138,6 +138,11 @@ export const QUERY_POST_BY_SLUG = gql`
           id
         }
       }
+      seo {
+        metaDesc
+        metaKeywords
+        title
+      }
       modified
       databaseId
       title
