@@ -6,7 +6,6 @@
   h2,
   h3,
   h4,
-  p,
   ul {
     &:first-child {
       margin-top: 0;
@@ -21,4 +20,7 @@
     display: block;
     margin: 0 auto;
   }
+}
+.temp {
+  color: red;
 }

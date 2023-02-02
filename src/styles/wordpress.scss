@@ -17,3 +17,46 @@
 .layoutTwoTwoChild {
   width: 60%;
 }
+// Add css 02-feb-2023
+p {
+  font-size: 18px;
+}
+h1 {
+  font-size: 3rem !important;
+}
+.d-flex.justify-content-around a {
+  color: #000;
+}
+.Container_container__jY5v0 {
+  max-width: 1320px !important;
+}
+
+.temp::first-letter {
+  display: block;
+  float: left;
+  margin-top: -20px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  background: #111;
+  text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+.Header_headerZeroMargin__nLVkC h1 {
+  text-align: right !important;
+}
+.TwoColumn {
+  display: flex;
+}
+.width50 {
+  width: 50%;
+  float: left;
+}
+.DisplayFlex {
+  display: flex;
+  justify-content: space-around;
+}
+.DisplayFlex a {
+  color: #000;
+}
