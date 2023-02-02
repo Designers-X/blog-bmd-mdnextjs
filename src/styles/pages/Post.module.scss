@@ -3,6 +3,8 @@
 .postMetadata {
   text-align: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .postFooter {
@@ -33,12 +35,21 @@
   margin-top: 1rem;
 }
 
-.content {
+.content1 {
   img {
     border: none;
   }
-  p:first-child {
-    p::first-letter {
+
+  a {
+    color: unset;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p .temp {
+    &::first-letter {
       display: block;
       float: left;
       font-size: 3rem;
@@ -50,3 +61,21 @@
     }
   }
 }
+
+// .content {
+//   img {
+//     border: none;
+//   }
+//   p:first-child {
+//     p::first-letter {
+//       display: block;
+//       float: left;
+//       font-size: 3rem;
+//       background: #111;
+//       text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5);
+//       -webkit-background-clip: text;
+//       -moz-background-clip: text;
+//       background-clip: text;
+//     }
+//   }
+// }

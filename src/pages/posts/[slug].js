@@ -30,6 +30,7 @@ export default function Post({ post, socialImage, related }) {
     modified,
     featuredImage,
     mastheadWistiaVideoId,
+    mastheadBanner,
     seo,
     isSticky = false,
   } = post;
@@ -90,7 +91,12 @@ export default function Post({ post, socialImage, related }) {
             ></iframe>
           </div>
         )}
-        <div className={mastheadWistiaVideoId && 'mt-4'}>
+        {mastheadBanner && false && (
+          <div>
+            <img src={mastheadBanner.node.link} />
+          </div>
+        )}
+        <div className={mastheadWistiaVideoId || (mastheadBanner && 'mt-4')}>
           <h1
             className={styles.title}
             dangerouslySetInnerHTML={{
@@ -120,7 +126,7 @@ export default function Post({ post, socialImage, related }) {
       <Content className={'mt-4'}>
         <Container>
           <div
-            className={styles.content}
+            className={styles.content1}
             dangerouslySetInnerHTML={{
               __html: content,
             }}
