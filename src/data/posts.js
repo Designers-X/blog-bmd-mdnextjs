@@ -149,6 +149,12 @@ export const QUERY_POST_BY_SLUG = gql`
       slug
       isSticky
       mastheadWistiaVideoId
+      mastheadBanner {
+        node {
+          altText
+          link
+        }
+      }
     }
   }
 `;

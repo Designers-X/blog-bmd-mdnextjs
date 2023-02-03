@@ -24,7 +24,7 @@ const Metadata = ({ className, author, date, categories, options = DEFAULT_METAD
       {author && (
         <li className={styles.metadataAuthor}>
           <address>
-            By{' '}
+            Written By:{' '}
             <Link href={authorPathByName(author.name)}>
               <a rel="author">{author.name}</a>
             </Link>
@@ -34,7 +34,7 @@ const Metadata = ({ className, author, date, categories, options = DEFAULT_METAD
       {date && (
         <li>
           <time pubdate="pubdate" dateTime={date}>
-            {formatDate(date)}
+            Published: {formatDate(date)}
           </time>
         </li>
       )}
