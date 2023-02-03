@@ -3,12 +3,12 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer style={{ marginTop: '20px' }}>
         <div className={styles.footerSpicl}>
           <div className={styles.middelSection}>
             <div className={styles.InRow}>
               <a href="" className={styles.LogoSection}>
-                <img src="img/the_MDiterranean_life_logo-white.png" alt="logo" />
+                <img src="/img/the_MDiterranean_life_logo-white.png" alt="logo" />
               </a>
               <div className={styles.SocialIcon}>
                 <i className="fa fa-twitter fa-2x paddingIcon" aria-hidden="true"></i>
@@ -78,25 +78,29 @@ const Footer = () => {
                 </a>
               </div>
             </nav>
-            <img src="img/Hearst-logo.png" alt="Hearst-logo" />
-            <p className={styles.DigitalTextFooter}>A Part of Hearst Digital Media</p>
-            <p className={styles.DigitalTextFooter}>
-              Every item on this page was chosen by an ELLE editor. We may earn commission on some of the items you
-              choose to buy.
-            </p>
-            <p className={styles.DigitalTextFooter}>©Hearst Magazine Media, Inc. All Rights Reserved.</p>
-            <div className={styles.footerLegalMenu}>
-              <a href="">Privacy Notice/Notice at Collection</a>
-              <a href="">Your California Privacy Rights</a>
-              <a href="">Interest-Based Ads</a>
-              <a href="">Terms of Use</a>
-              <a href="">Site Map</a>
-            </div>
-            <div className={styles.footerButton}>
-              <a href="" className={styles.lastBtn}>
-                Do Not Sell My Personal Information
-              </a>
-            </div>
+            {false && (
+              <>
+                <img src="img/Hearst-logo.png" alt="Hearst-logo" />
+                <p className={styles.DigitalTextFooter}>A Part of Hearst Digital Media</p>
+                <p className={styles.DigitalTextFooter}>
+                  Every item on this page was chosen by an ELLE editor. We may earn commission on some of the items you
+                  choose to buy.
+                </p>
+                <p className={styles.DigitalTextFooter}>©Hearst Magazine Media, Inc. All Rights Reserved.</p>
+                <div className={styles.footerLegalMenu}>
+                  <a href="">Privacy Notice/Notice at Collection</a>
+                  <a href="">Your California Privacy Rights</a>
+                  <a href="">Interest-Based Ads</a>
+                  <a href="">Terms of Use</a>
+                  <a href="">Site Map</a>
+                </div>
+                <div className={styles.footerButton}>
+                  <a href="" className={styles.lastBtn}>
+                    Do Not Sell My Personal Information
+                  </a>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </footer>
