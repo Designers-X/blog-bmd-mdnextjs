@@ -31,18 +31,18 @@ h1 {
   max-width: 1320px !important;
 }
 
-.temp::first-letter {
-  display: block;
-  float: left;
-  margin-top: -20px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  background: #111;
-  text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-}
+// .temp::first-letter {
+//   display: block;
+//   float: left;
+//   margin-top: -20px;
+//   font-weight: 600;
+//   font-size: 1.8rem;
+//   background: #111;
+//   text-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5);
+//   -webkit-background-clip: text;
+//   -moz-background-clip: text;
+//   background-clip: text;
+// }
 .Header_headerZeroMargin__nLVkC h1 {
   text-align: right !important;
 }
@@ -55,7 +55,7 @@ h1 {
 }
 .DisplayFlex {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .DisplayFlex a {
   color: #000;
@@ -68,4 +68,16 @@ h1 {
 }
 .mt-4 h1 {
   text-align: center !important;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.justify-content-center p {
+  font-size: 12px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.DisplayFlex p {
+  font-size: 12px;
 }
