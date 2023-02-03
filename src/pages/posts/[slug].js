@@ -147,34 +147,36 @@ export default function Post({ post, socialImage, related }) {
         </Container>
       </Content>
 
-      <Section className={styles.postFooter}>
-        <Container>
-          <p className={styles.postModified}>Last updated on {formatDate(modified)}.</p>
-          {Array.isArray(relatedPostsList) && relatedPostsList.length > 0 && (
-            <div className={styles.relatedPosts}>
-              {relatedPostsTitle.name ? (
-                <span>
-                  More from{' '}
-                  <Link href={relatedPostsTitle.link}>
-                    <a>{relatedPostsTitle.name}</a>
-                  </Link>
-                </span>
-              ) : (
-                <span>More Posts</span>
-              )}
-              <ul>
-                {relatedPostsList.map((post) => (
-                  <li key={post.title}>
-                    <Link href={postPathBySlug(post.slug)}>
-                      <a>{post.title}</a>
+      {false && (
+        <Section className={styles.postFooter}>
+          <Container>
+            <p className={styles.postModified}>Last updated on {formatDate(modified)}.</p>
+            {Array.isArray(relatedPostsList) && relatedPostsList.length > 0 && (
+              <div className={styles.relatedPosts}>
+                {relatedPostsTitle.name ? (
+                  <span>
+                    More from{' '}
+                    <Link href={relatedPostsTitle.link}>
+                      <a>{relatedPostsTitle.name}</a>
                     </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </Container>
-      </Section>
+                  </span>
+                ) : (
+                  <span>More Posts</span>
+                )}
+                <ul>
+                  {relatedPostsList.map((post) => (
+                    <li key={post.title}>
+                      <Link href={postPathBySlug(post.slug)}>
+                        <a>{post.title}</a>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </Container>
+        </Section>
+      )}
     </Layout>
   );
 }
