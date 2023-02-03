@@ -17,7 +17,7 @@
 .layoutTwoTwoChild {
   width: 60%;
 }
-// Add css 02-feb-2023
+// Add css 02-feb-2023 s
 p {
   font-size: 18px;
 }
@@ -29,7 +29,6 @@ h1 {
 }
 .Container_container__jY5v0 {
   max-width: 1320px !important;
-  // width:90;
 }
 
 .temp::first-letter {
@@ -60,4 +59,13 @@ h1 {
 }
 .DisplayFlex a {
   color: #000;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.mt-4 h1 {
+  text-align: center !important;
 }

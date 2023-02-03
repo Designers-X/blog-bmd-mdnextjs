@@ -72,57 +72,70 @@ export default function Post({ post, socialImage, related }) {
       <link rel="stylesheet" href="mystyle.css"></link>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
-      <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
-        {mastheadWistiaVideoId && (
-          <div class="ratio ratio-16x9">
-            <iframe
-              src={`//fast.wistia.net/embed/iframe/${mastheadWistiaVideoId}?videoFoam=true`}
-              allowtransparency="true"
-              frameborder="0"
-              scrolling="no"
-              class="wistia_embed"
-              name="wistia_embed"
-              autoPlay
-              allowfullscreen
-              mozallowfullscreen
-              webkitallowfullscreen
-              oallowfullscreen
-              msallowfullscreen
-            ></iframe>
+      {!mastheadBanner ? (
+        <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
+          {mastheadWistiaVideoId && (
+            <div class="ratio ratio-16x9">
+              <iframe
+                src={`//fast.wistia.net/embed/iframe/${mastheadWistiaVideoId}?videoFoam=true`}
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                class="wistia_embed"
+                name="wistia_embed"
+                autoPlay
+                allowfullscreen
+                mozallowfullscreen
+                webkitallowfullscreen
+                oallowfullscreen
+                msallowfullscreen
+              ></iframe>
+            </div>
+          )}
+          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+            <h1
+              className={styles.title}
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            />
           </div>
-        )}
-        {mastheadBanner && false && (
-          <div>
-            <img src={mastheadBanner.node.link} />
-          </div>
-        )}
-        <div className={mastheadWistiaVideoId || (mastheadBanner && 'mt-4')}>
-          <h1
-            className={styles.title}
-            dangerouslySetInnerHTML={{
-              __html: title,
-            }}
-          />
-        </div>
-        {false && (
-          <Metadata
-            className={styles.postMetadata}
-            date={date}
-            author={author}
-            categories={categories}
-            options={metadataOptions}
-            isSticky={isSticky}
-          />
-        )}
+          {false && (
+            <Metadata
+              className={styles.postMetadata}
+              date={date}
+              author={author}
+              categories={categories}
+              options={metadataOptions}
+              isSticky={isSticky}
+            />
+          )}
 
-        {featuredImage && false && (
-          <FeaturedImage
-            {...featuredImage}
-            src={featuredImage.sourceUrl}
-            dangerouslySetInnerHTML={featuredImage.caption}
-          />
-        )}
-      </Header>
+          {featuredImage && false && (
+            <FeaturedImage
+              {...featuredImage}
+              src={featuredImage.sourceUrl}
+              dangerouslySetInnerHTML={featuredImage.caption}
+            />
+          )}
+        </Header>
+      ) : (
+        <div>
+          {mastheadBanner && (
+            <div>
+              <img src={mastheadBanner.node.link} />
+            </div>
+          )}
+          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+            <h1
+              className={styles.title}
+              dangerouslySetInnerHTML={{
+                __html: title,
+              }}
+            />
+          </div>
+        </div>
+      )}
       <Content className={'mt-4'}>
         <Container>
           <div
