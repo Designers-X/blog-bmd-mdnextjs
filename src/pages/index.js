@@ -315,7 +315,7 @@ export default function Home({
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a href="#" className={styles.fashiHyperLink}>
+                            <a href={categoryslug} className={styles.fashiHyperLink}>
                               {ele.name}
                             </a>
                           </Link>
