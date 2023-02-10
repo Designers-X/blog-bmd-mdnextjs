@@ -161,18 +161,19 @@ figure {
 }
 .categoryLink {
   position: relative;
+  font-style: unset;
+  font-size: 35px;
 }
 .categoryLink figcaption {
   position: absolute;
-  left: 18%;
-  top: 30%;
+  left: 10%;
+  top: 27%;
   bottom: 0;
   padding: 1rem;
   color: #fff;
   border: 2px solid #fff;
-  width: 65%;
-  height: 25%;
-  font-weight: 600;
+  width: 80%;
+  height: 30%;
 }
 .categoryLink figcaption:hover {
   background-color: #fff;
