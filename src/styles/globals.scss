@@ -1,12 +1,21 @@
 @import "styles/settings/__settings";
 @import "style.css";
-
+@font-face {
+  font-family: "Didot";
+  src: url("../../public/font/Didot\ Bold\ Italic.ttf");
+  src: url("../../public/font/Didot\ LT\ Std\ Bold.otf");
+  src: url("../../public/font/Didot\ LT\ Std\ Italic.otf");
+  src: url("../../public/font/Didot\ Medium.ttf");
+  src: url("../../public/font/Didot\ Regular.ttf");
+}
 * {
   box-sizing: border-box;
+  font-family: Didot;
 }
 
 html,
 body {
+  font-family: Didot;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
