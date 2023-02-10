@@ -103,7 +103,7 @@ h1 {
   height: 250px !important;
 }
 .img350 img {
-  height: 350px !important;
+  height: 300px !important;
 }
 .imgFull img {
   width: 100% !important;
@@ -155,4 +155,26 @@ figure img {
 }
 figure {
   margin: 10px 0 1em 0em;
+}
+.categoryLink img {
+  height: 300px;
+}
+.categoryLink {
+  position: relative;
+}
+.categoryLink figcaption {
+  position: absolute;
+  left: 18%;
+  top: 30%;
+  bottom: 0;
+  padding: 1rem;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 65%;
+  height: 25%;
+  font-weight: 600;
+}
+.categoryLink figcaption:hover {
+  background-color: #fff;
+  color: #000;
 }
