@@ -161,9 +161,13 @@ figure {
 }
 .categoryLink {
   position: relative;
-  font-style: unset;
+  font-style: normal;
   font-size: 35px;
 }
+figcaption {
+  font-style: unset !important;
+}
+//blog
 .categoryLink figcaption a {
   position: absolute;
   left: 10%;
