@@ -164,7 +164,7 @@ figure {
   font-style: unset;
   font-size: 35px;
 }
-.categoryLink figcaption {
+.categoryLink figcaption a {
   position: absolute;
   left: 10%;
   top: 27%;
@@ -174,8 +174,27 @@ figure {
   border: 2px solid #fff;
   width: 80%;
   height: 30%;
+  font-style: unset;
 }
-.categoryLink figcaption:hover {
+.categoryLink figcaption a:hover {
   background-color: #fff;
   color: #000;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.text-left {
+  text-align-last: left;
+  color: #000;
+  font-size: 0.9em;
+  text-align: center;
+  font-style: unset;
+  margin-top: unset;
+}
+
+.justifyCenter {
+  display: flex !important;
+  justify-content: space-around !important;
 }
