@@ -1,32 +1,41 @@
 .aligncenter {
   text-align: center;
 }
+
 .layoutFlexDiv {
   display: flex;
   justify-content: space-between;
 }
+
 .layoutOneFirstChild {
   width: 60%;
 }
+
 .layoutOneTwoChild {
   width: 39%;
 }
+
 .layoutTwoFirstChild {
   width: 39%;
 }
+
 .layoutTwoTwoChild {
   width: 60%;
 }
+
 // Add css 02-feb-2023 s
 p {
   font-size: 18px;
 }
+
 h1 {
   font-size: 3rem !important;
 }
+
 .d-flex.justify-content-around a {
   color: #000;
 }
+
 .Container_container__jY5v0 {
   max-width: 1320px !important;
 }
@@ -47,49 +56,63 @@ h1 {
 .Header_headerZeroMargin__nLVkC h1 {
   text-align: right !important;
 }
+
 .TwoColumn {
   display: flex;
 }
+
 .width50 {
   width: 50%;
   float: left;
 }
+
 .DisplayFlex {
   display: flex;
   justify-content: center;
 }
+
 .DisplayFlex a {
   color: #000;
 }
+
 .pr-15 {
   padding-right: 15px;
 }
+
 .pl-15 {
   padding-left: 15px;
 }
+
 .mt-4 h1 {
   text-align: center !important;
 }
+
 .ml-20 {
   margin-left: 20px;
 }
+
 .justify-content-center p {
   font-size: 12px;
 }
+
 .fs-12 {
   font-size: 12px;
 }
+
 .DisplayFlex p {
   font-size: 12px;
 }
+
 .width45 {
   width: 45%;
   float: left;
 }
+
 .width55 {
   width: 55%;
   float: left;
 }
+
 .w-100 .uag-image-280 {
   width: 100%;
 }
@@ -99,15 +122,19 @@ h1 {
   margin-bottom: 1rem;
   font-size: 0.5em;
 }
+
 .img250 img {
   height: 250px !important;
 }
+
 .img350 img {
   height: 300px !important;
 }
+
 .imgFull img {
   width: 100% !important;
 }
+
 .Hover-Effect {
   position: absolute;
   top: 100px;
@@ -125,6 +152,7 @@ h1 {
   background-color: #ffffff00;
   cursor: pointer;
 }
+
 .Hover-Effect p {
   font-size: 48px;
 }
@@ -150,23 +178,29 @@ h1 {
 .text-img {
   position: relative;
 }
+
 figure img {
   padding-top: 0;
 }
+
 figure {
   margin: 10px 0 1em 0em;
 }
+
 .categoryLink img {
   height: 300px;
 }
+
 .categoryLink {
   position: relative;
   font-style: normal;
   font-size: 35px;
 }
+
 figcaption {
   font-style: unset !important;
 }
+
 //blog
 .categoryLink figcaption a {
   position: absolute;
@@ -180,6 +214,7 @@ figcaption {
   height: 30%;
   font-style: unset;
 }
+
 .categoryLink figcaption a:hover {
   background-color: #fff;
   color: #000;
@@ -198,7 +233,25 @@ figcaption {
   margin-top: unset;
 }
 
+.text-left figure {
+  width: 50vw;
+}
+
+.text-left figcaption {
+  margin-top: unset;
+}
+
 .justifyCenter {
   display: flex !important;
-  justify-content: space-around !important;
+  justify-content: space-between;
+}
+
+.authorImg img {
+  width: 150px;
+  height: 150px;
+}
+.imgBanner {
+  max-height: 501px;
+  width: 100vw;
+  overflow: hidden;
 }
