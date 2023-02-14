@@ -123,7 +123,7 @@ export default function Post({ post, socialImage, related }) {
         <div>
           {mastheadBanner && (
             <div>
-              <img src={mastheadBanner.node.link} />
+              <img src={mastheadBanner.node.link} className="imgBanner" />
             </div>
           )}
           <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
