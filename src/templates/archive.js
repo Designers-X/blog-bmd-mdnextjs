@@ -18,6 +18,7 @@ const DEFAULT_POST_OPTIONS = {};
 export default function TemplateArchive({
   title = 'Archive',
   Title,
+  section,
   posts,
   postOptions = DEFAULT_POST_OPTIONS,
   slug,
@@ -25,6 +26,7 @@ export default function TemplateArchive({
   pagination,
 }) {
   const { metadata: siteMetadata = {} } = useSite();
+  console.log({ section });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
     metadata.title = `${title} - ${siteMetadata.title}`;
@@ -33,7 +35,6 @@ export default function TemplateArchive({
   }
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
-
   return (
     <Layout>
       <Helmet {...helmetSettings} />
