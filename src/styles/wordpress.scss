@@ -125,6 +125,9 @@ h1 {
 .img150 img {
   height: 200px !important;
 }
+.img250 {
+  margin: 5px;
+}
 .img250 img {
   height: 250px !important;
 }
@@ -135,6 +138,7 @@ h1 {
 //updates
 .imgFull img {
   width: 100% !important;
+  height: auto;
 }
 
 .Hover-Effect {
@@ -150,7 +154,8 @@ h1 {
   align-items: center;
   text-align: center;
   margin: 0 187px;
-
+  left: 0;
+  right: 0;
   background-color: #ffffff00;
   cursor: pointer;
 }
@@ -182,7 +187,7 @@ h1 {
 }
 
 figure img {
-  padding-top: 0;
+  padding: 0 !important;
 }
 
 figure {
@@ -197,8 +202,11 @@ figure {
   position: relative;
   font-style: normal;
   font-size: 35px;
+  margin: 5px;
 }
-
+.mr-3 {
+  margin-right: 0.75rem;
+}
 figcaption {
   font-style: unset !important;
 }
@@ -259,4 +267,20 @@ figcaption {
 }
 .pad2rem {
   padding: 1rem;
+}
+.wp-block-columns {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.p-justify {
+  text-align: justify;
+}
+h3 {
+  font-size: 1.5em;
+}
+.pl-30 {
+  padding: 0 30px;
+}
+.img150 {
+  margin: 5px;
 }

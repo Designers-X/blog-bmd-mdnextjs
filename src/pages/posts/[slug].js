@@ -137,14 +137,14 @@ export default function Post({ post, socialImage, related }) {
         </div>
       )}
       <Content className={'mt-4'}>
-        <Container>
-          <div
-            className={styles.content1}
-            dangerouslySetInnerHTML={{
-              __html: content,
-            }}
-          />
-        </Container>
+        {/* <Container> */}
+        <div
+          className={styles.content1}
+          dangerouslySetInnerHTML={{
+            __html: content,
+          }}
+        />
+        {/* </Container> */}
       </Content>
 
       {false && (
