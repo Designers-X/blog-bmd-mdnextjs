@@ -24,21 +24,6 @@ export const QUERY_CATEGORY_BY_SLUG = gql`
       id
       name
       slug
-      s1CustomPostTitle
-      s1PostId
-      s1PostReference {
-        node {
-          title
-          slug
-          mastheadWistiaVideoId
-          mastheadBanner {
-            node {
-              altText
-              link
-            }
-          }
-        }
-      }
     }
   }
 `;
@@ -57,8 +42,6 @@ export const QUERY_CATEGORY_SEO_BY_SLUG = gql`
   query CategorySEOBySlug($slug: ID!) {
     category(id: $slug, idType: SLUG) {
       id
-      s1CustomPostTitle
-      s1PostId
       seo {
         canonical
         metaDesc
@@ -94,42 +77,3 @@ export const QUERY_CATEGORY_SEO_BY_SLUG = gql`
     }
   }
 `;
-// export const QUERY_CATEGORY_SEO_BY_SLUG = gql`
-//   query CategorySEOBySlug($slug: ID!) {
-//     category(id: $slug, idType: SLUG) {
-//       id
-//       seo {
-//         canonical
-//         metaDesc
-//         metaRobotsNofollow
-//         metaRobotsNoindex
-//         opengraphAuthor
-//         opengraphDescription
-//         opengraphModifiedTime
-//         opengraphPublishedTime
-//         opengraphPublisher
-//         opengraphTitle
-//         opengraphType
-//         title
-//         twitterDescription
-//         twitterTitle
-//         twitterImage {
-//           altText
-//           sourceUrl
-//           mediaDetails {
-//             width
-//             height
-//           }
-//         }
-//         opengraphImage {
-//           altText
-//           sourceUrl
-//           mediaDetails {
-//             height
-//             width
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
