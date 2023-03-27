@@ -39,7 +39,7 @@ export async function getAllCategories() {
 
 export async function getCategoryBySlug(slug) {
   const apolloClient = getApolloClient();
-  // const apiHost = new URL(process.env.WORDPRESS_GRAPHQL_ENDPOINT).host;
+  const apiHost = new URL(process.env.WORDPRESS_GRAPHQL_ENDPOINT).host;
 
   let categoryData;
   let seoData;
@@ -87,38 +87,38 @@ export async function getCategoryBySlug(slug) {
     // link along with the other metadata, but explicitly check if there's a custom one
     // in here by looking for the API's host in the provided canonical link
 
-    // if (seo.canonical && !seo.canonical.includes(apiHost)) {
-    //   category.canonical = seo.canonical;
-    // }
+    if (seo.canonical && !seo.canonical.includes(apiHost)) {
+      category.canonical = seo.canonical;
+    }
 
-    // category.og = {
-    //   author: seo.opengraphAuthor,
-    //   description: seo.opengraphDescription,
-    //   image: seo.opengraphImage,
-    //   modifiedTime: seo.opengraphModifiedTime,
-    //   publishedTime: seo.opengraphPublishedTime,
-    //   publisher: seo.opengraphPublisher,
-    //   title: seo.opengraphTitle,
-    //   type: seo.opengraphType,
-    // };
+    category.og = {
+      author: seo.opengraphAuthor,
+      description: seo.opengraphDescription,
+      image: seo.opengraphImage,
+      modifiedTime: seo.opengraphModifiedTime,
+      publishedTime: seo.opengraphPublishedTime,
+      publisher: seo.opengraphPublisher,
+      title: seo.opengraphTitle,
+      type: seo.opengraphType,
+    };
 
-    // category.article = {
-    //   author: category.og.author,
-    //   modifiedTime: category.og.modifiedTime,
-    //   publishedTime: category.og.publishedTime,
-    //   publisher: category.og.publisher,
-    // };
+    category.article = {
+      author: category.og.author,
+      modifiedTime: category.og.modifiedTime,
+      publishedTime: category.og.publishedTime,
+      publisher: category.og.publisher,
+    };
 
-    // category.robots = {
-    //   nofollow: seo.metaRobotsNofollow,
-    //   noindex: seo.metaRobotsNoindex,
-    // };
+    category.robots = {
+      nofollow: seo.metaRobotsNofollow,
+      noindex: seo.metaRobotsNoindex,
+    };
 
-    // category.twitter = {
-    //   description: seo.twitterDescription,
-    //   image: seo.twitterImage,
-    //   title: seo.twitterTitle,
-    // };
+    category.twitter = {
+      description: seo.twitterDescription,
+      image: seo.twitterImage,
+      title: seo.twitterTitle,
+    };
   }
 
   return {
@@ -154,7 +154,7 @@ export async function getCategory() {
   });
 
   const category = data;
-  console.log({ data });
+
   return {
     category,
   };
