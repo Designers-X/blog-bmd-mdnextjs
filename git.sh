@@ -24,9 +24,11 @@ if [ $flag -eq 1 ]
  then
   echo -e "\nEnter the remote git url";
   read git_url;
+  echo -e "\n origin Name";
   read name;
   git remote add $name $git_url;
  fi
+ echo -e "\n Branch Name";
  read branch
  git checkout -b $branch
 git pull Vercel $branch;
