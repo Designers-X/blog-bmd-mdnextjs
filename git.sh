@@ -24,11 +24,14 @@ if [ $flag -eq 1 ]
  then
   echo -e "\nEnter the remote git url";
   read git_url;
-  git remote add origin $git_url;
+  read name;
+  git remote add $name $git_url;
  fi
-git pull Vercel devT;
-echo -e "\npushing to branch main \n";
-git push Vercel devT;
+ read branch
+ git checkout -b $branch
+git pull Vercel $branch;
+echo -e "\npushing to $branch devT \n";
+git push Vercel $branch;
 if [ $? -eq 0 ];
  then
     echo -e "\nGit push was successful\n";
