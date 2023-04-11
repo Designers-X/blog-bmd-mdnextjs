@@ -217,19 +217,19 @@
   position: relative;
 }
 .wp-block-columns figure,
-.categoryLink {
+.categoryLink,
+.authorImg img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .wp-block-columns figure img,
 .categoryLink img {
   padding: 0 !important;
-  border: 1px solid #eee;
 }
 .authorImg img {
   width: 150px;
   height: 150px;
-  border: none !important;
+  border-radius: 50%;
 }
 
 .categoryLink img {
