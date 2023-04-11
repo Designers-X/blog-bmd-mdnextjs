@@ -25,13 +25,64 @@
   font-style: normal;
 }
 
-// src: url("../../public/font/Didot\ Italic.otf") format('truetype');
-// src: url("../../public/font/Didot\ LT\ Std\ Bold.otf") format('truetype');
-// src: url("../../public/font/Didot\ LT\ Std\ Italic.otf") format('truetype');
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n4.9cf7fc4f6a5a48eb27738cad395f0eba18922755.woff2?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=879dfbcf59fa95cad2de768e9fff731858f7e467c7b9709dd82b58776fff0c57")
+      format("woff2"),
+    url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n4.8a3fef162b1f576396eb89e46872ef50eeb08158.woff?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=f331a54dfc3339e19b084f2972dfd94671cdd350bdb4321e2195722c3c41f9ca")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n7.1e0ea1cc7a9e4ffdfd6c80b1742be1b89bbe2665.woff2?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=fc2a021e77bd8bb78c3506f30b5e12ee66d7b22cee3af4027a9ee8fb429822d6")
+      format("woff2"),
+    url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n7.40a558d0a1f7faa9f18d658a9ad541610d181d3b.woff?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=40db08fcc069e834915ac6037a5e788745db2871fab67881ccea7ea0fe2609e6")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_i4.a6b31dd7985a500dee50e8e9792e48b71014b51d.woff2?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=7c99e5bd386d9a7c16e7fca24c1135d8972561239f7cd841f32186f3ac0304de")
+      format("woff2"),
+    url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_i4.efdf7bd924b2180e5d0c4a2d40be7412ab667d60.woff?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=882d49dfeecba90551fb959222882d8fa6a43e14125fc3ad9cc30f446234cd78")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_i7.7b5eb632a605dbb99140d4e15db5828adc5a093e.woff2?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=cee763a0603a225a7e1b823a26f4caae9f379e2456000d3291cf119493082aab")
+      format("woff2"),
+    url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_i7.d164241d6fe16befc328a085280a1ffcaa6c95cc.woff?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=79ac955ac8d6bdcc5956a353a07271caa091e2348f0957f7e5f82b17906ae624")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n4.9cf7fc4f6a5a48eb27738cad395f0eba18922755.woff2?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=879dfbcf59fa95cad2de768e9fff731858f7e467c7b9709dd82b58776fff0c57")
+      format("woff2"),
+    url("https://fonts.shopifycdn.com/playfair_display/playfairdisplay_n4.8a3fef162b1f576396eb89e46872ef50eeb08158.woff?h1=dGhlbWRpdGVycmFuZWFubGlmZS1jb20uYWNjb3VudC5teXNob3BpZnkuY29t&hmac=f331a54dfc3339e19b084f2972dfd94671cdd350bdb4321e2195722c3c41f9ca")
+      format("woff");
+}
 
 * {
   box-sizing: border-box;
-  font-family: Didot;
+  font-family: Didot !important;
   font-weight: normal;
   color: #000000;
   letter-spacing: normal;
