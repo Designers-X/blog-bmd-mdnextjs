@@ -59,7 +59,10 @@ export default function Home({
                             <h2 className={styles.postTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
-                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}></div>
+                            <div
+                              className={styles.subPOstTitle}
+                              dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}
+                            ></div>
                             <div className={styles.AuthorText}>
                               {nodes.writtenBy && (
                                 <p>
