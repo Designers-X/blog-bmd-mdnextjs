@@ -1,3 +1,20 @@
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Didot-Title;
+}
+
+p {
+  font-family: Didot;
+}
+
+strong,
+h1 {
+  font-family: Didot-Bold;
+}
+
 .aligncenter {
   text-align: center;
 }
@@ -126,38 +143,48 @@ h1 {
   margin-bottom: 1rem;
   font-size: 0.5em;
 }
+
 .img150 img {
   height: 200px !important;
 }
+
 .img250 {
   margin: 5px;
 }
+
 .img250 img {
   height: 250px !important;
 }
+
 .p-95 {
   padding: 0 7rem;
 }
+
 .img350 img {
   height: auto !important;
   width: 100%;
 }
+
 //updates
 .imgFull img {
   width: 100% !important;
   height: auto;
 }
+
 .justifyCenterV2 {
   display: flex !important;
   justify-content: space-evenly;
 }
+
 .h-auto img {
   height: auto;
 }
+
 .justify-content-center {
   display: flex;
   justify-content: center;
 }
+
 .Hover-Effect {
   position: absolute;
   top: 100px;
@@ -212,7 +239,6 @@ figure {
 }
 
 .categoryLink img {
-  // height: 300px;
   width: 600px;
   height: 400px;
 }
@@ -223,9 +249,11 @@ figure {
   font-size: 35px;
   margin: 5px;
 }
+
 .mr-3 {
   margin-right: 0.75rem;
 }
+
 figcaption {
   font-style: unset !important;
 }
@@ -281,21 +309,26 @@ figcaption {
   width: 150px;
   height: 150px;
 }
+
 .imgBanner {
   max-height: 501px;
   width: 100vw;
   overflow: hidden;
 }
+
 .pad2rem {
   padding: 1rem;
 }
+
 .wp-block-columns {
   max-width: 60rem;
   margin: 0 auto;
 }
+
 .p-justify {
   text-align: justify;
 }
+
 h3 {
   font-size: 1.5em;
 }
@@ -315,10 +348,4 @@ h3 {
   }
 }
 
-.h-auto img {
-  height: auto;
-}
-.p-95 {
-  padding: 0 125px;
-}
 

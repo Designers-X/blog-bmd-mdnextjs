@@ -3,18 +3,35 @@
 
 @font-face {
   font-family: "Didot";
-  src: url("../../public/font/Didot.otf");
-  src: url("../../public/font/Didot\ Bold.otf");
-  src: url("../../public/font/Didot\ Italic.otf");
-  src: url("../../public/font/Didot\ LT\ Std\ Bold.otf");
-  src: url("../../public/font/Didot\ LT\ Std\ Italic.otf");
-  src: url("../../public/font/Didot\ Title.otf");
+  src: url("../../public/font/Didot.otf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "Didot-Bold";
+  src: url("../../public/font/Didot\ Bold.otf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Didot-Title";
+  src: url("../../public/font/Didot\ Title.otf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+// src: url("../../public/font/Didot\ Italic.otf") format('truetype');
+// src: url("../../public/font/Didot\ LT\ Std\ Bold.otf") format('truetype');
+// src: url("../../public/font/Didot\ LT\ Std\ Italic.otf") format('truetype');
 
 * {
   box-sizing: border-box;
   font-family: Didot;
-  font-size: 20px;
   font-weight: normal;
   color: #000000;
   letter-spacing: normal;
@@ -26,7 +43,6 @@ body {
   font-family: Didot !important;
   padding: 0;
   margin: 0;
-  font-size: 20px;
   font-weight: normal;
   color: #000000;
   letter-spacing: normal;
@@ -36,6 +52,7 @@ body {
 p {
   line-height: 1.6;
   margin: 1.2em 0;
+  font-size: 26px;
 }
 
 ul {
@@ -79,8 +96,7 @@ figcaption {
 }
 
 h1 {
-  font-family: Didot;
-  font-weight: lighter;
+  font-family: Didot-Title;
   color: #000;
   text-transform: capitalize;
 }
