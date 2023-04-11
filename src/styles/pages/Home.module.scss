@@ -95,11 +95,13 @@
   padding-bottom: 0.25rem;
   -webkit-text-stroke: 0;
   font-size: 0.70003rem;
-  line-height: 1;
+  line-height: 0.75;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-decoration: underline;
   text-align: center;
+  border-bottom: 1px solid;
+  width: fit-content;
+  font-weight: bolder;
 }
 .Author {
   text-align: center;
@@ -264,17 +266,6 @@
 
 .pLR96 {
   padding: 0 96px;
-}
-.ShoppingText {
-  margin: 0 auto 2rem;
-  padding-bottom: 0.25rem;
-  -webkit-text-stroke: 0;
-  font-size: 0.70003rem;
-  line-height: 1;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: center;
 }
 
 .PointsStyle {

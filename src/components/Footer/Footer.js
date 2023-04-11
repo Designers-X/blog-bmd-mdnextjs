@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <>
-      <footer style={{ marginTop: '20px' }}>
+      <footer>
         <div className={styles.footerSpicl}>
           <div className={styles.middelSection}>
             <div className={styles.InRow}>

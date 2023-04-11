@@ -71,6 +71,15 @@ ul {
 a {
   color: $color-primary;
 }
+figure {
+  padding: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+figure img {
+  padding: 0 !important;
+  border: 1px solid #eee !important;
+}
 
 input {
   &[type="text"],
