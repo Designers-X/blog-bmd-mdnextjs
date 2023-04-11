@@ -1,17 +1,17 @@
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Didot-Title;
+  font-family: "Playfair Display" !important;
 }
 
 p {
   font-family: Didot;
 }
 
-strong,
-h1 {
+strong {
   font-family: Didot-Bold;
 }
 
@@ -272,6 +272,8 @@ figcaption {
   font-style: unset;
   display: grid;
   place-content: center;
+  font-size: 1.5em;
+  line-height: 0.875em;
 }
 
 .categoryLink figcaption a:hover {
@@ -347,5 +349,4 @@ h3 {
     height: 300px;
   }
 }
-
 
