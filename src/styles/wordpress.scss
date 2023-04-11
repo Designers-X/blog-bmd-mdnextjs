@@ -297,8 +297,8 @@ figcaption {
   justify-content: space-between;
 }
 .authorImg {
-  border: none !important;
-  box-shadow: none !important;
+  padding: 0 !important;
+  box-shadow: unset !important;
 }
 .authorImg img {
   width: 150px;

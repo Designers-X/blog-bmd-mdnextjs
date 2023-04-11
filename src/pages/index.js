@@ -56,7 +56,7 @@ export default function Home({
                                 </div>
                               );
                             })}
-                            <h2 className="">
+                            <h2 className={styles.postTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
                             <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}></div>
