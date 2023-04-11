@@ -139,24 +139,24 @@ export default function Home({
                       </Link>
                     </div>
                   )}
-                  <div className="text-center">
-                    <Link href={postslug}>
+                  <div className="text-center mt-3">
+                    <Link className={styles.postTitle} href={postslug}>
                       <a href="#" className={styles.TextHoverEffect}>
-                        <span className={styles.fashionCompaigns}>{nodes.pageTitle || posttitle}</span>
+                        <span className={styles.postTitle}>{nodes.pageTitle || posttitle}</span>
                       </a>
                     </Link>
                   </div>
-                  <div className={styles.winterComing}>
+                  <div className={styles.subPOstTitle}>
                     <div className="text-center" dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
                   </div>
                   <div className={styles.AuthorText}>
                     {nodes.writtenBy && (
-                      <p>
+                      <p className={styles.postAutherDesc}>
                         Written By: <span>{writtenBy}</span>
                       </p>
                     )}
                     {nodes.interviewedBy && (
-                      <p>
+                      <p className={styles.postAutherDesc}>
                         Interviewed By: <span>{interviewedBy}</span>
                       </p>
                     )}
@@ -247,7 +247,7 @@ export default function Home({
                         </Link>
                       </div>
                     )}
-                    <div className="text-center">
+                    <div className="text-center mt-3">
                       <Link href={postslug}>
                         <div className={styles.ahover}>
                           <a href="#" className={styles.TextHoverEffect}>
@@ -258,12 +258,12 @@ export default function Home({
                     </div>
                     <div className={styles.AuthorText}>
                       {writtenBy && (
-                        <p>
+                        <p className={styles.postAutherDesc}>
                           Written By: <span>{writtenBy}</span>
                         </p>
                       )}
                       {interviewedBy && (
-                        <p>
+                        <p className={styles.postAutherDesc}>
                           Interviewed By: <span>{interviewedBy}</span>
                         </p>
                       )}
@@ -349,7 +349,7 @@ export default function Home({
                   </Link>
                 </div>
               )}
-              <div className="text-center">
+              <div className="text-center mt-3">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
                     <a href="#" className={styles.TextHoverEffect}>
@@ -358,8 +358,10 @@ export default function Home({
                   </div>
                 </Link>
               </div>
-              <div className={styles.winterComing}>
-                <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+              <div className="mt-2">
+                <div className={styles.subPOstTitle}>
+                  <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                </div>
               </div>
             </div>
           );
@@ -399,7 +401,7 @@ export default function Home({
                             </h2>
                             {writtenBy && (
                               <div className={styles.Author}>
-                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                                <p className={styles.postAutherDesc}>By {writtenBy}</p>
                               </div>
                             )}
                           </div>
