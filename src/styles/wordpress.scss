@@ -208,6 +208,17 @@
 .text-img {
   position: relative;
 }
+.wp-block-columns figure,
+.categoryLink {
+  padding: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wp-block-columns figure img,
+.categoryLink img {
+  padding: 0 !important;
+  border: 1px solid #eee !important;
+}
 
 .categoryLink img {
   width: 600px;
@@ -289,10 +300,14 @@ figcaption {
   display: flex !important;
   justify-content: space-between;
 }
-
+.authorImg {
+  padding: 0 !important;
+  box-shadow: unset !important;
+}
 .authorImg img {
   width: 150px;
   height: 150px;
+  border: none !important;
 }
 .authorDesc {
   font-size: 16px;
