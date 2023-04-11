@@ -52,6 +52,10 @@ h1 {
 .d-flex.justify-content-around a {
   color: #000;
 }
+.justifyCenterV2 {
+  display: flex;
+  justify-content: center;
+}
 
 .Container_container__jY5v0 {
   max-width: 1320px !important;
@@ -260,7 +264,7 @@ figcaption {
   left: 10%;
   top: 35%;
   bottom: 0;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   color: #fff;
   border: 2px solid #fff;
   width: 80%;
@@ -337,10 +341,11 @@ h3 {
   margin: 5px;
 }
 
+
 @media only screen and (max-width: 1400px) {
   .categoryLink img {
     height: 300px;
   }
 }
 
-//polpo
+
