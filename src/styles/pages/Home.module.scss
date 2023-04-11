@@ -130,7 +130,6 @@
   display: block;
   font-family: SaolDisplay, Georgia, Times, serif;
   font-weight: normal;
-  margin-bottom: 0.3125rem;
   margin-top: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -144,10 +143,15 @@
   display: inline-block;
   padding-right: 0.3125rem;
   font-family: NeueHaasUnica, Arial, sans-serif;
-  font-size: 0.70003rem;
+  font-size: 0.5rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: #000000;
+  font-weight: bolder;
+}
+.postAutherDesc span {
+  font-weight: 400;
 }
 
 .Author {
@@ -155,7 +159,6 @@
 }
 
 .AuthorText {
-  margin-top: 30px;
   font-size: 0.7rem;
   text-align: center;
 }
@@ -240,6 +243,7 @@
   font-family: SaolText, Georgia, Times, serif;
   letter-spacing: 0.02rem;
   color: #000;
+  margin-top: 1rem;
 }
 
 .AddressLeBlanc {
