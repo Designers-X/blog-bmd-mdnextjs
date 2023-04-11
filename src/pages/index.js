@@ -65,12 +65,12 @@ export default function Home({
                             ></div>
                             <div className={styles.AuthorText}>
                               {nodes.writtenBy && (
-                                <p>
+                                <p className={styles.postAutherDesc}>
                                   Written By: <span>{writtenBy}</span>
                                 </p>
                               )}
                               {nodes.interviewedBy && (
-                                <p>
+                                <p className={styles.postAutherDesc}>
                                   Interviewed By: <span>{interviewedBy}</span>
                                 </p>
                               )}
