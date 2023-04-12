@@ -136,7 +136,7 @@ export default function Post({ post, socialImage, related }) {
           </div>
         </div>
       )}
-      <Content className={'mt-4'}>
+      <Content className={'mt-4 postsContainer'}>
         {/* <Container> */}
         <div
           className={styles.content1}
