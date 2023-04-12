@@ -170,46 +170,37 @@
   display: flex;
   justify-content: center;
 }
-
 .Hover-Effect {
   position: absolute;
-  top: 100px;
+  top: 38%;
   border: 3px solid #fff;
   color: #fff;
   font-family: Didot !important;
   z-index: 111;
-  width: 70%;
-  justify-content: center;
-  display: flex;
   align-items: center;
   text-align: center;
-  margin: 0 187px;
+  margin: 0 15%;
   left: 0;
   right: 0;
-  background-color: #ffffff00;
+  background-color: hsla(0, 0%, 100%, 0);
   cursor: pointer;
-}
-
-.Hover-Effect p {
-  font-size: 48px;
+  width: auto;
 }
 
 .Hover-Effect:hover {
-  cursor: pointer;
-  position: absolute;
-  top: 100px;
   border: 3px solid #fff;
-  color: #000;
-  font-family: Didot !important;
-  z-index: 111;
-  width: 70%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 187px;
-
+  color: #000 !important;
   background-color: #fff;
+}
+
+.Hover-Effect p {
+  font-size: 46px;
+  line-height: 60px;
+  color: #ffffff;
+  padding: 3% 10%;
+}
+.Hover-Effect p:hover {
+  color: #000;
 }
 
 .text-img {
