@@ -65,7 +65,10 @@
   width: 50%;
   float: left;
 }
-
+.postsContainer h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
 .DisplayFlex {
   display: flex;
   justify-content: center;
