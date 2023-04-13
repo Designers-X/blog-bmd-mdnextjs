@@ -233,7 +233,12 @@
 .categoryLink figcaption {
   margin: 0;
 }
-
+.mtcap figcaption {
+  margin-top: 0.5rem !important;
+}
+.s-none figure {
+  box-shadow: none;
+}
 .categoryLink {
   position: relative;
   font-style: normal;
@@ -319,7 +324,7 @@ figcaption {
 }
 
 .imgBanner {
-  max-height: 501px;
+  // max-height: 501px;
   width: 100vw;
   overflow: hidden;
 }
