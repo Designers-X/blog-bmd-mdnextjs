@@ -450,7 +450,6 @@ export default function Home({
                   </div>
                 )}
               </div>
-
               <div className={styles.AddressLeBlanc}>
                 <div className={styles.underlinetext}>
                   <span className="text-center">{nodes.pageTitle || posttitle}</span>
