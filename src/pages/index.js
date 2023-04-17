@@ -612,7 +612,7 @@ export default function Home({
                 })}
               </div>
               <div className={styles.videoHeight}>
-                {/* {nodes.wistiaVideoScriptId && (
+                {/*false {nodes.wistiaVideoScriptId && (
                   <div class="ratio ratio-16x9">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
