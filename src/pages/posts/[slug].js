@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
-
 import { getPostBySlug, getRecentPosts, getRelatedPosts, postPathBySlug } from 'lib/posts';
 import { categoryPathBySlug } from 'lib/categories';
 import { formatDate } from 'lib/datetime';
@@ -126,14 +125,14 @@ export default function Post({ post, socialImage, related }) {
               <img src={mastheadBanner.node.link} className="imgBanner" />
             </div>
           )}
-          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+          <Container className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
             <h1
               className={styles.title}
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             />
-          </div>
+          </Container>
         </div>
       )}
       <Content className={'mt-4 postsContainer'}>
