@@ -125,14 +125,17 @@ export default function Post({ post, socialImage, related }) {
               <img src={mastheadBanner.node.link} className="imgBanner" />
             </div>
           )}
-          <Container className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+          <div
+            className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}
+            style={{ maxWidth: '60rem', margin: '0 auto' }}
+          >
             <h1
               className={styles.title}
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             />
-          </Container>
+          </div>
         </div>
       )}
       <Content className={'mt-4 postsContainer'}>
