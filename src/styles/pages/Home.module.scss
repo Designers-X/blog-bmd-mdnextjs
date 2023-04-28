@@ -126,32 +126,36 @@
   font-weight: bolder;
 }
 
-.postTitle {
+.pagesTitle {
   display: block;
-  font-family: SaolDisplay, Georgia, Times, serif;
+  font-family: "DidotB06" !important;
   font-weight: normal;
   margin-top: 0;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.subPOstTitle {
+.pagesSubTitle {
+  font-family: "DidotB06" !important;
   color: #1a1616;
+  font-size: 23px;
 }
 
-.postAutherDesc {
+.pagesAutherDesc {
   display: inline-block;
   padding-right: 0.3125rem;
-  font-family: NeueHaasUnica, Arial, sans-serif;
-  font-size: 0.5rem;
+  font-family: "DidotM06" !important;
+  font-size: 0.65rem;
   line-height: 1.6;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #000000;
-  font-weight: bolder;
+  // font-weight: bolder;
 }
-.postAutherDesc span {
-  font-weight: 400;
+.pagesAutherDesc span {
+  // font-weight: 400;
+  letter-spacing: 0.125em;
+  font-family: "DidotL06" !important;
 }
 
 .Author {
@@ -210,6 +214,7 @@
   text-transform: uppercase;
   text-decoration: unset;
   color: #000;
+  margin: 0;
 }
 
 .fashiHyperLink {
@@ -270,6 +275,10 @@
 .cardText {
   padding: 10px 0px;
 }
+.W250CardContainer {
+  width: 250px;
+  padding: 10px 0px;
+}
 
 .CardHoverEffect p:hover {
   color: #808080;
@@ -278,6 +287,7 @@
 }
 
 .CardHoverEffect p {
+  line-height: 30px;
   color: #000;
   text-decoration: unset;
   transition: color 0.3s ease-in-out;
@@ -332,6 +342,9 @@
 
 .pLR96 {
   padding: 0 96px;
+}
+.pLR75 {
+  padding: 0 75px;
 }
 
 .PointsStyle {
@@ -396,7 +409,12 @@
   height: 120px;
   width: 120px;
 }
-
+.topRoundImgFullWidth {
+  height: 350px;
+  width: 100%;
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+}
 .topRoundImg250 {
   height: 250px;
   width: 250px;
