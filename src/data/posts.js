@@ -558,7 +558,7 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
 
 export const QUERY_CATNOT_MISS_READS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, first: 4) {
+    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, last: 4) {
       edges {
         node {
           author {
