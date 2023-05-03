@@ -357,8 +357,106 @@ figcaption {
   margin: 5px;
 }
 
+.headingContainer {
+  border-bottom: thin solid #cccccc;
+  border-top: thin solid #cccccc;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3em 0;
+}
+.headingContainer h2 {
+  font-size: 5.49999rem;
+  line-height: 1;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.headingContainer p {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  line-height: 0;
+}
+.headingContainer:hover {
+  font-style: italic;
+}
+.sectionTinyTitle {
+  margin: 0 auto 0.5rem;
+  padding-bottom: 0.25rem;
+  -webkit-text-stroke: 0;
+  font-size: 0.70003rem;
+  line-height: 0.75;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid;
+  width: fit-content;
+  font-weight: bolder;
+}
+.sectionTitle {
+  display: block;
+  font-family: "DidotB06" !important;
+  font-weight: normal;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+}
+.sectionTitle a {
+  color: #000;
+  text-decoration: unset;
+}
+
+.sectionTitle:hover,
+.sectionTitle a:hover {
+  color: #808080;
+}
+
+.sectionSubTitle {
+  font-family: "DidotB06" !important;
+  color: #1a1616;
+  font-size: 23px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.width70 {
+  max-width: 70rem !important;
+}
+
 @media only screen and (max-width: 1400px) {
   .categoryLink img {
     height: 300px;
   }
+}
+
+.fontStyle {
+  margin: 45px auto;
+}
+.fontStyle p {
+  font-family: "Playfair Display", serif;
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-align: justify;
+  margin: 20px auto !important;
+  word-spacing: normal;
+}
+
+.fontStyle .pr-30 {
+  padding-right: 60px;
+}
+
+.fontStyle .pl-30 {
+  padding-left: 60px;
+}
+.fontStyle h1,
+.fontStyle h2,
+.fontStyle h3,
+.fontStyle h4,
+.fontStyle h5,
+.fontStyle h6 {
+  margin-top: 3rem;
 }
