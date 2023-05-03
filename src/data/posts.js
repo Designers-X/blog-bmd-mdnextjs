@@ -767,7 +767,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 12 }, first: 3) {
+    posts(where: { categoryId: 12 }, first: 4) {
       edges {
         node {
           author {
