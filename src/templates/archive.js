@@ -38,7 +38,6 @@ export default function TemplateArchive({
   return (
     <Layout>
       <Helmet {...helmetSettings} />
-
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
 
       <main className={styles.FashionPage}>

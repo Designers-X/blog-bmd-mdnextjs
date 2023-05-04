@@ -32,6 +32,22 @@ export default function Home({
 }) {
   return (
     <Layout>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src={`//fast.wistia.net/embed/iframe/i633jy0w7m?videoFoam=true`}
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          class="wistia_embed imgShadow mb-4"
+          name="wistia_embed"
+          autoPlay
+          allowfullscreen
+          mozallowfullscreen
+          webkitallowfullscreen
+          oallowfullscreen
+          msallowfullscreen
+        ></iframe>
+      </div>
       <Header></Header>
       <section className={styles.section1}>
         <div className="container">
@@ -396,6 +412,7 @@ export default function Home({
           );
         })}
       </section>
+
       <section className={styles.section6}>
         <div className="container">
           {culturepost.map((nodes, index) => {
@@ -406,6 +423,7 @@ export default function Home({
             return (
               <div className="row" key={index}>
                 <div className="container text-center">
+                  {console.log({ bbbbbbb: nodes })}
                   {nodes.categories.map((ele, index1) => {
                     return (
                       <div className={styles.FashionNew} key={index1}>
@@ -424,13 +442,15 @@ export default function Home({
                     <Link href={postslug}>
                       <a href="" className={styles.Atag}>
                         <div className="text-center">
-                          <div className={styles.pLR96}>
+                          <div>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
                             {writtenBy && (
                               <div className={styles.Author}>
-                                <p className={styles.pagesAutherDesc}>By {writtenBy}</p>
+                                <p className={styles.pagesAutherDesc}>
+                                  BY <span>{writtenBy}</span>
+                                </p>
                               </div>
                             )}
                           </div>
@@ -479,7 +499,7 @@ export default function Home({
                   </div>
                 )}
               </div>
-              <div className={styles.AddressLeBlanc}>
+              <div>
                 <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
               </div>
               <div className="text-center">
@@ -510,7 +530,7 @@ export default function Home({
                     <Link href={postslug}>
                       <a className={styles.Atag} href="">
                         <div className="text-center">
-                          <div className={styles.pLR96}>
+                          <div>
                             {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
@@ -522,13 +542,12 @@ export default function Home({
                             <h2 class={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                            <div
-                              className={styles.pageSubtitle}
-                              dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
-                            ></div>
+                            <div className={styles.pagesSubTitle}>
+                              <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
+                            </div>
                             {writtenBy && (
                               <div className={styles.Author}>
-                                <p className={styles.AuthorText}>
+                                <p className={styles.pagesAutherDesc}>
                                   BY <span>{writtenBy}</span>
                                 </p>
                               </div>
@@ -596,7 +615,7 @@ export default function Home({
               <Link href={postslug}>
                 <div className={styles.ahover}>
                   <a href="#" className={styles.TextHoverEffect}>
-                    <div className={styles.AddressLeBlanc}>
+                    <div>
                       <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
                     </div>
                   </a>
@@ -613,6 +632,13 @@ export default function Home({
                             dangerouslySetInnerHTML={{ __html: subtitle || nodes.pageSubtitle }}
                           />
                         </h2>
+                        {nodes.writtenBy && (
+                          <div className={styles.Author}>
+                            <p className={styles.pagesAutherDesc}>
+                              BY <span>{nodes.writtenBy}</span>
+                            </p>
+                          </div>
+                        )}
                       </div>
                     </a>
                   </div>
@@ -667,8 +693,8 @@ export default function Home({
               <Link href={postslug}>
                 <div className={styles.ahover}>
                   <a href="#" className={styles.TextHoverEffect}>
-                    <div className={styles.AddressLeBlanc}>
-                      <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
+                    <div>
+                      <div className={styles.ShoppingText}>{nodes.pageSubtitle || subtitle}</div>
                     </div>
                   </a>
                 </div>
@@ -678,9 +704,16 @@ export default function Home({
                   <div className={styles.ahover}>
                     <a href="#" className={styles.Atag}>
                       <h2 className={styles.pagesTitle}>
-                        <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                        <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
                       </h2>
                     </a>
+                    {nodes.writtenBy && (
+                      <div className={styles.Author}>
+                        <p className={styles.pagesAutherDesc}>
+                          BY <span>{nodes.writtenBy}</span>
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </Link>
               </div>
