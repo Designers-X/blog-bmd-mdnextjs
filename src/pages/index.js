@@ -16,6 +16,7 @@ import {
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import styles from 'styles/pages/Home.module.scss';
+// import { NewsLetter } from 'components/NewsLetter';
 export default function Home({
   fruitandwinepost,
   cantmissreadspost,
@@ -145,7 +146,7 @@ export default function Home({
           return (
             <div className="container" key={index}>
               <div className="row">
-                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-4">
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
@@ -205,7 +206,7 @@ export default function Home({
               const featuredimage = nodes.featuredImage?.sourceUrl;
               const postslug = 'posts/' + nodes.slug;
               return (
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-4" key={index}>
                   <Link href={postslug}>
                     <a href="#" className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
@@ -256,7 +257,7 @@ export default function Home({
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-4">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -305,7 +306,7 @@ export default function Home({
                 );
               })}
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-4">
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
@@ -382,7 +383,7 @@ export default function Home({
           const featuredimage = nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
-            <div className="container text-center" key={index}>
+            <div className="container text-center mt-4 mb-4" key={index}>
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
@@ -460,7 +461,7 @@ export default function Home({
                   </div>
                 </div>
                 {featuredimage && (
-                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-4">
                     <Link href={postslug}>
                       <a href="">
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
@@ -487,7 +488,7 @@ export default function Home({
                       allowtransparency="true"
                       frameborder="0"
                       scrolling="no"
-                      class="wistia_embed imgShadow"
+                      class="wistia_embed imgShadow mt-4"
                       name="wistia_embed"
                       autoPlay
                       allowfullscreen
@@ -502,7 +503,7 @@ export default function Home({
               <div>
                 <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
               </div>
-              <div className="text-center">
+              <div className="text-center mt-4">
                 <div className={styles.ahover}>
                   <a href="#" className={styles.Atag}>
                     <h2 className={styles.pagesTitle}>
@@ -699,7 +700,7 @@ export default function Home({
                   </a>
                 </div>
               </Link>
-              <div className="text-center">
+              <div className="text-center mt-4">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
                     <a href="#" className={styles.Atag}>
@@ -749,6 +750,18 @@ export default function Home({
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+      <section className={styles.section12}>
+        <div className="container">
+          <div className="row">
+            {/* <NewsLetter content={{
+      title:'Iscriviti alla newsletter',
+      portalId: '19647191',
+      // formId: '569a2af9-b397-486f-8ac7-98d462d81ec1'
+      formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5'
+    }}/> */}
           </div>
         </div>
       </section>

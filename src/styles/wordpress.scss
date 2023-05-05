@@ -330,7 +330,9 @@ figcaption {
 .authorDesc p {
   margin: 0 !important;
 }
-
+.authorDesc span:hover {
+  color: grey;
+}
 .wp-block-column li:hover {
   color: grey;
 }
@@ -401,7 +403,7 @@ figcaption {
 }
 .sectionTitle {
   display: block;
-  font-family: "DidotB06" !important;
+  font-family: "DidotL06" !important;
   font-weight: normal;
   margin: 0;
   -webkit-text-decoration: none;
@@ -419,7 +421,7 @@ figcaption {
 }
 
 .sectionSubTitle {
-  font-family: "DidotB06" !important;
+  font-family: "DidotL06" !important;
   color: #1a1616;
   font-size: 23px;
   margin: 10px 0;
@@ -435,6 +437,9 @@ figcaption {
   .categoryLink img {
     height: 300px;
   }
+}
+.mt-3R {
+  margin-top: 3rem;
 }
 
 .fontStyle {
@@ -466,4 +471,5 @@ figcaption {
 .fontStyle h6 {
   margin-top: 3rem;
 }
+
 
