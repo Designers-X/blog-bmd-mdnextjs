@@ -1,20 +1,20 @@
 @import "styles/settings/__settings";
 @import "style.css";
 
-@font-face {
-  font-family: "DidotB06";
-  src: url("../../public/font/HTFDidot-B06Bold.otf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DidotM06";
-  src: url("../../public/font/HTFDidot-M06Medium.otf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: "DidotB06";
+//   src: url("../../public/font/HTFDidot-B06Bold.otf") format("truetype");
+//   font-weight: 400;
+//   font-display: swap;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "DidotM06";
+//   src: url("../../public/font/HTFDidot-M06Medium.otf") format("truetype");
+//   font-weight: 400;
+//   font-display: swap;
+//   font-style: normal;
+// }
 @font-face {
   font-family: "DidotL06";
   src: url("../../public/font/HTFDidot-L06Light.otf") format("truetype");
@@ -40,18 +40,18 @@ body {
   line-height: 28px;
 }
 h1 {
-  font-weight: bold;
+  font-weight: 400;
 }
 h1,
 h2 {
-  font-family: "DidotB06" !important;
+  font-family: "DidotL06" !important;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: "DidotM06" !important;
+  font-family: "DidotL06" !important;
 }
 
 h1 {
@@ -61,15 +61,15 @@ h1 {
 }
 h2 {
   font-size: 2.25rem;
-  font-weight: bold;
+  font-weight: 300;
 }
 h3 {
   font-size: 1.25em;
-  font-weight: bold;
+  font-weight: 300;
 }
 h4 {
   font-size: 0.95em;
-  font-weight: bold;
+  font-weight: 300;
 }
 li {
   font-family: "DidotL06";
