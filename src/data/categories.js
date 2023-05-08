@@ -24,6 +24,19 @@ export const QUERY_CATEGORY_BY_SLUG = gql`
       id
       name
       slug
+      s1CategoryBanner {
+        node {
+          sourceUrl
+          altText
+        }
+      }
+      s1CustomPageTitle
+      s1CustomPageReference {
+        node {
+          content
+          title
+        }
+      }
     }
   }
 `;

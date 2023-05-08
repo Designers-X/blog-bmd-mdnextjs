@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
-
 import { getPostBySlug, getRecentPosts, getRelatedPosts, postPathBySlug } from 'lib/posts';
 import { categoryPathBySlug } from 'lib/categories';
 import { formatDate } from 'lib/datetime';
@@ -54,7 +53,7 @@ export default function Post({ post, socialImage, related }) {
   });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
-    metadata.title = `${title} - ${siteMetadata.title}`;
+    metadata.title = `${metadata.title}`;
     metadata.og.title = metadata.title;
     metadata.twitter.title = metadata.title;
   }
@@ -66,7 +65,7 @@ export default function Post({ post, socialImage, related }) {
   const { posts: relatedPostsList, title: relatedPostsTitle } = related || {};
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
-
+  console.log({ title, siteMetadata });
   return (
     <Layout>
       <link rel="stylesheet" href="mystyle.css"></link>
@@ -126,7 +125,10 @@ export default function Post({ post, socialImage, related }) {
               <img src={mastheadBanner.node.link} className="imgBanner" />
             </div>
           )}
-          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+          <div
+            className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}
+            style={{ maxWidth: '60rem', margin: '0 auto' }}
+          >
             <h1
               className={styles.title}
               dangerouslySetInnerHTML={{
@@ -136,7 +138,7 @@ export default function Post({ post, socialImage, related }) {
           </div>
         </div>
       )}
-      <Content className={'mt-4'}>
+      <Content className={'mt-4 postsContainer'}>
         {/* <Container> */}
         <div
           className={styles.content1}
