@@ -58,7 +58,10 @@
 .TwoColumn {
   display: flex;
 }
-
+.width40 {
+  width: 40%;
+  float: left;
+}
 .width50 {
   width: 50%;
   float: left;
@@ -66,6 +69,7 @@
 .postsContainer h2 {
   text-transform: uppercase;
   font-size: 2rem;
+  margin: 3rem 0 1rem 0 !important;
 }
 .DisplayFlex {
   display: flex;
@@ -363,7 +367,6 @@ figcaption {
   margin: 5px;
 }
 
-
 .headingContainer {
   border-bottom: thin solid #cccccc;
   border-top: thin solid #cccccc;
@@ -432,7 +435,6 @@ figcaption {
   max-width: 70rem !important;
 }
 
-
 @media only screen and (max-width: 1400px) {
   .categoryLink img {
     height: 300px;
@@ -471,5 +473,3 @@ figcaption {
 .fontStyle h6 {
   margin-top: 3rem;
 }
-
-
