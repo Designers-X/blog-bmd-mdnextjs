@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
 }
+.temp {
+  display: block;
+}
 
 .layoutOneFirstChild {
   width: 60%;
@@ -23,13 +26,12 @@
   width: 60%;
 }
 
-// Add css 02-feb-2023 s
-// p {
-//   font-size: 18px;
-// }
-
 .d-flex.justify-content-around a {
   color: #000;
+}
+.justifyCenterV2 {
+  display: flex;
+  justify-content: center;
 }
 
 .Container_container__jY5v0 {
@@ -56,12 +58,19 @@
 .TwoColumn {
   display: flex;
 }
-
+.width40 {
+  width: 40%;
+  float: left;
+}
 .width50 {
   width: 50%;
   float: left;
 }
-
+.postsContainer h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem 0 1rem 0 !important;
+}
 .DisplayFlex {
   display: flex;
   justify-content: center;
@@ -70,13 +79,27 @@
 .DisplayFlex a {
   color: #000;
 }
+.pt-15 {
+  padding-top: 15px !important;
+}
 
+.pb-15 {
+  padding-bottom: 15px !important;
+}
 .pr-15 {
   padding-right: 15px;
 }
 
 .pl-15 {
   padding-left: 15px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
 }
 
 .mt-4 h1 {
@@ -86,9 +109,8 @@
 .ml-20 {
   margin-left: 20px;
 }
-
-.justify-content-center p {
-  font-size: 12px;
+.mr-20 {
+  margin-right: 20px;
 }
 
 .fs-12 {
@@ -126,7 +148,9 @@
 .img250 {
   margin: 5px;
 }
-
+.imgGrid {
+  margin: 0;
+}
 .img250 img {
   height: 250px !important;
 }
@@ -140,7 +164,6 @@
   width: 100%;
 }
 
-//updates
 .imgFull img {
   width: 100% !important;
   height: auto;
@@ -149,6 +172,7 @@
 .justifyCenterV2 {
   display: flex !important;
   justify-content: space-evenly;
+  margin: 3rem auto;
 }
 
 .h-auto img {
@@ -159,66 +183,80 @@
   display: flex;
   justify-content: center;
 }
-
 .Hover-Effect {
   position: absolute;
-  top: 100px;
+  top: 38%;
   border: 3px solid #fff;
   color: #fff;
-  font-family: Didot !important;
+  font-family: "DidotB06" !important;
   z-index: 111;
-  width: 70%;
-  justify-content: center;
-  display: flex;
   align-items: center;
   text-align: center;
-  margin: 0 187px;
+  margin: 0 15%;
   left: 0;
   right: 0;
-  background-color: #ffffff00;
+  background-color: hsla(0, 0%, 100%, 0);
   cursor: pointer;
-}
-
-.Hover-Effect p {
-  font-size: 48px;
+  width: auto;
 }
 
 .Hover-Effect:hover {
-  cursor: pointer;
-  position: absolute;
-  top: 100px;
   border: 3px solid #fff;
-  color: #000;
-  font-family: Didot !important;
-  z-index: 111;
-  width: 70%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 187px;
-
+  color: #000 !important;
   background-color: #fff;
+}
+
+.Hover-Effect p {
+  font-size: 46px;
+  line-height: 60px;
+  color: #ffffff;
+  padding: 3% 10%;
+}
+.Hover-Effect p:hover {
+  color: #000;
 }
 
 .text-img {
   position: relative;
 }
+// .wp-block-columns figure,
+// .categoryLink,
+// .authorImg img {
+//   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+// }
+.categoryLink {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
 
-figure img {
+.wp-block-columns figure img,
+.categoryLink img {
   padding: 0 !important;
+}
+.authorImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .categoryLink img {
   width: 600px;
-  height: 400px;
+  height: 350px;
 }
-
+.categoryLink figcaption {
+  margin: 0;
+}
+.mtcap figcaption {
+  margin-top: 0.5rem !important;
+}
+.s-none figure {
+  box-shadow: none;
+}
 .categoryLink {
   position: relative;
   font-style: normal;
   font-size: 35px;
   margin: 5px;
+  padding: 5px;
 }
 
 .mr-3 {
@@ -229,13 +267,12 @@ figcaption {
   font-style: unset !important;
 }
 
-//blog
 .categoryLink figcaption a {
   position: absolute;
   left: 10%;
   top: 35%;
   bottom: 0;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   color: #fff;
   border: 2px solid #fff;
   width: 80%;
@@ -261,6 +298,9 @@ figcaption {
 .mr-4 {
   margin-right: 1rem;
 }
+.mtb-3 {
+  margin: 3rem auto;
+}
 
 .text-left {
   text-align-last: left;
@@ -283,14 +323,31 @@ figcaption {
   display: flex !important;
   justify-content: space-between;
 }
-
-.authorImg img {
-  width: 150px;
-  height: 150px;
+.authorImg {
+  padding: 0 !important;
+  box-shadow: unset !important;
 }
-
+.authorImg figcaption {
+  font-family: "DidotM06" !important;
+  font-size: 16px;
+  color: #000000;
+}
+.authorDesc {
+  font-family: "DidotM06" !important;
+  font-size: 16px;
+  margin: 0 auto !important;
+}
+.authorDesc p {
+  margin: 0 !important;
+}
+.authorDesc span:hover {
+  color: grey;
+}
+.wp-block-column li:hover {
+  color: grey;
+}
 .imgBanner {
-  max-height: 501px;
+  // max-height: 501px;
   width: 100vw;
   overflow: hidden;
 }
@@ -316,8 +373,109 @@ figcaption {
   margin: 5px;
 }
 
+.headingContainer {
+  border-bottom: thin solid #cccccc;
+  border-top: thin solid #cccccc;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 3em 0;
+}
+.headingContainer h2 {
+  font-size: 5.49999rem;
+  line-height: 1;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.headingContainer p {
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  line-height: 0;
+}
+.headingContainer:hover {
+  font-style: italic;
+}
+.sectionTinyTitle {
+  margin: 0 auto 0.5rem;
+  padding-bottom: 0.25rem;
+  -webkit-text-stroke: 0;
+  font-size: 0.70003rem;
+  line-height: 0.75;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid;
+  width: fit-content;
+  font-weight: bolder;
+}
+.sectionTitle {
+  display: block;
+  font-family: "DidotL06" !important;
+  font-weight: normal;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+}
+.sectionTitle a {
+  color: #000;
+  text-decoration: unset;
+}
+
+.sectionTitle:hover,
+.sectionTitle a:hover {
+  color: #808080;
+}
+
+.sectionSubTitle {
+  font-family: "DidotL06" !important;
+  color: #1a1616;
+  font-size: 23px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.width70 {
+  max-width: 70rem !important;
+}
+
 @media only screen and (max-width: 1400px) {
   .categoryLink img {
     height: 300px;
   }
 }
+.mt-3R {
+  margin-top: 3rem;
+}
+
+/*.fontStyle {
+  margin: 45px auto;
+}
+.fontStyle p {
+  font-family: "Playfair Display", serif;
+  line-height: 24px;
+  font-size: 20px;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-align: justify;
+  margin: 20px auto !important;
+  word-spacing: normal;
+}
+
+.fontStyle .pr-30 {
+  padding-right: 60px;
+}
+
+.fontStyle .pl-30 {
+  padding-left: 60px;
+}
+.fontStyle h1,
+.fontStyle h2,
+.fontStyle h3,
+.fontStyle h4,
+.fontStyle h5,
+.fontStyle h6 {
+  margin-top: 3rem;
+}*/
