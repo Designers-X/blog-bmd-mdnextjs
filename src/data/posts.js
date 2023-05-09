@@ -558,7 +558,7 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
 
 export const QUERY_CATNOT_MISS_READS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, first: 4) {
+    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, last: 4) {
       edges {
         node {
           author {
@@ -594,7 +594,7 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
 
 export const QUERY_SECTION_ELEVEN_POST = gql`
   query PostsByCategoryId {
-    posts(where: { in: ["169", "91", "178", "182"] }) {
+    posts(where: { in: ["95", "597", "965", "992"] }) {
       edges {
         node {
           author {
@@ -630,7 +630,7 @@ export const QUERY_SECTION_ELEVEN_POST = gql`
 
 export const QUERY_CULTURE_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 5, orderby: { field: AUTHOR, order: DESC } }, last: 1) {
+    posts(where: { categoryId: 6, orderby: { field: AUTHOR, order: DESC } }, first: 1) {
       edges {
         node {
           author {
@@ -641,7 +641,7 @@ export const QUERY_CULTURE_POSTS = gql`
           }
           content
           excerpt
-          categories(where: { termTaxonomyId: "5" }) {
+          categories(where: { termTaxonomyId: "6" }) {
             edges {
               node {
                 name
@@ -767,7 +767,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 12 }, first: 3) {
+    posts(where: { categoryId: 12 }, first: 4) {
       edges {
         node {
           author {
@@ -813,7 +813,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
   query PostsById {
-    posts(where: { categoryId: 12, id: 97 }) {
+    posts(where: { categoryId: 11, id: 178 }) {
       edges {
         node {
           author {
@@ -824,7 +824,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
           }
           content
           excerpt
-          categories(where: { termTaxonomyId: "12" }) {
+          categories(where: { termTaxonomyId: "11" }) {
             edges {
               node {
                 name

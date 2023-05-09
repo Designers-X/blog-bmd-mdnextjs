@@ -16,6 +16,7 @@ import {
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import styles from 'styles/pages/Home.module.scss';
+// import { NewsLetter } from 'components/NewsLetter';
 export default function Home({
   fruitandwinepost,
   cantmissreadspost,
@@ -32,6 +33,22 @@ export default function Home({
 }) {
   return (
     <Layout>
+      <div class="ratio ratio-16x9">
+        <iframe
+          src={`//fast.wistia.net/embed/iframe/i633jy0w7m?videoFoam=true`}
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="no"
+          class="wistia_embed imgShadow mb-4"
+          name="wistia_embed"
+          autoPlay
+          allowfullscreen
+          mozallowfullscreen
+          webkitallowfullscreen
+          oallowfullscreen
+          msallowfullscreen
+        ></iframe>
+      </div>
       <Header></Header>
       <section className={styles.section1}>
         <div className="container">
@@ -48,7 +65,7 @@ export default function Home({
                     <Link href={postslug}>
                       <a className={styles.Atag} href="">
                         <div className="text-center">
-                          <div className={styles.pLR96}>
+                          <div className={styles.pLR75}>
                             {nodes.categories.map((ele, index) => {
                               return (
                                 <div className={styles.ShoppingText} key={index}>
@@ -56,18 +73,21 @@ export default function Home({
                                 </div>
                               );
                             })}
-                            <h2 className="">
+                            <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
-                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}></div>
+                            <div
+                              className={styles.pagesSubTitle}
+                              dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}
+                            ></div>
                             <div className={styles.AuthorText}>
                               {nodes.writtenBy && (
-                                <p>
+                                <p className={styles.pagesAutherDesc}>
                                   Written By: <span>{writtenBy}</span>
                                 </p>
                               )}
                               {nodes.interviewedBy && (
-                                <p>
+                                <p className={styles.pagesAutherDesc}>
                                   Interviewed By: <span>{interviewedBy}</span>
                                 </p>
                               )}
@@ -82,7 +102,7 @@ export default function Home({
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <Link href={postslug}>
                       <a href="">
-                        <img className="img-fluid" src={featuredimage} alt="fluid" />
+                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </a>
                     </Link>
                   </div>
@@ -126,38 +146,43 @@ export default function Home({
           return (
             <div className="container" key={index}>
               <div className="row">
-                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-4">
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
                         <a href="#">
-                          <img className="img-fluid" src={featuredimage} alt="fluid" />
+                          <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                         </a>
                       </Link>
                     </div>
                   )}
-                  <div className="text-center">
-                    <Link href={postslug}>
-                      <a href="#" className={styles.TextHoverEffect}>
-                        <span className={styles.fashionCompaigns}>{nodes.pageTitle || posttitle}</span>
-                      </a>
-                    </Link>
-                  </div>
-                  <div className={styles.winterComing}>
-                    <div className="text-center" dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
-                  </div>
-                  <div className={styles.AuthorText}>
-                    {nodes.writtenBy && (
-                      <p>
-                        Written By: <span>{writtenBy}</span>
-                      </p>
-                    )}
-                    {nodes.interviewedBy && (
-                      <p>
-                        Interviewed By: <span>{interviewedBy}</span>
-                      </p>
-                    )}
-                  </div>
+                  <Link href={postslug}>
+                    <a href="#" className={styles.Atag}>
+                      <div className="text-center mt-3">
+                        <h2 className={styles.pagesTitle}>
+                          <span>{nodes.pageTitle || posttitle}</span>
+                        </h2>
+                      </div>
+                      <div className={styles.pagesSubTitle}>
+                        <div
+                          className="text-center"
+                          dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
+                        />
+                      </div>
+                      <div className={styles.AuthorText}>
+                        {nodes.writtenBy && (
+                          <p className={styles.pagesAutherDesc}>
+                            Written By: <span>{writtenBy}</span>
+                          </p>
+                        )}
+                        {nodes.interviewedBy && (
+                          <p className={styles.pagesAutherDesc}>
+                            Interviewed By: <span>{interviewedBy}</span>
+                          </p>
+                        )}
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -181,14 +206,20 @@ export default function Home({
               const featuredimage = nodes.featuredImage?.sourceUrl;
               const postslug = 'posts/' + nodes.slug;
               return (
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-4" key={index}>
                   <Link href={postslug}>
                     <a href="#" className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
                         <div className="card">
-                          {featuredimage && <img src={featuredimage} className={styles.topRoundImg250} alt="Fluid" />}
+                          {featuredimage ? (
+                            <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
+                          ) : (
+                            <div className={styles.topRoundImgFullWidth}>
+                              <img alt={posttitle} />
+                            </div>
+                          )}
                           <div className={styles.cardText}>
-                            <p className="card-text">{nodes.pageTitle || posttitle}</p>
+                            <p className={styles.pagesSubTitle}>{nodes.pageTitle || posttitle}</p>
                           </div>
                         </div>
                       </div>
@@ -226,7 +257,7 @@ export default function Home({
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-4">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -235,41 +266,47 @@ export default function Home({
                 const postslug = 'posts/' + nodes.slug;
                 return (
                   <div key={index}>
-                    {featuredimage && (
+                    {featuredimage ? (
                       <div className={styles.imgResponsive}>
                         <Link href={postslug}>
                           <a href="#">
-                            <img className="img-fluid" src={featuredimage} alt="fluid" />
+                            <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                           </a>
                         </Link>
                       </div>
+                    ) : (
+                      <div className={styles.imgResponsive}>
+                        <img alt={posttitle} />
+                      </div>
                     )}
-                    <div className="text-center">
-                      <Link href={postslug}>
-                        <div className={styles.ahover}>
-                          <a href="#" className={styles.TextHoverEffect}>
-                            <span className={styles.fashionCompaigns}>{nodes.pageTitle || posttitle}</span>
-                          </a>
+                    <Link href={postslug}>
+                      <a href="#" className={styles.Atag}>
+                        <div className="text-center mt-3">
+                          <div className={styles.ahover}>
+                            <h2 className={styles.pagesTitle}>
+                              <span>{nodes.pageTitle || posttitle}</span>
+                            </h2>
+                          </div>
                         </div>
-                      </Link>
-                    </div>
-                    <div className={styles.AuthorText}>
-                      {writtenBy && (
-                        <p>
-                          Written By: <span>{writtenBy}</span>
-                        </p>
-                      )}
-                      {interviewedBy && (
-                        <p>
-                          Interviewed By: <span>{interviewedBy}</span>
-                        </p>
-                      )}
-                    </div>
+                        <div className={styles.AuthorText}>
+                          {writtenBy && (
+                            <p className={styles.pagesAutherDesc}>
+                              Written By: <span>{writtenBy}</span>
+                            </p>
+                          )}
+                          {interviewedBy && (
+                            <p className={styles.pagesAutherDesc}>
+                              Interviewed By: <span>{interviewedBy}</span>
+                            </p>
+                          )}
+                        </div>
+                      </a>
+                    </Link>
                   </div>
                 );
               })}
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-4">
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
@@ -278,18 +315,28 @@ export default function Home({
                   const postslug = 'posts/' + nodes.slug;
                   return (
                     <Link href={postslug} key={index}>
-                      <a href="#" className=" ">
+                      <a href="#" className={styles.Atag}>
                         <div className=" mb-2">
                           <div className={styles.inlineBox}>
-                            {featuredimage && (
+                            {featuredimage ? (
                               <div className="">
                                 <img className={styles.img120} src={featuredimage} alt="fluid" />
+                              </div>
+                            ) : (
+                              <div className={styles.img120}>
+                                <img alt={posttitle} />
                               </div>
                             )}
                             <div className="m-auto">
                               <div className={styles.gridGap}>
-                                {nodes.pageTitle || posttitle}
-                                {writtenBy && <p className={styles.ByTextStyle}>By {writtenBy}</p>}
+                                <div className={styles.pageTitle}>
+                                  <span>{nodes.pageTitle || posttitle}</span>
+                                </div>
+                                {writtenBy && (
+                                  <p className={styles.pagesAutherDesc}>
+                                    By <span>{writtenBy}</span>
+                                  </p>
+                                )}
                               </div>
                             </div>
                           </div>
@@ -336,32 +383,37 @@ export default function Home({
           const featuredimage = nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
-            <div className="container text-center" key={index}>
+            <div className="container text-center mt-4 mb-4" key={index}>
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
                     <div class="ratio ratio-16x9">
-                      <img className="img-fluid" src={featuredimage} alt="fluid" />
+                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                     </div>
                   </Link>
                 </div>
               )}
-              <div className="text-center">
-                <Link href={postslug}>
-                  <div className={styles.ahover}>
-                    <a href="#" className={styles.TextHoverEffect}>
-                      <span className={styles.fashionCompaigns}>{nodes.pageTitle || posttitle}</span>
-                    </a>
+              <Link href={postslug}>
+                <a href="#" className={styles.Atag}>
+                  <div className="text-center mt-3">
+                    <div className={styles.ahover}>
+                      <h2 className={styles.pagesTitle}>
+                        <span>{nodes.pageTitle || posttitle}</span>
+                      </h2>
+                    </div>
                   </div>
-                </Link>
-              </div>
-              <div className={styles.winterComing}>
-                <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
-              </div>
+                  <div className="mt-2">
+                    <div className={styles.pagesSubTitle}>
+                      <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </div>
           );
         })}
       </section>
+
       <section className={styles.section6}>
         <div className="container">
           {culturepost.map((nodes, index) => {
@@ -372,6 +424,7 @@ export default function Home({
             return (
               <div className="row" key={index}>
                 <div className="container text-center">
+                  {console.log({ bbbbbbb: nodes })}
                   {nodes.categories.map((ele, index1) => {
                     return (
                       <div className={styles.FashionNew} key={index1}>
@@ -390,13 +443,15 @@ export default function Home({
                     <Link href={postslug}>
                       <a href="" className={styles.Atag}>
                         <div className="text-center">
-                          <div className={styles.pLR96}>
-                            <h2 className="">
+                          <div>
+                            <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
                             {writtenBy && (
                               <div className={styles.Author}>
-                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                                <p className={styles.pagesAutherDesc}>
+                                  BY <span>{writtenBy}</span>
+                                </p>
                               </div>
                             )}
                           </div>
@@ -406,10 +461,10 @@ export default function Home({
                   </div>
                 </div>
                 {featuredimage && (
-                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-4">
                     <Link href={postslug}>
                       <a href="">
-                        <img className="img-fluid" src={featuredimage} alt="fluid" />
+                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </a>
                     </Link>
                   </div>
@@ -433,7 +488,7 @@ export default function Home({
                       allowtransparency="true"
                       frameborder="0"
                       scrolling="no"
-                      class="wistia_embed"
+                      class="wistia_embed imgShadow mt-4"
                       name="wistia_embed"
                       autoPlay
                       allowfullscreen
@@ -445,18 +500,15 @@ export default function Home({
                   </div>
                 )}
               </div>
-              <div className={styles.AddressLeBlanc}>
-                <div className={styles.underlinetext}>
-                  <span className="text-center">{nodes.pageTitle || posttitle}</span>
-                </div>
+              <div>
+                <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
               </div>
-              <div className="text-center">
+              <div className="text-center mt-4">
                 <div className={styles.ahover}>
-                  <a href="#" className={styles.TextHoverEffect}>
-                    <div
-                      className={styles.fashionCompaigns}
-                      dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
-                    />
+                  <a href="#" className={styles.Atag}>
+                    <h2 className={styles.pagesTitle}>
+                      <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                    </h2>
                   </a>
                 </div>
               </div>
@@ -479,7 +531,7 @@ export default function Home({
                     <Link href={postslug}>
                       <a className={styles.Atag} href="">
                         <div className="text-center">
-                          <div className={styles.pLR96}>
+                          <div>
                             {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
@@ -488,13 +540,17 @@ export default function Home({
                                 </Link>
                               );
                             })}
-                            <h2 class="">
+                            <h2 class={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
+                            <div className={styles.pagesSubTitle}>
+                              <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
+                            </div>
                             {writtenBy && (
                               <div className={styles.Author}>
-                                <p className={styles.ByTextStyle}>By {writtenBy}</p>
+                                <p className={styles.pagesAutherDesc}>
+                                  BY <span>{writtenBy}</span>
+                                </p>
                               </div>
                             )}
                           </div>
@@ -505,7 +561,7 @@ export default function Home({
                 </div>
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img className="img-fluid" src={featuredimage} alt="fluid" />
+                    <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                   </div>
                 )}
               </div>
@@ -539,13 +595,13 @@ export default function Home({
               </div>
               <div className={styles.videoHeight}>
                 {nodes.wistiaVideoScriptId && (
-                  <div class="ratio ratio-16x9">
+                  <div class="ratio ratio-16x9 ">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
                       allowtransparency="true"
                       frameborder="0"
                       scrolling="no"
-                      class="wistia_embed"
+                      class="wistia_embed imgShadow"
                       name="wistia_embed"
                       autoPlay
                       allowfullscreen
@@ -560,10 +616,8 @@ export default function Home({
               <Link href={postslug}>
                 <div className={styles.ahover}>
                   <a href="#" className={styles.TextHoverEffect}>
-                    <div className={styles.AddressLeBlanc}>
-                      <div className={styles.underlinetext}>
-                        <span className="text-center">{nodes.pageTitle || posttitle}</span>
-                      </div>
+                    <div>
+                      <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
                     </div>
                   </a>
                 </div>
@@ -571,11 +625,22 @@ export default function Home({
               <div className="text-center">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a href="#" className={styles.TextHoverEffect}>
-                      <div
-                        className={styles.fashionCompaigns}
-                        dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
-                      />
+                    <a href="#" className={styles.Atag}>
+                      <div className="text-center">
+                        <h2 className={styles.pagesTitle}>
+                          <span
+                            style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}
+                            dangerouslySetInnerHTML={{ __html: subtitle || nodes.pageSubtitle }}
+                          />
+                        </h2>
+                        {nodes.writtenBy && (
+                          <div className={styles.Author}>
+                            <p className={styles.pagesAutherDesc}>
+                              BY <span>{nodes.writtenBy}</span>
+                            </p>
+                          </div>
+                        )}
+                      </div>
                     </a>
                   </div>
                 </Link>
@@ -607,7 +672,7 @@ export default function Home({
                 })}
               </div>
               <div className={styles.videoHeight}>
-                {/* {nodes.wistiaVideoScriptId && (
+                {/*false {nodes.wistiaVideoScriptId && (
                   <div class="ratio ratio-16x9">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
@@ -629,23 +694,27 @@ export default function Home({
               <Link href={postslug}>
                 <div className={styles.ahover}>
                   <a href="#" className={styles.TextHoverEffect}>
-                    <div className={styles.AddressLeBlanc}>
-                      <div className={styles.underlinetext}>
-                        <span className="text-center">{nodes.pageTitle || posttitle}</span>
-                      </div>
+                    <div>
+                      <div className={styles.ShoppingText}>{nodes.pageSubtitle || subtitle}</div>
                     </div>
                   </a>
                 </div>
               </Link>
-              <div className="text-center">
+              <div className="text-center mt-4">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a href="#" className={styles.TextHoverEffect}>
-                      <div
-                        className={styles.fashionCompaigns}
-                        dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
-                      />
+                    <a href="#" className={styles.Atag}>
+                      <h2 className={styles.pagesTitle}>
+                        <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
+                      </h2>
                     </a>
+                    {nodes.writtenBy && (
+                      <div className={styles.Author}>
+                        <p className={styles.pagesAutherDesc}>
+                          BY <span>{nodes.writtenBy}</span>
+                        </p>
+                      </div>
+                    )}
                   </div>
                 </Link>
               </div>
@@ -666,8 +735,12 @@ export default function Home({
                     <a href="#" className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
                         <div className="card">
-                          {featuredimage && <img src={featuredimage} className={styles.topRoundImg250} alt="Fluid" />}
-                          <div className={styles.cardText}>
+                          {featuredimage ? (
+                            <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
+                          ) : (
+                            <img className={styles.topRoundImgFullWidth} alt="..." />
+                          )}
+                          <div className={styles.pageTitle}>
                             <p className="card-text">{nodes.pageTitle || posttitle}</p>
                           </div>
                         </div>
@@ -677,6 +750,18 @@ export default function Home({
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+      <section className={styles.section12}>
+        <div className="container">
+          <div className="row">
+            {/* <NewsLetter content={{
+      title:'Iscriviti alla newsletter',
+      portalId: '19647191',
+      // formId: '569a2af9-b397-486f-8ac7-98d462d81ec1'
+      formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5'
+    }}/> */}
           </div>
         </div>
       </section>

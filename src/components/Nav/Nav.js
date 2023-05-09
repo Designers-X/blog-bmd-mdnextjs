@@ -32,8 +32,8 @@ const Nav = () => {
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
               <div className={styles.topnavright}>
-                <a href="#search">Subscribe</a>
-                <a href="#about">Sign in</a>
+                <a href="#">Subscribe</a>
+                {/* <a href="#about">Sign in</a> */}
               </div>
             </div>
           </div>
