@@ -55,7 +55,7 @@ export default function TemplateArchive({
               </div>
             </header>
             <section className="mt-4 mb-4">
-              <div className={styles.containerfluid_boxGrayTop}></div>
+              <div className={styles.boxBlackTop}></div>
             </section>
           </>
         )}
