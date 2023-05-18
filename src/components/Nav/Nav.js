@@ -20,9 +20,9 @@ const Nav = () => {
           <Leftsidebar />
           <div className={styles.navName}>
             <Link href="/">
-              <Link>
-                <img src="/the_MDiterranean_life_logo.png" width={180} />
-              </Link>
+              <a>
+                <img src="/the_MDiterranean_life_logo.png" width={180} alt="t" />
+              </a>
             </Link>
           </div>
           <div className={styles.sidebarcontainer}>
@@ -31,7 +31,9 @@ const Nav = () => {
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
               <div className={styles.topnavright}>
-                <Link href="/subscribe">Subscribe</Link>
+                <Link href="/subscribe">
+                  <a>Subscribe</a>
+                </Link>
                 {/* <Link href="#about">Sign in</Link> */}
               </div>
             </div>

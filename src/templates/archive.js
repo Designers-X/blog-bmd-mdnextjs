@@ -7,7 +7,6 @@ import useSite from 'hooks/use-site';
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import Section from 'components/Section';
-import Container from 'components/Container';
 import PostCard from 'components/PostCard';
 import Pagination from 'components/Pagination/Pagination';
 
@@ -17,7 +16,6 @@ const DEFAULT_POST_OPTIONS = {};
 
 export default function TemplateArchive({
   title = 'Archive',
-  Title,
   posts,
   postOptions = DEFAULT_POST_OPTIONS,
   slug,
@@ -47,7 +45,7 @@ export default function TemplateArchive({
                 className={styles.MasterHead}
                 style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
               >
-                {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt=' ' className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
+                {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="alt-Text" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
               </div>
               <div className={styles.FashionPadding}>
                 <h1 className={styles.MasterTitle}>{title}</h1>
