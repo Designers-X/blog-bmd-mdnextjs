@@ -32,7 +32,7 @@
 
 .footerMenuTitle {
   display: inline-block;
-  color: $color-gray-800;
+  color: #fff;
   text-decoration: none;
   margin-bottom: 1.4em;
   margin-top: 0;
@@ -46,6 +46,10 @@
       margin-bottom: 0;
     }
   }
+
+  color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 0;
 
   a {
     display: block;
@@ -76,7 +80,40 @@
     margin: 0;
   }
 }
-
+ul.footerCustomMenu{
+  margin: 0;
+  padding: 0;
+}
+ul.footerCustomMenu li{
+  list-style-type: none;
+   float: left;
+   
+}
+ul.footerCustomMenu li a{
+  color: #fff;
+    text-decoration: none;
+    font-family: "DidotL06";
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+ul.footerCustomMenu li span{
+  color: #fff;
+  padding: 0 12px;
+  font-size: 14px;
+}
+ul.contactSocialIcons {
+  margin: 0;
+  padding: 0;
+  float: right;
+  }
+  ul.contactSocialIcons li{
+   list-style-type: none;
+   float: left;
+   padding-right: 12px;
+    }
+    ul.contactSocialIcons li:last-child{
+      padding-right: 0;
+    }
 .footerSpicl {
   background-color: #000000;
   color: #fff;
@@ -103,6 +140,8 @@
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
+  border-bottom: 1px solid #ccc;
+  padding-bottom:30px;
 }
 
 .LogoSection {
@@ -135,6 +174,7 @@
   text-decoration: underline;
   padding: 0.6rem 0;
 }
+
 
 .Newsletter {
   padding: 0.6rem 0;
