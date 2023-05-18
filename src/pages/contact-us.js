@@ -17,7 +17,7 @@ const Contact = () => {
             <div class="logoCenter text-center mb-4">
               <img
                 src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png"
-                alt="..."
+                alt=" "
               />
             </div>
             <div class="row">
