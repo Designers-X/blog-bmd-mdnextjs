@@ -724,7 +724,7 @@ export default function TemplateArchive({
         </Header>
       )}
 
-      {!category?.s1CustomPageReference?.node?.content && (
+      {true || !category?.s1CustomPageReference?.node?.content && (
         <Section>
           {/* <Container> */}
           <div className="wp-block-columns">
