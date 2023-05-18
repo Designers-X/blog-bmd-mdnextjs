@@ -24,7 +24,6 @@ export default function TemplateArchive({
   category,
 }) {
   const { metadata: siteMetadata = {} } = useSite();
-  console.log({ category });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
     metadata.title = `${title} - ${siteMetadata.title}`;
@@ -61,7 +60,7 @@ export default function TemplateArchive({
       <section className="mt-4">
         <div dangerouslySetInnerHTML={{ __html: category?.s1CustomPageReference?.node?.content }} />
       </section>
-      {category?.s1CustomPageReference?.node?.content && (
+      {!category?.s1CustomPageReference?.node?.content && (
         <Section>
           {/* <Container> */}
           <div className="wp-block-columns">

@@ -122,7 +122,7 @@ export default function Post({ post, socialImage, related }) {
         <div>
           {mastheadBanner && (
             <div>
-              <img src={mastheadBanner.node.link} className="imgBanner" alt="n" />
+              <img src={mastheadBanner.node.link} className="imgBanner" alt="..." />
             </div>
           )}
           <div
