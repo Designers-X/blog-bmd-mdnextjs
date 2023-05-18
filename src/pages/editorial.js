@@ -17,7 +17,7 @@ const Editorial = () => {
             <div className={styles.authorBox}>
               <img
                 src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/fcb71049d1909b8a0f57a5f65d5a5cc0.png"
-                alt="..."
+                alt="   "
               />
               <div className={styles.authorBoxText}>
                 <h3>APRIL LONG</h3>
@@ -66,7 +66,10 @@ const Editorial = () => {
         <div className={styles.m4Rem}>
           <div className={styles.width20}>
             <div className={styles.authorBox}>
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/18fc45f7e97e0dcafa528d8da5d67d5e.png" alt='...'/>
+              <img
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/18fc45f7e97e0dcafa528d8da5d67d5e.png"
+                alt="   "
+              />
               <div className={styles.authorBoxText}>
                 <h3>Marlow Granados</h3>
                 <p>Editor</p>
@@ -99,7 +102,10 @@ const Editorial = () => {
         <div className={styles.m4Rem}>
           <div className={styles.width20}>
             <div className={styles.authorBox}>
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/2843fe643174a8a211b7ed88a5247920.png" alt='...'/>
+              <img
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/2843fe643174a8a211b7ed88a5247920.png"
+                alt="   "
+              />
               <div className={styles.authorBoxText}>
                 <h3>Garrett Munce</h3>
                 <p>Editor</p>
@@ -154,7 +160,10 @@ const Editorial = () => {
         <div className={styles.m4Rem}>
           <div className={styles.width20}>
             <div className={styles.authorBox}>
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/e4a4e84da9aaf26159a1942de5f7fbe0.png" alt='...'/>
+              <img
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/e4a4e84da9aaf26159a1942de5f7fbe0.png"
+                alt="   "
+              />
               <div className={styles.authorBoxText}>
                 <h3>Rock Lane</h3>
                 <p>Editor</p>
@@ -189,7 +198,10 @@ const Editorial = () => {
         <div className={styles.m4Rem}>
           <div className={styles.width20}>
             <div className={styles.authorBox}>
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bf78f35fbfdb43056779b08482206d37.png" alt='...'/>
+              <img
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bf78f35fbfdb43056779b08482206d37.png"
+                alt="   "
+              />
               <div className={styles.authorBoxText}>
                 <h3>Darius Arya</h3>
                 <p>Host - Archaeologist</p>
