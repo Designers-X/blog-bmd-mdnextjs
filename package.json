@@ -6,7 +6,7 @@
   "author": "Colby Fayock <hello@colbyfayock.com>",
   "scripts": {
     "build": "next build",
-    "run": "next dev -p 3001",
+    "run": "next dev",
     "export": "next export",
     "format": "yarn lint --fix",
     "format:no-path": "yarn lint:no-path --fix",

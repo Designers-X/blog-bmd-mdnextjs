@@ -67,7 +67,7 @@ export default function Post({ post, socialImage, related }) {
   const helmetSettings = helmetSettingsFromMetadata(metadata);
   console.log({ title, siteMetadata });
   return (
-    <Layout>
+    <Layout newsLetterShow={true}>
       <link rel="stylesheet" href="mystyle.css"></link>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
@@ -122,7 +122,7 @@ export default function Post({ post, socialImage, related }) {
         <div>
           {mastheadBanner && (
             <div>
-              <img src={mastheadBanner.node.link} className="imgBanner" />
+              <img src={mastheadBanner.node.link} className="imgBanner" alt='...' />
             </div>
           )}
           <div

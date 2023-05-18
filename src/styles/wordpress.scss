@@ -33,6 +33,12 @@
   display: flex;
   justify-content: center;
 }
+.bt-1{
+  border-top: 1px solid #808080;
+}
+.bb-1{
+  border-bottom: 1px solid #808080;
+}
 
 .Container_container__jY5v0 {
   max-width: 1320px !important;
@@ -227,6 +233,10 @@
 .categoryLink {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+.widthFull{
+  width: 100%!important;
+  max-width: 100%!important;
+}
 
 .wp-block-columns figure img,
 .categoryLink img {
@@ -394,6 +404,10 @@ figcaption {
   text-align: center;
   line-height: 0;
 }
+.headingContainer a {
+  color: #000000;
+  text-decoration: none;
+}
 .headingContainer:hover {
   font-style: italic;
 }
@@ -512,4 +526,7 @@ figcaption {
 }
 .authorDesc_parnt span:hover {
   color: grey;
+}
+.boxGrayTop {
+  background-color: #000000;
 }
