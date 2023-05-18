@@ -36,7 +36,7 @@ export default function TemplateArchive({
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
   return (
-    <Layout>
+    <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
 
@@ -724,7 +724,7 @@ export default function TemplateArchive({
         </Header>
       )}
 
-      {!category?.s1CustomPageReference?.node?.content && (
+      {(true || !category?.s1CustomPageReference?.node?.content) && (
         <Section>
           {/* <Container> */}
           <div className="wp-block-columns">

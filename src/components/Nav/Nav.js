@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-
 import useSite from 'hooks/use-site';
 import { findMenuByLocation, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus';
 
@@ -19,21 +18,21 @@ const Nav = () => {
       <div className={styles.sidebarcontainer}>
         <Section className={styles.navSection}>
           <Leftsidebar />
-          <p className={styles.navName}>
+          <div className={styles.navName}>
             <Link href="/">
-              <a>
+              <Link>
                 <img src="/the_MDiterranean_life_logo.png" width={180} />
-              </a>
+              </Link>
             </Link>
-          </p>
+          </div>
           <div className={styles.sidebarcontainer}>
             <div className={styles.topnav}>
               {navigation?.map((listItem) => {
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
               <div className={styles.topnavright}>
-                <a href="#">Subscribe</a>
-                {/* <a href="#about">Sign in</a> */}
+                <Link href="/subscribe">Subscribe</Link>
+                {/* <Link href="#about">Sign in</Link> */}
               </div>
             </div>
           </div>
