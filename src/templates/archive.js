@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet';
-
+import { NewsLetter } from 'components/NewsLetter';
 import { WebpageJsonLd } from 'lib/json-ld';
 import { helmetSettingsFromMetadata } from 'lib/site';
 import useSite from 'hooks/use-site';
@@ -752,6 +752,15 @@ export default function TemplateArchive({
           </div>
         </Section>
       )}
+      <div className="m-5">
+        <NewsLetter
+          content={{
+            title: 'Iscriviti alla newsletter',
+            portalId: '19647191',
+            formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5',
+          }}
+        />
+      </div>
     </Layout>
   );
 }

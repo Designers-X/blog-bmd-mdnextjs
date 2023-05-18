@@ -166,6 +166,138 @@ button.btn.btn-black:hover {
   padding-left: 0;
 }
 
+.Bg-Image {
+  background-image: url("https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bg-Back.png");
+  background-repeat: no-repeat, repeat;
+
+  background-size: cover;
+  padding-top: 50px;
+}
+
+.Bg-Image .login-form {
+  background: #ffffff7a;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 40px 50px;
+  border-radius: 32px;
+  color: white;
+  border: 2px solid #fff;
+}
+
+.Bg-Image .login-heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Bg-Image .btn-primary {
+  width: 100%;
+}
+
+.Bg-Image .FirstText {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "HTF Didot";
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+.Bg-Image .subscribeFormText {
+  width: 90%;
+}
+
+.Bg-Image .SecondText {
+  font-size: 42px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "HTF Didot";
+  line-height: 50px;
+  letter-spacing: 0.03em;
+}
+
+.Bg-Image .ThirdText {
+  font-size: 32px;
+  color: #fff;
+  font-family: "HTF Didot";
+  line-height: 38px;
+  letter-spacing: 0.03em;
+}
+
+.Bg-Image .FourthText {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "HTF Didot";
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  margin-bottom: 0px;
+}
+
+.Bg-Image .FifthText a {
+  color: #fff;
+  font-size: 22px;
+  font-family: "HTF Didot";
+  word-break: break-all;
+}
+
+.Bg-Image .login-form h2 {
+  font-family: "HTF Didot";
+  color: #000;
+  font-size: 54px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.Bg-Image .form-control.mb-4 {
+  background: #eeeeee;
+  border-radius: 18px;
+  border: unset;
+  font-size: 16px;
+}
+
+.Bg-Image .btn-darkBlack {
+  background: #000;
+  color: #fff;
+  border-radius: 30px;
+  width: 40%;
+}
+
+.Bg-Image .form-control {
+  font-size: 1rem;
+  font-family: "HTF Didot";
+}
+
+@media (max-width: 767.98px) {
+  .Bg-Image .subscribeFormText {
+    width: 100%;
+  }
+
+  .Bg-Image .login-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+  }
+
+  .Bg-Image .login-form h2 {
+    font-size: 42px;
+  }
+
+  .form-control.mb-4 {
+    font-size: 16px !important;
+  }
+
+  .Bg-Image {
+    background-position: center;
+  }
+
+  .logoCenter img {
+    width: 100%;
+  }
+}
+
 .xyz {
   color: white;
   background-color: gold;
