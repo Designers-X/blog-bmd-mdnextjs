@@ -21,7 +21,7 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <a>
-                <img src="/the_MDiterranean_life_logo.png" width={180}  alt="t"/>
+                <img src="/the_MDiterranean_life_logo.png" width={180} alt="t" />
               </a>
             </Link>
           </div>
@@ -31,7 +31,9 @@ const Nav = () => {
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
               <div className={styles.topnavright}>
-                <Link href="/subscribe"><a>Subscribe</a></Link>
+                <Link href="/subscribe">
+                  <a>Subscribe</a>
+                </Link>
                 {/* <Link href="#about">Sign in</Link> */}
               </div>
             </div>

@@ -123,9 +123,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}> {ele.description}</div>
@@ -195,9 +193,7 @@ export default function Home({
             <div className="text-center">
               <div className={styles.FashionNew}>
                 <h6 className={styles.fashionText}>
-                  <a className={styles.fashiHyperLink}>
-                    Can&apos;t Miss Reads
-                  </a>
+                  <a className={styles.fashiHyperLink}>Can&apos;t Miss Reads</a>
                 </h6>
               </div>
             </div>
@@ -242,9 +238,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}>{ele.description}</div>
@@ -362,9 +356,7 @@ export default function Home({
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink}>
-                              {ele.name}
-                            </a>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -388,9 +380,9 @@ export default function Home({
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
                     <a>
-                    <div class="ratio ratio-16x9">
-                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                    </div>
+                      <div class="ratio ratio-16x9">
+                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                      </div>
                     </a>
                   </Link>
                 </div>
@@ -431,9 +423,7 @@ export default function Home({
                     return (
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
-                          <a className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
@@ -538,7 +528,9 @@ export default function Home({
                               const categoryslug = '/categories/' + ele.slug;
                               return (
                                 <Link href={categoryslug} key={index1}>
-                                  <a><div className={styles.ShoppingText}>{ele.name}</div></a>
+                                  <a>
+                                    <div className={styles.ShoppingText}>{ele.name}</div>
+                                  </a>
                                 </Link>
                               );
                             })}
@@ -586,9 +578,7 @@ export default function Home({
                       <div className={styles.FashionNew} key={index1}>
                         <div>
                           <h2 className={styles.fashionText}>
-                            <a className={styles.fashiHyperLink}>
-                              {ele.name}
-                            </a>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
                           </h2>
                         </div>
                       </div>
@@ -664,9 +654,7 @@ export default function Home({
                     <div className={styles.FashionNew} key={index1}>
                       <div>
                         <h2 className={styles.fashionText}>
-                          <a className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </h2>
                       </div>
                     </div>
