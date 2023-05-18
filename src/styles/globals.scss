@@ -39,9 +39,11 @@ body {
   font-family: "DidotL06";
   line-height: 28px;
 }
+
 h1 {
   font-weight: 400;
 }
+
 h1,
 h2 {
   font-family: "DidotL06" !important;
@@ -59,18 +61,22 @@ h1 {
   letter-spacing: 1px;
   text-transform: none !important;
 }
+
 h2 {
   font-size: 2.25rem;
   font-weight: 300;
 }
+
 h3 {
   font-size: 1.25em;
   font-weight: 300;
 }
+
 h4 {
   font-size: 0.95em;
   font-weight: 300;
 }
+
 li {
   font-family: "DidotL06";
   font-weight: normal;
@@ -98,6 +104,7 @@ a {
 }
 
 input {
+
   &[type="text"],
   &[type="search"],
   &[type="email"] {
@@ -105,9 +112,11 @@ input {
     padding: 0.5em 0.8em;
   }
 }
+
 figure img {
   padding: 0;
 }
+
 figcaption {
   color: $color-gray-500;
   font-size: 0.8em;
@@ -165,22 +174,26 @@ button.btn.btn-black:hover {
 .col-xl-2.col-lg-2.col-md-2.col-sm-12.pl-0 {
   padding-left: 0;
 }
+
 .Bg-Image {
   padding-top: 50px;
   padding-bottom: 100px;
 }
-.Bg-Image .container{
-  
+
+.Bg-Image .container {
+
   width: 1140px;
   margin: 0 auto;
-    
+
 }
+
 #subscribe .Bg-Image {
   background-image: url('https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bg-Back.png');
   background-repeat: no-repeat, repeat;
 
   background-size: cover;
 }
+
 #contact .Bg-Image {
   background-image: url('https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/foto-toscana-capelli-rossi-e-uomo-copy.png');
   background-repeat: no-repeat, repeat;
@@ -244,7 +257,7 @@ button.btn.btn-black:hover {
   text-align: left !important;
 }
 
-.Bg-Image .ThirdTextDesc{
+.Bg-Image .ThirdTextDesc {
   font-size: 22px;
   color: #fff;
   font-family: "DidotL06";
@@ -263,19 +276,23 @@ button.btn.btn-black:hover {
   margin-bottom: 0px !important;
   text-align: left !important;
 }
+
 ul.contactSocialIcons {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
-ul.contactSocialIcons li{
- list-style-type: none;
- float: left;
- padding-right: 12px;
-  }
-.Bg-Image .FifthText{
+
+ul.contactSocialIcons li {
+  list-style-type: none;
+  float: left;
+  padding-right: 12px;
+}
+
+.Bg-Image .FifthText {
   margin: 0 auto !important;
-    line-height: 0;
+  line-height: 0;
 }
+
 .Bg-Image .FifthText a {
   color: #fff;
   font-size: 22px;
@@ -298,11 +315,11 @@ ul.contactSocialIcons li{
 
 .Bg-Image .form-control {
   background: #EEEEEE;
-    border-radius: 31px;
-    border: unset;
-    font-size: 14px !important;
-    padding: 10px 20px;
-    height: auto;
+  border-radius: 31px;
+  border: unset;
+  font-size: 14px !important;
+  padding: 10px 20px;
+  height: auto;
 }
 
 .Bg-Image .btn-darkBlack {
@@ -320,36 +337,37 @@ ul.contactSocialIcons li{
 
 @media (max-width: 767.98px) {
   .Bg-Image .subscribeFormText {
-      width: 100%;
+    width: 100%;
   }
 
   .Bg-Image .login-form {
 
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
 
   }
 
   .Bg-Image .login-form h2 {
 
-      font-size: 42px;
+    font-size: 42px;
 
   }
 
   .form-control.mb-4 {
-      font-size: 16px !important;
+    font-size: 16px !important;
   }
 
   .Bg-Image {
 
-      background-position: center;
+    background-position: center;
   }
 
   .logoCenter img {
-      width: 100%;
+    width: 100%;
   }
 }
+
 .xyz {
   color: white;
   background-color: khaki;
