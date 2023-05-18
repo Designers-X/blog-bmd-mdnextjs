@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
+import Link from 'next/link';
 const Contact = () => {
   return (
     <Layout>
@@ -14,7 +15,7 @@ const Contact = () => {
         <div class="Bg-Image ">
           <div class="container">
             <div class="logoCenter text-center mb-4">
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png" />
+              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png" alt='...'/>
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 m-auto">
@@ -31,7 +32,7 @@ const Contact = () => {
                   <p class="FourthText">Follow Us :</p>
                   <ul class="contactSocialIcons">
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -44,10 +45,10 @@ const Contact = () => {
                             fill="white"
                           ></path>
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +61,10 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +77,7 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
