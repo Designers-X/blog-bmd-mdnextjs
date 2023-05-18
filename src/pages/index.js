@@ -752,7 +752,6 @@ export default function Home({
           </div>
         </div>
       </section>
-      <section className={styles.section12}></section>
     </Layout>
   );
 }

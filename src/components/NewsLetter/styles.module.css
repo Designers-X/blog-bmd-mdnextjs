@@ -3,6 +3,7 @@
   margin-right: auto;
   max-width: 1380px;
   width: 100%;
+  margin-bottom: 70px;
 }
 
 .xyz {
@@ -33,7 +34,7 @@
   background: #eeeeeed1;
   display: grid;
   grid-template-rows: auto 1fr;
-  padding: 2rem;
+  padding: 1.5rem 3rem 0.5rem 3rem;
   min-height: 345px;
   height: 100%;
 }
@@ -90,7 +91,7 @@ iframe .hs-submit>.actions {
 
   .mobile_banner {
     display: block;
-    width: 100vw;
+    width: 100%;
     height: auto;
   }
 

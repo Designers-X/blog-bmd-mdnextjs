@@ -10,8 +10,8 @@ export const NewsLetter = ({ content }) => {
     script.addEventListener('load', () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: content.portalId,
-          formId: content.formId,
+          portalId: content?.portalId,
+          formId: content?.formId,
           target: '#hubspotForm',
         });
       }
@@ -21,8 +21,16 @@ export const NewsLetter = ({ content }) => {
     <section className={styles.newsletterSection} id="NewLetterFrom">
       <div className={styles.styles_grid}>
         <div className={styles.imageContainer}>
-          <img className={styles.desktop_banner} src="https://email.brunomd.com/hubfs/Culture%20Image.png" alt="..." />
-          <img className={styles.mobile_banner} src="https://email.brunomd.com/hubfs/Culture%20Image.png" alt="..." />
+          <img
+            className={styles.desktop_banner}
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08.png"
+            alt="..."
+          />
+          <img
+            className={styles.mobile_banner}
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08-1.png"
+            alt="..."
+          />
         </div>
         <div style={{ position: 'relative' }}>
           <div className={styles.details}>
