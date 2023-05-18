@@ -21,7 +21,7 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <Link>
-                <img src="/the_MDiterranean_life_logo.png" width={180} />
+                <img src="/the_MDiterranean_life_logo.png" width={180}  alt="t"/>
               </Link>
             </Link>
           </div>
