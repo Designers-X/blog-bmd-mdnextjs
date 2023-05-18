@@ -36,7 +36,7 @@ export default function TemplateArchive({
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
   return (
-    <Layout>
+    <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
 
