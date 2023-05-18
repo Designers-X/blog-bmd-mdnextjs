@@ -78,7 +78,7 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
+                        
                         Fashion Trends
                       </a>
                     </span>
@@ -131,8 +131,8 @@ export default function TemplateArchive({
                       <a href="#">
                         <div className={styles.inlineflex}>
                           <span className={styles.marginAuto}>
-                            {' '}
-                            Take a Look at the World`s Most Luxurious Island Properties{' '}
+                            
+                            Take a Look at the World`s Most Luxurious Island Properties
                             <p className={styles.ByTextStyle}>Advertisement</p>
                           </span>
                         </div>
@@ -149,7 +149,7 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
+                        
                         shopping
                       </a>
                     </span>
@@ -180,7 +180,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -193,7 +193,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -206,7 +206,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -233,7 +233,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -246,7 +246,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -259,7 +259,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -286,7 +286,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -311,7 +311,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -328,7 +328,7 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
+                        
                         Street Style
                       </a>
                     </span>
@@ -355,8 +355,8 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
-                        Celebrity Style{' '}
+                        
+                        Celebrity Style
                       </a>
                     </span>
                   </h2>
@@ -388,7 +388,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Where Were the Political Statements at NYFW?{' '}
+                                Where Were the Political Statements at NYFW?
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -401,7 +401,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Gianluca Russo on The Power of Being Plus Size{' '}
+                                Gianluca Russo on The Power of Being Plus Size
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -414,7 +414,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Gianluca Russo on The Power of Being Plus Size{' '}
+                                Gianluca Russo on The Power of Being Plus Size
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -441,7 +441,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Where Were the Political Statements at NYFW?{' '}
+                                Where Were the Political Statements at NYFW?
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -454,7 +454,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Gianluca Russo on The Power of Being Plus Size{' '}
+                                Gianluca Russo on The Power of Being Plus Size
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -467,7 +467,7 @@ export default function TemplateArchive({
                                 <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                               </div>
                               <span className={styles.marginAuto}>
-                                Gianluca Russo on The Power of Being Plus Size{' '}
+                                Gianluca Russo on The Power of Being Plus Size
                                 <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                               </span>
                             </div>
@@ -481,8 +481,8 @@ export default function TemplateArchive({
                       <a href="#">
                         <div className={styles.inlineflex}>
                           <span className={styles.marginAuto}>
-                            {' '}
-                            Take a Look at the World`s Most Luxurious Island Properties{' '}
+                            
+                            Take a Look at the World`s Most Luxurious Island Properties
                             <p className={styles.ByTextStyle}>Advertisement</p>
                           </span>
                         </div>
@@ -499,7 +499,7 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
+                        
                         Personal Style
                       </a>
                     </span>
@@ -531,7 +531,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -544,7 +544,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -557,7 +557,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -584,7 +584,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -597,7 +597,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -610,7 +610,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -637,7 +637,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-02.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Where Were the Political Statements at NYFW?{' '}
+                            Where Were the Political Statements at NYFW?
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -662,7 +662,7 @@ export default function TemplateArchive({
                             <img alt=" " className={styles.img195} src="/img/StylePoint-03.jpg" />
                           </div>
                           <span className={styles.marginAuto}>
-                            Gianluca Russo on The Power of Being Plus Size{' '}
+                            Gianluca Russo on The Power of Being Plus Size
                             <p className={styles.ByTextStyle}>By Véronique Hyland</p>
                           </span>
                         </div>
@@ -679,8 +679,7 @@ export default function TemplateArchive({
                   <h2 className={styles.fashiontext}>
                     <span>
                       <a href="" className={styles.textCapital}>
-                        {' '}
-                        Accessories{' '}
+                        Accessories
                       </a>
                     </span>
                   </h2>
