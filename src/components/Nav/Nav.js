@@ -19,20 +19,20 @@ const Nav = () => {
       <div className={styles.sidebarcontainer}>
         <Section className={styles.navSection}>
           <Leftsidebar />
-          <p className={styles.navName}>
+          <div className={styles.navName}>
             <Link href="/">
               <a>
                 <img src="/the_MDiterranean_life_logo.png" width={180} />
               </a>
             </Link>
-          </p>
+          </div>
           <div className={styles.sidebarcontainer}>
             <div className={styles.topnav}>
               {navigation?.map((listItem) => {
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
               <div className={styles.topnavright}>
-                <a href="#">Subscribe</a>
+                <a href="/subscribe">Subscribe</a>
                 {/* <a href="#about">Sign in</a> */}
               </div>
             </div>

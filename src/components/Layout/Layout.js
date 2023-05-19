@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
-
+import { NewsLetter } from 'components/NewsLetter';
 import useSite from 'hooks/use-site';
 import { helmetSettingsFromMetadata } from 'lib/site';
 
@@ -9,7 +9,8 @@ import Nav from 'components/Nav';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children,newsLetterShow }) => {
+  if(!newsLetterShow) newsLetterShow = false;
   const router = useRouter();
   const { asPath } = router;
 
@@ -66,7 +67,11 @@ const Layout = ({ children }) => {
 
       <Nav />
       <Main>{children}</Main>
-
+      {newsLetterShow && <div class="m-4"><NewsLetter content={{
+                title: 'Iscriviti alla newsletter',
+                portalId: '19647191',
+                formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5'
+            }} /></div>}
       <Footer />
     </div>
   );

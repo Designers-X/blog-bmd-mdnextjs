@@ -32,7 +32,7 @@ export default function Home({
   fashionbyidpost,
 }) {
   return (
-    <Layout>
+    <Layout newsLetterShow={true}>
       <div class="ratio ratio-16x9">
         <iframe
           src={`//fast.wistia.net/embed/iframe/i633jy0w7m?videoFoam=true`}
@@ -753,18 +753,7 @@ export default function Home({
           </div>
         </div>
       </section>
-      <section className={styles.section12}>
-        <div className="container">
-          <div className="row">
-            {/* <NewsLetter content={{
-      title:'Iscriviti alla newsletter',
-      portalId: '19647191',
-      // formId: '569a2af9-b397-486f-8ac7-98d462d81ec1'
-      formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5'
-    }}/> */}
-          </div>
-        </div>
-      </section>
+      
     </Layout>
   );
 }
