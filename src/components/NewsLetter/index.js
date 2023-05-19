@@ -17,28 +17,38 @@ export const NewsLetter = ({ content }) => {
       }
     });
   }, []);
-  return(
-  <section className={styles.newsletterSection} id="NewLetterFrom">
-    <div  className={styles.styles_grid}>
-      <div className={styles.imageContainer}>
-        <img className={styles.desktop_banner} src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08.png" alt="..." />
-        <img className={styles.mobile_banner} src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08-1.png" alt="..." />
-      </div>
-      <div style={{ position: 'relative' }}>
-        <div className={styles.details}>
-          <div className={styles.formContainer}>
-              <div  className={styles.form}>
+  return (
+    <section className={styles.newsletterSection} id="NewLetterFrom">
+      <div className={styles.styles_grid}>
+        <div className={styles.imageContainer}>
+          <img
+            className={styles.desktop_banner}
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08.png"
+            alt="..."
+          />
+          <img
+            className={styles.mobile_banner}
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/08-1.png"
+            alt="..."
+          />
+        </div>
+        <div style={{ position: 'relative' }}>
+          <div className={styles.details}>
+            <div className={styles.formContainer}>
+              <div className={styles.form}>
                 <div className={styles.headingContainer}>{content.title}</div>
                 <div id="hubspotForm">
-                  <div style={{ height: '200px' }}><div class="loader-circle-2"></div></div>
+                  <div style={{ height: '200px' }}>
+                    <div class="loader-circle-2"></div>
+                  </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  )
+    </section>
+  );
   return (
     <>
       <section className={styles.newsletterSection} id="NewLetterFrom">
