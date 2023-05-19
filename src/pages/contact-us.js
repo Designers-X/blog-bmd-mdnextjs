@@ -1,8 +1,23 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
 import Link from 'next/link';
 const Contact = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.hsforms.net/forms/v2.js';
+    document.body.appendChild(script);
+
+    script.addEventListener('load', () => {
+      if (window.hbspt) {
+        window.hbspt.forms.create({
+          portalId: "19647191",
+          formId: "2dc7982a-20de-40e5-acaf-ee19d2bcea93",
+          target: '#formContact',
+        });
+      }
+    });
+  }, []);
   return (
     <Layout>
       <Helmet>
