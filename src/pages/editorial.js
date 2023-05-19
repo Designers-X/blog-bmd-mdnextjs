@@ -26,7 +26,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-
+          <p>
             April Long is a renowned beauty editor who has been in the industry for over 20 years. With an extensive
             background in fashion and beauty, April has been a trusted voice in the industry, working for some of the
             most prestigious publications in the world.

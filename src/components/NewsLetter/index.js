@@ -42,7 +42,6 @@ export const NewsLetter = ({ content }) => {
                     <div class="loader-circle-2"></div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
