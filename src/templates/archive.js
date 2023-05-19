@@ -37,7 +37,7 @@ export default function TemplateArchive({
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
-              <div className={styles.HeroImage}>
+            <div className={styles.HeroImage}>
               <div
                 className={styles.MasterHead}
                 style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
@@ -47,7 +47,7 @@ export default function TemplateArchive({
               <div className={styles.FashionPadding}>
                 <h1 className={styles.MasterTitle}>{title}</h1>
               </div>
-              </div>
+            </div>
             <section className="mt-4 mb-4">
               <div className={styles.boxBlackTop}></div>
             </section>
