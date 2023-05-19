@@ -26,7 +26,6 @@ const Contact = () => {
                   <p class="SecondText">How can we help?</p>
                   <p class="ThirdTextDesc">
                     Should you have any questions or require further clarification, please submit your request using the
-                    form below.{' '}
                   </p>
                   <p class="FourthText">email us at :</p>
                   <p class="FifthText">

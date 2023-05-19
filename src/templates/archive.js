@@ -5,7 +5,6 @@ import useSite from 'hooks/use-site';
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import Section from 'components/Section';
-import Container from 'components/Container';
 import PostCard from 'components/PostCard';
 import Pagination from 'components/Pagination/Pagination';
 import Link from 'next/link';
@@ -15,7 +14,6 @@ const DEFAULT_POST_OPTIONS = {};
 
 export default function TemplateArchive({
   title = 'Archive',
-  Title,
   posts,
   postOptions = DEFAULT_POST_OPTIONS,
   slug,
@@ -24,7 +22,6 @@ export default function TemplateArchive({
   category,
 }) {
   const { metadata: siteMetadata = {} } = useSite();
-  console.log({ category });
 
   if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
     metadata.title = `${title} - ${siteMetadata.title}`;
@@ -41,7 +38,7 @@ export default function TemplateArchive({
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
-            <header className={styles.HeroImage}>
+            <Header className={styles.HeroImage}>
               <div
                 className={styles.MasterHead}
                 style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
@@ -51,7 +48,7 @@ export default function TemplateArchive({
               <div className={styles.FashionPadding}>
                 <h1 className={styles.MasterTitle}>{title}</h1>
               </div>
-            </header>
+            </Header>
             <section className="mt-4 mb-4">
               <div className={styles.boxBlackTop}></div>
             </section>
@@ -695,27 +692,9 @@ export default function TemplateArchive({
           </>
         )}
       </main>
-      {/* <h2>{category?.s1CustomPageTitle}</h2>
-        <h2>{category?.s1CustomPageReference?.node?.title}</h2> */}
       <section className="mt-4">
         <div dangerouslySetInnerHTML={{ __html: category?.s1CustomPageReference?.node?.content }} />
       </section>
-      {false && (
-        <Header>
-          <Container>
-            <h1>{Title || title}</h1>
-            {metadata.description && (
-              <p
-                className={styles.archiveDescription}
-                dangerouslySetInnerHTML={{
-                  __html: metadata.description,
-                }}
-              />
-            )}
-          </Container>
-        </Header>
-      )}
-
       {!category?.s1CustomPageReference?.node?.content && (
         <Section>
           {/* <Container> */}
