@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from 'components/Layout/Layout';
 import styles from 'styles/pages/editorial.module.scss';
 import { Helmet } from 'react-helmet';
+
 const Editorial = () => {
   return (
     <Layout>
@@ -135,7 +136,6 @@ const Editorial = () => {
             more proactive approach to their physical and mental health.
           </p>
           <p>
-            {' '}
             In addition to his work as a writer, Munce has also been a sought-after editor, helping to shape the content
             and direction of several prominent publications. He served as the grooming editor for Esquire for several
             years, overseeing the publication&apos;s coverage of men&apos;s grooming and personal care. During his
