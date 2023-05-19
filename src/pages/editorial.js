@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from 'components/Layout/Layout';
 import styles from 'styles/pages/editorial.module.scss';
 import { Helmet } from 'react-helmet';
+
 const Editorial = () => {
   return (
     <Layout>
@@ -31,7 +32,6 @@ const Editorial = () => {
             most prestigious publications in the world.
           </p>
           <p>
-            {' '}
             She began her career in the beauty industry as a makeup artist in New York City. After working in the field
             for a few years,she realized that her true passion was writing about beauty. She started her editorial
             career as an assistant editor at Elle magazine and worked her way up to become the beauty director at Town &
@@ -135,7 +135,6 @@ const Editorial = () => {
             more proactive approach to their physical and mental health.
           </p>
           <p>
-            {' '}
             In addition to his work as a writer, Munce has also been a sought-after editor, helping to shape the content
             and direction of several prominent publications. He served as the grooming editor for Esquire for several
             years, overseeing the publication&apos;s coverage of men&apos;s grooming and personal care. During his

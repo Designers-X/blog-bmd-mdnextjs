@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
+import Link from 'next/link';
 const Contact = () => {
   return (
     <Layout>
@@ -34,7 +35,7 @@ const Contact = () => {
                   <p class="FourthText">Follow Us :</p>
                   <ul class="contactSocialIcons">
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +48,10 @@ const Contact = () => {
                             fill="white"
                           ></path>
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +64,10 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +80,7 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
