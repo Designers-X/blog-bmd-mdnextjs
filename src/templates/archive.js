@@ -3,7 +3,6 @@ import { WebpageJsonLd } from 'lib/json-ld';
 import { helmetSettingsFromMetadata } from 'lib/site';
 import useSite from 'hooks/use-site';
 import Layout from 'components/Layout';
-import Header from 'components/Header';
 import Section from 'components/Section';
 import PostCard from 'components/PostCard';
 import Pagination from 'components/Pagination/Pagination';
@@ -38,7 +37,7 @@ export default function TemplateArchive({
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
-            <Header className={styles.HeroImage}>
+              <div className={styles.HeroImage}>
               <div
                 className={styles.MasterHead}
                 style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
@@ -48,7 +47,7 @@ export default function TemplateArchive({
               <div className={styles.FashionPadding}>
                 <h1 className={styles.MasterTitle}>{title}</h1>
               </div>
-            </Header>
+              </div>
             <section className="mt-4 mb-4">
               <div className={styles.boxBlackTop}></div>
             </section>
