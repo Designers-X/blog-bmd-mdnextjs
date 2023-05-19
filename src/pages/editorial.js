@@ -25,13 +25,12 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+
             April Long is a renowned beauty editor who has been in the industry for over 20 years. With an extensive
             background in fashion and beauty, April has been a trusted voice in the industry, working for some of the
             most prestigious publications in the world.
           </p>
           <p>
-            {' '}
             She began her career in the beauty industry as a makeup artist in New York City. After working in the field
             for a few years,she realized that her true passion was writing about beauty. She started her editorial
             career as an assistant editor at Elle magazine and worked her way up to become the beauty director at Town &
@@ -113,6 +112,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
+
           <p>
             Garrett Munce is an accomplished editor and writer, known for his expertise in the fields of fashion,
             grooming, and lifestyle. He has written for a variety of publications, including Esquire, GQ, and Men&apos;s

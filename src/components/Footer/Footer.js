@@ -39,6 +39,7 @@ const Footer = () => {
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.contactSocialIcons}>
                   <li>
+
                     <Link href={''}>
                       <a>
                         <svg

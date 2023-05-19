@@ -10,8 +10,8 @@ export const NewsLetter = ({ content }) => {
     script.addEventListener('load', () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: content.portalId,
-          formId: content.formId,
+          portalId: content?.portalId,
+          formId: content?.formId,
           target: '#hubspotForm',
         });
       }
@@ -42,6 +42,7 @@ export const NewsLetter = ({ content }) => {
                     <div class="loader-circle-2"></div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

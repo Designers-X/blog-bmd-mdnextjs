@@ -25,7 +25,6 @@ const Contact = () => {
                   <p class="SecondText">How can we help?</p>
                   <p class="ThirdTextDesc">
                     Should you have any questions or require further clarification, please submit your request using the
-                    form below.{' '}
                   </p>
                   <p class="FourthText">email us at :</p>
                   <p class="FifthText">
@@ -51,6 +50,9 @@ const Contact = () => {
                     </li>
                     <li>
                       <a href="#">
+                    </li>
+                    <li>
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +69,10 @@ const Contact = () => {
                     </li>
                     <li>
                       <a href="#">
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +85,7 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
