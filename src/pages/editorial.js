@@ -17,7 +17,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/fcb71049d1909b8a0f57a5f65d5a5cc0.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/April-Long-Beauty-Editor-final-image-copy.png"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -68,7 +68,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/18fc45f7e97e0dcafa528d8da5d67d5e.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Marlowe-Granados-editor-final-image-copy.png"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -104,7 +104,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/2843fe643174a8a211b7ed88a5247920.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Garrett-Munce-editor-final-image.png"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -163,7 +163,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/e4a4e84da9aaf26159a1942de5f7fbe0.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Rock-Lane-eidtor-final-image-copy.png"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -201,7 +201,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bf78f35fbfdb43056779b08482206d37.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Darius-Arya-archeologist-final-image.png"
                 alt=""
               />
               <div className={styles.authorBoxText}>
