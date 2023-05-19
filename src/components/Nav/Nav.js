@@ -22,7 +22,7 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <a>
-                <img src="/the_MDiterranean_life_logo.png" width={180} />
+                <img src="/the_MDiterranean_life_logo.png" width={180} alt="" />
               </a>
             </Link>
           </div>
@@ -32,19 +32,14 @@ const Nav = () => {
                 console.log({ listItem });
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
-              <Link href={'/categories/food-and-wine'}>
-                <a title={'Food & Wine'}>Food & Wine</a>
+            </div>
+            <div className={styles.topnavright}>
+              <Link href="/subscribe">
+                <a className={styles.subscribeBtn}>
+                  <span>Subscribe</span>
+                </a>
               </Link>
-              <Link href={'/categories/health-and-wellness'}>
-                <a title={'Health & Wellness'}>Health & Wellness</a>
-              </Link>
-              <Link href={'/categories/art-and-history'}>
-                <a title={'Art & History'}>Art & History</a>
-              </Link>
-              <div className={styles.topnavright}>
-                <a href="/subscribe">Subscribe</a>
-                {/* <a href="#about">Sign in</a> */}
-              </div>
+              {/* <a href="#about">Sign in</a> */}
             </div>
           </div>
         </Section>

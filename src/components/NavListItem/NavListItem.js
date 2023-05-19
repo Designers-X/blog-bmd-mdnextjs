@@ -13,12 +13,14 @@ const NavListItem = ({ className, item }) => {
     <span key={item.id}>
       {!item.path.includes('http') && !item.target && (
         <Link href={catUrl}>
-          <a title={item.title}>{item.label}</a>
+          <a title={item.title}>
+            <span>{item.label}</span>
+          </a>
         </Link>
       )}
       {item.path.includes('http') && (
         <a href={catUrl} title={item.title} target={item.target}>
-          {item.label}
+          <span>{item.label}</span>
         </a>
       )}
 

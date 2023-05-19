@@ -20,13 +20,13 @@ const Footer = () => {
                   <li>
                     <Link href="/subscribe">
                       <a>Subscribe</a>
-                    </Link>{' '}
+                    </Link>
                     <span>|</span>
                   </li>
                   <li>
                     <Link href="/contact-us">
                       <a>Contact Us</a>
-                    </Link>{' '}
+                    </Link>
                     <span>|</span>
                   </li>
                   <li>

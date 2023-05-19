@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Contact Us | Mditerranean life'</title>
+        <title>Contact Us | Mditerranean life</title>
         <meta name="description" content={null} />
         <meta property="og:title" content={'Contact Us | Mditerranean life'} />
         <meta property="og:description" content={null} />
@@ -14,7 +14,10 @@ const Contact = () => {
         <div class="Bg-Image ">
           <div class="container">
             <div class="logoCenter text-center mb-4">
-              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png" />
+              <img
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png"
+                alt=""
+              />
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 m-auto">
