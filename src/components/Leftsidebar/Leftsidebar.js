@@ -230,9 +230,11 @@ function Leftsidebar() {
           ×
         </a>
         <hr />
-        {navigation?.map((listItem) => {
-          return <LeftbarItem key={listItem.id} item={listItem} />;
-        })}
+        <div className={styles.listContainer}>
+          {navigation?.map((listItem) => {
+            return <LeftbarItem key={listItem.id} item={listItem} />;
+          })}
+        </div>
       </div>
       <nav>
         <div>

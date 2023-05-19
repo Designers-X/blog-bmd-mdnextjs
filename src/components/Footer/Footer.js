@@ -18,6 +18,12 @@ const Footer = () => {
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.footerCustomMenu}>
                   <li>
+                    <Link href="/editorial">
+                      <a>Editorial</a>
+                    </Link>
+                    <span>|</span>
+                  </li>
+                  <li>
                     <Link href="/subscribe">
                       <a>Subscribe</a>
                     </Link>
@@ -39,7 +45,7 @@ const Footer = () => {
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.contactSocialIcons}>
                   <li>
-                    <Link href={''}>
+                    <Link href={'https://www.facebook.com/BrunoMDofficial/'}>
                       <a>
                         <svg
                           style={{ color: '#fff' }}
@@ -57,7 +63,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={''}>
+                    <Link href={'https://www.instagram.com/brunomdofficial/'}>
                       <a>
                         <svg
                           style={{ color: '#fff' }}
@@ -75,7 +81,35 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={''}>
+                    <Link href={'https://www.tiktok.com/@brunomdofficial'}>
+                      <a>
+                        <div
+                          style={{
+                            height: '25px',
+                            width: '25px',
+                            background: '#fff',
+                            borderRadius: '25%',
+                            display: 'grid',
+                            placeContent: 'center',
+                            marginTop: '10px',
+                          }}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-tiktok"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link href={'https://www.tiktok.com/@brunomdofficial'}>
                       <a>
                         <svg
                           style={{ color: '#fff' }}
@@ -91,7 +125,7 @@ const Footer = () => {
                         </svg>
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
