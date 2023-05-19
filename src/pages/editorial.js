@@ -22,18 +22,19 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+
             April Long is a renowned beauty editor who has been in the industry for over 20 years. With an extensive
             background in fashion and beauty, April has been a trusted voice in the industry, working for some of the
             most prestigious publications in the world.
           </p>
           <p>
+
             {' '}
             She began her career in the beauty industry as a makeup artist in New York City. After working in the field
             for a few years,she realized that her true passion was writing about beauty. She started her editorial
             career as an assistant editor at Elle magazine and worked her way up to become the beauty director at Town &
             Country magazine. April has also worked as a freelance writer and has contributed to a wide variety of
-            publications including Vogue, Harper’s Bazaar, Allure, InStyle, and The New York Times. Her work is
+            publications including Vogue, Harper’s Bazaar, Allure, InStyle, and The New York Times. Her work i
             well-known for its expertise and insight, as well as her ability to provide her readers with a unique
             perspective on the beauty industry.
           </p>
@@ -104,6 +105,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
+
           <p>
             Garrett Munce is an accomplished editor and writer, known for his expertise in the fields of fashion,
             grooming, and lifestyle. He has written for a variety of publications, including Esquire, GQ, and Men's
@@ -114,11 +116,22 @@ const Editorial = () => {
           <p>
             One of Munce's notable contributions to the fashion industry has been his advocacy for sustainable fashion
             practices. He has written extensively about the need for fashion brands to adopt more
+          <p className="m-0">
+            Garrett Munce is an accomplished editor and writer, known for his expertise in the fields of fashion,
+            grooming, and lifestyle. He has written for a variety of publications, including Esquire, GQ, and Men&apos;s
+            Health, and has become a trusted voice in the industry. Munce&apos;s work often focuses on the intersection
+            of style and culture, exploring how fashion and grooming trends are shaped by broader social and political
+            developments.
+          </p>
+          <p>
+            One of Munce&apos;s notable contributions to the fashion industry has been his advocacy for sustainable
+            fashion practices. He has written extensively about the need for fashion brands to adopt more
             environmentally-friendly production methods and to reduce waste in the supply chain. In doing so, he has
             helped to raise awareness about the negative impacts of fast fashion and the importance of ethical and
             sustainable consumption.
           </p>
           <p>
+
             Munce has also been a leading voice in the field of men's grooming, promoting a holistic approach to
             personal care that goes beyond simple hygiene. He has written about the benefits of using natural and
             organic products, as well as the importance of self-care practices such as meditation and exercise. Munce's
@@ -135,6 +148,20 @@ const Editorial = () => {
           </p>
           <p>
             Munce's expertise and leadership have also made him a popular speaker and commentator on fashion and
+            Munce has also been a leading voice in the field of men&apos;s grooming, promoting a holistic approach to
+            personal care that goes beyond simple hygiene. He has written about the benefits of using natural and
+            organic products, as well as the importance of self-care practices such as meditation and exercise.
+            Munce&apos;s writing on grooming has helped to break down gender stereotypes and encourage men to take a
+            more proactive approach to their physical and mental health.
+          </p>
+          <p>
+            In addition to his work as a writer, Munce has also been a sought-after editor, helping to shape the content
+            and direction of several prominent publications. He served as the grooming editor for Esquire for several
+            years, overseeing the publication&apos;s coverage of men&apos;s grooming and personal care. During his
+            tenure, he worked to expand the scope of the grooming section, incorporating more diverse perspectives and
+            covering a wider range of topics.
+          </p>
+          <p>
             lifestyle topics. He has appeared on numerous television programs, including the Today Show and Good Morning
             America, as well as on podcasts and other media outlets. His engaging and insightful commentary has helped
             to raise awareness about important issues in the fashion and grooming industries, as well as to inspire men
@@ -174,6 +201,14 @@ const Editorial = () => {
             Cop III, working alongside renowned directors such as Jim Cameron, John Landis, and Ridley Scott. In the
             late 1990s, Rock transitioned to directing, focusing on faith-based films like "Powerplay" and "The
             Homecoming."
+          <p className="m-0">
+            Rock Lane boasts a diverse background in national broadcast, digital advertising, and film production.
+            Co-founding two successful production companies, Cielo Pictures with David Lynch and Wim Wenders, and Space
+            Program under Universal Studios, Rock has overseen award-winning campaigns that garnered accolades such as
+            gold and silver at the Addy&apos;s, the London Intl. Awards, Golden Pencil/Show One, and a Clio for a Bud
+            Light Superbowl spot.
+          </p>
+          <p>
           </p>
           <p>
             Currently, Rock helms Ductape Inc., a boutique advertising and production agency catering to national and

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-
 import useSite from 'hooks/use-site';
 import { findMenuByLocation, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus';
 
@@ -22,7 +21,7 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <a>
-                <img src="/the_MDiterranean_life_logo.png" width={180} />
+                <img src="/the_MDiterranean_life_logo.png" width={180} alt="t" />
               </a>
             </Link>
           </div>

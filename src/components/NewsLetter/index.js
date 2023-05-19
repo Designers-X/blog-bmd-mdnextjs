@@ -10,8 +10,8 @@ export const NewsLetter = ({ content }) => {
     script.addEventListener('load', () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: content.portalId,
-          formId: content.formId,
+          portalId: content?.portalId,
+          formId: content?.formId,
           target: '#hubspotForm',
         });
       }
@@ -42,31 +42,12 @@ export const NewsLetter = ({ content }) => {
                     <div class="loader-circle-2"></div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-  return (
-    <>
-      <section className={styles.newsletterSection} id="NewLetterFrom">
-        <div className={styles.container}>
-          <img className={styles.imgHolder} src="https://email.brunomd.com/hubfs/Culture%20Image.png" />
-
-          <div className={styles.formContainer}>
-            <div className={styles.form}>
-              <div className={styles.headingContainer}>{content.title}</div>
-              <div id="hubspotForm">
-                <div class="center-body" style={{ height: '200px' }}>
-                  <div class="loader-circle-2"></div>
-                </div>{' '}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
   );
 };

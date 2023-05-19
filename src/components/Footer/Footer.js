@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-
+import Link from 'next/link';
 const Footer = () => {
   return (
     <>
@@ -7,9 +7,9 @@ const Footer = () => {
         <div className={styles.footerSpicl}>
           <div className={styles.middelSection}>
             <div className={styles.InRow}>
-              <a href="" className={styles.LogoSection}>
+              <Link href="" className={styles.LogoSection}>
                 <img src="/img/the_MDiterranean_life_logo-white.png" alt="logo" />
-              </a>
+              </Link>
             </div>
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
@@ -22,13 +22,20 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="/privacy-policy">Privacy Policy</a>
+                    <Link href="/subscribe">Subscribe</Link> <span>|</span>{' '}
+                  </li>
+                  <li>
+                    <Link href="/contact-us">Contact Us</Link> <span>|</span>{' '}
+                  </li>
+                  <li>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                 </ul>
               </div>
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.contactSocialIcons}>
                   <li>
-                    <a href="#">
+                    <Link href="#">
                       <svg
                         style={{ color: '#fff' }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -41,10 +48,13 @@ const Footer = () => {
                           fill="white"
                         ></path>
                       </svg>
-                    </a>
                   </li>
                   <li>
                     <a href="#">
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
                       <svg
                         style={{ color: '#fff' }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -57,10 +67,13 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
-                    </a>
                   </li>
                   <li>
                     <a href="#">
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#">
                       <svg
                         style={{ color: '#fff' }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +87,7 @@ const Footer = () => {
                         />
                       </svg>
                     </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -83,58 +97,58 @@ const Footer = () => {
               <>
                 <nav>
                   <div className={styles.footerMenu}>
-                    <a href="" className={styles.NewsLetter}>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Newsletter
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Contact Us
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Media Kit
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Press Room
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Site Map
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Community Guidelines
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Advertise Online
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Customer Service
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Subscribe
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Give a Gift
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Events & Promotions
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Other Hearst Subscriptions
-                    </a>
-                    <a href="" className={styles.NewsLetter}>
+                    </Link>
+                    <Link href="" className={styles.NewsLetter}>
                       {' '}
                       Giveaways
-                    </a>
+                    </Link>
                   </div>
                 </nav>
                 <img src="img/Hearst-logo.png" alt="Hearst-logo" />
@@ -145,16 +159,16 @@ const Footer = () => {
                 </p>
                 <p className={styles.DigitalTextFooter}>©Hearst Magazine Media, Inc. All Rights Reserved.</p>
                 <div className={styles.footerLegalMenu}>
-                  <a href="">Privacy Notice/Notice at Collection</a>
-                  <a href="">Your California Privacy Rights</a>
-                  <a href="">Interest-Based Ads</a>
-                  <a href="">Terms of Use</a>
-                  <a href="">Site Map</a>
+                  <Link href="">Privacy Notice/Notice at Collection</Link>
+                  <Link href="">Your California Privacy Rights</Link>
+                  <Link href="">Interest-Based Ads</Link>
+                  <Link href="">Terms of Use</Link>
+                  <Link href="">Site Map</Link>
                 </div>
                 <div className={styles.footerButton}>
-                  <a href="" className={styles.lastBtn}>
+                  <Link href="" className={styles.lastBtn}>
                     Do Not Sell My Personal Information
-                  </a>
+                  </Link>
                 </div>
               </>
             )}
