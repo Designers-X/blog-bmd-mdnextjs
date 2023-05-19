@@ -21,19 +21,24 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <a>
-                <img src="/the_MDiterranean_life_logo.png" width={180} alt="t" />
+                <img src="/the_MDiterranean_life_logo.png" width={180} alt="" />
               </a>
             </Link>
           </div>
           <div className={styles.sidebarcontainer}>
             <div className={styles.topnav}>
               {navigation?.map((listItem) => {
+                console.log({ listItem });
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
-              <div className={styles.topnavright}>
-                <a href="/subscribe">Subscribe</a>
-                {/* <a href="#about">Sign in</a> */}
-              </div>
+            </div>
+            <div className={styles.topnavright}>
+              <Link href="/subscribe">
+                <a className={styles.subscribeBtn}>
+                  <span>Subscribe</span>
+                </a>
+              </Link>
+              {/* <a href="#about">Sign in</a> */}
             </div>
           </div>
         </Section>

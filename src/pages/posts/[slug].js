@@ -17,7 +17,6 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ post, socialImage, related }) {
-  console.log({ post });
   const {
     title,
     metaTitle,
@@ -68,7 +67,6 @@ export default function Post({ post, socialImage, related }) {
   console.log({ title, siteMetadata });
   return (
     <Layout newsLetterShow={true}>
-      <link rel="stylesheet" href="mystyle.css"></link>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
       {!mastheadBanner ? (
@@ -122,7 +120,7 @@ export default function Post({ post, socialImage, related }) {
         <div>
           {mastheadBanner && (
             <div>
-              <img src={mastheadBanner.node.link} className="imgBanner" alt="..." />
+              <img src={mastheadBanner.node.link} className="imgBanner" alt="" />
             </div>
           )}
           <div

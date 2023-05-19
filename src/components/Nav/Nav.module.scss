@@ -289,6 +289,9 @@
 .sidebarcontainer {
   width: 75rem;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .topnav {
@@ -296,7 +299,7 @@
   background-color: #fff;
 }
 
-.topnav a {
+.topnav a,.topnavright a {
   float: left;
   color: #000;
   text-align: center;
@@ -304,15 +307,62 @@
   text-decoration: none;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: NeueHaasUnica, Arial, sans-serif;
+  font-family: 'DidotL06', Arial, sans-serif;
+  word-spacing: 2px;
+  span{
+    letter-spacing: 0.08em;
+  }
+}
+.subscribeBtn{
+  -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 1.875rem;
+    width: auto;
+    margin: 0 0 0 auto;
+    padding-left: 1.05rem;
+    padding-right: 1.05rem;
+    text-align: center;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: thin solid black;
+    span{
+      color: #ffffff;
+    }
+    &:hover{
+      background-color: #ffffff;
+      border: thin solid black;
+      span{
+        color: #000000;
+       border: none!important;
+      }
+    }
+    &:active{
+      background-color: #ffffff;
+      border: thin solid black;
+      span{
+        color: #000000;
+       border: none!important;
+      }
+    }
 }
 
 .topnav a:hover {
-  text-decoration: underline;
+  span{
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+  }
 }
 
 .topnav a.active {
-  text-decoration: underline;
+  border-bottom: 1px solid;
 }
 
 .topnavright {
