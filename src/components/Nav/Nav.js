@@ -29,8 +29,18 @@ const Nav = () => {
           <div className={styles.sidebarcontainer}>
             <div className={styles.topnav}>
               {navigation?.map((listItem) => {
+                console.log({ listItem });
                 return <NavListItem key={listItem.id} item={listItem} />;
               })}
+              <Link href={'/categories/food-and-wine'}>
+                <a title={'Food & Wine'}>Food & Wine</a>
+              </Link>
+              <Link href={'/categories/health-and-wellness'}>
+                <a title={'Health & Wellness'}>Health & Wellness</a>
+              </Link>
+              <Link href={'/categories/art-and-history'}>
+                <a title={'Art & History'}>Art & History</a>
+              </Link>
               <div className={styles.topnavright}>
                 <a href="/subscribe">Subscribe</a>
                 {/* <a href="#about">Sign in</a> */}
