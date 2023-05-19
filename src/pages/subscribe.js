@@ -5,7 +5,7 @@ const Subscribe = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Subscribe | Mditerranean life</title>
+        <title>Subscribe | Mditerranean life'</title>
         <meta name="description" content={null} />
         <meta property="og:title" content={'Subscribe | Mditerranean life'} />
         <meta property="og:description" content={null} />
@@ -14,10 +14,7 @@ const Subscribe = () => {
         <div class="Bg-Image">
           <div class="container">
             <div class="logoCenter text-center mb-4">
-              <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png"
-                alt=" "
-              />
+              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png" />
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 m-auto p-0 m-0">

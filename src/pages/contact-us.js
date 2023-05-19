@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
-import Link from 'next/link';
 const Contact = () => {
   return (
     <Layout>
@@ -15,10 +14,8 @@ const Contact = () => {
         <div class="Bg-Image ">
           <div class="container">
             <div class="logoCenter text-center mb-4">
-              <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png"
-                alt=" "
-              />
+              <img src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/the_MDiterranean_life_logo-white-1.png" />
+
             </div>
             <div class="row">
               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 m-auto">
@@ -26,7 +23,6 @@ const Contact = () => {
                   <p class="SecondText">How can we help?</p>
                   <p class="ThirdTextDesc">
                     Should you have any questions or require further clarification, please submit your request using the
-                    form below.
                   </p>
                   <p class="FourthText">email us at :</p>
                   <p class="FifthText">
@@ -35,7 +31,7 @@ const Contact = () => {
                   <p class="FourthText">Follow Us :</p>
                   <ul class="contactSocialIcons">
                     <li>
-                      <Link href="#">
+                      <a href="#">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +44,10 @@ const Contact = () => {
                             fill="white"
                           ></path>
                         </svg>
-                      </Link>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
                     </li>
                     <li>
                       <Link href="#">
@@ -64,6 +63,10 @@ const Contact = () => {
                             fill="white"
                           />
                         </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
                       </Link>
                     </li>
                     <li>

@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Privacy Policy | Mditerranean life</title>
+        <title>Privacy Policy | Mditerranean life'</title>
         <meta name="description" content={null} />
         <meta property="og:title" content={'Privacy Policy | Mditerranean life'} />
         <meta property="og:description" content={null} />

@@ -15,6 +15,13 @@ const Footer = () => {
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.footerCustomMenu}>
                   <li>
+                    <a href="/subscribe">Subscribe</a> <span>|</span>{' '}
+                  </li>
+                  <li>
+                    <a href="/contact-us">Contact Us</a> <span>|</span>{' '}
+                  </li>
+                  <li>
+                    <a href="/privacy-policy">Privacy Policy</a>
                     <Link href="/subscribe">Subscribe</Link> <span>|</span>{' '}
                   </li>
                   <li>
@@ -41,6 +48,9 @@ const Footer = () => {
                           fill="white"
                         ></path>
                       </svg>
+                  </li>
+                  <li>
+                    <a href="#">
                     </Link>
                   </li>
                   <li>
@@ -57,6 +67,9 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
+                  </li>
+                  <li>
+                    <a href="#">
                     </Link>
                   </li>
                   <li>
@@ -73,6 +86,7 @@ const Footer = () => {
                           fill="white"
                         />
                       </svg>
+                    </a>
                     </Link>
                   </li>
                 </ul>
