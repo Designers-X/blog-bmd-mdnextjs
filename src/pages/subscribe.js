@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
 const Subscribe = () => {
@@ -10,8 +10,8 @@ const Subscribe = () => {
     script.addEventListener('load', () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: "19647191",
-          formId: "2dc7982a-20de-40e5-acaf-ee19d2bcea93",
+          portalId: '19647191',
+          formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
           target: '#formSubscribe',
         });
       }

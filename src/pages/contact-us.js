@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
 import Link from 'next/link';
@@ -11,8 +11,8 @@ const Contact = () => {
     script.addEventListener('load', () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
-          portalId: "19647191",
-          formId: "2dc7982a-20de-40e5-acaf-ee19d2bcea93",
+          portalId: '19647191',
+          formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
           target: '#formContact',
         });
       }
@@ -114,7 +114,7 @@ const Contact = () => {
               <div class=" col-xl-5 col-lg-5 col-md-12 col-sm-12">
                 <div class="login-form Subscribe">
                   <h2>Contact</h2>
-                  <form>
+                  <form id="">
                     <div class="form-group">
                       <input
                         type="text"
