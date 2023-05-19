@@ -313,6 +313,14 @@
     letter-spacing: 0.08em;
   }
 }
+
+.listContainer span:nth-last-child(2) {
+  a{
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+}
 .subscribeBtn{
   -webkit-align-items: center;
     -webkit-box-align: center;
