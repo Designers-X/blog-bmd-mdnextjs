@@ -27,18 +27,21 @@ const Nav = () => {
           </div>
           <div className={styles.sidebarcontainer}>
             <div className={styles.topnav}>
-              {navigation?.map((listItem) => {
-                console.log({ listItem });
-                return <NavListItem key={listItem.id} item={listItem} />;
-              })}
-            </div>
-            <div className={styles.topnavright}>
-              <Link href="/subscribe">
-                <a className={styles.subscribeBtn}>
-                  <span>Subscribe</span>
-                </a>
-              </Link>
-              {/* <a href="#about">Sign in</a> */}
+              <div className={styles.MobileScroll}>
+                {navigation?.map((listItem) => {
+                  console.log({ listItem });
+                  return <NavListItem key={listItem.id} item={listItem} />;
+                })}
+              </div>
+
+              <div className={styles.topnavright}>
+                <Link href="/subscribe">
+                  <a className={styles.subscribeBtn}>
+                    <span>Subscribe</span>
+                  </a>
+                </Link>
+                {/* <a href="#about">Sign in</a> */}
+              </div>
             </div>
           </div>
         </Section>

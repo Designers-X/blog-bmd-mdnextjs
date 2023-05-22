@@ -612,7 +612,7 @@ a.textCapital {
   background-color: #000000;
   color: #e8e8e8;
   min-height: 121px;
-  min-width: 45.5rem;
+  min-width: 10.5rem;
   padding: 0.9375rem 0 1.25rem;
   text-align: center;
   width: 100%;
@@ -656,15 +656,16 @@ a.textCapital {
   padding-bottom: 2.5rem;
   padding-top: 1.25rem;
 
-  .cardTrending {
-    max-width: 400px;
-    margin: 0px 12px;
-    text-align: left;
-    width: 50%;
-    color: #000;
-  }
-  .HeightWidth282 {
-    height: 388px;
-    width: 388px;
-  }
+  
+}
+.cardTrending {
+  max-width: 400px;
+  margin: 0px 12px;
+  text-align: left;
+  width: 50%;
+  color: #000;
+}
+.HeightWidth282 {
+  height: 388px;
+  width: 388px;
 }
