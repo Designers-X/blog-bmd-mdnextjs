@@ -68,15 +68,13 @@ const Layout = ({ children, newsLetterShow }) => {
       <Nav />
       <Main>{children}</Main>
       {newsLetterShow && (
-        <div class="m-4">
-          <NewsLetter
-            content={{
-              title: 'Join Our Newsletter',
-              portalId: '19647191',
-              formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5',
-            }}
-          />
-        </div>
+        <NewsLetter
+          content={{
+            title: 'Join Our Newsletter',
+            portalId: '19647191',
+            formId: '9763546f-5aed-4882-8ef6-1f9e9a92a6c5',
+          }}
+        />
       )}
       <Footer />
     </div>

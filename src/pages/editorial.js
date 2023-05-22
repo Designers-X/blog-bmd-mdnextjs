@@ -26,7 +26,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+          <p style={{ margin: '0 auto 0 !important' }}>
             April Long is a renowned beauty editor who has been in the industry for over 20 years. With an extensive
             background in fashion and beauty, April has been a trusted voice in the industry, working for some of the
             most prestigious publications in the world.
@@ -77,7 +77,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+          <p style={{ margin: '0 auto 0 !important' }}>
             Marlow Granados is an editor and writer based in Los Angeles, California. He has worked with several major
             publishing houses and media outlets, including HarperCollins, Penguin Random House, and The New Yorker.
             Granados is known for his ability to work with authors to refine and enhance their writing while preserving
@@ -114,7 +114,7 @@ const Editorial = () => {
             </div>
           </div>
 
-          <p>
+          <p style={{ margin: '0 auto 0 !important' }}>
             Garrett Munce is an accomplished editor and writer, known for his expertise in the fields of fashion,
             grooming, and lifestyle. He has written for a variety of publications, including Esquire, GQ, and Men&apos;s
             Health, and has become a trusted voice in the industry. Munce&apos;s work often focuses on the intersection
@@ -172,7 +172,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+          <p style={{ margin: '0 auto 0 !important' }}>
             Rock Lane boasts a diverse background in national broadcast, digital advertising, and film production.
             Co-founding two successful production companies, Cielo Pictures with David Lynch and Wim Wenders, and Space
             Program under Universal Studios, Rock has overseen award-winning campaigns that garnered accolades such as
@@ -210,7 +210,7 @@ const Editorial = () => {
               </div>
             </div>
           </div>
-          <p>
+          <p style={{ margin: '0 auto 0 !important' }}>
             Darius Arya, Ph.D., is a renowned archaeologist, educator, and media personality who has dedicated his
             career to the study and preservation of ancient civilizations. With a strong focus on Roman history, Dr.
             Arya has contributed significantly to our understanding of ancient urban landscapes and the societies that

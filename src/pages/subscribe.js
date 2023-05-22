@@ -49,7 +49,7 @@ const Subscribe = () => {
               <div class=" col-xl-5 col-lg-5 col-md-12 col-sm-12 p-0 m-0">
                 <div class="login-form Subscribe">
                   <h2>Subscribe</h2>
-                  <form>
+                  <form id="formSubscribe">
                     <div class="form-group">
                       <input
                         type="text"

@@ -530,3 +530,24 @@ figcaption {
 .boxGrayTop {
   background-color: #000000;
 }
+
+
+// 22-05-2023 Add media Query
+@media (max-width: 767px) {
+  .justifyCenterV2 {
+    display: block !important;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+}
+.headingContainer h2 {
+  font-size: 3.49999rem;
+  line-height: 1;
+  margin: auto;
+  text-transform: uppercase;
+}
+.sectionTinyTitle {
+  
+  font-size: 13px;
+  
+}
+}
