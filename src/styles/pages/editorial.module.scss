@@ -43,3 +43,84 @@
         margin: 0 !important;
     }
 }
+
+// 23-05-2023 Add media Query
+@media (max-width: 1400px) {
+    .width20 {
+        width: 30%;
+        float: left;
+        height: 382px;
+    }
+
+    .authorBox {
+        position: relative;
+        height: 340px;
+        width: 315px;
+
+        img {
+            height: 340px;
+            width: 315px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .width20 {
+        width: 35%;
+        float: left;
+        height: 382px;
+    }
+
+    .authorBox {
+        position: relative;
+        height: 340px;
+        width: 300px;
+
+        img {
+            height: 340px;
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .width20 {
+        width: 50%;
+        float: left;
+        height: 382px;
+    }
+
+    .authorBox {
+        position: relative;
+        height: 340px;
+        width: 300px;
+
+        img {
+            height: 340px;
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .width20 {
+        width: 100%;
+        float: left;
+        height: 382px;
+    }
+
+    .authorBox {
+        position: relative;
+        height: 340px;
+        width: 300px;
+
+        img {
+            height: 340px;
+            width: 300px;
+            object-fit: cover;
+        }
+    }
+}

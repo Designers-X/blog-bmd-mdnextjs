@@ -565,3 +565,82 @@ figcaption {
   
 }
 }
+
+@media (max-width: 767px) {
+
+  .width40 {
+    width: 100%;
+    float: left;
+  }
+
+  .pr-30 {
+    padding-right: 0px;
+  }
+
+  .width50 {
+    width: 100%;
+    float: left;
+  }
+
+  .justifyCenterV2 {
+    display: block !important;
+    justify-content: space-evenly;
+    margin: 3rem auto;
+  }
+
+  .headingContainer h2 {
+    font-size: 3.49999rem;
+    line-height: 1;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  .sectionTinyTitle {
+
+    font-size: 13px;
+
+  }
+
+  .wp-block-columns {
+    padding: 10px 15px;
+
+  }
+
+  .Hover-Effect {
+    top: 8%;
+    margin: 0 8%;
+  }
+
+  .Hover-Effect p {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 3% 3%;
+  }
+}
+
+@media (max-width: 575px) {
+  .Bg-Image .container {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .Bg-Image .container {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .Hover-Effect {
+    top: 4%;
+    margin: 0 4%;
+  }
+
+  .Hover-Effect p {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3% 3%;
+    margin: 0px !important;
+  }
+}
