@@ -15,8 +15,7 @@ const Privacy = () => {
           <h1>Privacy Policy</h1>
           <p>
             Bruno Pharma Innovations, LLC (“Bruno Pharma”) is committed to protecting your privacy and developing
-            technology that gives you the most powerful and safe online experience. This Privacy Policy applies to the
-            <a href="www.themditerraneanlife.com">MDiterranean Life Website</a> and Bruno Pharma Services and governs
+            technology that gives you the most powerful and safe online experience. This Privacy Policy applies to the <a href="www.themditerraneanlife.com" style={{textDecoration:'underline',color:'#000'}}>MDiterranean Life Website</a> and Bruno Pharma Services and governs
             data collection and usage. By using our Site and/or Services you accept all of the policies and practices
             described in this Privacy Policy. Each time you visit the site and provide information to us, you are
             consenting to our disclosure and use of the information provided. This Privacy Policy is incorporated into
@@ -162,11 +161,8 @@ const Privacy = () => {
           <h2>Contact Information</h2>
           <p>
             Bruno Pharma welcomes your comments regarding this Privacy Policy. If you believe that Bruno Pharma has not
-            adhered to this Policy, please contact Bruno Pharma at
-          </p>
-
-          <p>
-            customercare@mditerraneanlife.com. We will use commercially reasonable efforts to promptly determine and
+            adhered to this Policy, please contact Bruno Pharma at <a href='mailto:customercare@mditerraneanlife.com' style={{textDecoration:'underline',color:'#000'}}>customercare@mditerraneanlife.com</a>
+            . We will use commercially reasonable efforts to promptly determine and
             remedy the problem.
           </p>
         </div>
