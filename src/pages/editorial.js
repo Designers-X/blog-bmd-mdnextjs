@@ -13,7 +13,7 @@ const Editorial = () => {
         <meta property="og:description" content={null} />
       </Helmet>
       <section className="container">
-        <div className={styles.m4Rem}>
+        <div className={styles.m4Rem} id="April_Long">
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
@@ -21,8 +21,8 @@ const Editorial = () => {
                 alt=""
               />
               <div className={styles.authorBoxText}>
-                <h3>APRIL LONG</h3>
-                <p>Beauty editor</p>
+                <h3>April Long</h3>
+                <p>Beauty Editor</p>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Editorial = () => {
           </p>
         </div>
 
-        <div className={styles.m4Rem}>
+        <div className={styles.m4Rem} id="Marlow_Granados">
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
@@ -100,7 +100,7 @@ const Editorial = () => {
           </p>
         </div>
 
-        <div className={styles.m4Rem}>
+        <div className={styles.m4Rem} id="Garrett_Munce">
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
@@ -159,7 +159,7 @@ const Editorial = () => {
           </p>
         </div>
 
-        <div className={styles.m4Rem}>
+        <div className={styles.m4Rem} id="Rock_Lane">
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
@@ -197,7 +197,7 @@ const Editorial = () => {
           <p>A UCLA alumnus, Rock holds a degree in Sociology with a minor in film studies</p>
         </div>
 
-        <div className={styles.m4Rem}>
+        <div className={styles.m4Rem} id="Darius_Arya">
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img

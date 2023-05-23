@@ -136,6 +136,9 @@
   width: 55%;
   float: left;
 }
+.width100 {
+  width: 100%;
+}
 
 .w-100 .uag-image-280 {
   width: 100%;
@@ -510,6 +513,17 @@ figcaption {
   font-size: 14px;
   color: #000000;
 }
+.authorImg_parnt figcaption a, .authorDesc_parnt a {
+  font-family: "DidotM06" !important;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.authorImg_parnt figcaption a:hover, .authorDesc_parnt a:hover {
+  color: grey;
+}
+
 .authorImg_parnt img {
   width: 80px;
   height: 80px;

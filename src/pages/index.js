@@ -62,40 +62,45 @@ export default function Home({
               <div className="row" key={index1}>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
-                    <Link href={postslug}>
-                      <a className={styles.Atag}>
-                        <div className="text-center">
-                          <div className={styles.pLR75}>
-                            {nodes.categories.map((ele, index) => {
-                              return (
-                                <div className={styles.ShoppingText} key={index}>
-                                  {ele.name}
-                                </div>
-                              );
-                            })}
+                    <div className="text-center">
+                      <div className={styles.pLR75}>
+                        {nodes.categories.map((ele, index) => {
+                          return (
+                            <div className={styles.ShoppingText} key={index}>
+                              {ele.name}
+                            </div>
+                          );
+                        })}
+                        <Link href={postslug}>
+                          <a className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
-                            <div
-                              className={styles.pagesSubTitle}
-                              dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}
-                            ></div>
-                            <div className={styles.AuthorText}>
-                              {nodes.writtenBy && (
-                                <p className={styles.pagesAutherDesc}>
-                                  Written By: <span>{writtenBy}</span>
-                                </p>
-                              )}
-                              {nodes.interviewedBy && (
-                                <p className={styles.pagesAutherDesc}>
-                                  Interviewed By: <span>{interviewedBy}</span>
-                                </p>
-                              )}
-                            </div>
-                          </div>
+                          </a>
+                        </Link>
+                        <div
+                          className={styles.pagesSubTitle}
+                          dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}
+                        ></div>
+                        <div className={styles.AuthorText}>
+                          {nodes.writtenBy && (
+                            <p className={styles.pagesAutherDesc}>
+                              Written By:
+                              <Link href="/editorial/#Garrett_MuNce">
+                                <a className={styles.Atag}>
+                                  <span>{writtenBy}</span>
+                                </a>
+                              </Link>
+                            </p>
+                          )}
+                          {nodes.interviewedBy && (
+                            <p className={styles.pagesAutherDesc}>
+                              Interviewed By: <span>{interviewedBy}</span>
+                            </p>
+                          )}
                         </div>
-                      </a>
-                    </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 {featuredimage && (
@@ -518,7 +523,7 @@ export default function Home({
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index}>
-                <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
+                <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
                     <Link href={postslug}>
                       <a className={styles.Atag} href="">
@@ -554,7 +559,7 @@ export default function Home({
                   </div>
                 </div>
                 {featuredimage && (
-                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                   </div>
                 )}

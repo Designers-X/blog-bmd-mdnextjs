@@ -194,9 +194,8 @@ button.btn.btn-black:hover {
 }
 
 #subscribe .Bg-Image {
-  background-image: url("https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/bg-Back.png");
+  background-image: url("https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/subscribe-image.jpg");
   background-repeat: no-repeat, repeat;
-
   background-size: cover;
 }
 
@@ -224,6 +223,21 @@ button.btn.btn-black:hover {
 
 .Bg-Image .btn-primary {
   width: 100%;
+}
+#policy h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem 0 1rem 0 !important;
+  text-align: left;
+}
+#policy h1 {
+  text-align: left;
+  margin: 2rem 0 1rem;
+  font-size: 3.49999rem;
+  line-height: 1;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: "DidotL06";
 }
 
 .Bg-Image .FirstText {
@@ -302,7 +316,8 @@ ul.contactSocialIcons li {
   text-decoration: underline;
 }
 
-.Bg-Image .login-form h2 {
+.Bg-Image .login-form h2,
+#policy h1 {
   font-family: "DidotL06";
   color: #000;
   font-size: 54px;
