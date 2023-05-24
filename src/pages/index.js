@@ -99,8 +99,7 @@ export default function Home({
                         <div className={styles.AuthorText}>
                           {nodes.writtenBy && (
                             <p className={styles.pagesAutherDesc}>
-                              Written By:
-                              <CustomLink text={writtenBy} />
+                              Written By: <CustomLink text={writtenBy} />
                             </p>
                           )}
                           {nodes.interviewedBy && (

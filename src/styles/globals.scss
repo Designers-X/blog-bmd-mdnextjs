@@ -23,10 +23,22 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Charter,Georgia,Times,Serif";
+  font-family: "Charter";
   src: url("../../public/font/Charter.otf") format("truetype");
   font-display: swap;
   font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasUnica";
+  src: url("../../public/font/NeueHaasUnica-Regular.ttf");
+}
+@font-face {
+  font-family: "NeueHaasUnicaM";
+  src: url("../../public/font/NeueHaasUnica-Medium.ttf");
+}
+@font-face {
+  font-family: "SaolDisplay";
+  src: url("../../public/font/SaolDisplay-Regular.ttf");
 }
 
 * {
@@ -42,7 +54,7 @@ body {
   font-weight: 400;
   color: #000000;
   letter-spacing: normal;
-  font-family: "DidotL06";
+  font-family: "Charter";
   line-height: 28px;
 }
 
@@ -52,14 +64,14 @@ h1 {
 
 h1,
 h2 {
-  font-family: "DidotL06" !important;
+  font-family: "SaolDisplay", Georgia, Times, serif !important;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: "DidotL06" !important;
+  font-family: "SaolDisplay", Georgia, Times, serif !important;
 }
 
 h1 {
@@ -90,18 +102,13 @@ li {
 }
 
 p {
-  // font-size: 18px;
-  // line-height: 1.6;
-  // font-family: "Charter", Georgia, Times, Serif;
-  line-height: 40px;
-  font-size: 24px;
-  font-family: "DidotL06";
-  font-weight: 100;
-  word-spacing: normal;
-  font-weight: normal;
-  margin: 24px auto !important;
+  font-family: "Charter", "Georgia", "Times", "Serif" !important;
+  font-size: 19px !important;
+  line-height: 1.6;
+  font-weight: initial;
+  letter-spacing: normal;
   text-align: justify;
-  letter-spacing: 0.2px;
+  word-spacing: 1px;
 }
 
 ul {
