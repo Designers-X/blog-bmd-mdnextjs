@@ -460,3 +460,22 @@
   width: fit-content;
   margin: auto;
 }
+
+// 24-05-2023 Add media Query
+@media (max-width: 991px) {
+  .pLR75 {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+ 
+  .inlineBox {
+    display: block;
+    text-align: center;
+  }
+  .fashionText {
+    
+    font-size: 70px;
+  
+  }
+}
