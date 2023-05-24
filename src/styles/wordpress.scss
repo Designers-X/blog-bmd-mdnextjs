@@ -349,15 +349,19 @@ figcaption {
   color: #000000;
 }
 .authorDesc {
-  font-family: "NeueHaasUnica", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
   font-size: 0.70003rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto !important;
+  letter-spacing: 0.1em!important;
+  a{
+    letter-spacing: 0.1em!important;
+    font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  }
 }
-.authorDesc a,
 .authorImg figcaption a {
   text-decoration: underline;
   text-decoration-thickness: 0.0625rem;
@@ -524,17 +528,24 @@ figcaption {
   padding: 0 !important;
   box-shadow: unset !important;
 }
+.authorDesc_parnt{
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+
 .authorImg_parnt figcaption {
   font-size: 14px;
   color: #000000;
-  font-family: "NeueHaasUnica", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
 }
 .authorImg_parnt figcaption a,
 .authorDesc_parnt a {
   font-size: 14px;
   color: #000000;
   text-decoration: none;
-  font-family: "NeueHaasUnica", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
 }
 
 .authorImg_parnt figcaption a:hover,
@@ -552,6 +563,8 @@ figcaption {
   font-size: 14px;
   margin: 0 auto !important;
   line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
 }
 .authorDesc_parnt p {
   margin: 0 !important;

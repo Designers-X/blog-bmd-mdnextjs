@@ -229,7 +229,7 @@ export default function Home({
                             </div>
                           )}
                           <div className={styles.cardText}>
-                            <p className={styles.pagesSubTitle}>{nodes.pageTitle || posttitle}</p>
+                            <p className={styles.pagesAutherDesc}>{nodes.pageTitle || posttitle}</p>
                           </div>
                         </div>
                       </div>
@@ -249,7 +249,7 @@ export default function Home({
                 {nodes.categories.map((ele, index) => {
                   const categoryslug = '/categories/' + ele.slug;
                   return (
-                    <div key={index}>
+                    <div className='' key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
                           <a className={styles.fashiHyperLink}>{ele.name}</a>
@@ -341,7 +341,7 @@ export default function Home({
                           <div className={styles.gridGap}>
                             <Link href={postslug} key={index}>
                               <a className={styles.Atag}>
-                                <div className={styles.pageTitle}>
+                                <div className={styles.pagesSubTitle}>
                                   <span>{nodes.pageTitle || posttitle}</span>
                                 </div>
                               </a>
