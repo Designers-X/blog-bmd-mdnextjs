@@ -31,6 +31,20 @@ export default function Home({
   arthistorypost,
   fashionbyidpost,
 }) {
+  const CustomLink = ({ text }) => {
+    const arr = text.toLowerCase().split(' ');
+    for (var i = 0; i < arr.length; i++) {
+      arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    const tagLink = arr.join('_');
+    return (
+      <Link href={`/editorial/#${tagLink}`}>
+        <a className={styles.Atag}>
+          <span>{text}</span>
+        </a>
+      </Link>
+    );
+  };
   return (
     <Layout newsLetterShow={true}>
       <div class="ratio ratio-16x9">
@@ -86,16 +100,12 @@ export default function Home({
                           {nodes.writtenBy && (
                             <p className={styles.pagesAutherDesc}>
                               Written By:
-                              <Link href="/editorial/#Garrett_MuNce">
-                                <a className={styles.Atag}>
-                                  <span>{writtenBy}</span>
-                                </a>
-                              </Link>
+                              <CustomLink text={writtenBy} />
                             </p>
                           )}
                           {nodes.interviewedBy && (
                             <p className={styles.pagesAutherDesc}>
-                              Interviewed By: <span>{interviewedBy}</span>
+                              Interviewed By: <CustomLink text={interviewedBy} />
                             </p>
                           )}
                         </div>
@@ -172,20 +182,20 @@ export default function Home({
                           dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
                         />
                       </div>
-                      <div className={styles.AuthorText}>
-                        {nodes.writtenBy && (
-                          <p className={styles.pagesAutherDesc}>
-                            Written By: <span>{writtenBy}</span>
-                          </p>
-                        )}
-                        {nodes.interviewedBy && (
-                          <p className={styles.pagesAutherDesc}>
-                            Interviewed By: <span>{interviewedBy}</span>
-                          </p>
-                        )}
-                      </div>
                     </a>
                   </Link>
+                  <div className={styles.AuthorText}>
+                    {nodes.writtenBy && (
+                      <p className={styles.pagesAutherDesc}>
+                        Written By: <CustomLink text={writtenBy} />
+                      </p>
+                    )}
+                    {nodes.interviewedBy && (
+                      <p className={styles.pagesAutherDesc}>
+                        Interviewed By: <CustomLink text={interviewedBy} />
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
@@ -287,20 +297,20 @@ export default function Home({
                             </h2>
                           </div>
                         </div>
-                        <div className={styles.AuthorText}>
-                          {writtenBy && (
-                            <p className={styles.pagesAutherDesc}>
-                              Written By: <span>{writtenBy}</span>
-                            </p>
-                          )}
-                          {interviewedBy && (
-                            <p className={styles.pagesAutherDesc}>
-                              Interviewed By: <span>{interviewedBy}</span>
-                            </p>
-                          )}
-                        </div>
                       </a>
                     </Link>
+                    <div className={styles.AuthorText}>
+                      {writtenBy && (
+                        <p className={styles.pagesAutherDesc}>
+                          Written By: <CustomLink text={writtenBy} />
+                        </p>
+                      )}
+                      {interviewedBy && (
+                        <p className={styles.pagesAutherDesc}>
+                          Interviewed By: <CustomLink text={interviewedBy} />
+                        </p>
+                      )}
+                    </div>
                   </div>
                 );
               })}
@@ -313,10 +323,10 @@ export default function Home({
                   const writtenBy = nodes.writtenBy;
                   const postslug = 'posts/' + nodes.slug;
                   return (
-                    <Link href={postslug} key={index}>
-                      <a className={styles.Atag}>
-                        <div className=" mb-2">
-                          <div className={styles.inlineBox}>
+                    <div className=" mb-2" key={index}>
+                      <div className={styles.inlineBox}>
+                        <Link href={postslug}>
+                          <a className={styles.Atag}>
                             {featuredimage ? (
                               <div className="">
                                 <img className={styles.img120} src={featuredimage} alt="fluid" />
@@ -326,22 +336,26 @@ export default function Home({
                                 <img alt={posttitle} />
                               </div>
                             )}
-                            <div className="m-auto">
-                              <div className={styles.gridGap}>
+                          </a>
+                        </Link>
+                        <div className="m-auto">
+                          <div className={styles.gridGap}>
+                            <Link href={postslug} key={index}>
+                              <a className={styles.Atag}>
                                 <div className={styles.pageTitle}>
                                   <span>{nodes.pageTitle || posttitle}</span>
                                 </div>
-                                {writtenBy && (
-                                  <p className={styles.pagesAutherDesc}>
-                                    By <span>{writtenBy}</span>
-                                  </p>
-                                )}
-                              </div>
-                            </div>
+                              </a>
+                            </Link>
+                            {writtenBy && (
+                              <p className={styles.pagesAutherDesc}>
+                                WRITTEN BY: <CustomLink text={writtenBy} />
+                              </p>
+                            )}
                           </div>
                         </div>
-                      </a>
-                    </Link>
+                      </div>
+                    </div>
                   );
                 })}
               </div>
@@ -425,10 +439,13 @@ export default function Home({
                 <div className="container text-center">
                   {console.log({ bbbbbbb: nodes })}
                   {nodes.categories.map((ele, index1) => {
+                    const categoryslug = '/categories/' + ele.slug;
                     return (
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
-                          <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          <Link href={categoryslug}>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
@@ -437,24 +454,24 @@ export default function Home({
                 </div>
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
-                    <Link href={postslug}>
-                      <a className={styles.Atag}>
-                        <div className="text-center">
-                          <div>
+                    <div className="text-center">
+                      <div>
+                        <Link href={postslug}>
+                          <a className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                            {writtenBy && (
-                              <div className={styles.Author}>
-                                <p className={styles.pagesAutherDesc}>
-                                  BY <span>{writtenBy}</span>
-                                </p>
-                              </div>
-                            )}
+                          </a>
+                        </Link>
+                        {writtenBy && (
+                          <div className={styles.Author}>
+                            <p className={styles.pagesAutherDesc}>
+                              WRITTEN BY: <CustomLink text={writtenBy} />
+                            </p>
                           </div>
-                        </div>
-                      </a>
-                    </Link>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
                 {featuredimage && (
@@ -475,6 +492,7 @@ export default function Home({
         {travelandleisure1.map((nodes, index) => {
           const posttitle = nodes.title;
           const subtitle = nodes.excerpt;
+          const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container text-center" key={index}>
               <div className={styles.videoHeight}>
@@ -497,18 +515,22 @@ export default function Home({
                   </div>
                 )}
               </div>
-              <div>
-                <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
-              </div>
-              <div className="text-center mt-4">
-                <div className={styles.ahover}>
-                  <a className={styles.Atag}>
-                    <h2 className={styles.pagesTitle}>
-                      <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
-                    </h2>
-                  </a>
-                </div>
-              </div>
+              <Link href={postslug}>
+                <a className={styles.Atag}>
+                  <div>
+                    <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
+                  </div>
+                  <div className="text-center mt-4">
+                    <div className={styles.ahover}>
+                      <a className={styles.Atag}>
+                        <h2 className={styles.pagesTitle}>
+                          <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                        </h2>
+                      </a>
+                    </div>
+                  </div>
+                </a>
+              </Link>
             </div>
           );
         })}
@@ -548,7 +570,7 @@ export default function Home({
                             {writtenBy && (
                               <div className={styles.Author}>
                                 <p className={styles.pagesAutherDesc}>
-                                  BY <span>{writtenBy}</span>
+                                  WRITTEN BY: <CustomLink text={writtenBy} />
                                 </p>
                               </div>
                             )}
@@ -570,7 +592,6 @@ export default function Home({
       </section>
       <section className={styles.section9}>
         {arthistorypost.map((nodes, index) => {
-          console.log({ nodes });
           const posttitle = nodes.title;
           const postslug = 'posts/' + nodes.slug;
           const subtitle = nodes.excerpt;
@@ -579,12 +600,15 @@ export default function Home({
               <div className="container text-center">
                 {index == 0 &&
                   nodes.categories.map((ele, index1) => {
+                    const categoryslug = '/categories/' + ele.slug;
                     return (
                       <div className={styles.FashionNew} key={index1}>
                         <div>
-                          <h2 className={styles.fashionText}>
-                            <a className={styles.fashiHyperLink}>{ele.name}</a>
-                          </h2>
+                          <Link href={categoryslug}>
+                            <h2 className={styles.fashionText}>
+                              <a className={styles.fashiHyperLink}>{ele.name}</a>
+                            </h2>
+                          </Link>
                         </div>
                       </div>
                     );
@@ -633,7 +657,7 @@ export default function Home({
                         {nodes.writtenBy && (
                           <div className={styles.Author}>
                             <p className={styles.pagesAutherDesc}>
-                              BY <span>{nodes.writtenBy}</span>
+                              WRITTEN BY: <CustomLink text={nodes.writtenBy} />
                             </p>
                           </div>
                         )}
@@ -655,11 +679,14 @@ export default function Home({
             <div className="container text-center" key={index}>
               <div className="container text-center">
                 {nodes.categories.map((ele, index1) => {
+                  const categoryslug = '/categories/' + ele.slug;
                   return (
                     <div className={styles.FashionNew} key={index1}>
                       <div>
                         <h2 className={styles.fashionText}>
-                          <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          <Link href={categoryslug}>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          </Link>
                         </h2>
                       </div>
                     </div>
