@@ -143,7 +143,7 @@ const allPostsIncludesTypes = {
   archive: QUERY_ALL_POSTS_ARCHIVE,
   index: QUERY_ALL_POSTS_INDEX,
   fashion: QUERY_FASHIOH_POSTS,
-  fashionbyid: QUERY_FASHIOH_POST_BY_ID,a
+  fashionbyid: QUERY_FASHIOH_POST_BY_ID,
   beauty: QUERY_BEAUTY_POSTS,
   latestpost: QUERY_LATEST_POST,
   fruitandwine: QUERY_FRUIT_AND_WINE_POSTS,
