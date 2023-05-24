@@ -168,7 +168,7 @@ const Privacy = () => {
             adhered to this Policy, please contact Bruno Pharma at{' '}
             <Link href="mailto:customercare@mditerraneanlife.com">
               <a style={{ textDecoration: 'underline', color: '#000' }}>customercare@mditerraneanlife.com</a>
-            </Link>
+            </Link>{' '}
             . We will use commercially reasonable efforts to promptly determine and remedy the problem.
           </p>
         </div>
