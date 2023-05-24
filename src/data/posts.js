@@ -555,10 +555,10 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
     }
   }
 `;
-
+//12
 export const QUERY_CATNOT_MISS_READS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 1, orderby: { field: AUTHOR, order: DESC } }, last: 4) {
+    posts(where: { in: ["83", "84", "86", "87"] }) {
       edges {
         node {
           author {
@@ -630,7 +630,7 @@ export const QUERY_SECTION_ELEVEN_POST = gql`
 
 export const QUERY_CULTURE_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 6, orderby: { field: AUTHOR, order: DESC } }, first: 1) {
+    posts(where: { in: ["1009"] }) {
       edges {
         node {
           author {
@@ -767,7 +767,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
 
 export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 12 }, first: 4) {
+    posts(where: { in: ["1261", "1147", "861", "92"] }) {
       edges {
         node {
           author {
@@ -859,7 +859,7 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
 
 export const QUERY_HEALTH_WELLNESS_POSTS = gql`
   query PostsByCategoryId {
-    posts(where: { categoryId: 13 }, last: 1) {
+    posts(where: { in: ["91"] }) {
       edges {
         node {
           author {
