@@ -43,7 +43,7 @@
   line-height: 1.1;
   padding-bottom: 1rem;
   color: var(--bmd-black);
-  font-family: var(--bmd-font-Primary);
+  font-family: "SaolDisplay", Georgia, Times, serif !important;
 }
 
 .formContainer {
