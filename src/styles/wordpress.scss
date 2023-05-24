@@ -341,7 +341,7 @@ figcaption {
   box-shadow: unset !important;
 }
 .authorImg figcaption {
-  font-family: "NeueHaasUnica", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
   font-size: 0.70003rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
@@ -388,7 +388,7 @@ figcaption {
 }
 
 .wp-block-columns {
-  max-width: 68rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
@@ -592,32 +592,32 @@ figcaption {
 .row {
   --bs-gutter-x: 0rem;
 }
-.mlr-12 {
-  margin-left: 12rem;
-  margin-right: 12rem;
-}
-.pl-4 {
-  padding-left: 4rem;
-}
-.pr-4 {
-  padding-right: 4rem;
-}
-.pl-5 {
-  padding-left: 5rem;
-}
-.pr-5 {
-  padding-right: 5rem;
-}
-.pl-2 {
-  padding-left: 2rem;
-}
+// .mlr-12 {
+//   margin-left: 12rem;
+//   margin-right: 12rem;
+// }
+// .pl-4 {
+//   padding-left: 4rem;
+// }
+// .pr-4 {
+//   padding-right: 4rem;
+// }
+// .pl-5 {
+//   padding-left: 5rem;
+// }
+// .pr-5 {
+//   padding-right: 5rem;
+// }
+// .pl-2 {
+//   padding-left: 2rem;
+// }
 
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
-  .mlr-12 {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  }
+  // .mlr-12 {
+  //   margin-left: 4rem;
+  //   margin-right: 4rem;
+  // }
   .categoryLink {
     margin: 15px 0px;
   }
