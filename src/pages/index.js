@@ -249,7 +249,7 @@ export default function Home({
                 {nodes.categories.map((ele, index) => {
                   const categoryslug = '/categories/' + ele.slug;
                   return (
-                    <div className='' key={index}>
+                    <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
                           <a className={styles.fashiHyperLink}>{ele.name}</a>
