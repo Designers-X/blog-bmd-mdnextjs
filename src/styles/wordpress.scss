@@ -544,7 +544,19 @@ figcaption {
 .boxGrayTop {
   background-color: #000000;
 }
+// 24-05-2023
+.postsContainer ul {
+  word-break: break-all;
+}
 
+.postsContainer iframe {
+  border: 0;
+  width: 100%;
+}
+
+.postsContainer p {
+  word-break: break-all;
+}
 
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
