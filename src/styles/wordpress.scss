@@ -758,8 +758,11 @@ figcaption {
     max-width: 380px;
     margin: 0 auto;
   }
-    .categoryLink img{
+   .categoryLink img{
     height:180px;
+  }
+  .categoryLink figcaption a {
+  font-size: 0.9em;
   }
 }
 
