@@ -648,7 +648,11 @@ figcaption {
 // .pl-2 {
 //   padding-left: 2rem;
 // }
-
+@media (max-width: 1024px) {
+    .categoryLink img{
+    height:280px;
+  }
+}
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
   .mpad30{
@@ -663,6 +667,9 @@ figcaption {
   // }
   .categoryLink {
     margin: 15px 0px;
+  }
+  .categoryLink img{
+    height:250px;
   }
 
   .pr-15 {
@@ -750,6 +757,9 @@ figcaption {
   .Bg-Image .container {
     max-width: 380px;
     margin: 0 auto;
+  }
+    .categoryLink img{
+    height:180px;
   }
 }
 
