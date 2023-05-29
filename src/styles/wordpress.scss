@@ -4,33 +4,40 @@
 .layout70{
   max-width: 70rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .layout60{
   max-width: 60rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .layout50{
   max-width: 50rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .layout40{
   max-width: 40rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .layout30{
   max-width: 30rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .layout20{
   max-width: 20rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .layout10{
   max-width: 10rem;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .layoutFlexDiv {
   display: flex;
@@ -644,6 +651,12 @@ figcaption {
 
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
+  .mpad30{
+    padding: 0 30px !important;
+  }
+  .mpad15{
+    padding: 0 15px !important;
+  }
   // .mlr-12 {
   //   margin-left: 4rem;
   //   margin-right: 4rem;
@@ -687,8 +700,11 @@ figcaption {
     float: left;
   }
 
-  .pr-30 {
-    padding-right: 0px;
+.pr-30 {
+    padding-right: 0;
+  }
+  .pl-30 {
+    padding-left: 0;
   }
 
   .width50 {
