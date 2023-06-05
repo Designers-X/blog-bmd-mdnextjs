@@ -228,7 +228,7 @@ export default function Home({
                               <img alt={posttitle} />
                             </div>
                           )}
-                            <p className={'card-text mt-2'}>{nodes.pageTitle || posttitle}</p>
+                          <p className={'card-text mt-2'}>{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
                     </a>
@@ -262,8 +262,8 @@ export default function Home({
           })}
         </div>
         <div className="container">
-        <div className="row mtb-3">
-          <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15">
+          <div className="row mtb-3">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -759,7 +759,7 @@ export default function Home({
                           ) : (
                             <img className={styles.topRoundImgFullWidth} alt="..." />
                           )}
-                            <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
+                          <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
                     </a>
