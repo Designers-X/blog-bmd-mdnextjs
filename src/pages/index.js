@@ -228,9 +228,7 @@ export default function Home({
                               <img alt={posttitle} />
                             </div>
                           )}
-                          <div className={styles.cardText}>
-                            <p className={styles.pagesAutherDesc}>{nodes.pageTitle || posttitle}</p>
-                          </div>
+                            <p className={'card-text mt-2'}>{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
                     </a>
@@ -264,8 +262,8 @@ export default function Home({
           })}
         </div>
         <div className="container">
-          <div className="row">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-4">
+        <div className="row mtb-3">
+          <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -314,7 +312,7 @@ export default function Home({
                 );
               })}
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 mt-4">
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 pl-15">
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
@@ -761,9 +759,7 @@ export default function Home({
                           ) : (
                             <img className={styles.topRoundImgFullWidth} alt="..." />
                           )}
-                          <div className={styles.pageTitle}>
-                            <p className="card-text">{nodes.pageTitle || posttitle}</p>
-                          </div>
+                            <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
                     </a>
