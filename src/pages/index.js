@@ -753,7 +753,7 @@ export default function Home({
                   <Link href={postslug}>
                     <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
-                        <div className="card">
+                        <div className="card mb-4">
                           {featuredimage ? (
                             <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
                           ) : (

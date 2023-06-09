@@ -480,4 +480,15 @@
     height: auto;
     width: auto;
    }
+   .topRoundImgFullWidth {
+    height: 240px;
+    width: 95%;
+   }
+}
+@media (max-width: 576px) {
+  .topRoundImgFullWidth {
+    height: auto;
+    width: 100%;
+   }
+
 }

@@ -1,48 +1,54 @@
 .aligncenter {
   text-align: center;
 }
-.layout70{
+
+.layout70 {
   max-width: 70rem;
   margin: 0 auto;
   padding: 0 15px;
 }
-.layout60{
+
+.layout60 {
   max-width: 60rem;
   margin: 0 auto;
   padding: 0 15px;
 }
-.layout50{
+
+.layout50 {
   max-width: 50rem;
   margin: 0 auto;
   padding: 0 15px;
 }
-.layout40{
+
+.layout40 {
   max-width: 40rem;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.layout30{
+.layout30 {
   max-width: 30rem;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.layout20{
+.layout20 {
   max-width: 20rem;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.layout10{
+.layout10 {
   max-width: 10rem;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .layoutFlexDiv {
   display: flex;
   justify-content: space-between;
 }
+
 .temp {
   display: block;
 }
@@ -66,13 +72,16 @@
 .d-flex.justify-content-around a {
   color: #000;
 }
+
 .justifyCenterV2 {
   display: flex;
   justify-content: center;
 }
+
 .bt-1 {
   border-top: 1px solid #808080;
 }
+
 .bb-1 {
   border-bottom: 1px solid #808080;
 }
@@ -101,19 +110,23 @@
 .TwoColumn {
   display: flex;
 }
+
 .width40 {
   width: 40%;
   float: left;
 }
+
 .width50 {
   width: 50%;
   float: left;
 }
+
 .postsContainer h2 {
   text-transform: uppercase;
   font-size: 2rem;
   margin: 3rem 0 1rem 0 !important;
 }
+
 .DisplayFlex {
   display: flex;
   justify-content: center;
@@ -122,6 +135,7 @@
 .DisplayFlex a {
   color: #000;
 }
+
 .pt-15 {
   padding-top: 15px !important;
 }
@@ -129,6 +143,7 @@
 .pb-15 {
   padding-bottom: 15px !important;
 }
+
 .pr-15 {
   padding-right: 15px;
 }
@@ -152,6 +167,7 @@
 .ml-20 {
   margin-left: 20px;
 }
+
 .mr-20 {
   margin-right: 20px;
 }
@@ -173,6 +189,7 @@
   width: 55%;
   float: left;
 }
+
 .width100 {
   width: 100%;
 }
@@ -194,9 +211,11 @@
 .img250 {
   margin: 5px;
 }
+
 .imgGrid {
   margin: 0;
 }
+
 .img250 img {
   height: 250px !important;
 }
@@ -229,6 +248,7 @@
   display: flex;
   justify-content: center;
 }
+
 .Hover-Effect {
   position: absolute;
   top: 38%;
@@ -258,6 +278,7 @@
   color: #ffffff;
   padding: 3% 10%;
 }
+
 .Hover-Effect p:hover {
   color: #000;
 }
@@ -265,6 +286,7 @@
 .text-img {
   position: relative;
 }
+
 // .wp-block-columns figure,
 // .categoryLink,
 // .authorImg img {
@@ -273,6 +295,7 @@
 .categoryLink {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 .widthFull {
   width: 100% !important;
   max-width: 100% !important;
@@ -282,6 +305,7 @@
 .categoryLink img {
   padding: 0 !important;
 }
+
 .authorImg img {
   width: 150px;
   height: 150px;
@@ -292,15 +316,19 @@
   width: 600px;
   height: 350px;
 }
+
 .categoryLink figcaption {
   margin: 0;
 }
+
 .mtcap figcaption {
   margin-top: 0.5rem !important;
 }
+
 .s-none figure {
   box-shadow: none;
 }
+
 .categoryLink {
   position: relative;
   font-style: normal;
@@ -342,12 +370,15 @@ figcaption {
 .ml-3 {
   margin-left: 0.75rem;
 }
+
 .ml-4 {
   margin-left: 1rem;
 }
+
 .mr-4 {
   margin-right: 1rem;
 }
+
 .mtb-3 {
   margin: 3rem auto;
 }
@@ -373,32 +404,37 @@ figcaption {
   display: flex !important;
   justify-content: space-between;
 }
+
 .authorImg {
   padding: 0 !important;
   box-shadow: unset !important;
 }
+
 .authorImg figcaption {
-  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif !important;
   font-size: 0.70003rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
 }
+
 .authorDesc {
-  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif !important;
   font-size: 0.70003rem;
   line-height: 1.6;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto !important;
-  letter-spacing: 0.1em!important;
-  a{
-    letter-spacing: 0.1em!important;
-    font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  letter-spacing: 0.1em !important;
+
+  a {
+    letter-spacing: 0.1em !important;
+    font-family: "NeueHaasUnicaM", Arial, sans-serif !important;
   }
 }
+
 .authorImg figcaption a {
   text-decoration: underline;
   text-decoration-thickness: 0.0625rem;
@@ -407,13 +443,16 @@ figcaption {
   letter-spacing: 1px;
   margin: 0 !important;
 }
+
 .authorDesc a:hover,
 .authorImg figcaption a:hover {
   color: grey;
 }
+
 .wp-block-column li:hover {
   color: grey;
 }
+
 .imgBanner {
   // max-height: 501px;
   width: 100vw;
@@ -447,24 +486,28 @@ figcaption {
   text-align: center;
   padding: 2rem 0;
   margin: 3em 0;
+
   h2 {
     font-size: 5.49999rem;
     line-height: 1;
     margin: auto;
     text-transform: uppercase;
   }
+
   p {
     font-size: 26px;
     font-style: italic;
     font-weight: 300;
-    text-align: center!important;
+    text-align: center !important;
     line-height: 26px;
     margin-top: .75rem;
   }
+
   a {
     color: #000000;
     text-decoration: none;
   }
+
   &:hover {
     font-style: italic;
   }
@@ -473,6 +516,7 @@ figcaption {
 .pageTitle {
   text-transform: uppercase;
 }
+
 .sectionTinyTitle {
   margin: 0 auto 0.5rem;
   padding-bottom: 0.25rem;
@@ -485,8 +529,9 @@ figcaption {
   border-bottom: 1px solid;
   width: fit-content;
   font-weight: bolder;
-    font-family: "NeueHaasUnica", Arial, sans-serif!important;
+  font-family: "NeueHaasUnica", Arial, sans-serif !important;
 }
+
 .sectionTitle {
   display: block;
   font-family: "SaolDisplay", Georgia, Times, serif !important;
@@ -496,6 +541,7 @@ figcaption {
   text-decoration: none;
   text-align: center;
 }
+
 .sectionTitle a {
   color: #000;
   text-decoration: unset;
@@ -523,6 +569,7 @@ figcaption {
     height: 300px;
   }
 }
+
 .mt-3R {
   margin-top: 3rem;
 }
@@ -565,7 +612,8 @@ figcaption {
   padding: 0 !important;
   box-shadow: unset !important;
 }
-.authorDesc_parnt{
+
+.authorDesc_parnt {
   letter-spacing: 0.1em;
   text-transform: capitalize;
 }
@@ -573,14 +621,15 @@ figcaption {
 .authorImg_parnt figcaption {
   font-size: 14px;
   color: #000000;
-  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif !important;
 }
+
 .authorImg_parnt figcaption a,
 .authorDesc_parnt a {
   font-size: 14px;
   color: #000000;
   text-decoration: none;
-  font-family: "NeueHaasUnicaM", Arial, sans-serif!important;
+  font-family: "NeueHaasUnicaM", Arial, sans-serif !important;
   letter-spacing: 0.1em;
   text-transform: capitalize;
 }
@@ -595,23 +644,28 @@ figcaption {
   height: 80px;
   border-radius: 50%;
 }
+
 .authorDesc_parnt {
-  font-family: "NeueHaasUnicaM","Arial","sans-serif" !important;
+  font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
   font-size: 14px;
   margin: 0 auto !important;
   line-height: 18px;
   letter-spacing: 0.1em;
   text-transform: capitalize;
 }
+
 .authorDesc_parnt p {
   margin: 0 !important;
 }
+
 .authorDesc_parnt span:hover {
   color: grey;
 }
+
 .boxGrayTop {
   background-color: #000000;
 }
+
 // 24-05-2023
 .postsContainer ul {
   // word-break: break-all;
@@ -629,6 +683,7 @@ figcaption {
 .row {
   --bs-gutter-x: 0rem;
 }
+
 // .mlr-12 {
 //   margin-left: 12rem;
 //   margin-right: 12rem;
@@ -649,18 +704,21 @@ figcaption {
 //   padding-left: 2rem;
 // }
 @media (max-width: 1024px) {
-    .categoryLink img{
-    height:280px;
+  .categoryLink img {
+    height: 280px;
   }
 }
+
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
-  .mpad30{
+  .mpad30 {
     padding: 0 30px !important;
   }
-  .mpad15{
+
+  .mpad15 {
     padding: 0 15px !important;
   }
+
   // .mlr-12 {
   //   margin-left: 4rem;
   //   margin-right: 4rem;
@@ -668,8 +726,9 @@ figcaption {
   .categoryLink {
     margin: 15px 0px;
   }
-  .categoryLink img{
-    height:250px;
+
+  .categoryLink img {
+    height: 250px;
   }
 
   .pr-15 {
@@ -706,11 +765,12 @@ figcaption {
     width: 100%;
     float: left;
   }
-  
 
-.pr-30 {
+
+  .pr-30 {
     padding-right: 0;
   }
+
   .pl-30 {
     padding-left: 0;
   }
@@ -752,9 +812,22 @@ figcaption {
     line-height: 30px;
     padding: 3% 3%;
   }
-  .mtb-2m{
-    margin-top:2rem !important;
+
+  .mtb-2m {
+    margin-top: 2rem !important;
     margin-bottom: 2rem !important;
+  }
+
+  .mpb-4 {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .mpt-4 {
+    padding-top: 1.5rem !important;
+  }
+
+  .w-break {
+    word-wrap: break-word;
   }
 }
 
@@ -763,11 +836,13 @@ figcaption {
     max-width: 380px;
     margin: 0 auto;
   }
-   .categoryLink img{
-    height:180px;
+
+  .categoryLink img {
+    height: 180px;
   }
+
   .categoryLink figcaption a {
-  font-size: 0.9em;
+    font-size: 0.9em;
   }
 }
 
@@ -789,4 +864,5 @@ figcaption {
     margin: 0px !important;
   }
 }
+
 // red
