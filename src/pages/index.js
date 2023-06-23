@@ -53,7 +53,7 @@ export default function Home({
           allowtransparency="true"
           frameborder="0"
           scrolling="no"
-          class="wistia_embed imgShadow mb-4"
+          class="wistia_embed imgShadow"
           name="wistia_embed"
           autoPlay
           allowfullscreen
@@ -158,7 +158,7 @@ export default function Home({
           return (
             <div className="container" key={index}>
               <div className="row">
-                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-4">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mtb-p3">
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
@@ -216,7 +216,7 @@ export default function Home({
               const featuredimage = nodes.featuredImage?.sourceUrl;
               const postslug = 'posts/' + nodes.slug;
               return (
-                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-4" key={index}>
+                <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-5" key={index}>
                   <Link href={postslug}>
                     <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
@@ -262,8 +262,8 @@ export default function Home({
           })}
         </div>
         <div className="container">
-          <div className="row mtb-3">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15">
+          <div className="row mt-5">
+            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15 mb-5">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -312,7 +312,7 @@ export default function Home({
                 );
               })}
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 pl-15">
+            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 pl-15 mb-5">
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
@@ -391,7 +391,7 @@ export default function Home({
           const featuredimage = nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
-            <div className="container text-center mt-4 mb-4" key={index}>
+            <div className="container text-center mt-5 mb-5" key={index}>
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
@@ -472,7 +472,7 @@ export default function Home({
                   </div>
                 </div>
                 {featuredimage && (
-                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-4">
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
                     <Link href={postslug}>
                       <a>
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
@@ -500,7 +500,7 @@ export default function Home({
                       allowtransparency="true"
                       frameborder="0"
                       scrolling="no"
-                      class="wistia_embed imgShadow mt-4"
+                      class="wistia_embed imgShadow"
                       name="wistia_embed"
                       autoPlay
                       allowfullscreen
@@ -673,8 +673,8 @@ export default function Home({
           const postslug = 'posts/' + nodes.slug;
           const subtitle = nodes.excerpt;
           return (
-            <div className="container text-center" key={index}>
-              <div className="container text-center">
+            <div className="container text-center " key={index}>
+              <div className="container text-center mb-5">
                 {nodes.categories.map((ele, index1) => {
                   const categoryslug = '/categories/' + ele.slug;
                   return (
@@ -689,26 +689,6 @@ export default function Home({
                     </div>
                   );
                 })}
-              </div>
-              <div className={styles.videoHeight}>
-                {/*false {nodes.wistiaVideoScriptId && (
-                  <div class="ratio ratio-16x9">
-                    <iframe
-                      src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
-                      allowtransparency="true"
-                      frameborder="0"
-                      scrolling="no"
-                      class="wistia_embed"
-                      name="wistia_embed"
-                      autoPlay
-                      allowfullscreen
-                      mozallowfullscreen
-                      webkitallowfullscreen
-                      oallowfullscreen
-                      msallowfullscreen
-                    ></iframe>
-                  </div>
-                )} */}
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
