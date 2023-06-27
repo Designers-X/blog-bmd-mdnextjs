@@ -50,7 +50,7 @@ const Contact = () => {
                   </p>
                   <p class="FourthText">Follow Us :</p>
                   <ul class="contactSocialIcons">
-                    <li>
+                    {/* <li>
                       <Link href={'https://www.facebook.com/BrunoMDofficial/'}>
                         <svg
                           style={{ color: '#fff' }}
@@ -65,7 +65,7 @@ const Contact = () => {
                           ></path>
                         </svg>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href={' https://www.instagram.com/brunomdofficial/'}>
                         <svg
@@ -82,7 +82,7 @@ const Contact = () => {
                         </svg>
                       </Link>
                     </li>
-                    <li style={{ marginTop: '5px' }}>
+                    {/* <li style={{ marginTop: '5px' }}>
                       <Link href={'https://www.tiktok.com/@brunomdofficial'}>
                         <a>
                           <div
@@ -112,7 +112,7 @@ const Contact = () => {
                           </div>
                         </a>
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
