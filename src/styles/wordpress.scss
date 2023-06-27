@@ -243,10 +243,6 @@
 .h-auto img {
   height: auto;
 }
-.firstCapLetter{
-  font-size: 30px; 
-  font-weight: bold;
-}
 
 .justify-content-center {
   display: flex;
@@ -567,7 +563,13 @@ figcaption {
 .width70 {
   max-width: 70rem !important;
 }
-
+.dropcap::first-letter{
+  float: left;
+  font-size: 40px;
+  line-height: 80%;
+  padding: 10px 20px;
+  font-family: "SaolDisplay", Georgia, Times, serif !important;
+}
 @media only screen and (max-width: 1400px) {
   .categoryLink img {
     height: 300px;
