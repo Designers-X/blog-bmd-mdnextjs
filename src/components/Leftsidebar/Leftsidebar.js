@@ -239,10 +239,10 @@ function Leftsidebar() {
       <nav>
         <div>
           <button className={styles.openbtn} onClick={() => openSideNavbar()}>
-            <svg viewBox="0 0 70 60" width="40" height="30">
-              <rect width="80" height="6"></rect>
-              <rect y="25" width="80" height="6"></rect>
-              <rect y="50" width="80" height="6"></rect>
+            <svg viewBox="0 0 70 60" width="35" height="25">
+              <rect width="70" height="6"></rect>
+              <rect y="25" width="70" height="6"></rect>
+              <rect y="50" width="70" height="6"></rect>
             </svg>
           </button>
         </div>
