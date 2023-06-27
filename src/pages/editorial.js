@@ -12,7 +12,7 @@ const Editorial = () => {
         <meta property="og:title" content={'Editorial | Mditerranean life'} />
         <meta property="og:description" content={null} />
       </Helmet>
-      <section className="container">
+      <section className="container mb-5">
         <div className={styles.m4Rem} id="April_Long">
           <div className={styles.width20}>
             <div className={styles.authorBox}>

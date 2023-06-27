@@ -26,7 +26,7 @@ const Contact = () => {
         <meta property="og:title" content={'Contact Us | Mditerranean life'} />
         <meta property="og:description" content={null} />
       </Helmet>
-      <section class="m-0" id="contact">
+      <section class="mb-5" id="contact">
         <div class="Bg-Image ">
           <div class="container">
             <div class="logoCenter text-center mb-4">
