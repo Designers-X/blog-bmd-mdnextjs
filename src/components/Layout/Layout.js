@@ -10,7 +10,7 @@ import Main from 'components/Main';
 import Footer from 'components/Footer';
 
 const Layout = ({ children, newsLetterShow }) => {
-  if (!newsLetterShow) newsLetterShow = false;
+  if (!newsLetterShow) newsLetterShow = true;
   const router = useRouter();
   const { asPath } = router;
 
