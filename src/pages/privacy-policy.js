@@ -11,7 +11,7 @@ const Privacy = () => {
         <meta property="og:title" content={'Privacy Policy | Mditerranean life'} />
         <meta property="og:description" content={null} />
       </Helmet>
-      <section className="container m-auto mt-4 text-center">
+      <section className="container m-auto mt-4 text-center mb-5">
         <div id="policy">
           <h1>Privacy Policy</h1>
           <p>

@@ -25,7 +25,7 @@ const Subscribe = () => {
         <meta property="og:title" content={'Subscribe | Mditerranean life'} />
         <meta property="og:description" content={null} />
       </Helmet>
-      <section class="m-0" id="subscribe">
+      <section class="mb-5" id="subscribe">
         <div class="Bg-Image">
           <div class="container">
             <div class="logoCenter text-center mb-4">
