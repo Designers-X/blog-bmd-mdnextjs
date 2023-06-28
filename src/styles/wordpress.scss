@@ -690,6 +690,10 @@ figcaption {
   // word-break: break-all;
 }
 
+.mfigure figure{
+  margin: 0 !important;
+}
+
 .row {
   --bs-gutter-x: 0rem;
 }
@@ -721,6 +725,9 @@ figcaption {
 
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {
+  .mfigure figure{
+    margin: 1em 0 !important;
+ }
   .mpad30 {
     padding: 0 30px !important;
   }
