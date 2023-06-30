@@ -37,6 +37,11 @@ export const QUERY_CATEGORY_BY_SLUG = gql`
           title
         }
       }
+      categoryBannerArticleLink {
+        node {
+          slug
+        }
+      }
     }
   }
 `;
