@@ -37,17 +37,51 @@ export default function TemplateArchive({
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
-            <div className={styles.HeroImage}>
-              <div
-                className={styles.MasterHead}
-                style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
-              >
-                {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="altText" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
-              </div>
+            {category.categoryBannerArticleLink ?
+              <a href={`/posts/${category.categoryBannerArticleLink}`}>
+                <div className={styles.HeroImage}>
+                  <div
+                    className={styles.MasterHead}
+                    style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
+                  >
+                    {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="altText" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
+                  </div>
+                  <div className={styles.FashionPadding}>
+                    <h1 className={styles.MasterTitle}>{title}</h1>
+                  </div>
+                </div>
+              </a> :
+              <div className={styles.HeroImage}>
+                <div
+                  className={styles.MasterHead}
+                  style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
+                >
+                  {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="altText" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
+                </div>
+                <div className={styles.FashionPadding}>
+                  <h1 className={styles.MasterTitle}>{title}</h1>
+                </div>
+              </div>}
+              {/* title category link and banner post link */}
+            {false && <div className={styles.HeroImage}>
+              {category.categoryBannerArticleLink ? <a href={`/posts/${category.categoryBannerArticleLink}`}>
+                <div
+                  className={styles.MasterHead}
+                  style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
+                >
+                  {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="altText" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
+                </div>
+              </a> :
+                <div
+                  className={styles.MasterHead}
+                  style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
+                >
+                  {/* {category.s1CategoryBanner?.node?.sourceUrl &&<img alt="altText" className={styles.imgfluid_w100} src={category.s1CategoryBanner?.node?.sourceUrl} />} */}
+                </div>}
               <div className={styles.FashionPadding}>
-                <h1 className={styles.MasterTitle}>{title}</h1>
+                {category.slug ? <a href={`/categories/${category.slug}`}><h1 className={styles.MasterTitle}>{title}</h1></a> : <h1 className={styles.MasterTitle}>{title}</h1>}
               </div>
-            </div>
+            </div>}
             <section className="mt-4 mb-4">
               <div className={styles.boxBlackTop}></div>
             </section>
