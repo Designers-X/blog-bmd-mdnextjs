@@ -37,8 +37,8 @@ export default function TemplateArchive({
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
-            {category.categoryBannerArticleLink ? (
-              <a href={`/posts/${category.categoryBannerArticleLink}`}>
+            {category.categoryBannerArticleLink?.node?.slug ? (
+              <a href={`/posts/${category.categoryBannerArticleLink?.node?.slug}`}>
                 <div className={styles.HeroImage}>
                   <div
                     className={styles.MasterHead}
@@ -67,8 +67,8 @@ export default function TemplateArchive({
             {/* title category link and banner post link */}
             {false && (
               <div className={styles.HeroImage}>
-                {category.categoryBannerArticleLink ? (
-                  <a href={`/posts/${category.categoryBannerArticleLink}`}>
+                {category.categoryBannerArticleLink?.node?.slug ? (
+                  <a href={`/posts/${category.categoryBannerArticleLink?.node?.slug}`}>
                     <div
                       className={styles.MasterHead}
                       style={{ backgroundImage: `url(${category?.s1CategoryBanner?.node?.sourceUrl})` }}
