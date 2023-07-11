@@ -14,6 +14,7 @@
 }
 
 .section3 {
+  margin: 0 0 2rem;
 }
 
 .section4 {
@@ -140,7 +141,9 @@
 .section9 .pagesTitle span p{
   margin-bottom: 0;
 }
-
+.pagesTitle span{
+  cursor: pointer;
+}
 
 .pagesTitle {
   display: block;
