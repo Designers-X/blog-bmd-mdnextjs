@@ -10,7 +10,7 @@ const Footer = () => {
             <div className={styles.InRow}>
               <Link href="">
                 <a className={styles.LogoSection}>
-                  <img src="/img/the_MDiterranean_life_logo-white.png" alt="logo" />
+                  <img src="/logo-white.png" alt="logo" />
                 </a>
               </Link>
             </div>
