@@ -579,7 +579,9 @@ export default function Home({
                 </div>
                 {featuredimage && (
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <Link href={postslug}><img className="img-fluid imgShadow" src={featuredimage} alt="fluid" /></Link>
+                    <Link href={postslug}>
+                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                    </Link>
                   </div>
                 )}
               </div>
