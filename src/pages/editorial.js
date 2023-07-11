@@ -17,7 +17,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/April-Long-Beauty-Editor-final-image-copy.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/07/April-Long-Beauty-Editor-final-image-copy.webp"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -68,7 +68,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Marlowe-Granados-editor-final-image-copy.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/07/Marlowe-Granados-editor-final-image-copy.webp"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -104,7 +104,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Garrett-Munce-editor-final-image.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/07/Garrett-Munce-editor-final-image.webp"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -163,7 +163,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Rock-Lane-eidtor-final-image-copy.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/07/Rock-Lane-eidtor-final-image-copy.webp"
                 alt=""
               />
               <div className={styles.authorBoxText}>
@@ -201,7 +201,7 @@ const Editorial = () => {
           <div className={styles.width20}>
             <div className={styles.authorBox}>
               <img
-                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/05/Darius-Arya-archeologist-final-image.png"
+                src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/07/Darius-Arya-archeologist-final-image.webp"
                 alt=""
               />
               <div className={styles.authorBoxText}>
