@@ -202,7 +202,6 @@ button.btn.btn-black:hover {
 }
 
 #subscribe .Bg-Image {
-  background-image: url("/BMD-IG-Feed-i4-Tuscany-FIOR8113+.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
   // background-position: center;
@@ -210,18 +209,18 @@ button.btn.btn-black:hover {
 }
 
 #contact .Bg-Image {
-  background-image: url("/tuscany.webp");
   // background-image: url("/B-IG-Feed-BMD-i4-Tuscany-FIO_0424+.jpg");
   background-repeat: no-repeat, repeat;
   background-size: cover;
   background-position: 5% 20%;
   // background-position: top center;
 }
-
-.Bg-Image .login-form {
-  background: rgba(255, 255, 255, 0.6);
+.Submtb-50{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.Bg-Image .login-form {
+  background: rgba(255, 255, 255, 0.6);
   padding: 36px 60px;
   border-radius: 32px;
   color: white;

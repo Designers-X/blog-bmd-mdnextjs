@@ -17,6 +17,7 @@ import Layout from 'components/Layout';
 import Header from 'components/Header';
 import styles from 'styles/pages/Home.module.scss';
 // import { NewsLetter } from 'components/NewsLetter';
+
 export default function Home({
   fruitandwinepost,
   cantmissreadspost,
