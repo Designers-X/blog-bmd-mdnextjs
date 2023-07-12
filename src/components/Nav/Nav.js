@@ -21,7 +21,8 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/">
               <a>
-                <img src="/logo.png" width={180} alt="" />
+                <img src="/logo-black01.png" width={180} alt="" />
+                <img src="/logo-231f20-black.png" width={180} alt="" />
               </a>
             </Link>
           </div>
