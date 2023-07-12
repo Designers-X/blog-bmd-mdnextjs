@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
+import Image from "../../public/BMD-IG-Feed-i4-Tuscany-FIOR8113+.jpg"
 const Subscribe = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://js.hsforms.net/forms/v2.js';
+    script.defer = true
     document.body.appendChild(script);
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
+        document.getElementById("formSubscribe").style.height = '400px';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
@@ -26,7 +29,7 @@ const Subscribe = () => {
         <meta property="og:description" content={null} />
       </Helmet>
       <section class="mb-5" id="subscribe">
-        <div class="Bg-Image">
+        <div class="Bg-Image" style={{backgroundImage: `url(${Image.src})`}}>
           <div class="container">
             <div class="logoCenter text-center mb-4">
               {false && (
@@ -48,57 +51,11 @@ const Subscribe = () => {
                   </p>
                 </div>
               </div>
-              <div class=" col-xl-5 col-lg-5 col-md-12 col-sm-12 p-0 m-0">
+              <div class=" col-xl-5 col-lg-5 col-md-12 col-sm-12 p-0 Submtb-50">
                 <div class="login-form Subscribe">
                   <h2>Subscribe</h2>
                   <form id="formSubscribe">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control mb-3"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="First Name "
-                      />
-
-                      <input
-                        type="text"
-                        class="form-control mb-3"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Last Name "
-                      />
-
-                      <input
-                        type="email"
-                        class="form-control mb-3"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Email "
-                      />
-
-                      <input
-                        type="text"
-                        class="form-control mb-3"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Phone Number "
-                      />
-
-                      <textarea
-                        class="form-control mb-3"
-                        rows="3"
-                        id="comment"
-                        name="text"
-                        placeholder="Message "
-                      ></textarea>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-darkBlack">
-                        Submit
-                      </button>
-                    </div>
+                    <div style={{height:'350px'}}></div>
                   </form>
                 </div>
               </div>
