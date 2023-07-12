@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
 import Link from 'next/link';
-import Image from "../../public/tuscany.webp"
+import Image from '../../public/tuscany.webp';
 const Contact = () => {
   useEffect(() => {
     const script = document.createElement('script');
@@ -11,7 +11,7 @@ const Contact = () => {
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
-        document.getElementById("formContact").style.height = '400px';
+        document.getElementById('formContact').style.height = '400px';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: 'fe5925db-40b4-48ee-b150-3cdde78a0a41',
@@ -29,7 +29,7 @@ const Contact = () => {
         <meta property="og:description" content={null} />
       </Helmet>
       <section class="mb-5" id="contact">
-        <div class="Bg-Image" style={{backgroundImage: `url(${Image.src})`}}>
+        <div class="Bg-Image" style={{ backgroundImage: `url(${Image.src})` }}>
           <div class="container">
             <div class="logoCenter text-center mb-4">
               {false && (

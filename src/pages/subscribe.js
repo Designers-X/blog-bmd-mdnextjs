@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
 import Layout from 'components/Layout';
 import { Helmet } from 'react-helmet';
-import Image from "../../public/BMD-IG-Feed-i4-Tuscany-FIOR8113+.jpg"
+import Image from '../../public/BMD-IG-Feed-i4-Tuscany-FIOR8113+.jpg';
 const Subscribe = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://js.hsforms.net/forms/v2.js';
-    script.defer = true
+    script.defer = true;
     document.body.appendChild(script);
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
-        document.getElementById("formSubscribe").style.height = '400px';
+        document.getElementById('formSubscribe').style.height = '400px';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
@@ -29,7 +29,7 @@ const Subscribe = () => {
         <meta property="og:description" content={null} />
       </Helmet>
       <section class="mb-5" id="subscribe">
-        <div class="Bg-Image" style={{backgroundImage: `url(${Image.src})`}}>
+        <div class="Bg-Image" style={{ backgroundImage: `url(${Image.src})` }}>
           <div class="container">
             <div class="logoCenter text-center mb-4">
               {false && (
@@ -55,7 +55,7 @@ const Subscribe = () => {
                 <div class="login-form Subscribe">
                   <h2>Subscribe</h2>
                   <form id="formSubscribe">
-                    <div style={{height:'350px'}}></div>
+                    <div style={{ height: '350px' }}></div>
                   </form>
                 </div>
               </div>
