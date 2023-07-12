@@ -42,7 +42,10 @@ const Subscribe = () => {
             <div class="row">
               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 m-auto p-0 m-0">
                 <div class="subscribeFormText">
-                  <p class="FirstText">Become a member to get the best of The MDiterranean Life in its entirety.</p>
+                  <p class="FirstText">
+                    Become a member to get the best of The MDiterranean Life
+                    <sup style={{ color: '#fff' }}>&reg;</sup> in its entirety.
+                  </p>
                   <p class="SecondText">Stay up - to - date with exclusive content!</p>
                   <p class="ThirdText">Subscribe now and never miss a thing. For further assistance, </p>
                   <p class="FourthText">email us at :</p>
