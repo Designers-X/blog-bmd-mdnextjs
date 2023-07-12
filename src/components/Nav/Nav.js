@@ -22,6 +22,7 @@ const Nav = () => {
             <Link href="/">
               <a>
                 <img src="/logo.png" width={180} alt="" />
+                <img src="/md-logo.png" width={180} alt="" />
               </a>
             </Link>
           </div>

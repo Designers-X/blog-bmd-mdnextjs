@@ -21,7 +21,6 @@ const Layout = ({ children, newsLetterShow }) => {
   }
 
   metadata.og.url = `${homepage}${asPath}`;
-
   const helmetSettings = {
     defaultTitle: metadata.title,
     titleTemplate: process.env.WORDPRESS_PLUGIN_SEO === true ? '%s' : `%s`,
