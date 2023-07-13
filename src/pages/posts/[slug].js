@@ -15,7 +15,7 @@ import Content from 'components/Content';
 import Metadata from 'components/Metadata';
 import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Post({ post, socialImage, related }) {
   const {
@@ -68,9 +68,9 @@ export default function Post({ post, socialImage, related }) {
   console.log({ title, siteMetadata });
   return (
     <Layout newsLetterShow={true}>
-    <Head>
-    <meta name="description" content={seo.metaDesc}/>
-    </Head>
+      <Head>
+        <meta name="description" content={seo.metaDesc} />
+      </Head>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
       {!mastheadBanner ? (
