@@ -15,7 +15,6 @@ import Content from 'components/Content';
 import Metadata from 'components/Metadata';
 import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
-import Head from 'next/head';
 
 export default function Post({ post, socialImage, related }) {
   const {
@@ -52,9 +51,9 @@ export default function Post({ post, socialImage, related }) {
     },
   });
 
-    metadata.title = `${metadata.title}`;
-    metadata.og.title = metadata.title;
-    metadata.twitter.title = metadata.title;
+  metadata.title = `${metadata.title}`;
+  metadata.og.title = metadata.title;
+  metadata.twitter.title = metadata.title;
 
   const metadataOptions = {
     compactCategories: false,
@@ -63,7 +62,7 @@ export default function Post({ post, socialImage, related }) {
   const { posts: relatedPostsList, title: relatedPostsTitle } = related || {};
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
-  console.warn({ title, siteMetadata ,helmetSettings,metadata});
+  console.warn({ title, siteMetadata, helmetSettings, metadata });
   return (
     <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
