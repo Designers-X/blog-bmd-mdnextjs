@@ -50,7 +50,7 @@ export default function Home({
   return (
     <Layout newsLetterShow={true}>
       <Head>
-        <title>Mditerranean life - Online</title>
+        <title>Mditerranean life - Online - 1</title>
         <meta name="title" content="Mditerranean life - Online" />
         <meta name="description" content="Enjoy the Mditerranean life" />
       </Head>
