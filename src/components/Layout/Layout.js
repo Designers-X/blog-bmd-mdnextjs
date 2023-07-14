@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
 import { NewsLetter } from 'components/NewsLetter';
 import useSite from 'hooks/use-site';
@@ -63,7 +63,7 @@ const Layout = ({ children, newsLetterShow }) => {
 
   return (
     <div className={styles.layoutContainer}>
-      <Helmet {...helmetSettings} />
+      {/* <Helmet {...helmetSettings} /> */}
 
       <Nav />
       <Main>{children}</Main>
