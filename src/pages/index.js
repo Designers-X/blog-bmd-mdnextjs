@@ -17,6 +17,7 @@ import Layout from 'components/Layout';
 import Header from 'components/Header';
 import styles from 'styles/pages/Home.module.scss';
 // import { NewsLetter } from 'components/NewsLetter';
+import Head from 'next/head';
 
 export default function Home({
   fruitandwinepost,
@@ -48,6 +49,9 @@ export default function Home({
   };
   return (
     <Layout newsLetterShow={true}>
+      <Head>
+      <meta name="description" content="Meta description content goes here." />
+      </Head>
       <div class="ratio ratio-16x9">
         <iframe
           src={`//fast.wistia.net/embed/iframe/i633jy0w7m?videoFoam=true`}
