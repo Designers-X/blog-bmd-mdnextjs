@@ -191,8 +191,8 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
 
 export function helmetSettingsFromMetadata(metadata = {}, options = {}) {
   const { link = [], meta = [], setTitle = true } = options;
-
   const sanitizedDescription = removeExtraSpaces(metadata.description);
+  console.warn({metadata,meta});
 
   const settings = {
     htmlAttributes: {
@@ -211,7 +211,6 @@ export function helmetSettingsFromMetadata(metadata = {}, options = {}) {
       href: metadata.canonical,
     },
   ].filter(({ href } = {}) => !!href);
-
   settings.meta = [
     ...meta,
     {

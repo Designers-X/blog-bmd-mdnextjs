@@ -52,11 +52,9 @@ export default function Post({ post, socialImage, related }) {
     },
   });
 
-  if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
     metadata.title = `${metadata.title}`;
     metadata.og.title = metadata.title;
     metadata.twitter.title = metadata.title;
-  }
 
   const metadataOptions = {
     compactCategories: false,
@@ -65,12 +63,9 @@ export default function Post({ post, socialImage, related }) {
   const { posts: relatedPostsList, title: relatedPostsTitle } = related || {};
 
   const helmetSettings = helmetSettingsFromMetadata(metadata);
-  console.log({ title, siteMetadata });
+  console.warn({ title, siteMetadata ,helmetSettings,metadata});
   return (
     <Layout newsLetterShow={true}>
-      <Head>
-        <meta name="description" content={seo.metaDesc} />
-      </Head>
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
       {!mastheadBanner ? (
