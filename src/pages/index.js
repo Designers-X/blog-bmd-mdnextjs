@@ -50,9 +50,10 @@ export default function Home({
   return (
     <Layout newsLetterShow={true}>
       <Head>
-        <title>Mditerranean life - Online - 1</title>
+        {/* <title>Mditerranean life - Online - 1</title>
         <meta name="title" content="Mditerranean life - Online" />
-        <meta name="description" content="Enjoy the Mditerranean life" />
+        <meta name="description" content="Enjoy the Mditerranean life" /> */}
+        <meta name="description" content="Discover a world of top-quality beauty products and exceptional services with BEAUTYfashion. Explore our passion for beauty as we bring you the latest trends and must-have items for an unforgettable experience." /><meta property="og:image" content="http://beautyfashionsales.com/static/media/btif-sale-logo.f02476a3.png" /><meta property="og:image:height" content="72px" /><meta property="og:image:width" content="250px" /><meta property="og:image:type" content="image/png" />
       </Head>
       <div class="ratio ratio-16x9">
         <iframe
