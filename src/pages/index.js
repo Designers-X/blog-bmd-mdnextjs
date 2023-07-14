@@ -50,7 +50,7 @@ export default function Home({
   return (
     <Layout newsLetterShow={true}>
       <Head>
-      <meta name="description" content="Meta description content goes here." />
+        <meta name="description" content="Meta description content goes here." />
       </Head>
       <div class="ratio ratio-16x9">
         <iframe
