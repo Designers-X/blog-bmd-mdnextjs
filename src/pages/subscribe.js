@@ -11,7 +11,7 @@ const Subscribe = () => {
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
-        document.getElementById('formSubscribe').style.height = '400px';
+        // document.getElementById('formSubscribe').style.height = '400px';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
@@ -20,14 +20,8 @@ const Subscribe = () => {
       }
     });
   }, []);
-  return (
-    <Layout>
-      <Helmet>
-        <title>Subscribe | Mditerranean life</title>
-        <meta name="description" content={null} />
-        <meta property="og:title" content={'Subscribe | Mditerranean life'} />
-        <meta property="og:description" content={null} />
-      </Helmet>
+  const SubscribeRaw = () => {
+    return (
       <section class="mb-5" id="subscribe">
         <div class="Bg-Image" style={{ backgroundImage: `url(${Image.src})` }}>
           <div class="container">
@@ -66,6 +60,17 @@ const Subscribe = () => {
           </div>
         </div>
       </section>
+    );
+  };
+  return (
+    <Layout>
+      <Helmet>
+        <title>Subscribe | Mditerranean life</title>
+        <meta name="description" content={null} />
+        <meta property="og:title" content={'Subscribe | Mditerranean life'} />
+        <meta property="og:description" content={null} />
+      </Helmet>
+      <SubscribeRaw />
     </Layout>
   );
 };
