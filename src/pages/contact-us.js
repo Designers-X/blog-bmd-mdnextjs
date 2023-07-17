@@ -20,14 +20,9 @@ const Contact = () => {
       }
     });
   }, []);
-  return (
-    <Layout>
-      <Helmet>
-        <title>Contact Us | Mditerranean life</title>
-        <meta name="description" content={null} />
-        <meta property="og:title" content={'Contact Us | Mditerranean life'} />
-        <meta property="og:description" content={null} />
-      </Helmet>
+
+  const ContactRaw = () => {
+    return (
       <section class="mb-5" id="contact">
         <div class="Bg-Image" style={{ backgroundImage: `url(${Image.src})` }}>
           <div class="container">
@@ -53,21 +48,21 @@ const Contact = () => {
                   <p class="FourthText">Follow Us :</p>
                   <ul class="contactSocialIcons">
                     {/* <li>
-                      <Link href={'https://www.facebook.com/BrunoMDofficial/'}>
-                        <svg
-                          style={{ color: '#fff' }}
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 448 512"
-                          width="35"
-                          height="35"
-                        >
-                          <path
-                            d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
-                            fill="white"
-                          ></path>
-                        </svg>
-                      </Link>
-                    </li> */}
+                    <Link href={'https://www.facebook.com/BrunoMDofficial/'}>
+                      <svg
+                        style={{ color: '#fff' }}
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        width="35"
+                        height="35"
+                      >
+                        <path
+                          d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </Link>
+                  </li> */}
                     <li>
                       <Link href={' https://www.instagram.com/brunomdofficial/'}>
                         <svg
@@ -85,36 +80,36 @@ const Contact = () => {
                       </Link>
                     </li>
                     {/* <li style={{ marginTop: '5px' }}>
-                      <Link href={'https://www.tiktok.com/@brunomdofficial'}>
-                        <a>
-                          <div
-                            style={{
-                              height: '35px',
-                              width: '35px',
-                              background: '#fff',
-                              borderRadius: '25%',
-                              display: 'grid',
-                              placeContent: 'center',
-                            }}
+                    <Link href={'https://www.tiktok.com/@brunomdofficial'}>
+                      <a>
+                        <div
+                          style={{
+                            height: '35px',
+                            width: '35px',
+                            background: '#fff',
+                            borderRadius: '25%',
+                            display: 'grid',
+                            placeContent: 'center',
+                          }}
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-tiktok"
+                            viewBox="0 0 16 16"
                           >
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              class="bi bi-tiktok"
-                              viewBox="0 0 16 16"
-                            >
-                              {' '}
-                              <path
-                                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
-                                fill="#b9837f"
-                              />{' '}
-                            </svg>
-                          </div>
-                        </a>
-                      </Link>
-                    </li> */}
+                            {' '}
+                            <path
+                              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                              fill="#b9837f"
+                            />{' '}
+                          </svg>
+                        </div>
+                      </a>
+                    </Link>
+                  </li> */}
                   </ul>
                 </div>
               </div>
@@ -176,6 +171,17 @@ const Contact = () => {
           </div>
         </div>
       </section>
+    );
+  };
+  return (
+    <Layout>
+      <Helmet>
+        <title>Contact Us | Mditerranean life</title>
+        <meta name="description" content={null} />
+        <meta property="og:title" content={'Contact Us | Mditerranean life'} />
+        <meta property="og:description" content={null} />
+      </Helmet>
+      <ContactRaw />
     </Layout>
   );
 };

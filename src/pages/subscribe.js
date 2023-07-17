@@ -11,7 +11,7 @@ const Subscribe = () => {
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
-        // document.getElementById('formSubscribe').style.height = '400px';
+        document.getElementById('formSubscribe').style.height = '400px';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
