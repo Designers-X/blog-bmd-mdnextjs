@@ -703,6 +703,9 @@ figcaption {
 .row {
   --bs-gutter-x: 0rem;
 }
+.m-fig figure{
+  margin: 0!important;
+}
 
 // .mlr-12 {
 //   margin-left: 12rem;
