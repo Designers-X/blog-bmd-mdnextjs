@@ -27,27 +27,11 @@ export default function TemplateArchive({
     metadata.og.title = metadata.title;
     metadata.twitter.title = metadata.title;
   }
-
   const helmetSettings = helmetSettingsFromMetadata(metadata);
   return (
     <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
-      <iframe
-        src={`//fast.wistia.net/embed/iframe/4h7f5gngp4?videoFoam=true`}
-        allowtransparency="true"
-        frameborder="0"
-        scrolling="no"
-        class="wistia_embed imgShadow"
-        name="wistia_embed"
-        autoPlay
-        allowfullscreen
-        mozallowfullscreen
-        webkitallowfullscreen
-        oallowfullscreen
-        msallowfullscreen
-        style={{ width: '100%', height: '825px' }}
-      ></iframe>
       <main className={styles.FashionPage}>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
