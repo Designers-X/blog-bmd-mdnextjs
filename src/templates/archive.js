@@ -33,6 +33,7 @@ export default function TemplateArchive({
     <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
+      <></>
       <iframe
           src={`//fast.wistia.net/embed/iframe/4h7f5gngp4?videoFoam=true`}
           allowtransparency="true"
