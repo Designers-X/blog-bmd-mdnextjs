@@ -15,6 +15,7 @@ import Content from 'components/Content';
 import Metadata from 'components/Metadata';
 import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
+import RelatedPost from 'components/RelatedPost';
 
 export default function Post({ post, socialImage, related }) {
   const {
@@ -26,6 +27,7 @@ export default function Post({ post, socialImage, related }) {
     author,
     categories,
     modified,
+    tags,
     featuredImage,
     mastheadWistiaVideoId,
     mastheadBanner,
@@ -37,7 +39,6 @@ export default function Post({ post, socialImage, related }) {
   if (!post.og) {
     post.og = {};
   }
-
   post.og.imageUrl = `${homepage}${socialImage}`;
   post.og.imageSecureUrl = post.og.imageUrl;
   post.og.imageWidth = 2000;
@@ -61,8 +62,39 @@ export default function Post({ post, socialImage, related }) {
 
   const { posts: relatedPostsList, title: relatedPostsTitle } = related || {};
 
+  let tagList = tags?.nodes || [];
+  let postId = post.id;
+  let relatedPosts = [];
+  let relatedPostId = [];
+  if (tagList.length) {
+    tagList.map((tag) => {
+      if (tag.posts && tag.posts.nodes && tag.posts.nodes.length) {
+        tag.posts.nodes.map((post) => {
+          if (!relatedPostId.includes(post.id) && postId != post.id) {
+            relatedPosts = [...relatedPosts, post];
+            relatedPostId.push(post.id);
+          }
+        });
+      }
+    });
+  }
+
+  console.warn({ relatedPosts });
+  function getRandom(arr, n) {
+    var result = new Array(n),
+      len = arr.length,
+      taken = new Array(len);
+    if (n > len) throw new RangeError('getRandom: more elements taken than available');
+    while (n--) {
+      var x = Math.floor(Math.random() * len);
+      result[n] = arr[x in taken ? taken[x] : x];
+      taken[x] = --len in taken ? taken[len] : len;
+    }
+    return result;
+  }
+
   const helmetSettings = helmetSettingsFromMetadata(metadata);
-  console.warn({ title, siteMetadata, helmetSettings, metadata });
+  // console.warn({ metadata });
   return (
     <Layout newsLetterShow={true}>
       <Helmet {...helmetSettings} />
@@ -144,6 +176,9 @@ export default function Post({ post, socialImage, related }) {
         />
         {/* </Container> */}
       </Content>
+      {relatedPosts.length && (
+        <RelatedPost array={getRandom(relatedPosts, 3)}/>
+      )}
 
       {false && (
         <Section className={styles.postFooter}>

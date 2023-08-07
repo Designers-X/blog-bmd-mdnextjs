@@ -149,10 +149,60 @@ export const QUERY_POST_BY_SLUG = gql`
       slug
       isSticky
       mastheadWistiaVideoId
+      tags {
+        nodes {
+          id
+          name
+          slug
+          posts {
+            nodes {
+              id
+              title
+              content
+              slug
+              date
+              excerpt
+              author {
+                node {
+                  avatar {
+                    height
+                    url
+                    width
+                  }
+                  id
+                  name
+                  slug
+                }
+              }
+              featuredImage {
+                node {
+                  altText
+                  caption
+                  sourceUrl
+                  srcSet
+                  sizes
+                  id
+                }
+              }
+            }
+          }
+        }
+      }
       mastheadBanner {
         node {
           altText
           link
+        }
+      }
+    }
+  }
+`;
+export const QUERY_SEARCH_BY_TAGS = gql`
+  query MyQuery2 {
+    posts(where: { tag: "Health, travel" }) {
+      edges {
+        node {
+          title
         }
       }
     }
