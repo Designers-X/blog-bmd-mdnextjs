@@ -176,9 +176,7 @@ export default function Post({ post, socialImage, related }) {
         />
         {/* </Container> */}
       </Content>
-      {relatedPosts.length && (
-        <RelatedPost array={getRandom(relatedPosts, 3)}/>
-      )}
+      {relatedPosts.length && <RelatedPost array={getRandom(relatedPosts, 3)} />}
 
       {false && (
         <Section className={styles.postFooter}>

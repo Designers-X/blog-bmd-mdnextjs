@@ -1,16 +1,18 @@
-import React from "react";
+import React from 'react';
 import styles from './styles.module.scss';
-const RelatedPost = ({array})=>{
-    if(!array || !array.length) return null
-    return(
-        <section className={styles.container}>
-            <h2 className={styles.sectionTitle}>RELATED POST</h2>
-            {array.map((post)=>{
-                return(
-                    <li><a href={`/posts/${post.slug}`}>{post.title}</a></li>
-                )
-            })}
-          {/* {array.map((post) => {
+const RelatedPost = ({ array }) => {
+  if (!array || !array.length) return null;
+  return (
+    <section className={styles.container}>
+      <h2 className={styles.sectionTitle}>RELATED POST</h2>
+      {array.map((post, index) => {
+        return (
+          <li key={index}>
+            <a href={`/posts/${post.slug}`}>{post.title}</a>
+          </li>
+        );
+      })}
+      {/* {array.map((post) => {
             return (
               <>
                 <div className="d-flex">
@@ -33,7 +35,7 @@ const RelatedPost = ({array})=>{
               </>
             );
           })} */}
-        </section>
-    )
-}
-export default RelatedPost
+    </section>
+  );
+};
+export default RelatedPost;
