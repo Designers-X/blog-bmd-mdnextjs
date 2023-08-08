@@ -4,7 +4,7 @@ const RelatedPost = ({ array }) => {
   if (!array || !array.length) return null;
   return (
     <section className={styles.container}>
-      <h2 className={styles.sectionTitle}>RELATED POST</h2>
+      <h1 className={styles.sectionTitle}>RELATED POST</h1>
       {array.map((post, index) => {
         return (
           <li key={index}>
@@ -12,29 +12,32 @@ const RelatedPost = ({ array }) => {
           </li>
         );
       })}
-      {/* {array.map((post) => {
+      {/* <div className={styles.holder}>
+      {array.map((post, index) => {
             return (
               <>
-                <div className="d-flex">
+                <div className={styles.dflex} key={index}>
+                    <div className={styles.imgHolder}>
                   {post.featuredImage?.node && (
-                    <div>
                       <img src={post.featuredImage.node.sourceUrl} alt={post.featuredImage.node.altText} />
+                      )}
                     </div>
-                  )}
-                  <div className="ml-4">
-                    <p>WRITTEN BY {post.author?.node.name}</p>
-                    <h1>{post.title}</h1>
+                  <div className={styles.textHolder}>
+                    {post.writtenBy &&<p className={styles.authorLabel}>WRITTEN BY {post.writtenBy}</p>}
+                    <h2 className={styles.postTitle}>{post.title}</h2>
                     <div
+                    className={styles.descText}
                       dangerouslySetInnerHTML={{
                         __html: post.excerpt,
                       }}
                     />
-                    <a href={`/posts/${post.slug}`}>Read More</a>
+                   <div className={styles.btnHolder}><a href={`/posts/${post.slug}`}>Read More</a></div>
                   </div>
                 </div>
               </>
             );
-          })} */}
+          })}
+          </div> */}
     </section>
   );
 };
