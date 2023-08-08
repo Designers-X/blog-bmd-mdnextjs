@@ -115,15 +115,20 @@ export default function Post({ post, socialImage, related }) {
       {!mastheadBanner ? (
         <>
           {mastheadMp4Video ? (
-            <video
-              poster={
-                mastheadMp4VideoThumb.node.mediaItemUrl || featuredImage.sourceUrl || mastheadMp4Video.node.mediaItemUrl
-              }
-              controls
-              style={{ width: '100vw' }}
-            >
-              <source src={mastheadMp4Video.node.mediaItemUrl} type="video/mp4" />
-            </video>
+            <div style={{ margin: 'auto', display: 'grid', placeContent: 'center' }}>
+              <video
+                poster={
+                  mastheadMp4VideoThumb.node.mediaItemUrl ||
+                  featuredImage.sourceUrl ||
+                  mastheadMp4Video.node.mediaItemUrl
+                }
+                controls
+                style={{ width: '90vw' }}
+              >
+                <source src={mastheadMp4Video.node.mediaItemUrl} type="video/mp4" />
+              </video>
+              <Header></Header>
+            </div>
           ) : (
             <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
               {mastheadWistiaVideoId && (
