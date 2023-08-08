@@ -127,7 +127,16 @@ export default function Post({ post, socialImage, related }) {
               >
                 <source src={mastheadMp4Video.node.mediaItemUrl} type="video/mp4" />
               </video>
-              <Header></Header>
+              <Header>
+                <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+                  <h1
+                    className={styles.title}
+                    dangerouslySetInnerHTML={{
+                      __html: title,
+                    }}
+                  />
+                </div>
+              </Header>
             </div>
           ) : (
             <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
