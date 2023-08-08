@@ -123,7 +123,7 @@ export default function Post({ post, socialImage, related }) {
                   mastheadMp4Video.node.mediaItemUrl
                 }
                 controls
-                style={{ width: '90vw' }}
+                style={{ width: '68rem' }}
               >
                 <source src={mastheadMp4Video.node.mediaItemUrl} type="video/mp4" />
               </video>
