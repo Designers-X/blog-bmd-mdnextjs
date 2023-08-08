@@ -20,6 +20,8 @@ import RelatedPost from 'components/RelatedPost';
 export default function Post({ post, socialImage, related }) {
   const {
     title,
+    mastheadMp4Video,
+    mastheadMp4VideoThumb,
     metaTitle,
     description,
     content,
@@ -28,6 +30,7 @@ export default function Post({ post, socialImage, related }) {
     categories,
     modified,
     tags,
+    selectRelatedPosts,
     featuredImage,
     mastheadWistiaVideoId,
     mastheadBanner,
@@ -63,23 +66,33 @@ export default function Post({ post, socialImage, related }) {
   const { posts: relatedPostsList, title: relatedPostsTitle } = related || {};
 
   let tagList = tags?.nodes || [];
+  let selList = selectRelatedPosts.nodes || [];
   let postId = post.id;
   let relatedPosts = [];
   let relatedPostId = [];
-  if (tagList.length) {
-    tagList.map((tag) => {
-      if (tag.posts && tag.posts.nodes && tag.posts.nodes.length) {
-        tag.posts.nodes.map((post) => {
-          if (!relatedPostId.includes(post.id) && postId != post.id) {
-            relatedPosts = [...relatedPosts, post];
-            relatedPostId.push(post.id);
-          }
-        });
+  if (selList.length) {
+    selList.map((post) => {
+      if (!relatedPostId.includes(post.id) && postId != post.id) {
+        relatedPosts = [...relatedPosts, post];
+        relatedPostId.push(post.id);
       }
     });
+  } else {
+    if (tagList.length) {
+      tagList.map((tag) => {
+        if (tag.posts && tag.posts.nodes && tag.posts.nodes.length) {
+          tag.posts.nodes.map((post) => {
+            if (!relatedPostId.includes(post.id) && postId != post.id) {
+              relatedPosts = [...relatedPosts, post];
+              relatedPostId.push(post.id);
+            }
+          });
+        }
+      });
+    }
   }
 
-  console.warn({ relatedPosts });
+  console.warn({ post });
   function getRandom(arr, n) {
     var result = new Array(n),
       len = arr.length,
@@ -100,52 +113,66 @@ export default function Post({ post, socialImage, related }) {
       <Helmet {...helmetSettings} />
       <ArticleJsonLd post={post} siteTitle={siteMetadata.title} />
       {!mastheadBanner ? (
-        <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
-          {mastheadWistiaVideoId && (
-            <div class="ratio ratio-16x9">
-              <iframe
-                src={`//fast.wistia.net/embed/iframe/${mastheadWistiaVideoId}?videoFoam=true`}
-                allowtransparency="true"
-                frameborder="0"
-                scrolling="no"
-                class="wistia_embed"
-                name="wistia_embed"
-                autoPlay
-                allowfullscreen
-                mozallowfullscreen
-                webkitallowfullscreen
-                oallowfullscreen
-                msallowfullscreen
-              ></iframe>
-            </div>
-          )}
-          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
-            <h1
-              className={styles.title}
-              dangerouslySetInnerHTML={{
-                __html: title,
-              }}
-            />
-          </div>
-          {false && (
-            <Metadata
-              className={styles.postMetadata}
-              date={date}
-              author={author}
-              categories={categories}
-              options={metadataOptions}
-              isSticky={isSticky}
-            />
-          )}
+        <>
+          {mastheadMp4Video ? (
+            <video
+              poster={
+                mastheadMp4VideoThumb.node.mediaItemUrl || featuredImage.sourceUrl || mastheadMp4Video.node.mediaItemUrl
+              }
+              controls
+              style={{ width: '100vw' }}
+            >
+              <source src={mastheadMp4Video.node.mediaItemUrl} type="video/mp4" />
+            </video>
+          ) : (
+            <Header isTopMargin={mastheadWistiaVideoId ? true : false}>
+              {mastheadWistiaVideoId && (
+                <div class="ratio ratio-16x9">
+                  <iframe
+                    src={`//fast.wistia.net/embed/iframe/${mastheadWistiaVideoId}?videoFoam=true`}
+                    allowtransparency="true"
+                    frameborder="0"
+                    scrolling="no"
+                    class="wistia_embed"
+                    name="wistia_embed"
+                    autoPlay
+                    allowfullscreen
+                    mozallowfullscreen
+                    webkitallowfullscreen
+                    oallowfullscreen
+                    msallowfullscreen
+                  ></iframe>
+                </div>
+              )}
+              <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}>
+                <h1
+                  className={styles.title}
+                  dangerouslySetInnerHTML={{
+                    __html: title,
+                  }}
+                />
+              </div>
+              {false && (
+                <Metadata
+                  className={styles.postMetadata}
+                  date={date}
+                  author={author}
+                  categories={categories}
+                  options={metadataOptions}
+                  isSticky={isSticky}
+                />
+              )}
 
-          {featuredImage && false && (
-            <FeaturedImage
-              {...featuredImage}
-              src={featuredImage.sourceUrl}
-              dangerouslySetInnerHTML={featuredImage.caption}
-            />
+              {featuredImage && false && (
+                <FeaturedImage
+                  {...featuredImage}
+                  src={featuredImage.sourceUrl}
+                  dangerouslySetInnerHTML={featuredImage.caption}
+                />
+              )}
+            </Header>
           )}
-        </Header>
+        </>
       ) : (
         <div>
           {mastheadBanner && (

@@ -149,6 +149,42 @@ export const QUERY_POST_BY_SLUG = gql`
       slug
       isSticky
       mastheadWistiaVideoId
+
+      mastheadMp4Video {
+        node {
+          mimeType
+          mediaItemUrl
+        }
+      }
+      mastheadMp4VideoThumb {
+        node {
+          mimeType
+          mediaItemUrl
+        }
+      }
+      selectRelatedPosts {
+        nodes {
+          id
+          title
+          content
+          slug
+          date
+          excerpt
+          writtenBy
+          interviewedBy
+          featuredImage {
+            node {
+              altText
+              caption
+              sourceUrl
+              srcSet
+              sizes
+              id
+            }
+          }
+        }
+      }
+
       tags {
         nodes {
           id
@@ -162,18 +198,8 @@ export const QUERY_POST_BY_SLUG = gql`
               slug
               date
               excerpt
-              author {
-                node {
-                  avatar {
-                    height
-                    url
-                    width
-                  }
-                  id
-                  name
-                  slug
-                }
-              }
+              writtenBy
+              interviewedBy
               featuredImage {
                 node {
                   altText
