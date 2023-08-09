@@ -640,10 +640,9 @@ export default function Home({
                     <a className={styles.Atag}>
                       <div className="text-center">
                         <h2 className={styles.pagesTitle}>
-                          <span
-                            style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}
-                            dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}
-                          />
+                          <span style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
+                            <p dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
+                          </span>
                         </h2>
                         {nodes.writtenBy && (
                           <div className={styles.Author}>
