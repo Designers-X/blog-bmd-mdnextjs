@@ -1,10 +1,25 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from './styles.module.scss';
+const CustomLink = ({ text }) => {
+  const arr = text.toLowerCase().split(' ');
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+  }
+  const tagLink = arr.join('_');
+  return (
+    <Link href={`/editorial/#${tagLink}`}>
+      <a>
+        <span>{text}</span>
+      </a>
+    </Link>
+  );
+};
 const RelatedPost = ({ array }) => {
   if (!array || !array.length) return null;
   return (
     <section className={styles.container}>
-      <h1 className={styles.sectionTitle}>RELATED POST</h1>
+      <h2 className={styles.sectionTitle}>RELATED POST</h2>
       {/* {array.map((post, index) => {
         return (
           <li key={index}>
@@ -23,17 +38,25 @@ const RelatedPost = ({ array }) => {
                   )}
                 </div>
                 <div className={styles.textHolder}>
-                  {post.writtenBy && <p className={styles.authorLabel}>WRITTEN BY {post.writtenBy}</p>}
-                  <h2 className={styles.postTitle}>{post.title}</h2>
+                  {post.writtenBy && (
+                    <p className={styles.authorLabel}>
+                      Written By : <CustomLink text={post.writtenBy} />
+                    </p>
+                  )}
+                  <h3 className={styles.postTitle}>
+                    <a href={`/posts/${post.slug}`}>{post.title}</a>
+                  </h3>
                   <div
                     className={styles.descText}
                     dangerouslySetInnerHTML={{
                       __html: post.excerpt,
                     }}
                   />
-                  <div className={styles.btnHolder}>
-                    <a href={`/posts/${post.slug}`}>Read More</a>
-                  </div>
+                  <a className={styles.btnHolderLink} href={`/posts/${post.slug}`}>
+                    <div className={styles.btnHolder}>
+                      <a href={`/posts/${post.slug}`}>Read More</a>
+                    </div>
+                  </a>
                 </div>
               </div>
             </>

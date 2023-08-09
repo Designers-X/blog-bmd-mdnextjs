@@ -68,7 +68,6 @@ export default function Home({
       <section className={styles.section1}>
         <div className="container">
           {fashionbyidpost.map((nodes, index1) => {
-            const htmlStr = nodes.excerpt;
             const interviewedBy = nodes.interviewedBy;
             const writtenBy = nodes.writtenBy;
             const featuredimage = nodes.featuredImage?.sourceUrl;
@@ -95,7 +94,7 @@ export default function Home({
                         </Link>
                         <div
                           className={styles.pagesSubTitle}
-                          dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || htmlStr }}
+                          dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}
                         ></div>
                         <div className={styles.AuthorText}>
                           {nodes.writtenBy && (
@@ -151,7 +150,6 @@ export default function Home({
         </div>
         {fruitandwinepost.map((nodes, index) => {
           const posttitle = nodes.title;
-          const subtitle = nodes.excerpt;
           const featuredimage = nodes.featuredImage?.sourceUrl;
           const writtenBy = nodes.writtenBy;
           const interviewedBy = nodes.interviewedBy;
@@ -177,10 +175,7 @@ export default function Home({
                         </h2>
                       </div>
                       <div className={styles.pagesSubTitle}>
-                        <div
-                          className="text-center"
-                          dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}
-                        />
+                        <div className="text-center" dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                       </div>
                     </a>
                   </Link>
@@ -388,7 +383,6 @@ export default function Home({
 
         {feshionpost.map((nodes, index) => {
           const posttitle = nodes.title;
-          const subtitle = nodes.excerpt;
           const featuredimage = nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
@@ -415,7 +409,7 @@ export default function Home({
                   </div>
                   <div className="mt-2">
                     <div className={styles.pagesSubTitle}>
-                      <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                      <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                     </div>
                   </div>
                 </a>
@@ -489,7 +483,6 @@ export default function Home({
       <section className={styles.section7}>
         {travelandleisure1.map((nodes, index) => {
           const posttitle = nodes.title;
-          const subtitle = nodes.excerpt;
           const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container text-center" key={index}>
@@ -522,7 +515,7 @@ export default function Home({
                     <div className={styles.ahover}>
                       <a className={styles.Atag}>
                         <h2 className={styles.pagesTitle}>
-                          <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }} />
+                          <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                         </h2>
                       </a>
                     </div>
@@ -537,7 +530,6 @@ export default function Home({
         <div className="container">
           {healthwellnesspost.map((nodes, index) => {
             const posttitle = nodes.title;
-            const subtitle = nodes.excerpt;
             const writtenBy = nodes.writtenBy;
             const featuredimage = nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
@@ -563,7 +555,7 @@ export default function Home({
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
                             <div className={styles.pagesSubTitle}>
-                              <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle || subtitle }}></div>
+                              <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}></div>
                             </div>
                             {writtenBy && (
                               <div className={styles.Author}>
@@ -594,7 +586,6 @@ export default function Home({
         {arthistorypost.map((nodes, index) => {
           const posttitle = nodes.title;
           const postslug = 'posts/' + nodes.slug;
-          const subtitle = nodes.excerpt;
           return (
             <div className="container text-center" key={index}>
               <div className="container text-center">
@@ -651,7 +642,7 @@ export default function Home({
                         <h2 className={styles.pagesTitle}>
                           <span
                             style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}
-                            dangerouslySetInnerHTML={{ __html: subtitle || nodes.pageSubtitle }}
+                            dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}
                           />
                         </h2>
                         {nodes.writtenBy && (
@@ -674,7 +665,6 @@ export default function Home({
         {travelandleisure4.map((nodes, index) => {
           const posttitle = nodes.title;
           const postslug = 'posts/' + nodes.slug;
-          const subtitle = nodes.excerpt;
           return (
             <div className="container text-center " key={index}>
               <div className="container text-center mb-5">
@@ -697,7 +687,7 @@ export default function Home({
                 <div className={styles.ahover}>
                   <a className={styles.TextHoverEffect}>
                     <div>
-                      <div className={styles.ShoppingText}>{nodes.pageSubtitle || subtitle}</div>
+                      <div className={styles.ShoppingText}>{nodes.pageSubtitle}</div>
                     </div>
                   </a>
                 </div>
