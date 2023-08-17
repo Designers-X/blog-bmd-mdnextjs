@@ -447,6 +447,13 @@ export const QUERY_FASHIOH_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -491,6 +498,13 @@ export const QUERY_FASHIOH_POST_BY_ID = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -535,6 +549,13 @@ export const QUERY_BEAUTY_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           interviewedBy
           writtenBy
           pageTitle
@@ -561,6 +582,13 @@ export const QUERY_LATEST_POST = gql`
           }
           link
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           content
           author {
             node {
@@ -621,6 +649,13 @@ export const QUERY_FRUIT_AND_WINE_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -657,6 +692,13 @@ export const QUERY_CATNOT_MISS_READS_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -693,6 +735,13 @@ export const QUERY_SECTION_ELEVEN_POST = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -738,6 +787,13 @@ export const QUERY_CULTURE_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -783,6 +839,13 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID1 = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -830,6 +893,13 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID2 = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -876,6 +946,13 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID3 = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -921,6 +998,13 @@ export const QUERY_TRAVEL_AND_LEISURE_BY_ID4 = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           interviewedBy
           writtenBy
@@ -966,6 +1050,13 @@ export const QUERY_HEALTH_WELLNESS_POSTS = gql`
           }
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           excerpt
           interviewedBy
@@ -1012,6 +1103,13 @@ export const QUERY_ART_HISTORY_POSTS = gql`
           postId
           modified
           title
+          homepagePostThumb {
+            node {
+              mimeType
+              mediaType
+              mediaItemUrl
+            }
+          }
           slug
           excerpt
           interviewedBy

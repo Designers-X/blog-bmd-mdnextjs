@@ -92,7 +92,6 @@ export default function Post({ post, socialImage, related }) {
     }
   }
 
-  console.warn({ post });
   function getRandom(arr, n) {
     var result = new Array(n),
       len = arr.length,
