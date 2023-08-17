@@ -46,9 +46,10 @@ export default function Home({
       </Link>
     );
   };
-  return (
-    <Layout newsLetterShow={true}>
-      <div class="ratio ratio-16x9">
+
+  const MastHead = ({ wistia }) => {
+    if (wistia) {
+      return (
         <iframe
           src={`//fast.wistia.net/embed/iframe/i633jy0w7m?videoFoam=true`}
           allowtransparency="true"
@@ -63,6 +64,19 @@ export default function Home({
           oallowfullscreen
           msallowfullscreen
         ></iframe>
+      );
+    } else {
+      return (
+        <video poster={'/home-thumb.jpg'} controls>
+          <source src={'/home.mp4'} type="video/mp4" />
+        </video>
+      );
+    }
+  };
+  return (
+    <Layout newsLetterShow={true}>
+      <div class="ratio ratio-16x9">
+        <MastHead />
       </div>
       <Header></Header>
       <section className={styles.section1}>
@@ -70,7 +84,7 @@ export default function Home({
           {fashionbyidpost.map((nodes, index1) => {
             const interviewedBy = nodes.interviewedBy;
             const writtenBy = nodes.writtenBy;
-            const featuredimage = nodes.featuredImage?.sourceUrl;
+            const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index1}>
@@ -150,7 +164,7 @@ export default function Home({
         </div>
         {fruitandwinepost.map((nodes, index) => {
           const posttitle = nodes.title;
-          const featuredimage = nodes.featuredImage?.sourceUrl;
+          const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
           const writtenBy = nodes.writtenBy;
           const interviewedBy = nodes.interviewedBy;
           const postslug = 'posts/' + nodes.slug;
@@ -209,7 +223,7 @@ export default function Home({
             </div>
             {cantmissreadspost.map((nodes, index) => {
               const posttitle = nodes.title;
-              const featuredimage = nodes.featuredImage?.sourceUrl;
+              const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
               const postslug = 'posts/' + nodes.slug;
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-5" key={index}>
@@ -262,7 +276,7 @@ export default function Home({
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15 mb-5">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
-                const featuredimage = nodes.featuredImage?.sourceUrl;
+                const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
                 const writtenBy = nodes.writtenBy;
                 const interviewedBy = nodes.interviewedBy;
                 const postslug = 'posts/' + nodes.slug;
@@ -312,7 +326,7 @@ export default function Home({
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;
-                  const featuredimage = nodes.featuredImage?.sourceUrl;
+                  const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
                   const writtenBy = nodes.writtenBy;
                   const postslug = 'posts/' + nodes.slug;
                   return (
@@ -383,7 +397,7 @@ export default function Home({
 
         {feshionpost.map((nodes, index) => {
           const posttitle = nodes.title;
-          const featuredimage = nodes.featuredImage?.sourceUrl;
+          const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
           const postslug = 'posts/' + nodes.slug;
           return (
             <div className="container text-center mt-5 mb-5" key={index}>
@@ -424,7 +438,7 @@ export default function Home({
           {culturepost.map((nodes, index) => {
             const writtenBy = nodes.writtenBy;
             const posttitle = nodes.title;
-            const featuredimage = nodes.featuredImage?.sourceUrl;
+            const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index}>
@@ -531,7 +545,7 @@ export default function Home({
           {healthwellnesspost.map((nodes, index) => {
             const posttitle = nodes.title;
             const writtenBy = nodes.writtenBy;
-            const featuredimage = nodes.featuredImage?.sourceUrl;
+            const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
             const postslug = 'posts/' + nodes.slug;
             return (
               <div className="row" key={index}>
@@ -718,7 +732,7 @@ export default function Home({
           <div className="row">
             {sectionEleven.map((nodes, index) => {
               const posttitle = nodes.title;
-              const featuredimage = nodes.featuredImage?.sourceUrl;
+              const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
               const postslug = 'posts/' + nodes.slug;
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
