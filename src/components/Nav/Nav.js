@@ -19,8 +19,8 @@ const Nav = () => {
         <Section className={styles.navSection}>
           <Leftsidebar />
           <div className={styles.navName}>
-            <Link href="/">
-              <a>
+            <Link href="/" aria-label="themditerraneanlifeIcon">
+              <a aria-label="themditerraneanlifeIcon">
                 <img src="/logo-black-v2.png" width={180} alt="" />
               </a>
             </Link>

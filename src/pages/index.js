@@ -70,6 +70,7 @@ export default function Home({
       return (
         <video poster={'https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/home-thumb-opt.webp'} controls>
           <source src={'/home.mp4'} type="video/mp4" />
+          <track src="" kind="captions" />
         </video>
       );
     }

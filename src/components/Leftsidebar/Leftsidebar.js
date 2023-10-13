@@ -238,7 +238,7 @@ function Leftsidebar() {
       </div>
       <nav>
         <div>
-          <button className={styles.openbtn} onClick={() => openSideNavbar()}>
+          <button className={styles.openbtn} onClick={() => openSideNavbar()} aria-labelledby="menu-Icon">
             <svg viewBox="0 0 50 60" width="30" height="25">
               <rect width="70" height="5"></rect>
               <rect y="26" width="70" height="5"></rect>

@@ -63,8 +63,8 @@ const Footer = () => {
                     </Link>
                   </li> */}
                   <li>
-                    <Link href={'https://www.instagram.com/brunomdofficial/'}>
-                      <a>
+                    <Link href={'https://www.instagram.com/brunomdofficial/'} aria-label="instagramLink">
+                      <a href={'https://www.instagram.com/brunomdofficial/'} aria-label="instagramLink">
                         <svg
                           style={{ color: '#fff' }}
                           xmlns="http://www.w3.org/2000/svg"
