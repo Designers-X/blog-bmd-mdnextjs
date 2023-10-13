@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
-import { NewsLetter } from 'components/NewsLetter';
+// import { NewsLetter } from 'components/NewsLetter';
 import useSite from 'hooks/use-site';
 import { helmetSettingsFromMetadata } from 'lib/site';
 
@@ -66,7 +66,7 @@ const Layout = ({ children, newsLetterShow }) => {
 
       <Nav />
       <Main>{children}</Main>
-      {newsLetterShow && (
+      {/* {newsLetterShow && (
         <div className="mb-5">
           <NewsLetter
             content={{
@@ -76,7 +76,7 @@ const Layout = ({ children, newsLetterShow }) => {
             }}
           />
         </div>
-      )}
+      )} */}
       <Footer />
     </div>
   );
