@@ -538,7 +538,7 @@ export default function Home({
                   </div>
                   <div className="text-center mt-4">
                     <div className={styles.ahover}>
-                      <a className={styles.Atag} href="">
+                      <a className={styles.Atag} href={postslug}>
                         <h2 className={styles.pagesTitle}>
                           <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                         </h2>

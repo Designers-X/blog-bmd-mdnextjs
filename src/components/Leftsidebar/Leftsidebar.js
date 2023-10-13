@@ -226,9 +226,9 @@ function Leftsidebar() {
             </form>
           )}
         </div>
-        <a href="javascript:void(0)" className={styles.closebtn} onClick={() => closeSideNavbar()}>
+        <div className={styles.closebtn} onClick={() => closeSideNavbar()}>
           ×
-        </a>
+        </div>
         <hr />
         <div className={styles.listContainer}>
           {navigation?.map((listItem) => {
