@@ -63,6 +63,7 @@ export default function Home({
           webkitallowfullscreen
           oallowfullscreen
           msallowfullscreen
+          title="myFrame-2"
         ></iframe>
       );
     } else {
@@ -515,6 +516,7 @@ export default function Home({
                       webkitallowfullscreen
                       oallowfullscreen
                       msallowfullscreen
+                      title="myFrame-3"
                     ></iframe>
                   </div>
                 )}
@@ -634,6 +636,7 @@ export default function Home({
                       webkitallowfullscreen
                       oallowfullscreen
                       msallowfullscreen
+                      title="myFrame-1"
                     ></iframe>
                   </div>
                 )}
