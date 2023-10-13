@@ -511,7 +511,7 @@ export default function Home({
           return (
             <div className="container text-center" key={index}>
               <div className={styles.videoHeight}>
-                {nodes.wistiaVideoScriptId && (
+                {/* {nodes.wistiaVideoScriptId && (
                   <div class="ratio ratio-16x9">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
@@ -529,7 +529,15 @@ export default function Home({
                       title="myFrame-3"
                     ></iframe>
                   </div>
-                )}
+                )} */}
+                <video
+                  poster={'/738f73855239dce54ab5e6bbc51b006ea6c56c91.webp'}
+                  controls
+                  style={{ width: '100%', height: 'auto' }}
+                >
+                  <source src={'/SINA_HOTELS_BOCCA.mp4'} type="video/mp4" />
+                  <track src="" kind="captions" />
+                </video>
               </div>
               <Link href={postslug}>
                 <a className={styles.Atag} href={postslug}>
@@ -631,7 +639,7 @@ export default function Home({
                   })}
               </div>
               <div className={styles.videoHeight}>
-                {nodes.wistiaVideoScriptId && (
+                {/* {nodes.wistiaVideoScriptId && (
                   <div class="ratio ratio-16x9 ">
                     <iframe
                       src={`//fast.wistia.net/embed/iframe/${nodes.wistiaVideoScriptId}?videoFoam=true`}
@@ -649,7 +657,15 @@ export default function Home({
                       title="myFrame-1"
                     ></iframe>
                   </div>
-                )}
+                )} */}
+                <video
+                  poster={'/9713ce51e7c697782a23c6a58257c82ab33b490c.webp'}
+                  controls
+                  style={{ width: '100%', height: 'auto' }}
+                >
+                  <source src={'/BMD_Capri_Darius_Water_EDIT_rev09_1.mp4'} type="video/mp4" />
+                  <track src="" kind="captions" />
+                </video>
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
