@@ -219,11 +219,11 @@ export default function Home({
           <div className="row">
             <div className="text-center">
               <div className={styles.FashionNew}>
-                <h6 className={styles.fashionText}>
+                <h2 className={styles.fashionText}>
                   <a href="#" className={styles.fashiHyperLink}>
                     Can&apos;t Miss Reads
                   </a>
-                </h6>
+                </h2>
               </div>
             </div>
             {cantmissreadspost.map((nodes, index) => {
@@ -618,15 +618,13 @@ export default function Home({
                     const categoryslug = '/categories/' + ele.slug;
                     return (
                       <div className={styles.FashionNew} key={index1}>
-                        <div>
-                          <Link href={categoryslug}>
-                            <h2 className={styles.fashionText}>
-                              <a href={categoryslug} className={styles.fashiHyperLink}>
-                                {ele.name}
-                              </a>
-                            </h2>
-                          </Link>
-                        </div>
+                        <Link href={categoryslug}>
+                          <h2 className={styles.fashionText}>
+                            <a href={categoryslug} className={styles.fashiHyperLink}>
+                              {ele.name}
+                            </a>
+                          </h2>
+                        </Link>
                       </div>
                     );
                   })}
@@ -698,15 +696,13 @@ export default function Home({
                   const categoryslug = '/categories/' + ele.slug;
                   return (
                     <div className={styles.FashionNew} key={index1}>
-                      <div>
-                        <h2 className={styles.fashionText}>
-                          <Link href={categoryslug}>
-                            <a href={categoryslug} className={styles.fashiHyperLink}>
-                              {ele.name}
-                            </a>
-                          </Link>
-                        </h2>
-                      </div>
+                      <h2 className={styles.fashionText}>
+                        <Link href={categoryslug}>
+                          <a href={categoryslug} className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
+                        </Link>
+                      </h2>
                     </div>
                   );
                 })}
