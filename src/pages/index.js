@@ -182,7 +182,7 @@ export default function Home({
                     </div>
                   )}
                   <Link href={postslug}>
-                    <a className={styles.Atag}>
+                    <a className={styles.Atag} id="q" href="">
                       <div className="text-center mt-3">
                         <h2 className={styles.pagesTitle}>
                           <span>{nodes.pageTitle || posttitle}</span>
@@ -230,7 +230,7 @@ export default function Home({
                   <Link href={postslug}>
                     <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
-                        <div className={'card '+styles.cards}>
+                        <div className={'card ' + styles.cards}>
                           {featuredimage ? (
                             <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
                           ) : (
@@ -739,11 +739,11 @@ export default function Home({
                   <Link href={postslug}>
                     <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
-                      <div className={'card mb-4 '+styles.cards}>
+                        <div className={'card mb-4 ' + styles.cards}>
                           {featuredimage ? (
                             <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
                           ) : (
-                            <img className={styles.imgShadow}  alt="..." />
+                            <img className={styles.imgShadow} alt="..." />
                           )}
                           <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                         </div>
