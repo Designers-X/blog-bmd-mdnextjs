@@ -68,7 +68,7 @@ export default function Home({
       );
     } else {
       return (
-        <video poster={'/home-thumb.jpg'} controls>
+        <video poster={'https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/home-thumb-opt.webp'} controls>
           <source src={'/home.mp4'} type="video/mp4" />
         </video>
       );
@@ -172,7 +172,7 @@ export default function Home({
           return (
             <div className="container" key={index}>
               <div className="row">
-                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mtb-p3">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 mtb-p3 text-center">
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
@@ -433,7 +433,6 @@ export default function Home({
           );
         })}
       </section>
-
       <section className={styles.section6}>
         <div className="container">
           {culturepost.map((nodes, index) => {

@@ -247,6 +247,16 @@
   text-decoration: unset;
   color: #000;
 }
+.section1 button,.section2 button,.section3 button,.section4 button,.section5 button,.section6 button,.section7 button,.section8 button,.section9 button,.section10 button,.section11 button{
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
+}
 
 .fashiHyperLink:hover {
   font-style: italic;
