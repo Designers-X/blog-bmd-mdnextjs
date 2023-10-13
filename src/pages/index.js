@@ -151,7 +151,9 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a href="javascript:void(0)" className={styles.fashiHyperLink}>{ele.name}</a>
+                          <a href="javascript:void(0)" className={styles.fashiHyperLink}>
+                            {ele.name}
+                          </a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}> {ele.description}</div>
@@ -217,7 +219,9 @@ export default function Home({
             <div className="text-center">
               <div className={styles.FashionNew}>
                 <h6 className={styles.fashionText}>
-                  <a className={styles.fashiHyperLink} href="javascript:void(0)">Can&apos;t Miss Reads</a>
+                  <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                    Can&apos;t Miss Reads
+                  </a>
                 </h6>
               </div>
             </div>
@@ -260,7 +264,9 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink} href="javascript:void(0)">{ele.name}</a>
+                          <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                            {ele.name}
+                          </a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}>{ele.description}</div>
@@ -382,7 +388,9 @@ export default function Home({
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">{ele.name}</a>
+                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                              {ele.name}
+                            </a>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -450,7 +458,9 @@ export default function Home({
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">{ele.name}</a>
+                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                              {ele.name}
+                            </a>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -611,7 +621,9 @@ export default function Home({
                         <div>
                           <Link href={categoryslug}>
                             <h2 className={styles.fashionText}>
-                              <a className={styles.fashiHyperLink} href="javascript:void(0)">{ele.name}</a>
+                              <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                                {ele.name}
+                              </a>
                             </h2>
                           </Link>
                         </div>
@@ -688,7 +700,9 @@ export default function Home({
                       <div>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">{ele.name}</a>
+                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
+                              {ele.name}
+                            </a>
                           </Link>
                         </h2>
                       </div>
