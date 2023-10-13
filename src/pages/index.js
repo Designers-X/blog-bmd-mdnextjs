@@ -40,9 +40,9 @@ export default function Home({
     const tagLink = arr.join('_');
     return (
       <Link href={`/editorial/#${tagLink}`}>
-        <a className={styles.Atag}>
+        <button className={styles.Atag}>
           <span>{text}</span>
-        </a>
+        </button>
       </Link>
     );
   };
@@ -101,11 +101,11 @@ export default function Home({
                           );
                         })}
                         <Link href={postslug}>
-                          <a className={styles.Atag}>
+                          <button className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
-                          </a>
+                          </button>
                         </Link>
                         <div
                           className={styles.pagesSubTitle}
@@ -130,9 +130,9 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <Link href={postslug}>
-                      <a>
+                      <button>
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                      </a>
+                      </button>
                     </Link>
                   </div>
                 )}
@@ -152,7 +152,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          <button className={styles.fashiHyperLink}>{ele.name}</button>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}> {ele.description}</div>
@@ -176,14 +176,14 @@ export default function Home({
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
-                        <a>
+                        <button>
                           <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                        </a>
+                        </button>
                       </Link>
                     </div>
                   )}
                   <Link href={postslug}>
-                    <a className={styles.Atag}>
+                    <button className={styles.Atag}>
                       <div className="text-center mt-3">
                         <h2 className={styles.pagesTitle}>
                           <span>{nodes.pageTitle || posttitle}</span>
@@ -192,7 +192,7 @@ export default function Home({
                       <div className={styles.pagesSubTitle}>
                         <div className="text-center" dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                       </div>
-                    </a>
+                    </button>
                   </Link>
                   <div className={styles.AuthorText}>
                     {nodes.writtenBy && (
@@ -218,7 +218,7 @@ export default function Home({
             <div className="text-center">
               <div className={styles.FashionNew}>
                 <h6 className={styles.fashionText}>
-                  <a className={styles.fashiHyperLink}>Can&apos;t Miss Reads</a>
+                  <button className={styles.fashiHyperLink}>Can&apos;t Miss Reads</button>
                 </h6>
               </div>
             </div>
@@ -229,7 +229,7 @@ export default function Home({
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-5" key={index}>
                   <Link href={postslug}>
-                    <a className={styles.CardHoverEffect}>
+                    <button className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
                         <div className={'card ' + styles.cards}>
                           {featuredimage ? (
@@ -242,7 +242,7 @@ export default function Home({
                           <p className={'card-text mt-2'}>{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
-                    </a>
+                    </button>
                   </Link>
                 </div>
               );
@@ -261,7 +261,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink}>{ele.name}</a>
+                          <button className={styles.fashiHyperLink}>{ele.name}</button>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}>{ele.description}</div>
@@ -286,9 +286,9 @@ export default function Home({
                     {featuredimage ? (
                       <div className={styles.imgResponsive}>
                         <Link href={postslug}>
-                          <a>
+                          <button>
                             <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                          </a>
+                          </button>
                         </Link>
                       </div>
                     ) : (
@@ -297,7 +297,7 @@ export default function Home({
                       </div>
                     )}
                     <Link href={postslug}>
-                      <a className={styles.Atag}>
+                      <button className={styles.Atag}>
                         <div className="text-center mt-3">
                           <div className={styles.ahover}>
                             <h2 className={styles.pagesTitle}>
@@ -305,7 +305,7 @@ export default function Home({
                             </h2>
                           </div>
                         </div>
-                      </a>
+                      </button>
                     </Link>
                     <div className={styles.AuthorText}>
                       {writtenBy && (
@@ -334,7 +334,7 @@ export default function Home({
                     <div className={styles.sthumbBox} key={index}>
                       <div className={styles.inlineBox}>
                         <Link href={postslug}>
-                          <a className={styles.Atag}>
+                          <button className={styles.Atag}>
                             {featuredimage ? (
                               <div className="">
                                 <img className={styles.img120} src={featuredimage} alt="fluid" />
@@ -344,16 +344,16 @@ export default function Home({
                                 <img alt={posttitle} />
                               </div>
                             )}
-                          </a>
+                          </button>
                         </Link>
                         <div className={styles.sthumb}>
                           <div className={styles.gridGap}>
                             <Link href={postslug} key={index}>
-                              <a className={styles.Atag}>
+                              <button className={styles.Atag}>
                                 <div className={styles.pagesSubTitle}>
                                   <span>{nodes.pageTitle || posttitle}</span>
                                 </div>
-                              </a>
+                              </button>
                             </Link>
                             {writtenBy && (
                               <p className={styles.pagesAutherDesc}>
@@ -383,7 +383,7 @@ export default function Home({
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink}>{ele.name}</a>
+                            <button className={styles.fashiHyperLink}>{ele.name}</button>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -405,16 +405,16 @@ export default function Home({
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
-                    <a>
+                    <button>
                       <div class="">
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </div>
-                    </a>
+                    </button>
                   </Link>
                 </div>
               )}
               <Link href={postslug}>
-                <a className={styles.Atag}>
+                <button className={styles.Atag}>
                   <div className="text-center mt-3">
                     <div className={styles.ahover}>
                       <h2 className={styles.pagesTitle}>
@@ -427,7 +427,7 @@ export default function Home({
                       <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                     </div>
                   </div>
-                </a>
+                </button>
               </Link>
             </div>
           );
@@ -450,7 +450,7 @@ export default function Home({
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink}>{ele.name}</a>
+                            <button className={styles.fashiHyperLink}>{ele.name}</button>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -463,11 +463,11 @@ export default function Home({
                     <div className="text-center">
                       <div>
                         <Link href={postslug}>
-                          <a className={styles.Atag}>
+                          <button className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
-                          </a>
+                          </button>
                         </Link>
                         {writtenBy && (
                           <div className={styles.Author}>
@@ -483,9 +483,9 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
                     <Link href={postslug}>
-                      <a>
+                      <button>
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                      </a>
+                      </button>
                     </Link>
                   </div>
                 )}
@@ -522,7 +522,7 @@ export default function Home({
                 )}
               </div>
               <Link href={postslug}>
-                <a className={styles.Atag}>
+                <button className={styles.Atag}>
                   <div>
                     <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
                   </div>
@@ -535,7 +535,7 @@ export default function Home({
                       </a>
                     </div>
                   </div>
-                </a>
+                </button>
               </Link>
             </div>
           );
@@ -553,16 +553,16 @@ export default function Home({
                 <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
                     <Link href={postslug}>
-                      <a className={styles.Atag} href="">
+                      <button className={styles.Atag}>
                         <div className="text-center">
                           <div>
                             {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
                                 <Link href={categoryslug} key={index1}>
-                                  <a>
+                                  <button>
                                     <div className={styles.ShoppingText}>{ele.name}</div>
-                                  </a>
+                                  </button>
                                 </Link>
                               );
                             })}
@@ -581,7 +581,7 @@ export default function Home({
                             )}
                           </div>
                         </div>
-                      </a>
+                      </button>
                     </Link>
                   </div>
                 </div>
@@ -612,7 +612,7 @@ export default function Home({
                         <div>
                           <Link href={categoryslug}>
                             <h2 className={styles.fashionText}>
-                              <a className={styles.fashiHyperLink}>{ele.name}</a>
+                              <button className={styles.fashiHyperLink}>{ele.name}</button>
                             </h2>
                           </Link>
                         </div>
@@ -643,17 +643,17 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                  <a className={styles.TextHoverEffect}>
+                  <button className={styles.TextHoverEffect}>
                     <div>
                       <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
                     </div>
-                  </a>
+                  </button>
                 </div>
               </Link>
               <div className="text-center">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a className={styles.Atag}>
+                    <button className={styles.Atag}>
                       <div className="text-center">
                         <h2 className={styles.pagesTitle}>
                           <span style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
@@ -668,7 +668,7 @@ export default function Home({
                           </div>
                         )}
                       </div>
-                    </a>
+                    </button>
                   </div>
                 </Link>
               </div>
@@ -690,7 +690,7 @@ export default function Home({
                       <div>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink}>{ele.name}</a>
+                            <button className={styles.fashiHyperLink}>{ele.name}</button>
                           </Link>
                         </h2>
                       </div>
@@ -700,21 +700,21 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                  <a className={styles.TextHoverEffect}>
+                  <button className={styles.TextHoverEffect}>
                     <div>
                       <div className={styles.ShoppingText}>{nodes.pageSubtitle}</div>
                     </div>
-                  </a>
+                  </button>
                 </div>
               </Link>
               <div className="text-center mt-4">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a className={styles.Atag}>
+                    <button className={styles.Atag}>
                       <h2 className={styles.pagesTitle}>
                         <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
                       </h2>
-                    </a>
+                    </button>
                     {nodes.writtenBy && (
                       <div className={styles.Author}>
                         <p className={styles.pagesAutherDesc}>
@@ -739,7 +739,7 @@ export default function Home({
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
                   <Link href={postslug}>
-                    <a className={styles.CardHoverEffect}>
+                    <button className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
                         <div className={'card mb-4 ' + styles.cards}>
                           {featuredimage ? (
@@ -750,7 +750,7 @@ export default function Home({
                           <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                         </div>
                       </div>
-                    </a>
+                    </button>
                   </Link>
                 </div>
               );
