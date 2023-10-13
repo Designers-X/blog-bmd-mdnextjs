@@ -344,7 +344,13 @@ export default function Home({
                           <a className={styles.Atag} href={postslug}>
                             {featuredimage ? (
                               <div className="">
-                                <img className={styles.img120} src={featuredimage} alt="fluid" />
+                                <img
+                                  className={styles.img120}
+                                  src={featuredimage}
+                                  alt="fluid"
+                                  height={'auto'}
+                                  width={'100%'}
+                                />
                               </div>
                             ) : (
                               <div className={styles.img120}>

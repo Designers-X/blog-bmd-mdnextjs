@@ -21,7 +21,7 @@ const Nav = () => {
           <div className={styles.navName}>
             <Link href="/" aria-label="themditerraneanlifeIcon">
               <a aria-label="themditerraneanlifeIcon">
-                <img src="/logo-black-v2.png" width={180} alt="" />
+                <img src="/logo-black-v2.png" width={180} height={'auto'} alt="" />
               </a>
             </Link>
           </div>
