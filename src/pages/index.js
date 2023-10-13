@@ -150,9 +150,7 @@ export default function Home({
                   return (
                     <div key={index}>
                       <h2 className={styles.fashionText}>
-                        <Link href={categoryslug}>
-                          {ele.name}
-                        </Link>
+                        <Link href={categoryslug}>{ele.name}</Link>
                       </h2>
                       <div className={styles.WhatNew}> {ele.description}</div>
                     </div>
@@ -259,9 +257,7 @@ export default function Home({
                   return (
                     <div key={index}>
                       <h2 className={styles.fashionText}>
-                        <Link href={categoryslug}>
-                          {ele.name}
-                        </Link>
+                        <Link href={categoryslug}>{ele.name}</Link>
                       </h2>
                       <div className={styles.WhatNew}>{ele.description}</div>
                     </div>
@@ -381,9 +377,7 @@ export default function Home({
                     return (
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
-                          <Link href={categoryslug}>
-                            {ele.name}
-                          </Link>
+                          <Link href={categoryslug}>{ele.name}</Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
@@ -404,25 +398,25 @@ export default function Home({
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
-                      <div class="ratio ratio-16x9">
-                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
-                      </div>
+                    <div class="ratio ratio-16x9">
+                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                    </div>
                   </Link>
                 </div>
               )}
               <Link href={postslug}>
-                  <div className="text-center mt-3">
-                    <div className={styles.ahover}>
-                      <h2 className={styles.pagesTitle}>
-                        <span>{nodes.pageTitle || posttitle}</span>
-                      </h2>
-                    </div>
+                <div className="text-center mt-3">
+                  <div className={styles.ahover}>
+                    <h2 className={styles.pagesTitle}>
+                      <span>{nodes.pageTitle || posttitle}</span>
+                    </h2>
                   </div>
-                  <div className="mt-2">
-                    <div className={styles.pagesSubTitle}>
-                      <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
-                    </div>
+                </div>
+                <div className="mt-2">
+                  <div className={styles.pagesSubTitle}>
+                    <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                   </div>
+                </div>
               </Link>
             </div>
           );
@@ -445,9 +439,7 @@ export default function Home({
                     return (
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
-                          <Link href={categoryslug}>
-                            {ele.name}
-                          </Link>
+                          <Link href={categoryslug}>{ele.name}</Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
                       </div>
@@ -459,9 +451,9 @@ export default function Home({
                     <div className="text-center">
                       <div>
                         <Link href={postslug}>
-                            <h2 className={styles.pagesTitle}>
-                              <span>{nodes.pageTitle || posttitle}</span>
-                            </h2>
+                          <h2 className={styles.pagesTitle}>
+                            <span>{nodes.pageTitle || posttitle}</span>
+                          </h2>
                         </Link>
                         {writtenBy && (
                           <div className={styles.Author}>
@@ -477,7 +469,7 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
                     <Link href={postslug}>
-                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                     </Link>
                   </div>
                 )}
@@ -519,9 +511,9 @@ export default function Home({
                   </div>
                   <div className="text-center mt-4">
                     <div className={styles.ahover}>
-                        <h2 className={styles.pagesTitle}>
-                          <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
-                        </h2>
+                      <h2 className={styles.pagesTitle}>
+                        <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
+                      </h2>
                     </div>
                   </div>
                 </a>
@@ -542,31 +534,31 @@ export default function Home({
                 <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
                     <Link href={postslug}>
-                        <div className="text-center">
-                          <div>
-                            {nodes.categories.map((ele, index1) => {
-                              const categoryslug = '/categories/' + ele.slug;
-                              return (
-                                <Link href={categoryslug} key={index1}>
-                                    <div className={styles.ShoppingText}>{ele.name}</div>
-                                </Link>
-                              );
-                            })}
-                            <h2 class={styles.pagesTitle}>
-                              <span>{nodes.pageTitle || posttitle}</span>
-                            </h2>
-                            <div className={styles.pagesSubTitle}>
-                              <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}></div>
-                            </div>
-                            {writtenBy && (
-                              <div className={styles.Author}>
-                                <p className={styles.pagesAutherDesc}>
-                                  WRITTEN BY: <CustomLink text={writtenBy} />
-                                </p>
-                              </div>
-                            )}
+                      <div className="text-center">
+                        <div>
+                          {nodes.categories.map((ele, index1) => {
+                            const categoryslug = '/categories/' + ele.slug;
+                            return (
+                              <Link href={categoryslug} key={index1}>
+                                <div className={styles.ShoppingText}>{ele.name}</div>
+                              </Link>
+                            );
+                          })}
+                          <h2 class={styles.pagesTitle}>
+                            <span>{nodes.pageTitle || posttitle}</span>
+                          </h2>
+                          <div className={styles.pagesSubTitle}>
+                            <div dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }}></div>
                           </div>
+                          {writtenBy && (
+                            <div className={styles.Author}>
+                              <p className={styles.pagesAutherDesc}>
+                                WRITTEN BY: <CustomLink text={writtenBy} />
+                              </p>
+                            </div>
+                          )}
                         </div>
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -596,9 +588,7 @@ export default function Home({
                       <div className={styles.FashionNew} key={index1}>
                         <div>
                           <Link href={categoryslug}>
-                            <h2 className={styles.fashionText}>
-                              {ele.name}
-                            </h2>
+                            <h2 className={styles.fashionText}>{ele.name}</h2>
                           </Link>
                         </div>
                       </div>
@@ -627,28 +617,28 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                    <div>
-                      <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
-                    </div>
+                  <div>
+                    <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
+                  </div>
                 </div>
               </Link>
               <div className="text-center">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                      <div className="text-center">
-                        <h2 className={styles.pagesTitle}>
-                          <span style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
-                            <p dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
-                          </span>
-                        </h2>
-                        {nodes.writtenBy && (
-                          <div className={styles.Author}>
-                            <p className={styles.pagesAutherDesc}>
-                              WRITTEN BY: <CustomLink text={nodes.writtenBy} />
-                            </p>
-                          </div>
-                        )}
-                      </div>
+                    <div className="text-center">
+                      <h2 className={styles.pagesTitle}>
+                        <span style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
+                          <p dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
+                        </span>
+                      </h2>
+                      {nodes.writtenBy && (
+                        <div className={styles.Author}>
+                          <p className={styles.pagesAutherDesc}>
+                            WRITTEN BY: <CustomLink text={nodes.writtenBy} />
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </Link>
               </div>
@@ -669,9 +659,7 @@ export default function Home({
                     <div className={styles.FashionNew} key={index1}>
                       <div>
                         <h2 className={styles.fashionText}>
-                          <Link href={categoryslug}>
-                           {ele.name}
-                          </Link>
+                          <Link href={categoryslug}>{ele.name}</Link>
                         </h2>
                       </div>
                     </div>
@@ -680,17 +668,17 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                    <div>
-                      <div className={styles.ShoppingText}>{nodes.pageSubtitle}</div>
-                    </div>
+                  <div>
+                    <div className={styles.ShoppingText}>{nodes.pageSubtitle}</div>
+                  </div>
                 </div>
               </Link>
               <div className="text-center mt-4">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                      <h2 className={styles.pagesTitle}>
-                        <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
-                      </h2>
+                    <h2 className={styles.pagesTitle}>
+                      <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
+                    </h2>
                     {nodes.writtenBy && (
                       <div className={styles.Author}>
                         <p className={styles.pagesAutherDesc}>
@@ -715,16 +703,16 @@ export default function Home({
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
                   <Link href={postslug}>
-                      <div className={styles.cardBorder}>
-                        <div className="card mb-4">
-                          {featuredimage ? (
-                            <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
-                          ) : (
-                            <img className={styles.topRoundImgFullWidth} alt="..." />
-                          )}
-                          <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
-                        </div>
+                    <div className={styles.cardBorder}>
+                      <div className="card mb-4">
+                        {featuredimage ? (
+                          <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
+                        ) : (
+                          <img className={styles.topRoundImgFullWidth} alt="..." />
+                        )}
+                        <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                       </div>
+                    </div>
                   </Link>
                 </div>
               );
