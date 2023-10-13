@@ -182,7 +182,7 @@ export default function Home({
                     </div>
                   )}
                   <Link href={postslug}>
-                    <a className={styles.Atag} id="q" href="">
+                    <a className={styles.Atag}>
                       <div className="text-center mt-3">
                         <h2 className={styles.pagesTitle}>
                           <span>{nodes.pageTitle || posttitle}</span>
@@ -345,7 +345,7 @@ export default function Home({
                             )}
                           </a>
                         </Link>
-                        <div className="m-auto">
+                        <div className={styles.sthumb}>
                           <div className={styles.gridGap}>
                             <Link href={postslug} key={index}>
                               <a className={styles.Atag}>
@@ -443,7 +443,6 @@ export default function Home({
             return (
               <div className="row" key={index}>
                 <div className="container text-center">
-                  {console.log({ bbbbbbb: nodes })}
                   {nodes.categories.map((ele, index1) => {
                     const categoryslug = '/categories/' + ele.slug;
                     return (
