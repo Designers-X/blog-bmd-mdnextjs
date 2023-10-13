@@ -319,11 +319,13 @@
   transition: color 0.3s ease-in-out;
   text-align: left;
 }
-
 .CardHoverEffect {
   color: #000;
   text-decoration: unset;
   transition: color 0.3s ease-in-out;
+  .cards{
+    margin:0 10px !important;
+  }
 }
 
 .CreatedBy {
@@ -445,6 +447,7 @@
   border-top-right-radius: var(--bs-card-inner-border-radius);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23);
 }
+
 .topRoundImg250 {
   height: 250px;
   width: 250px;

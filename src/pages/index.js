@@ -40,7 +40,7 @@ export default function Home({
     const tagLink = arr.join('_');
     return (
       <Link href={`/editorial/#${tagLink}`}>
-        <a className={styles.Atag} href="javascript:void(0)">
+        <a className={styles.Atag}>
           <span>{text}</span>
         </a>
       </Link>
@@ -100,7 +100,7 @@ export default function Home({
                           );
                         })}
                         <Link href={postslug}>
-                          <a className={styles.Atag} href="javascript:void(0)">
+                          <a className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || nodes.title}</span>
                             </h2>
@@ -129,7 +129,7 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <Link href={postslug}>
-                      <a href="javascript:void(0)">
+                      <a>
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </a>
                     </Link>
@@ -151,9 +151,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a href="javascript:void(0)" className={styles.fashiHyperLink}>
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}> {ele.description}</div>
@@ -177,14 +175,14 @@ export default function Home({
                   {featuredimage && (
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
-                        <a href="javascript:void(0)">
+                        <a>
                           <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                         </a>
                       </Link>
                     </div>
                   )}
                   <Link href={postslug}>
-                    <a className={styles.Atag} href="javascript:void(0)">
+                    <a className={styles.Atag}>
                       <div className="text-center mt-3">
                         <h2 className={styles.pagesTitle}>
                           <span>{nodes.pageTitle || posttitle}</span>
@@ -219,9 +217,7 @@ export default function Home({
             <div className="text-center">
               <div className={styles.FashionNew}>
                 <h6 className={styles.fashionText}>
-                  <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                    Can&apos;t Miss Reads
-                  </a>
+                  <a className={styles.fashiHyperLink}>Can&apos;t Miss Reads</a>
                 </h6>
               </div>
             </div>
@@ -232,13 +228,13 @@ export default function Home({
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 mt-5" key={index}>
                   <Link href={postslug}>
-                    <a className={styles.CardHoverEffect} href="javascript:void(0)">
+                    <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
-                        <div className="card">
+                        <div className={'card '+styles.cards}>
                           {featuredimage ? (
-                            <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
+                            <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
                           ) : (
-                            <div className={styles.topRoundImgFullWidth}>
+                            <div className={styles.imgShadow}>
                               <img alt={posttitle} />
                             </div>
                           )}
@@ -264,9 +260,7 @@ export default function Home({
                     <div key={index}>
                       <h2 className={styles.fashionText}>
                         <Link href={categoryslug}>
-                          <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                            {ele.name}
-                          </a>
+                          <a className={styles.fashiHyperLink}>{ele.name}</a>
                         </Link>
                       </h2>
                       <div className={styles.WhatNew}>{ele.description}</div>
@@ -291,7 +285,7 @@ export default function Home({
                     {featuredimage ? (
                       <div className={styles.imgResponsive}>
                         <Link href={postslug}>
-                          <a href="javascript:void(0)">
+                          <a>
                             <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                           </a>
                         </Link>
@@ -302,7 +296,7 @@ export default function Home({
                       </div>
                     )}
                     <Link href={postslug}>
-                      <a className={styles.Atag} href="javascript:void(0)">
+                      <a className={styles.Atag}>
                         <div className="text-center mt-3">
                           <div className={styles.ahover}>
                             <h2 className={styles.pagesTitle}>
@@ -339,7 +333,7 @@ export default function Home({
                     <div className=" mb-2" key={index}>
                       <div className={styles.inlineBox}>
                         <Link href={postslug}>
-                          <a className={styles.Atag} href="javascript:void(0)">
+                          <a className={styles.Atag}>
                             {featuredimage ? (
                               <div className="">
                                 <img className={styles.img120} src={featuredimage} alt="fluid" />
@@ -354,7 +348,7 @@ export default function Home({
                         <div className="m-auto">
                           <div className={styles.gridGap}>
                             <Link href={postslug} key={index}>
-                              <a className={styles.Atag} href="javascript:void(0)">
+                              <a className={styles.Atag}>
                                 <div className={styles.pagesSubTitle}>
                                   <span>{nodes.pageTitle || posttitle}</span>
                                 </div>
@@ -388,9 +382,7 @@ export default function Home({
                       <div key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                              {ele.name}
-                            </a>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -412,8 +404,8 @@ export default function Home({
               {featuredimage && (
                 <div className={styles.imgResponsive}>
                   <Link href={postslug}>
-                    <a href="javascript:void(0)">
-                      <div class="ratio ratio-16x9">
+                    <a>
+                      <div class="">
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </div>
                     </a>
@@ -421,7 +413,7 @@ export default function Home({
                 </div>
               )}
               <Link href={postslug}>
-                <a className={styles.Atag} href="javascript:void(0)">
+                <a className={styles.Atag}>
                   <div className="text-center mt-3">
                     <div className={styles.ahover}>
                       <h2 className={styles.pagesTitle}>
@@ -458,9 +450,7 @@ export default function Home({
                       <div className={styles.FashionNew} key={index1}>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                              {ele.name}
-                            </a>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
                           </Link>
                         </h2>
                         <div className={styles.WhatNew}>{ele.description}</div>
@@ -473,7 +463,7 @@ export default function Home({
                     <div className="text-center">
                       <div>
                         <Link href={postslug}>
-                          <a className={styles.Atag} href="javascript:void(0)">
+                          <a className={styles.Atag}>
                             <h2 className={styles.pagesTitle}>
                               <span>{nodes.pageTitle || posttitle}</span>
                             </h2>
@@ -493,7 +483,7 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
                     <Link href={postslug}>
-                      <a href="javascript:void(0)">
+                      <a>
                         <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                       </a>
                     </Link>
@@ -531,13 +521,13 @@ export default function Home({
                 )}
               </div>
               <Link href={postslug}>
-                <a className={styles.Atag} href="javascript:void(0)">
+                <a className={styles.Atag}>
                   <div>
                     <div className={styles.ShoppingText}>{nodes.pageTitle || posttitle}</div>
                   </div>
                   <div className="text-center mt-4">
                     <div className={styles.ahover}>
-                      <a className={styles.Atag} href="javascript:void(0)">
+                      <a className={styles.Atag}>
                         <h2 className={styles.pagesTitle}>
                           <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                         </h2>
@@ -562,14 +552,14 @@ export default function Home({
                 <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12 m-auto ">
                   <div className={styles.textStleShop}>
                     <Link href={postslug}>
-                      <a className={styles.Atag} href="javascript:void(0)">
+                      <a className={styles.Atag} href="">
                         <div className="text-center">
                           <div>
                             {nodes.categories.map((ele, index1) => {
                               const categoryslug = '/categories/' + ele.slug;
                               return (
                                 <Link href={categoryslug} key={index1}>
-                                  <a href="javascript:void(0)">
+                                  <a>
                                     <div className={styles.ShoppingText}>{ele.name}</div>
                                   </a>
                                 </Link>
@@ -621,9 +611,7 @@ export default function Home({
                         <div>
                           <Link href={categoryslug}>
                             <h2 className={styles.fashionText}>
-                              <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                                {ele.name}
-                              </a>
+                              <a className={styles.fashiHyperLink}>{ele.name}</a>
                             </h2>
                           </Link>
                         </div>
@@ -653,7 +641,7 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                  <a className={styles.TextHoverEffect} href="javascript:void(0)">
+                  <a className={styles.TextHoverEffect}>
                     <div>
                       <div className={styles.ShoppingText}>{posttitle || nodes.pageTitle}</div>
                     </div>
@@ -663,7 +651,7 @@ export default function Home({
               <div className="text-center">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a className={styles.Atag} href="javascript:void(0)">
+                    <a className={styles.Atag}>
                       <div className="text-center">
                         <h2 className={styles.pagesTitle}>
                           <span style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}>
@@ -700,9 +688,7 @@ export default function Home({
                       <div>
                         <h2 className={styles.fashionText}>
                           <Link href={categoryslug}>
-                            <a className={styles.fashiHyperLink} href="javascript:void(0)">
-                              {ele.name}
-                            </a>
+                            <a className={styles.fashiHyperLink}>{ele.name}</a>
                           </Link>
                         </h2>
                       </div>
@@ -712,7 +698,7 @@ export default function Home({
               </div>
               <Link href={postslug}>
                 <div className={styles.ahover}>
-                  <a className={styles.TextHoverEffect} href="javascript:void(0)">
+                  <a className={styles.TextHoverEffect}>
                     <div>
                       <div className={styles.ShoppingText}>{nodes.pageSubtitle}</div>
                     </div>
@@ -722,7 +708,7 @@ export default function Home({
               <div className="text-center mt-4">
                 <Link href={postslug}>
                   <div className={styles.ahover}>
-                    <a className={styles.Atag} href="javascript:void(0)">
+                    <a className={styles.Atag}>
                       <h2 className={styles.pagesTitle}>
                         <span dangerouslySetInnerHTML={{ __html: nodes.pageTitle || posttitle }} />
                       </h2>
@@ -751,13 +737,13 @@ export default function Home({
               return (
                 <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6" key={index}>
                   <Link href={postslug}>
-                    <a className={styles.CardHoverEffect} href="javascript:void(0)">
+                    <a className={styles.CardHoverEffect}>
                       <div className={styles.cardBorder}>
-                        <div className="card mb-4">
+                      <div className={'card mb-4 '+styles.cards}>
                           {featuredimage ? (
-                            <img src={featuredimage} className={styles.topRoundImgFullWidth} alt="Fluid" />
+                            <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
                           ) : (
-                            <img className={styles.topRoundImgFullWidth} alt="..." />
+                            <img className={styles.imgShadow}  alt="..." />
                           )}
                           <p className="card-text mt-2">{nodes.pageTitle || posttitle}</p>
                         </div>
