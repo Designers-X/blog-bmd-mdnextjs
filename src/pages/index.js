@@ -528,11 +528,11 @@ export default function Home({
                   </div>
                   <div className="text-center mt-4">
                     <div className={styles.ahover}>
-                      <a className={styles.Atag}>
+                      <button className={styles.Atag}>
                         <h2 className={styles.pagesTitle}>
                           <span dangerouslySetInnerHTML={{ __html: nodes.pageSubtitle }} />
                         </h2>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </button>
