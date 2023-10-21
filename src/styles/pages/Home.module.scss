@@ -507,19 +507,26 @@
 }
 @media (max-width: 767px) {
  
-  .inlineBox {
-    display: block;
-    text-align: center;
-  }
-  .fashionText {
-    
-    font-size: 70px;
-  
-  }
+  // .inlineBox {
+  //   display: block;
+  //   text-align: center;
+  // }
   .img120 {
     height: auto;
     width: auto;
    }
+  .img120ResFull{
+    width: 100%;
+    height: auto;
+  }
+  .fashionText {
+    
+    font-size: 55px;
+  
+  }
+  .WhatNew{
+    font-size: 22px;
+  }
    .topRoundImgFullWidth {
     height: 240px;
     width: 95%;
@@ -531,4 +538,27 @@
     width: 100%;
    }
 
+  .sthumbBox{
+    margin-left: 0.8rem;
+  }
+  .sthumb{
+    width: 70%;
+  }
+  .pagesSubTitle{
+    font-size: 16px;
+  }
+}
+@media (max-width: 376px) {
+  .sthumbBox{
+    margin-left: 0;
+  }
+  .pagesAutherDesc{
+    font-size: 12px !important;
+  }
+  .sthumb{
+    width: 60%;
+  }
+  .gridGap{
+    padding-left: 0.5rem;
+  }
 }
