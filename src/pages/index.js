@@ -345,7 +345,7 @@ export default function Home({
                             {featuredimage ? (
                               <div className="">
                                 <img
-                                  className={styles.img120}
+                                  className={`${styles.img120} ${styles.img120ResFull}`}
                                   src={featuredimage}
                                   alt="fluid"
                                   height={'auto'}
