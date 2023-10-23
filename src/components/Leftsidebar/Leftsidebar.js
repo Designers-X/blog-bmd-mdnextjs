@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import styles from '../Nav/Nav.module.scss';
-import useSite from 'hooks/use-site';
-import { findSideMenuByLocation, LEFT_MENU_LOCATION_NAVIGATION } from 'lib/leftsidemenu';
+// import useSite from 'hooks/use-site';
+// import { findSideMenuByLocation, LEFT_MENU_LOCATION_NAVIGATION } from 'lib/leftsidemenu';
 import LeftbarItem from 'components/Leftsidebaritem';
 import { FaSearch } from 'react-icons/fa';
 import { postPathBySlug } from 'lib/posts';
@@ -28,9 +28,56 @@ function Leftsidebar() {
     document.getElementById('mySidepanel').style.width = '0';
   }
 
-  const { menus } = useSite();
-  const navigationLocation = LEFT_MENU_LOCATION_NAVIGATION;
-  const navigation = findSideMenuByLocation(menus, navigationLocation);
+  // const { menus } = useSite();
+  // const navigationLocation = LEFT_MENU_LOCATION_NAVIGATION;
+  // const navigation = findSideMenuByLocation(menus, navigationLocation);
+  const navigation = [
+    {
+      id: 'cG9zdDoxMjIz',
+      label: 'Fashion & Beauty',
+      path: '/categories/fashion-and-beauty/',
+    },
+    {
+      id: 'cG9zdDoxMTkw',
+      label: 'Culture',
+      path: '/categories/culture/',
+    },
+    {
+      id: 'cG9zdDoxMDY1',
+      label: 'Science',
+      path: '/categories/science/',
+    },
+    {
+      id: 'cG9zdDoxMjY4',
+      label: 'Travel & Leisure',
+      path: '/categories/travel-and-leisure/',
+    },
+    {
+      id: 'cG9zdDoxMjkz',
+      label: 'Food & Wine',
+      path: '/categories/food-and-wine/',
+    },
+    {
+      id: 'cG9zdDoxMjE2',
+      label: 'Health & Wellness',
+      path: '/categories/health-and-wellness/',
+    },
+    {
+      id: 'cG9zdDoxMTQ5',
+      label: 'Art & History',
+      path: '/categories/art-and-history/',
+    },
+    {
+      id: 'rgtyjdgfgg',
+      label: 'Subscribe',
+      path: '/subscribe/',
+    },
+    {
+      id: 'rgtyjdg5yhfgg',
+      label: 'Editorial',
+      path: '/editorial/',
+    },
+  ];
 
   const formRef = useRef();
   const [searchVisibility, setSearchVisibility] = useState(SEARCH_HIDDEN);
