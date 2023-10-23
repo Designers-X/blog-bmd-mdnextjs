@@ -140,11 +140,11 @@
 }
 .section9 .pagesTitle span p{
   margin-bottom: 0;
+  font-family: "SaolDisplay" !important;
 }
 .pagesTitle span{
   cursor: pointer;
 }
-
 .pagesTitle {
   display: block;
   font-family: "SaolDisplay" !important;
@@ -548,7 +548,16 @@
     font-size: 16px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width:426px) {
+  .fashionText{
+    
+    font-size: 38px;
+  }
+  .pagesTitle{
+    font-size: 28px;
+  }
+}
+  @media (max-width: 376px) {
   .sthumbBox{
     margin-left: 0;
   }

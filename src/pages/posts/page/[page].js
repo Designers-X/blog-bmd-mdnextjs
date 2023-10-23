@@ -13,7 +13,6 @@ export default function Posts({ posts, pagination }) {
       description: `Page ${pagination.currentPage}`,
     },
   });
-
   return <TemplateArchive title={title} posts={posts} slug={slug} pagination={pagination} metadata={metadata} />;
 }
 

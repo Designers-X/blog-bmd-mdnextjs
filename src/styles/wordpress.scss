@@ -463,7 +463,8 @@ figcaption {
 
 .imgBanner {
   // max-height: 501px;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
@@ -762,7 +763,8 @@ figcaption {
   }
 
   .categoryLink img {
-    height: 250px;
+    width: 100%;
+    height: auto;
   }
 
   .pr-15 {
@@ -777,6 +779,7 @@ figcaption {
     margin: 1rem 0 1rem 0 !important;
     word-spacing: 2px;
     letter-spacing: 1px;
+    font-size: 1.75rem;
   }
 
   .authorImg_parnt figcaption {
@@ -822,7 +825,7 @@ figcaption {
   }
 
   .headingContainer h2 {
-    font-size: 3.49999rem;
+    font-size: 55px;
     line-height: 1;
     margin: auto;
     text-transform: uppercase;
@@ -871,15 +874,29 @@ figcaption {
     margin: 0 auto;
   }
 
-  .categoryLink img {
-    height: 180px;
-  }
+  // .categoryLink img {
+  //   height: 180px;
+  // }
 
   .categoryLink figcaption a {
     font-size: 0.9em;
   }
 }
-
+@media (max-width:426px) {
+  .headingContainer h2{
+    
+    font-size: 38px;
+  }
+  .sectionTinyTitle,.sectionTitle{
+    font-size: 28px;
+  }
+  .sectionSubTitle{
+    font-size: 16px;
+  }
+  .headingContainer p{
+    font-size: 22px;
+  }
+}
 @media (max-width: 375px) {
   .Bg-Image .container {
     max-width: 300px;
@@ -900,7 +917,3 @@ figcaption {
 }
 
 // red
-.categoryLink img {
-  width: 100%;
-  height: auto;
-}
