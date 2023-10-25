@@ -16,6 +16,7 @@ import {
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import styles from 'styles/pages/Home.module.scss';
+import Image from 'next/image';
 // import { NewsLetter } from 'components/NewsLetter';
 
 export default function Home({
@@ -68,7 +69,11 @@ export default function Home({
       );
     } else {
       return (
-        <video poster={'https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/home-thumb-opt.webp'} controls>
+        <video
+          poster={'https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/home-thumb-opt.webp'}
+          controls
+          loop
+        >
           <source src={'/home.mp4'} type="video/mp4" />
           <track src="" kind="captions" />
         </video>
@@ -132,7 +137,13 @@ export default function Home({
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                     <Link href={postslug}>
                       <a href={postslug}>
-                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                        <Image
+                          width={647}
+                          height={448}
+                          className="img-fluid imgShadow"
+                          src={featuredimage}
+                          alt="fluid"
+                        />
                       </a>
                     </Link>
                   </div>
@@ -180,7 +191,13 @@ export default function Home({
                     <div className={styles.imgResponsive}>
                       <Link href={postslug}>
                         <a href={postslug}>
-                          <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                          <Image
+                            width={1290}
+                            height={860}
+                            className="img-fluid imgShadow"
+                            src={featuredimage}
+                            alt="fluid"
+                          />
                         </a>
                       </Link>
                     </div>
@@ -238,7 +255,13 @@ export default function Home({
                       <div className={styles.cardBorder}>
                         <div className={'card ' + styles.cards}>
                           {featuredimage ? (
-                            <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
+                            <Image
+                              width={303}
+                              height={303}
+                              src={featuredimage}
+                              className={styles.imgShadow}
+                              alt="Fluid"
+                            />
                           ) : (
                             <div className={styles.imgShadow}>
                               <img alt={posttitle} />
@@ -294,7 +317,13 @@ export default function Home({
                       <div className={styles.imgResponsive}>
                         <Link href={postslug}>
                           <a href={postslug}>
-                            <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                            <Image
+                              width={845}
+                              height={445}
+                              className="img-fluid imgShadow"
+                              src={featuredimage}
+                              alt="fluid"
+                            />
                           </a>
                         </Link>
                       </div>
@@ -344,12 +373,12 @@ export default function Home({
                           <a className={styles.Atag} href={postslug}>
                             {featuredimage ? (
                               <div className="">
-                                <img
+                                <Image
                                   className={`${styles.img120} ${styles.img120ResFull}`}
                                   src={featuredimage}
                                   alt="fluid"
-                                  height={'auto'}
-                                  width={'100%'}
+                                  height={100}
+                                  width={130}
                                 />
                               </div>
                             ) : (
@@ -422,7 +451,13 @@ export default function Home({
                   <Link href={postslug}>
                     <a href={postslug}>
                       <div class="">
-                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                        <Image
+                          width={1290}
+                          height={860}
+                          className="img-fluid imgShadow"
+                          src={featuredimage}
+                          alt="fluid"
+                        />
                       </div>
                     </a>
                   </Link>
@@ -500,7 +535,13 @@ export default function Home({
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-5">
                     <Link href={postslug}>
                       <a href={postslug}>
-                        <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                        <Image
+                          width={647}
+                          height={448}
+                          className="img-fluid imgShadow"
+                          src={featuredimage}
+                          alt="fluid"
+                        />
                       </a>
                     </Link>
                   </div>
@@ -612,7 +653,7 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <Link href={postslug}>
-                      <img className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                      <Image width={430} height={355} className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
                     </Link>
                   </div>
                 )}
@@ -775,7 +816,13 @@ export default function Home({
                       <div className={styles.cardBorder}>
                         <div className={'card mb-4 ' + styles.cards}>
                           {featuredimage ? (
-                            <img src={featuredimage} className={styles.imgShadow} alt="Fluid" />
+                            <Image
+                              width={303}
+                              height={303}
+                              src={featuredimage}
+                              className={styles.imgShadow}
+                              alt="Fluid"
+                            />
                           ) : (
                             <img className={styles.imgShadow} alt="..." />
                           )}
