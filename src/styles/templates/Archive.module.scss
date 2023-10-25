@@ -27,14 +27,20 @@
   margin: -1rem 0;
 
   & > li {
-    margin: 4em 0;
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
 
-    &:first-child {
-      margin-top: 0;
-    }
+    
 
     &:last-child {
       margin-bottom: 0;
+    }
+    
+    h3{
+      margin: auto;
+    min-height: 65px;
+    font-size: 1.2em;
     }
   }
 }
@@ -669,6 +675,7 @@ a.textCapital {
   height: 388px;
   width: 388px;
 }
+
 @media (max-width: 767px) {
 .MasterHead {
   background-size: contain;

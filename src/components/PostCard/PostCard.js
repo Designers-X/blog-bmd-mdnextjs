@@ -29,7 +29,7 @@ const PostCard = ({ post }) => {
       <div className={styles.postCardTitle} dangerouslySetInnerHTML={{ __html: post.content }}></div>
       <Metadata className={styles.postCardMetadata} />
 
-      <div className={styles.postCardContent}>{post.author.name}</div>
+      <div className={styles.postCardContent}>{post?.author?.name}</div>
     </div>
   );
 };

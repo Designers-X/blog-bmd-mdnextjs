@@ -114,7 +114,7 @@ export default function Post({ post, socialImage, related }) {
       {!mastheadBanner ? (
         <>
           {mastheadMp4Video ? (
-            <div style={{ margin: 'auto', display: 'grid', placeContent: 'center' }}>
+            <div style={{ margin: 'auto', display: 'block', placeContent: 'center' }}>
               {true && (
                 <figure className="videoFull">
                   <video
