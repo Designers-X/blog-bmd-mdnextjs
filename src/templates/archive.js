@@ -32,6 +32,7 @@ export default function TemplateArchive({
       <Helmet {...helmetSettings} />
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
       <main className={styles.FashionPage}>
+        <>
         {category?.s1CategoryBanner?.node?.sourceUrl && (
           <>
             {category.categoryBannerArticleLink?.node?.slug ? (
