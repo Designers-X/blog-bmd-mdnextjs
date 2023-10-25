@@ -25,11 +25,15 @@ export const NewsLetter = ({ content }) => {
             className={styles.desktop_banner}
             src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/08-opt-opt.webp"
             alt="..."
+            width={'100%'}
+            height={'auto'}
           />
           <img
             className={styles.mobile_banner}
             src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/08-1-opt.webp"
             alt="..."
+            width={'100%'}
+            height={'auto'}
           />
         </div>
         <div style={{ position: 'relative' }}>
