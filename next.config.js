@@ -1,11 +1,11 @@
-const indexSearch = require('./plugins/search-index');
-const feed = require('./plugins/feed');
-const sitemap = require('./plugins/sitemap');
+// const indexSearch = require('./plugins/search-index');
+// const feed = require('./plugins/feed');
+// const sitemap = require('./plugins/sitemap');
 // const socialImages = require('./plugins/socialImages'); TODO: failing to run on Netlify
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   swcMinify: true,
 
   // By default, Next.js removes the trailing slash. One reason this would be good
@@ -39,10 +39,12 @@ const nextConfig = {
   },
 };
 
-module.exports = () => {
-  const plugins = [indexSearch, feed, sitemap];
-  return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
-};
+// module.exports = () => {
+//   const plugins = [indexSearch, feed, sitemap];
+//   return plugins.reduce((acc, plugin) => plugin(acc), nextConfig);
+// };
+
+module.exports = nextConfig;
 
 /**
  * parseEnv

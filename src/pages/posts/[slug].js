@@ -13,7 +13,6 @@ import Section from 'components/Section';
 import Container from 'components/Container';
 import Content from 'components/Content';
 import Metadata from 'components/Metadata';
-import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 import RelatedPost from 'components/RelatedPost';
 
@@ -177,14 +176,6 @@ export default function Post({ post, socialImage, related }) {
                   categories={categories}
                   options={metadataOptions}
                   isSticky={isSticky}
-                />
-              )}
-
-              {featuredImage && false && (
-                <FeaturedImage
-                  {...featuredImage}
-                  src={featuredImage.sourceUrl}
-                  dangerouslySetInnerHTML={featuredImage.caption}
                 />
               )}
             </Header>
