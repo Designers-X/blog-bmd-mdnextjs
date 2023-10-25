@@ -8,6 +8,7 @@ import { helmetSettingsFromMetadata } from 'lib/site';
 import Nav from 'components/Nav';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
+import ScrollToTop from 'components/ScrollToTop';
 
 const Layout = ({ children, newsLetterShow }) => {
   if (!newsLetterShow) newsLetterShow = true;
@@ -66,6 +67,7 @@ const Layout = ({ children, newsLetterShow }) => {
 
       <Nav />
       <Main>{children}</Main>
+      <ScrollToTop />
       {newsLetterShow && (
         <div className="mb-5">
           <NewsLetter
