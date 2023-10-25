@@ -23,14 +23,14 @@ export const NewsLetter = ({ content }) => {
         <div className={styles.imageContainer}>
           <img
             className={styles.desktop_banner}
-            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/08-opt-opt.webp"
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/newsletter-desk.webp"
             alt="..."
             width={'100%'}
             height={'auto'}
           />
           <img
             className={styles.mobile_banner}
-            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/08-1-opt.webp"
+            src="https://mditerraneastg.wpengine.com/wp-content/uploads/2023/10/newsletter-mob.webp"
             alt="..."
             width={'100%'}
             height={'auto'}
