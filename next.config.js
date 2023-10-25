@@ -19,7 +19,7 @@ const nextConfig = {
   // verbose: true,
 
   images: {
-    domains: ["mditerraneastg.wpengine.com"],
+    domains: ['mditerraneastg.wpengine.com'],
   },
 
   env: {
