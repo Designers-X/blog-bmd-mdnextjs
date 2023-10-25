@@ -218,6 +218,7 @@ button.btn.btn-black:hover {
   background-position: 5% 20%;
   // background-position: top center;
 }
+
 .Submtb-50{
   margin-top: 50px;
   margin-bottom: 50px;
@@ -413,4 +414,30 @@ ul.contactSocialIcons li {
   h4 {
     font-size: 0.5em;
   }
+  #subscribe .Bg-Image {
+    background-position: 40% 0%;
+
+  }
+  #contact .Bg-Image {
+    background-position: 40% 0%;
+
+  }
+  .Bg-Image .FirstText{
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .Bg-Image .SecondText{
+    font-size: 22px;
+    line-height: 36px !important;
+    margin-bottom: 16px;
+  }
+  .Bg-Image .ThirdText{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .Bg-Image .FourthText{
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+ 
 }
