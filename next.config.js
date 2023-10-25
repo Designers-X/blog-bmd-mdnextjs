@@ -18,6 +18,10 @@ const nextConfig = {
   // diagnostic purposes. By default is set to false.
   // verbose: true,
 
+  images: {
+    domains: ["mditerraneastg.wpengine.com"],
+  },
+
   env: {
     // The image directory for open graph images will be saved at the location above
     // with `public` prepended. By default, images will be saved at /public/images/og
