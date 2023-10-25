@@ -115,13 +115,14 @@
   position: absolute;
   top: 100%;
   right: 0;
-  width: fit-content;
+  width: max-content;
   background-color: white;
   padding: 1.5em;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   border-top: solid 5px $color-primary;
   margin-right: -1rem;
   z-index: 999;
+  max-width: 300px;
 
   @media (min-width: 480px) {
     width: 18em;
