@@ -653,7 +653,15 @@ export default function Home({
                 {featuredimage && (
                   <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <Link href={postslug}>
-                      <Image width={430} height={355} className="img-fluid imgShadow" src={featuredimage} alt="fluid" />
+                      <a className={styles.Atag} href={postslug}>
+                        <Image
+                          width={430}
+                          height={355}
+                          className="img-fluid imgShadow"
+                          src={featuredimage}
+                          alt="fluid"
+                        />
+                      </a>
                     </Link>
                   </div>
                 )}
