@@ -304,7 +304,7 @@ export default function Home({
         </div>
         <div className="container">
           <div className="row mt-5">
-            <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 pr-15 mb-5">
+            <div className="col-xl-8 col-lg-6 col-md-12 col-sm-12 pr-15 mb-5">
               {travelandleisure2.map((nodes, index) => {
                 const posttitle = nodes.title;
                 const featuredimage = nodes?.homepagePostThumb?.node?.mediaItemUrl || nodes.featuredImage?.sourceUrl;
@@ -359,7 +359,7 @@ export default function Home({
                 );
               })}
             </div>
-            <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 pl-15 mb-5">
+            <div className="col-xl-4 col-lg-6 col-md-12 col-sm-12 pl-15 mb-5">
               <div className={styles.ThreeDivHoverEffect}>
                 {travelandleisure3.map((nodes, index) => {
                   const posttitle = nodes.title;

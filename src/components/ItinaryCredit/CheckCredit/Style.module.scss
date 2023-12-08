@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "NeueHaasUnica";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NeueHaasUnicaM";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
+}
+.travel3Main p, .travel3Main h5, .travel3Main h4,.travel3Main span, .travel3Main h6{
+  font-family: "NeueHaasUnica" !important;
+}  
+.MapTravel h4, .PriceBSpan, .PriceBh5, .TravHeight span, .ExecllentTravel span, .MapTravel h4, .MapTravel span, .ParkingFree h4,.travel3 .SideSpaceTravel .checkDate span{
+  font-weight: 400;
+}
+.travel3Main {
+  width: 23.5%;
+}
+.SideSpaceTravel {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 17px;
+  margin: 0 0 0px 0;
+}
+.travel3 .SideSpaceTravel .checkDate {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 11px 0;
+  padding: 0 0 6px 0;
+}
+.CreditSmallImg .imgSmall {
+  width: 36%;
+  margin: 0 0px 0 0;
+  
+}
+
+.travel3 .SideSpaceTravel .BorderNoneCheckDate{
+  border-bottom: none;
+}
+.CreditSmallImg .TravelContent {
+  width: 60%;
+}
+.TravelContent img {
+  height: 13px;
+  width: 13px;
+  margin: 0 1px;
+}
+.TravelContent p {
+  color: #9d9d9d;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.TravelPrice {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 7px 0;
+}
+.TravelPrice .TravelPricea p {
+  color: #000; 
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.TravelPrice .TravelPriceb p {
+  color: #000;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.PriceBSpan {
+  color: #9d9d9d;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.PriceBh5 {
+  color: #000;
+  font-size: 10px;
+  margin: 0;
+}
+
+.travel3a h5 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0 0 0px 0;
+}
+
+.travel3a {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 28px;
+  margin: 0 0 0px 0;
+}
+
+.TravHeight {
+  margin: 30px 0 0 0;
+}
+
+.TravHeight span {
+  color: #a3a3a3;
+  font-size: 16px;
+}
+
+.ExecllentTravel {
+  display: flex;
+  margin: 6px 0 0 0;
+}
+
+.ExecllentTravel span {
+  border: 0.5px solid #9d9d9d;
+  background-color: #fff;
+  color: #11aa39;
+  text-align: center;
+  font-size: 12px;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+.ExecllentMargin {
+  margin: 0 14px 0 0;
+}
+
+.MapTravel img {
+  margin: 23px 0 0px 0;
+  width: 100%;
+}
+
+.MapTravel h4 {
+  color: #000;
+  font-size: 16px;
+  margin: 5px 0 5px 0;
+}
+
+.MapTravel span {
+  color: #9d9d9d;
+  font-size: 16px;
+}
+
+.MapTravel .ParkingFree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 0 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
+.ParkingFree h4 {
+  color: #11aa39;
+  text-align: right;
+  font-size: 14px;
+}
+.travel3 .SideSpaceTravel .checkDate h6 {
+  color: #000; 
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 0 0px 0;
+}
+.travel3 .SideSpaceTravel .checkDate span {
+  color: #a3a3a3;
+  font-size: 16px;
+}
+.CreditSmallImg {
+  display: flex;
+  justify-content: space-between;
+}
+.CreditSmallImg h4 {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  margin: 0;
+}
+@media (max-width: 1024.98px) {
+
+  .travel3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+  .TravHeight {
+    margin: 0px 0 0 0;
+  }
+  .SideSpaceTravel,
+  .travel3a {
+    width: 48%;
+  }
+  .travel3Main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .CreditSmallImg {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+
+  .CreditSmallImg h4 {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .travel3{
+    display: block;
+    width: 100%;
+}
+  .travel3 {
+    display: block;
+  }
+  .travel3 {
+    display: block;
+  }
+  .SideSpaceTravel,
+  .travel3a {
+    width: 100%;
+  }
+
+  .SideSpaceTravel,
+  .travel3a {
+    margin: 0 0 18px 0;
+  }
+}

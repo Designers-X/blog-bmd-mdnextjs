@@ -308,7 +308,10 @@
 .sidebarcontainer {
   width: 75rem;
   margin: auto;
-  
+  @media (max-width: 1025px) {
+      width: 100%;
+      margin: auto;
+    }
 }
 
 .topnav {
@@ -439,11 +442,8 @@
   height: 0 !important;
   color: #000 !important;
 }
+
 @media (max-width: 767px) {
-  .sidebarcontainer {
-    width: 100%;
-    margin: auto;
-  }
   .navSection{
     display: block;
   }

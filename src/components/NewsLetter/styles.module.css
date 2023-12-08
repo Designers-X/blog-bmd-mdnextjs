@@ -35,6 +35,9 @@
   min-height: 345px;
   height: 100%;
   align-content: center;
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
 }
 
 .headingContainer {
@@ -44,6 +47,9 @@
   padding-bottom: 1rem;
   color: var(--bmd-black);
   font-family: "SaolDisplay", Georgia, Times, serif !important;
+  @media (max-width: 769px) {
+    font-size: 29px;
+  }
 }
 
 .formContainer {
@@ -59,12 +65,12 @@ iframe .hs-submit>.actions {
   text-align: center !important;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .headingContainer {
     font-size: 40px;
     font-weight: 400;
   }
-}
+} */
 
 @media (max-width: 500px) {
   .headingContainer {

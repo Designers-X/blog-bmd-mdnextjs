@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "NeueHaasUnica";
+  font-display: swap;
+  src: url("../../../public/font/NeueHaasUnica-Regular.ttf");
+}
+
+.ConfirmedBook h3, .ConfirmedBook h4, .ConfirmedBook h6, .ConfirmedBook p{
+  font-family: "NeueHaasUnica" !important ;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.ConfirmedBook {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 25px 34px;
+  margin: 50px 0;
+}
+
+.ConfirmedBookIn {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: space-between;
+  margin: 0 0 25px 0;
+}
+
+.ConfirmedBookIn .BookIn h3 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 0 8px 0;
+}
+
+.ConfirmedBookIn .BookIn p {
+  color: #000;
+  text-align: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ConfirmedBookIn .BookIn h4 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 6px 0;
+}
+
+.ConfirmedBookIn .BookIn p span {
+  color: #9d9d9d;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ConfirmedBookIn .BookOut button {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  width: 190px;
+  height: 51px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BookOut .BookBtn {
+  display: flex;
+  justify-content: end;
+}
+
+.ConfirmedBookIn .BookOut p {
+  color: #9d9d9d;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 32px 0 0 0;
+}
+
+.CapriBoat {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 0px 0;
+  width: 100%;
+}
+.CapriContent {
+  width: 50%;
+}
+.CapriImg {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  padding: 0 0 0 30px;
+}
+
+.CapriBoat .CapriImg img {
+  border-radius: 12px;
+}
+
+.CapriContent h3 {
+  color: #000;
+  text-align: end;
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  margin: 0 0 34px 0;
+  text-underline-offset: 6px;
+}
+
+
+.CapriContent h6 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 8px 0;
+}
+
+.CapriContent p {
+  color: #9d9d9d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.CapriBoat .CapriContent .BookEnd {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-underline-offset: 6px;
+  margin: 90px 0 26px 0;
+}
+
+.CapriControlImg {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 0 0 25px 0;
+}
+.DetailHistory {
+  display: grid;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+  grid-template-columns: repeat(4, auto);
+}
+
+.DetailLine .DetailInfo p {
+  margin: 0 0 3px 0;
+  color: #a3a3a3;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.DetailLine .DetailInfo h6 {
+  margin: 0 0 50px 0;
+  color: #000;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.BookIn {
+  padding: 0 20px 0 0;
+}
+
+@media (max-width: 1024.98px) {
+  .container {
+    width: 90%;
+  }
+  .DetailLine .DetailInfo p {
+    font-size: 12px;
+  }
+  .DetailLine .DetailInfo h6 {
+    font-size: 14px;
+  }
+
+  .ConfirmedBookIn .BookIn h3 {
+    font-size: 25px;
+    margin: 0px 0 8px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .CapriContent h3 {
+    margin: 0 0 15px 0;
+  }
+  .CapriBoat .CapriContent .BookEnd {
+    margin: 10px 0 26px 0;
+  }
+  .ConfirmedBookIn .BookIn h3 {
+    font-size: 18px;
+  }
+
+  .ConfirmedBookIn .BookIn p {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .ConfirmedBookIn .BookIn h4 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .ConfirmedBookIn .BookOut p {
+    color: #9d9d9d;
+    text-align: right;
+    font-size: 15px;
+    
+    font-weight: 500;
+    line-height: normal;
+    margin: 32px 0 0 0;
+  }
+  .CapriContent h3 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .CapriContent h6 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 767.98px) {
+  .DetaiFlex {
+    display: contents;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .ConfirmedBookIn .BookOut p {
+    color: #9d9d9d;
+    text-align: right;
+    font-size: 15px;
+    
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0 20px 0;
+  }
+  .ConfirmedBookIn .BookOut button {
+    font-size: 16px;
+    font-weight: 500;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  .DetailHistory {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media (max-width: 665.95px) {
+  .CapriContent h3 {
+    font-size: 20px;
+    text-align: -webkit-center;
+  }
+  .CapriBoat {
+    display: block;
+  }
+
+  .CapriContent {
+    width: 100%;
+  }
+  .CapriImg {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
+  .CapriControlImg {
+    justify-content: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .DetailHistory {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 475.98px) {
+  .DetailHistory {
+    grid-template-columns: repeat(2, auto);
+  }
+  .ConfirmedBook {
+    padding: 25px 10px;
+  }
+}

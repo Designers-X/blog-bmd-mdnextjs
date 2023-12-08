@@ -1,0 +1,266 @@
+.mastHeadContainerAvail {
+  position: relative;
+  height: 700px;
+  @media (max-width: 1025px) {
+    height: 450px;
+  }
+  @media (max-width: 769px) {
+    height: 900px;
+  }
+  @media (max-width: 500px) {
+    height: 600px;
+  }
+  .titleHolder {
+    font-family: "SaolDisplay" !important;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 5rem;
+    background-color: black;
+    color: #fff;
+    font-size: 40px;
+    line-height: 44px;
+    display: grid;
+    place-content: center;
+    @media (max-width: 1441px) {
+      top: 40%;
+    }
+    @media (max-width: 1025px) {
+      top: 25%;
+      font-size: 26px;
+    }
+    @media (max-width: 769px) {
+      top: 60%;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    @media (max-width: 500px) {
+      top: 20%;
+      padding: 1.5rem 2rem;
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+  .availabilyContainer {
+    position: absolute;
+    transform: translate(-50%, 15%);
+    bottom: 10%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // width: 1000px;
+    width: 60%;
+    height: 175px;
+    padding: 2rem;
+    @media (max-width: 1441px) {
+      bottom: 20%;
+    }
+    @media (max-width: 1025px) {
+      bottom: 15%;
+      width: 80%;
+    }
+    @media (max-width: 769px) {
+      bottom: 8%;
+    }
+    @media (max-width: 500px) {
+      bottom: 20%;
+      width: 95%;
+      padding: 10px;
+    }
+    .formContainer {
+      width: 100%;
+      display: flex;
+      position: relative;
+      .dateRangeContainer {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        & > input {
+          border: none;
+          width: 50%;
+          height: 100%;
+          padding: 10px;
+        }
+        & > label{
+          display: none;
+        }
+        .dateRangeHolder1 {
+          border-right: 1px solid rgba(156, 156, 156, 1);
+        }
+        .dateRangeHolder2 {
+        }
+        background: rgba(255, 255, 255, 1);
+        width: 450px;
+        height: 60px;
+      }
+    }
+    .availabilyButton {
+      width: max-content;
+      height: auto;
+      background: #000;
+      color: #fff;
+      display: grid;
+      place-content: center;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: "NeueHaasUnica", Arial, sans-serif;
+      position: absolute;
+      bottom: -15%;
+      padding: .35rem 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        background: #fff;
+        border: 1px solid #000;
+        color: #000;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .dropdownContainer{
+      background: #fff;
+      width: 500px;
+      height: 60px;
+      border-radius: 10px;
+      border: none;
+      overflow: hidden;
+      margin-left: 2rem;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 1rem;
+      .dropDownTitleHolder{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 5px;
+        font-size: 16px;
+        line-height: 22px;
+        .dropDownTitle{
+        }
+        .dropDownSubTitle{
+          color: rgba(156, 156, 156, 1);
+        }
+      }
+  
+    }
+    .arrow{
+      bottom: -27px;
+      position: absolute;
+      right: 45%;
+      transform: rotate(-90deg);
+      z-index: 1;
+      background:unset;
+      .svgWrapper{
+        // border: 1px solid rgba(0, 0, 0, 0.25);
+        // box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+    .modalContainer{
+      position: absolute;
+      bottom: -245px;
+      right: 0;
+      width:490px;
+      height: max-content;
+      background: #fff;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      z-index: 1;
+      @media (max-width: 500px) {
+        width:100%;
+      }
+      .row{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: .5rem 1rem;
+        border-bottom: 1px solid #ccc;
+        .rowTitle{
+          font-size: 16px;
+        }
+        .rowDesc{
+          font-size: 14px;
+          color: rgba(156, 156, 156, 1);
+        }
+      }
+      .selectorHolder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        font-family: "NeueHaasUnica", Arial, sans-serif;
+        .selectorBtn{
+          border: 1px solid rgba(156, 156, 156, 1);
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          display: grid;
+          place-content: center;
+          color: rgba(156, 156, 156, 1);
+          font-size: 20px;
+          margin: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.mastHeadContainer {
+  position: relative;
+  .titleHolder {
+    font-family: "SaolDisplay" !important;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem 5rem;
+    background-color: black;
+    color: #fff;
+    font-size: 40px;
+    line-height: 44px;
+    display: grid;
+    place-content: center;
+    @media (max-width: 769px) {
+      font-size: 30px;
+      line-height: 34px;
+    }
+    @media (max-width: 500px) {
+      padding: 1.5rem 2rem;
+      font-size: 25px;
+      line-height: 28px;
+    }
+  }
+}
+.MastHeadMobImg {
+  width: 100%;
+  height: auto;
+  display: none;
+  @media (max-width: 1440px) {
+    object-fit: scale-down;
+  }
+  @media (max-width: 769px) {
+    display: block;
+    object-fit: unset;
+  }
+}
+.MastHeadDeskImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  @media (max-width: 1440px) {
+    object-fit: scale-down;
+  }
+  @media (max-width: 769px) {
+    display: none;
+    object-fit: unset;
+  }
+}

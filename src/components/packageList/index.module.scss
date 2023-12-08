@@ -1,0 +1,153 @@
+.listContainer {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  font-family: "NeueHaasUnica", Arial, sans-serif;
+  @media (max-width: 1025px) {
+    width: 95%;
+
+  
+  }
+
+  .columns h2{
+    color: #000;
+ font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+text-transform: capitalize;
+  }
+  @media (max-width: 650px) {
+    width: 95%;
+    flex-direction: column;
+  }
+  .filterContainer {
+    width: 25%;
+    height: max-content;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (max-width: 769px) {
+        width: 35%;
+    }
+        @media (max-width: 650px) {
+      width: 100%;
+    }
+    // padding: 1rem;
+    .filterCardContainer {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(230, 230, 230, 1);
+    }
+    .filterLabelHolder {
+        text-transform: uppercase;
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(230, 230, 230, 1);
+      .resetBtn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: rgba(157, 157, 157, 1);
+        border: 0;
+        background: none;
+      }
+      .titleHolder {
+        font-weight: 600;
+      }
+    }
+    .columns {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 10px 0 0 0;
+      & > div {
+        margin: 5px 0 0 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        & > label {
+          margin-left: 10px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .listContainer {
+    width: 73%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @media (max-width: 769px) {
+        width: 65%;
+    }
+    @media (max-width: 650px) {
+      width: 100%;
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+    & > div {
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+.inputBox{
+    accent-color: #fff;
+}
+
+.inputBox svg{
+  margin: 0 2px;
+}
+
+@media (max-width: 1024px) {
+
+  .listContainer {
+      // width: 90%;
+      display: block; 
+         }
+
+         .listContainer .filterContainer {
+          width: 95%;
+          margin: 0 auto 30px auto;
+          padding: 0 0 25px 0;
+         }
+
+         .PackFlex{
+          display: flex;
+          justify-content: space-between;
+
+         }
+         .PackFlex {
+                    padding: 0 1rem;
+         }      
+         .listContainer .filterContainer .filterCardContainer {
+          padding: 0 0rem;
+          border-bottom: 0px solid rgb(230, 230, 230);
+         }
+
+         .listContainer .filterContainer .columns > div {
+          margin: 15px 0 0 0;
+
+          align-items: center;}
+          .listContainer .listContainer{
+            width: 95%;
+                 }
+
+           }
+
+
+           @media( max-width:768.98px){
+ .PackFlex {
+    display: block; 
+    padding: 0 1rem;
+  
+}
+           }
