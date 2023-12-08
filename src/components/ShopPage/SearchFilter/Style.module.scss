@@ -16,6 +16,9 @@
 	margin: auto;
 }
 
+
+
+
 .dropdownContainer{
 	display: flex;
 	gap :10px;
@@ -58,11 +61,17 @@ align-items: center;
     text-align: center;
 	margin: 11px 0 0 0;
 	border: 1px solid #d9d9d9;
+	z-index: 1;
 
 }
 
 .dropdownHeader{
 	// background-color: #EDEDF5;
+}
+
+.DropDraw:first-child{
+	border-left: 0px solid #000;
+
 }
 
 .DropDraw{
@@ -119,7 +128,7 @@ line-height: 24px; /* 150% */
 }
 
 .dropdownBorder{
-	border: none;
+	// border: none;
 }
 
 .SearchBarC button{
@@ -170,6 +179,15 @@ padding:9px 22px;
 	font-size: 20px;
 }
 
+.arrowUp .flickityButtonIcon{
+	transform: rotate(270deg);
+	width: 14px;
+}
+
+.arrowUp .flickityButtonIcon1{
+	transform: rotate(90deg);
+	width: 14px;
+}
 
 @media (max-width: 1399.98px) {
 	.SearchBarC button {
@@ -187,15 +205,68 @@ padding:9px 22px;
 }
 
 @media (max-width: 1024.98px) {
+
+	.dropdownHeader {
+			font-size: 12px;
+			line-height: 18px;
+	}
+
+.SearchBarMain input[type=text] {
+        font-size: 12px;
+    }
+
+	.SearchSection input {
+		left: 5px;
+		position: relative;
+		width: 60%;
+	}
+
+	.SearchBarC button {
+		border-radius: 10px;
+			font-size: 12px;
+			padding: 6px 10px;
+	}
+
+	.dropdownContainer {
+			gap: 5px;
+	
+		margin: auto 2%;
+			padding: 4px;
+		}
+		.DropDraw {
+			padding: 0 0 0 5px;
+					}
+
+					.arrowUp .flickityButtonIcon {
+						width: 10px;
+					}
+
+
+
+
+
+}
+
+
+@media (max-width:991.98px){
+	.container {
+		width: 90%;
+			}
+			.SearchBarB {
+				height: 80px;
+			}
+			.SearchBarMain {
+			top: -37px;
+			}
+}
+
+
+
+@media (max-width:767.98px){
 	.SearchBarMain{
 		display: none;
 	}
-}
 
-@media (max-width: 767.98px) {
 
 }
 
-@media (max-width: 767.98px) {
-
-}

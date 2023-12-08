@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from '../TopSellingProduct/Style.module.scss';
+import Styles from 'components/ShopPage/TopSellingProduct/Style.module.scss';
 
 function RightsideSmallBanner() {
   return (

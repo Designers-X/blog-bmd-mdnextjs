@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CustomDropdown from './CustomDropDown';
+import CustomDropdown from 'components/ItinaryCredit/Accordion/CustomDropDown';
 import styles from './Style.module.scss';
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);

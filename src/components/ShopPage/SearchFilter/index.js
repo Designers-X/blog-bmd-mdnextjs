@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleDropdown from './PriceRangeDropDown';
 
-function index() {
+function SearchFilter() {
   return (
     <div>
       <SimpleDropdown></SimpleDropdown>
@@ -9,4 +9,4 @@ function index() {
   );
 }
 
-export default index;
+export default SearchFilter;

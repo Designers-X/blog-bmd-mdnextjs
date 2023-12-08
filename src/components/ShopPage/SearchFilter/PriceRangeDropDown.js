@@ -55,11 +55,23 @@ const SimpleDropdown = () => {
                   <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleA(!dropdownVisibleA)}>
                     {selectedOptionA || 'Price Range '}
                     {''}
-                    <span className={Styles.arrow}>
+                    <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
                       {dropdownVisibleA ? (
-                        <img src="\package\UpArrow.svg" alt="Arrow Up" />
+                        <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       ) : (
-                        <img src="\package\DownArrow.svg" alt="Arrow Down" />
+                        <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       )}
                     </span>
                   </div>
@@ -78,11 +90,23 @@ const SimpleDropdown = () => {
                   <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleB(!dropdownVisibleB)}>
                     {selectedOptionB || 'Category'}
                     {''}
-                    <span className={Styles.arrow}>
+                    <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
                       {dropdownVisibleB ? (
-                        <img src="\package\UpArrow.svg" alt="Arrow Up" />
+                        <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       ) : (
-                        <img src="\package\DownArrow.svg" alt="Arrow Down" />
+                        <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       )}
                     </span>
                   </div>
@@ -101,11 +125,23 @@ const SimpleDropdown = () => {
                   <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleC(!dropdownVisibleC)}>
                     {selectedOptionC || 'Review'}
                     {''}
-                    <span className={Styles.arrow}>
+                    <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
                       {dropdownVisibleC ? (
-                        <img src="\package\UpArrow.svg" alt="Arrow Up" />
+                        <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       ) : (
-                        <img src="\package\DownArrow.svg" alt="Arrow Down" />
+                        <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       )}
                     </span>
                   </div>
@@ -124,11 +160,23 @@ const SimpleDropdown = () => {
                   <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleD(!dropdownVisibleD)}>
                     {selectedOptionD || 'Discount'}
                     {''}
-                    <span className={Styles.arrow}>
+                    <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
                       {dropdownVisibleD ? (
-                        <img src="\package\UpArrow.svg" alt="Arrow Up" />
+                        <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       ) : (
-                        <img src="\package\DownArrow.svg" alt="Arrow Down" />
+                        <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
+                          <path
+                            d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                            class="arrow"
+                            transform="translate(100, 100) rotate(90deg) "
+                          ></path>
+                        </svg>
                       )}
                     </span>
                   </div>

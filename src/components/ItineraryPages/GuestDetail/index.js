@@ -38,10 +38,17 @@ function GuestDetail() {
             </div>
           </div>
           <div className={Styles.ADDGuestA}>
-            <a href="#">Add Guest</a>
+            <a className={Styles.AnchorGust} href="#">
+              Add Guest
+            </a>
           </div>
         </div>
-        <a href={'book'}>Proceed To Payment Options</a>
+
+        <div className={Styles.BigPaymentBtn}>
+          <a className={Styles.BigPaymentAnch} href={'book'}>
+            Proceed To Payment Options
+          </a>
+        </div>
       </div>
     </div>
   );

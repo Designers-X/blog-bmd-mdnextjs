@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Styles from './Styles.module.scss';
-import TopSellingProduct from '../TopSellingProduct/index';
-import BigLastBannerImg from '../BigLastBannerImg/index';
+import TopSellingProduct from 'components/ShopPage/TopSellingProduct';
+import BigLastBannerImg from 'components/ShopPage/BigLastBannerImg';
 
-function Index() {
+function MainProduct() {
   const allProducts = [
     {
       id: 1,
@@ -273,6 +273,31 @@ function Index() {
       rating: 4.6,
       imageUrl: '/package/MainImg1.png',
     },
+
+    {
+      id: 1,
+      name: 'Ferragamo shoe',
+      description: 'Made in Italy',
+      price: 540,
+      rating: 4.6,
+      imageUrl: '/package/MainImg1.png',
+    },
+    {
+      id: 1,
+      name: 'Ferragamo shoe',
+      description: 'Made in Italy',
+      price: 540,
+      rating: 4.6,
+      imageUrl: '/package/MainImg1.png',
+    },
+    {
+      id: 1,
+      name: 'Ferragamo shoe',
+      description: 'Made in Italy',
+      price: 540,
+      rating: 4.6,
+      imageUrl: '/package/MainImg1.png',
+    },
   ];
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
@@ -336,7 +361,13 @@ function Index() {
                   onClick={() => handlePageChange(currentPage - 1)}
                   disabled={currentPage === 1}
                 >
-                  <img src="/package/arrowLeft.svg" />
+                  <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
+                    <path
+                      d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                      class="arrow"
+                      transform="translate(100, 100) rotate(90deg) "
+                    ></path>
+                  </svg>
                 </button>
 
                 <div className={Styles.PageNumbers}>
@@ -362,7 +393,13 @@ function Index() {
                   onClick={() => handlePageChange(currentPage + 1)}
                   disabled={endIndex >= allProducts.length}
                 >
-                  <img src="/package/arrowRight.svg" />
+                  <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
+                    <path
+                      d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+                      class="arrow"
+                      transform="translate(100, 100) rotate(90deg) "
+                    ></path>
+                  </svg>
                 </button>
               </div>
             </div>
@@ -378,4 +415,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default MainProduct;

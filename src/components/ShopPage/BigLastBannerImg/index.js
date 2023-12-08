@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './Style.module.scss';
 
-function index() {
+function BigLastBannerImg() {
   return (
     <div>
       <div className={Styles.container}>
@@ -13,4 +13,4 @@ function index() {
   );
 }
 
-export default index;
+export default BigLastBannerImg;

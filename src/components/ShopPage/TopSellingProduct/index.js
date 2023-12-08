@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './Style.module.scss';
 import RightsideSmallBanner from '../MainProduct/RightsideSmallBanner';
 
-function index() {
+function TopSellingProduct() {
   return (
     <div>
       <section>
@@ -43,4 +43,4 @@ function index() {
   );
 }
 
-export default index;
+export default TopSellingProduct;

@@ -10,6 +10,17 @@
 	src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
   }
 
+  .flickityButtonIcon{
+	transform: rotate(360deg);
+	width: 14px;
+}
+
+.flickityButtonIcon1{
+	transform: rotate(180deg);
+	width: 14px;
+}
+
+
 
 .container{
     width: 75%;

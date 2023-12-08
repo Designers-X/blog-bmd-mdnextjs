@@ -1,7 +1,7 @@
 import React from 'react';
 import Styles from './Style.module.scss';
 
-function index() {
+function HeroSection() {
   return (
     <div>
       <section>
@@ -16,4 +16,4 @@ function index() {
   );
 }
 
-export default index;
+export default HeroSection;

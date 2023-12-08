@@ -1,7 +1,7 @@
 import React from 'react';
-import Styles from '../ItineraryContent/Style.module.scss';
-import CheckIn from '../CheckIn';
-import GuestDetail from '../GuestDetail';
+import Styles from 'components/ItineraryPages/ItineraryContent/Style.module.scss';
+import CheckIn from 'components/ItineraryPages/CheckIn';
+import GuestDetail from 'components/ItineraryPages/GuestDetail';
 
 function ItineraryContent() {
   return (

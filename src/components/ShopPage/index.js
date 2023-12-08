@@ -1,8 +1,8 @@
 import React from 'react';
-import HeroSection from './HeroSection/index';
-import SearchFilter from './SearchFilter/index';
-import MainProduct from './MainProduct/index';
-// import MobNavbar from './MobNavbar/index';
+import HeroSection from 'components/ShopPage/HeroSection';
+import SearchFilter from 'components/ShopPage/SearchFilter';
+import MainProduct from 'components/ShopPage/MainProduct';
+// import MobNavbar from 'components/ShopPage/MobNavbar/index';
 export default function index() {
   return (
     <div>

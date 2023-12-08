@@ -1,6 +1,6 @@
 import React from 'react';
-import ItineraryImages from '../ItineraryPages/ItineraryImage';
-import AccordionForm from './Accordion/AccordionForm';
+import ItineraryImages from 'components/ItineraryPages/ItineraryImage';
+import AccordionForm from 'components/ItinaryCredit/Accordion/AccordionForm';
 
 function index({ href }) {
   return (

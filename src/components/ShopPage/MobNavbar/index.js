@@ -20,13 +20,13 @@ const Navbar = () => {
 
       <div className={`${styles.menu} ${menuOpen ? styles.showMenu : ''}`}>
         <Link href="/">
-          <a>Home</a>
+          <a>Price Range</a>
         </Link>
         <Link href="/about">
-          <a>About</a>
+          <a>Category</a>
         </Link>
         <Link href="/contact">
-          <a>Contact</a>
+          <a>Review</a>
         </Link>
       </div>
     </nav>
