@@ -68,7 +68,7 @@ const Nav = () => {
                 </Link>
                 <Link href="/package/travel-experience">
                   <a className={styles.subscribeBtn} style={{ margin: '0 5px' }}>
-                    <span>Signature Experience</span>
+                    <span>Signature Experiences</span>
                   </a>
                 </Link>
                 <Link href="/shop">
