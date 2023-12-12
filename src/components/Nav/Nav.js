@@ -66,6 +66,16 @@ const Nav = () => {
                     <span>Subscribe</span>
                   </a>
                 </Link>
+                <Link href="/package/travel-experience">
+                  <a className={styles.subscribeBtn} style={{ margin: '0 5px' }}>
+                    <span>Signature Experience</span>
+                  </a>
+                </Link>
+                <Link href="/shop">
+                  <a className={styles.subscribeBtn}>
+                    <span>Shop</span>
+                  </a>
+                </Link>
                 {/* <a href="#about">Sign in</a> */}
               </div>
             </div>
