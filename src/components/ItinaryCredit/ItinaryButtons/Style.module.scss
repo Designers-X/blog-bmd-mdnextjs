@@ -55,7 +55,7 @@
   display: flex;
   width: 75%;
   justify-content: space-between;
-  padding-right: 16px;
+  padding-right: 6px;
   margin: 23px 0 47px 0;
   text-align: start;
 }
@@ -65,12 +65,44 @@
 align-items: center;
 
 }
+
+
+@media (max-width: 1299.98px){
+  .buttonItinery a {
+       font-size: 18px;
+}
+}
+
 @media (max-width: 1199.98px) {
+  .buttonItinery a {
+    font-size: 16px;
+}
   .buttonItinery .buttonBlack ,.buttonItinery .buttonWhite {
     font-size: 16px;
     height: 50px;
   }
 }
+
+@media (max-width: 1024.98px) {
+  .buttonItinery .buttonWhite {
+        margin: 0 0px 0px 0px;
+    
+}
+  .buttonItinery .buttonBlack {
+     margin: 0 0px 0px 0px;
+ }
+  .buttonItinery {
+       width: 100%;
+   display: flex;
+   gap: 20px;
+    padding-right: 0px;
+    margin: 23px 0 47px 0;
+    text-align: start;
+}
+
+}
+
+
 @media (max-width: 991.98px) {
   .buttonItinery {
     width: 100%;
@@ -98,4 +130,18 @@ align-items: center;
   .buttonItinery .buttonBlack,  .buttonItinery .buttonWhite  {
     font-size: 12px;
   }
+}
+
+
+@media (max-width: 400.98px) 
+{
+  .buttonItinery a {
+    border-radius: 10px;
+    text-align: center;
+    font-family: "NeueHaasUnica" !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 }

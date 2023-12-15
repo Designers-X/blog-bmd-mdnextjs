@@ -29,11 +29,13 @@
     overflow: hidden;
     width: 30%;
     height: auto;
+    display: flex;
     .imgSectionHolder {
       border-radius: 12px;
     }
     @media (max-width: 769px) {
       flex: 1 1 100%;
+      display: block;
     }
     .mobHead {
       display: none;
@@ -162,7 +164,7 @@
     }
     .termHolder {
       font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 18px;
       color: rgba(34, 34, 34, 1);
       margin: 0 0 11px 0;
@@ -190,7 +192,7 @@
       .tagHolder {
         color: rgba(86, 0, 140, 1);
         font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 14px;
         background: rgba(244, 226, 255, 1);
         padding: 5px 10px;
@@ -262,7 +264,7 @@
 .bookNowBox {
   border-radius: 10px;
   text-transform: uppercase;
-  padding: 12px 35px;
+  padding: 12px 10px;
   font-size: 18px;
   line-height: 21px;
   font-weight: bolder;
@@ -287,6 +289,7 @@
   display: none;
 }
 
+
 @media (max-width: 768.98px) {
   .viewBoxNone {
     display: none !important;
@@ -310,8 +313,9 @@
   .DisPlayButtonFlexMob {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0 0 0;
   }
-
+  
   .MobButton {
     display: block;
     width: 100%;
@@ -340,13 +344,13 @@
     font-size: 16px;
     line-height: 18px;
   }
-
+  
   .cardContainer .ContainerCenter {
     display: block;
     width: 100%;
     gap: 20px;
   }
-
+  
   .cardContainer .imgHolder {
     width: 100%;
     text-align: center;
@@ -358,8 +362,22 @@
   .cardContainer .imgHolder .mobHead .tagContainer .tagHolder {
     font-size: 10px;
   }
-
+  
   .cardContainer .imgHolder .mobHead .ratingContainer .ratingTitleHolder {
     font-size: 10px;
   }
+}
+
+
+@media (max-width: 1299.98px) {
+  
+}
+@media (max-width: 375.98px){
+.DisPlayButtonFlexMob {
+    display: block;
+}
+.cardContainer .infoCardHolder .infoCard .viewBox {
+margin: 20px 0 ;
+}
+
 }

@@ -5,18 +5,18 @@
   font-family: "NeueHaasUnica", Arial, sans-serif;
   @media (max-width: 1025px) {
     width: 95%;
-
-  
   }
 
-  .columns h2{
+  .columns h2 {
     color: #000;
- font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-text-transform: capitalize;
+    font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: capitalize;
+    margin: 0;
+    padding: 15px 0 0 0;
   }
   @media (max-width: 650px) {
     width: 95%;
@@ -31,22 +31,22 @@ text-transform: capitalize;
     flex-direction: column;
     flex-wrap: wrap;
     @media (max-width: 769px) {
-        width: 35%;
+      width: 35%;
     }
-        @media (max-width: 650px) {
+    @media (max-width: 650px) {
       width: 100%;
     }
     // padding: 1rem;
     .filterCardContainer {
       padding: 1rem;
-      border-bottom: 1px solid rgba(230, 230, 230, 1);
+      // border-bottom: 1px solid rgba(230, 230, 230, 1);
     }
     .filterLabelHolder {
-        text-transform: uppercase;
-        display: flex;
-        padding: 1rem;
-        justify-content: space-between;
-        border-bottom: 1px solid rgba(230, 230, 230, 1);
+      text-transform: uppercase;
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(230, 230, 230, 1);
       .resetBtn {
         font-size: 14px;
         font-weight: 400;
@@ -59,12 +59,19 @@ text-transform: capitalize;
         font-weight: 600;
       }
     }
+    .NOBorder h2 {
+      padding: 0 0 0 0 !important;
+    }
+    .PackFlex .NOBorder {
+      border-top: 0px solid #e6e6e6 !important;
+    }
     .columns {
       display: flex;
       flex-direction: column;
       font-size: 14px;
       line-height: 16px;
-      margin: 10px 0 0 0;
+      margin: 0px 0 20px 0;
+      border-top: 1px solid #e6e6e6;
       & > div {
         margin: 5px 0 0 0;
         display: flex;
@@ -74,7 +81,7 @@ text-transform: capitalize;
           margin-left: 10px;
           font-weight: 500;
           font-size: 16px;
-          line-height: 20px;
+          line-height: 24px;
         }
       }
     }
@@ -86,7 +93,7 @@ text-transform: capitalize;
     flex-direction: column;
     flex-wrap: wrap;
     @media (max-width: 769px) {
-        width: 65%;
+      width: 65%;
     }
     @media (max-width: 650px) {
       width: 100%;
@@ -99,55 +106,75 @@ text-transform: capitalize;
     }
   }
 }
-.inputBox{
-    accent-color: #fff;
+.inputBox {
+  accent-color: #fff;
 }
 
-.inputBox svg{
+.inputBox svg {
   margin: 0 2px;
 }
 
 @media (max-width: 1024px) {
+  .listContainer {
+    // width: 90%;
+    display: block;
+  }
+
+  .listContainer .filterContainer {
+    width: 95%;
+    margin: 0 auto 30px auto;
+    padding: 0 0 25px 0;
+  }
+
+  .PackFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .PackFlex {
+    padding: 0 1rem;
+  }
+  .listContainer .filterContainer .filterCardContainer {
+    padding: 0 0rem;
+    border-bottom: 0px solid rgb(230, 230, 230);
+  }
+
+  .listContainer .filterContainer .columns > div {
+    margin: 15px 0 0 0;
+
+    align-items: center;
+  }
+  .listContainer .listContainer {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .PackFlex {
+    display: block;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1350.98px) {
+  .listContainer .filterContainer .columns > div > label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1210.98px) {
+  .listContainer .filterContainer .columns > div > label {
+    font-size: 14px;
+  }
 
   .listContainer {
-      // width: 90%;
-      display: block; 
-         }
+    width: 90%;
+    margin: auto;
 
-         .listContainer .filterContainer {
-          width: 95%;
-          margin: 0 auto 30px auto;
-          padding: 0 0 25px 0;
-         }
-
-         .PackFlex{
-          display: flex;
-          justify-content: space-between;
-
-         }
-         .PackFlex {
-                    padding: 0 1rem;
-         }      
-         .listContainer .filterContainer .filterCardContainer {
-          padding: 0 0rem;
-          border-bottom: 0px solid rgb(230, 230, 230);
-         }
-
-         .listContainer .filterContainer .columns > div {
-          margin: 15px 0 0 0;
-
-          align-items: center;}
-          .listContainer .listContainer{
-            width: 95%;
-                 }
-
-           }
-
-
-           @media( max-width:768.98px){
- .PackFlex {
-    display: block; 
-    padding: 0 1rem;
-  
+    font-family: "NeueHaasUnica", Arial, sans-serif;
+  }
 }
-           }
+@media (max-width: 426px) {
+  .listContainer .listContainer {
+    width: 100%;
+  }
+}

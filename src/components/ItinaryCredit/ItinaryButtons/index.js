@@ -15,7 +15,6 @@ function ItinaryButtons({ href }) {
           <a href={`/package/${href[0]}/${href[1]}/${href[2]}/${href[3]}/${href[4]}`}>Back To Your Booking Details </a>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

@@ -1,0 +1,91 @@
+ {
+
+ "ItinearyM":[
+    {
+      "title": "Travelling Capri By Boat",
+      "stars": 4, 
+      "address": "Survey No.52/5 A Capri By Sea Island Tour Ste 324A Boca Raton, FL 33431",
+      "description":
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "amenities": {
+        "Workout and Leisure": ["Fitness center", "Swimming pool [outdoor]"],
+        "Spa & Beauty": ["Massage", "Spa"]
+      }
+   
+    }
+    
+  ],
+
+   "checkInData": [
+    {
+      "checkInDate": "Fri, 07 Jul 2023",
+      "checkInTime": "03:00 PM",
+      "checkOutDate": "Sat, 08 Jul 2023",
+      "checkOutTime": "12:00 PM",
+      "guestInfo": "2 Guest | 1 Room | 1 Night",
+      "rating": "8.6",
+      "reviews": "188 reviews",
+      "amenities": ["Breakfast", "Housekeeping"],
+      "locationRating": "8.9",
+      "locationRatingText": "Location rating score",
+      "parking": "FREE"
+    }
+    
+  ],
+
+   "images": [
+    "/package/TopBannerIti.png",
+    "/package/TopA.png",
+    "/package/TopB.png",
+    "/package/TopC.png",
+    "/package/TopD.png"
+  ],
+
+  " travelData" :[
+    {
+      "date": "07 Jul 2023 - 08 Jul 2023",
+      "night": "1 Night",
+      "imgSrc": "/package/TravelSmallImg.png",
+      "title": "Travelling Capri By Boat",
+      "stars": ["GoldenStar.svg", "GoldenStar.svg", "GoldenStar.svg", "GoldenStar.svg"],
+      "address": "Tour Ste 324A Boca Raton, FL 33431",
+      "price": "$1150.49",
+      "included": "Taxes and fees",
+      "savings": "$32.21",
+      "rating": "8.6",
+      "reviews": "188 reviews",
+      "services": ["Breakfast", "Housekeeping"],
+      "mapImgSrc": "/package/mapTravel.png",
+      "locationRating": "8.9",
+      "locationRatingText": "Location rating score",
+      "parking": "FREE"
+    }
+    
+  ],
+
+   "bookingsData": [
+    {
+      "id": 1,
+      "date": "07 Jul 2023 - 08 Jul 2023",
+      "nights": "1 Night",
+      "title": "Travelling Capri By Boat",
+      "rating": 8.6,
+      "reviews": 188,
+      "price": "$1150.49",
+      "savings": "$32.21",
+      "locationRating": 8.9,
+      "parking": "FREE"
+        }
+  ]
+
+
+
+
+
+
+
+
+}
+
+
+

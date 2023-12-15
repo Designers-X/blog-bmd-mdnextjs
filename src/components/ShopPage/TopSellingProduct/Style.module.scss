@@ -115,6 +115,10 @@ margin: 5px 0 0 0;
     
 }
 @media (max-width: 991.98px) {
+    .TopH2{
+     
+        text-align: center;
+    }
     .ProductTop h4 {
         font-size: 15px;
     }
@@ -131,6 +135,9 @@ margin: 5px 0 0 0;
 }
 
 @media (max-width: 575.98px) {
+    .container{
+        display: none;
+    }
 
     .MainImgFive img {
         width: 100%;

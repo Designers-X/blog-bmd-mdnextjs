@@ -14,7 +14,7 @@ const PackageLists = ({ data }) => {
         </div>
         <div className={styles.filterCardContainer}>
           <div className={styles.PackFlex}>
-            <div className={styles.columns}>
+            <div className={`${styles.columns} ${styles.NOBorder}`}>
               <h2> Popular Filters</h2>
               <div>
                 <input id="filter1" type="checkbox" className={styles.inputBox} />
@@ -30,7 +30,7 @@ const PackageLists = ({ data }) => {
               </div>
             </div>
 
-            <div className={styles.filterCardContainer}>
+            <div className={styles.filterCardContaine}>
               <div className={styles.columns}>
                 <h2>Price Range</h2>
                 <div>
@@ -48,7 +48,7 @@ const PackageLists = ({ data }) => {
               </div>
             </div>
 
-            <div className={styles.filterCardContainer}>
+            <div className={styles.filterCardContaine}>
               <div className={styles.columns}>
                 <h2>Customer Ratings</h2>
                 <div>

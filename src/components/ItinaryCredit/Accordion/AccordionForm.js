@@ -19,6 +19,10 @@ function AccordionForm({ href }) {
       title: 'Online Banking',
       content: 'Content for Section 3',
     },
+    {
+      title: 'Online Banking',
+      content: 'Content for Section 3',
+    },
   ];
   return (
     <div>
@@ -35,8 +39,9 @@ function AccordionForm({ href }) {
                 {/* sduh */}
               </div>
             </div>
-
-            <CheckCredit></CheckCredit>
+            <div className={Styles.CheckDeter}>
+              <CheckCredit></CheckCredit>
+            </div>
           </div>
 
           <ItinaryButtons href={href} />

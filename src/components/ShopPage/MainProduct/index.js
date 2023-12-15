@@ -1,312 +1,17 @@
 import React, { useState } from 'react';
 import Styles from './Styles.module.scss';
 import TopSellingProduct from 'components/ShopPage/TopSellingProduct';
-import BigLastBannerImg from 'components/ShopPage/BigLastBannerImg';
+import product from '/json/product..json';
 
 function MainProduct() {
-  const allProducts = [
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 2,
-      name: 'Jewellery',
-      description: 'Let your style shine',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg2.png',
-    },
-    {
-      id: 3,
-      name: 'Gladiator Sandal',
-      description: 'Contanzo’s style',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg3.png',
-    },
-    {
-      id: 4,
-      name: 'Carthusia',
-      description: 'Legends of Perfume',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg4.png',
-    },
-    {
-      id: 6,
-      name: 'Perfume',
-      description: 'Carthusia Fragrance',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg6.png',
-    },
-    {
-      id: 7,
-      name: 'Italian Wine',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg7.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg2.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg4.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg7.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg6.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg4.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg3.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg7.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg6.png',
-    },
-
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-    {
-      id: 1,
-      name: 'Ferragamo shoe',
-      description: 'Made in Italy',
-      price: 540,
-      rating: 4.6,
-      imageUrl: '/package/MainImg1.png',
-    },
-  ];
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentProducts = allProducts.slice(startIndex, endIndex);
+  const currentProducts = product.Products.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(allProducts.length / itemsPerPage);
+  const totalPages = Math.ceil(product.Products.length / itemsPerPage);
 
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
@@ -371,7 +76,7 @@ function MainProduct() {
                 </button>
 
                 <div className={Styles.PageNumbers}>
-                  {Array.from({ length: totalPages }, (_, index) => (
+                  {Array.from({ length: totalPages > 4 ? 3 : totalPages }, (_, index) => (
                     <button
                       key={index + 1}
                       onClick={() => handlePageChange(index + 1)}
@@ -384,6 +89,19 @@ function MainProduct() {
                       {index + 1}
                     </button>
                   ))}
+
+                  {totalPages > 4 && <span>....</span>}
+
+                  <button
+                    onClick={() => handlePageChange(totalPages)}
+                    className={currentPage === totalPages ? Styles.ActivePage : null}
+                    style={{
+                      backgroundColor: currentPage === totalPages ? '#10182f' : '#fff',
+                      color: currentPage === totalPages ? '#fff' : '#10182f',
+                    }}
+                  >
+                    {totalPages}
+                  </button>
                 </div>
 
                 {/* <span>{`Page ${currentPage} of ${totalPages}`}</span> */}
@@ -391,7 +109,7 @@ function MainProduct() {
                 <button
                   className={Styles.BtnBorderNone}
                   onClick={() => handlePageChange(currentPage + 1)}
-                  disabled={endIndex >= allProducts.length}
+                  disabled={endIndex >= product.length}
                 >
                   <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                     <path
@@ -410,7 +128,7 @@ function MainProduct() {
           </div>
         </div>
       </div>
-      <BigLastBannerImg></BigLastBannerImg>
+      {/* <BigLastBannerImg></BigLastBannerImg> */}
     </div>
   );
 }

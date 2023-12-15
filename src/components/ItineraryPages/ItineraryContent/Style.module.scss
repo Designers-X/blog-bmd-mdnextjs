@@ -4,6 +4,10 @@
     margin: auto;
    }
 
+   .Chekinder{
+    width: 23.5%;
+   }
+
    .travel1 p, .travel1 h2, .travel1 ul li, .travel1 h3, .travel1 h5 {
     font-family: "NeueHaasUnicaM" !important;
    }
@@ -176,6 +180,9 @@
     }
 }
    @media (max-width: 1024.98px) {
+    .Chekinder {
+      width: 100%;
+  }
     .travel2 {
         width: 100%;
       }
@@ -200,6 +207,7 @@
       .routeB {
         width: 50%;
         padding: 1px 0 0 0;
+        border-left: 0px solid #d9d9d9;
       }
     .travel2a {
       padding: 17px 17px 62px 17px;

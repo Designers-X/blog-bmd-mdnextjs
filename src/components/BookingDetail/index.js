@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from './Styles.module.scss';
+import Data1 from '/json/product..json';
 
 function Booking() {
   const handlePrint = () => {
@@ -26,6 +27,8 @@ function Booking() {
       alert('Please allow popups for this website');
     }
   };
+
+  // Array of details
 
   return (
     <div>
@@ -64,53 +67,14 @@ function Booking() {
             </div>
 
             <div className={Styles.DetailHistory}>
-              <div className={Styles.DetailLine}>
-                <div className={Styles.DetailInfo}>
-                  <p>Primary Guest</p>
-                  <h6>Test</h6>
+              {Data1.DetailsArray.map((detail, index) => (
+                <div key={index} className={Styles.DetailLine}>
+                  <div className={Styles.DetailInfo}>
+                    <p>{detail.label}</p>
+                    <h6>{detail.value}</h6>
+                  </div>
                 </div>
-
-                <div className={Styles.DetailInfo}>
-                  <p>Mobile Number</p>
-                  <h6>98XXXXXXX0</h6>
-                </div>
-              </div>
-
-              <div className={Styles.DetailLine}>
-                <div className={Styles.DetailInfo}>
-                  <p>Check In</p>
-                  <h6>Fri, 07 Jul 2023</h6>
-                </div>
-
-                <div className={Styles.DetailInfo}>
-                  <p>Check Out</p>
-                  <h6>Sat, 08 Jul 2023</h6>
-                </div>
-              </div>
-
-              <div className={Styles.DetailLine}>
-                <div className={Styles.DetailInfo}>
-                  <p>Check In Time</p>
-                  <h6>12:00 PM</h6>
-                </div>
-
-                <div className={Styles.DetailInfo}>
-                  <p>Check Out Time</p>
-                  <h6>11:00 AM</h6>
-                </div>
-              </div>
-
-              <div className={`${Styles.DetailLine} ${Styles.DetaiFlex}`}>
-                <div className={Styles.DetailInfo}>
-                  <p>Guest</p>
-                  <h6>2 Guest | 1 Room | 1Night</h6>
-                </div>
-
-                <div className={Styles.DetailInfo}>
-                  <p>Total Payable Amount</p>
-                  <h6>$1150.49</h6>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 

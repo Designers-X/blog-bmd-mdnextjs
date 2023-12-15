@@ -1,5 +1,7 @@
 import React from 'react';
 import Styles from './Style.module.scss';
+import Itinerary from '/json/Itinerary.json';
+
 // import ItineraryContent from '../ItineraryPages/ItineraryContent'
 
 function ItineraryImages() {
@@ -10,27 +12,33 @@ function ItineraryImages() {
           <div className={Styles.MainBannerIti}>
             <div className={Styles.MainBannerImageConvert}>
               <div className={Styles.MainBannerImg}>
-                <img src="/package/TopBannerIti.png" alt="TopBannerIti" />
+                <img src={Itinerary.images[0]} alt="TopBannerIti" />
               </div>
               <div className={Styles.MainBannerItiWIdth}>
                 <div className={`${Styles.MainBannerItiControl} ${Styles.bottom}`}>
-                  <div className={`${Styles.MainBannerItiImg} ${Styles.Side}`}>
-                    <img src="/package/TopA.png" alt="TopA" />
-                  </div>
-
-                  <div className={`${Styles.MainBannerItiImg} ${Styles.sde} ${Styles.borderRaduis}`}>
-                    <img src="/package/TopB.png" alt="TopB" />
-                  </div>
+                  {Itinerary.images.slice(1, 3).map((src, index) => (
+                    <div
+                      key={index}
+                      className={`${Styles.MainBannerItiImg} ${index === 1 ? Styles.sde : Styles.Side} ${
+                        index === 1 ? Styles.borderRaduis : ''
+                      }`}
+                    >
+                      <img src={src} alt={`Top${String.fromCharCode(65 + index)}`} />
+                    </div>
+                  ))}
                 </div>
 
                 <div className={Styles.MainBannerItiControl}>
-                  <div className={`${Styles.MainBannerItiImg} ${Styles.Side} `}>
-                    <img src="/package/TopC.png" alt="TopC" />
-                  </div>
-
-                  <div className={`${Styles.MainBannerItiImg} ${Styles.borderRaduis}`}>
-                    <img src="/package/TopD.png" alt="TopD" />
-                  </div>
+                  {Itinerary.images.slice(3, 5).map((src, index) => (
+                    <div
+                      key={index}
+                      className={`${Styles.MainBannerItiImg} ${index === 0 ? Styles.Side : ''} ${
+                        index === 0 ? '' : Styles.borderRaduis
+                      }`}
+                    >
+                      <img src={src} alt={`Top${String.fromCharCode(67 + index)}`} />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

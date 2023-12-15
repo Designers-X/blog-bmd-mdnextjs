@@ -67,9 +67,13 @@ const PackCard = ({ element, index = null }) => {
                 <div className={styles.DisPlayButtonFlexMob}>
                   <div>
                     {element?.btn && element?.href?.view ? (
-                      <a className={styles.viewBox} href={element.href.view}>
+                      <div
+                        className={styles.viewBox}
+                        href={element.href.view}
+                        onClick={() => (window.location.href = element.href.view)}
+                      >
                         View
-                      </a>
+                      </div>
                     ) : (
                       <div className={styles.viewBox}>View</div>
                     )}
@@ -77,9 +81,13 @@ const PackCard = ({ element, index = null }) => {
 
                   <div>
                     {element?.btn && element?.href?.book ? (
-                      <a className={styles.bookNowBox} href={element?.href?.book}>
+                      <div
+                        className={styles.bookNowBox}
+                        href={element?.href?.book}
+                        onClick={() => (window.location.href = element?.href?.book)}
+                      >
                         Book Now
-                      </a>
+                      </div>
                     ) : (
                       <div className={styles.bookNowBox}>Book Now</div>
                     )}

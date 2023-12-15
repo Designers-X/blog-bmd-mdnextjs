@@ -74,6 +74,9 @@
       width: 95%;
       padding: 10px;
     }
+    @media (max-width: 321px) {
+      bottom: 35%;
+    }
     .formContainer {
       width: 100%;
       display: flex;

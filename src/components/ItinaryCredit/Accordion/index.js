@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import CustomDropdown from 'components/ItinaryCredit/Accordion/CustomDropDown';
 import styles from './Style.module.scss';
+import OnlineBankingCustomDropdownBankName from './OnlineBankingCustomDropdownBankName';
+import DigitalPaymentSection from './DigitalPaymentSection';
+
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const onTitleClick = (index) => {
@@ -71,7 +74,9 @@ const Accordion = () => {
       </div>
       {activeIndex === 1 && (
         <div className={styles.Content}>
-          <p className={styles.ConfirmMail}>Coming Soon</p>
+          <p className={styles.ConfirmMail}>
+            <DigitalPaymentSection></DigitalPaymentSection>
+          </p>
         </div>
       )}
 
@@ -81,12 +86,15 @@ const Accordion = () => {
       </div>
       {activeIndex === 2 && (
         <div className={styles.Content}>
-          <p className={styles.ConfirmMail}>Coming Soon</p>
+          <p className={styles.ConfirmMail}>
+            <OnlineBankingCustomDropdownBankName></OnlineBankingCustomDropdownBankName>
+
+            <div className={styles.MakePaymentOP}>
+              <a href="#">Make Payment</a>
+            </div>
+          </p>
         </div>
       )}
-      <p className={styles.ConfirmMail}>
-        We&apos;ll send confirmation of your booking to <b>Test@gmail.com</b>
-      </p>
     </div>
   );
 };

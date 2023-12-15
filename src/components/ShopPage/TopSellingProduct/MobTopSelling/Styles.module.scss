@@ -1,0 +1,118 @@
+@font-face {
+	font-family: "NeueHaasUnica";
+	font-display: swap;
+	src: url("../../../../../public/font/NeueHaasUnica-Regular.ttf");
+	// src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "NeueHaasUnicaM";
+	font-display: swap;
+	src: url("../../../../../public/font/NeueHaasUnica-Medium.ttf");
+  }
+
+  .CarouselStyles {
+    margin: 0 0 30px 0;
+}
+
+
+  .CarouselStyles button{
+    display: inline-block;
+    width: 32px !important;
+    height: 3px !important;
+ border-radius: 0% !important;
+    opacity: 1;
+    padding: 5px 5px 5px 5px;
+    box-shadow: none;
+    transition: background .5s;
+    border: 0px solid grey;
+      padding: 0;
+    margin: 0;
+    margin-right: 6px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.SliderControl{
+    width: 80%;
+    overflow: hidden;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: none;
+}
+
+.ProductTop{
+    background-color: #EDEDF5;
+    border-radius: 10px;
+    padding:20px;
+    margin: 0 0 30px 0;
+}
+
+.ProductTop img{
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.TopH2{
+    color: #000;
+    font-family:  "NeueHaasUnica"!important;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 96% */
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.ProductTop h4{
+    
+    color: #FFF;
+font-family:"NeueHaasUnica"!important;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 109.091% */
+text-transform: uppercase;
+margin:-21px 0px 0 10px;
+position: absolute;
+}
+
+.ProductTop p{
+    color: #000;
+font-family: "NeueHaasUnica"!important;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+margin: 10px 0 0 0;
+}
+
+
+.MainImgFive{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.MainImgFive img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 575.98px) {
+    .container{
+    display: block;
+
+    }
+
+.sliderflexx{
+    width: 80%;
+    overflow: hidden;
+}
+}

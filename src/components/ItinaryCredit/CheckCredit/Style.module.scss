@@ -16,7 +16,7 @@
   font-weight: 400;
 }
 .travel3Main {
-  width: 23.5%;
+  width: 100%;
 }
 .SideSpaceTravel {
   border-radius: 20px;
@@ -31,7 +31,7 @@
   padding: 0 0 6px 0;
 }
 .CreditSmallImg .imgSmall {
-  width: 36%;
+  // width: 36%;
   margin: 0 0px 0 0;
   
 }
@@ -171,6 +171,7 @@
 .CreditSmallImg {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .CreditSmallImg h4 {
   color: #000;
@@ -179,19 +180,65 @@
   line-height: 19px;
   margin: 0;
 }
+
+@media (max-width: 1399.98px) {
+  .buttonItinery .buttonWhite {
+        margin: 0 0px 0px 0px;
+    }
+
+  .ExecllentTravel{
+display: grid;
+row-gap: 10px;
+  }
+  .ExecllentMargin {
+    margin: 0 0 0 0;
+}
+
+}
+
+@media (max-width: 1199.98px) {
+
+  .buttonItinery a {
+    font-size: 16px;
+}
+}
+
 @media (max-width: 1024.98px) {
+  .CreditSmallImg .imgSmall {
+    // width: 18%;
+    margin: 0 0px 0 0;
+}
+  .CreditSmallImg {
+    display: flex;
+    justify-content: unset;
+    gap: 20px;
+}
+  .buttonItinery {
+    
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0px;
+   }
+  .ExecllentMargin {
+    margin: 0 16px 0 0;
+}
+  .ExecllentTravel{
+    display: flex;
+    // row-gap: 10px;
+      }
 
   .travel3{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    gap: 20px;
 }
   .TravHeight {
     margin: 0px 0 0 0;
   }
   .SideSpaceTravel,
   .travel3a {
-    width: 48%;
+    width: 50%;
   }
   .travel3Main {
     width: 100%;
@@ -200,7 +247,7 @@
 
 @media (max-width: 991.98px) {
   .CreditSmallImg {
-    display: block;
+    // display: block;
     margin: 10px 0 0 0;
   }
 
@@ -210,6 +257,8 @@
 }
 
 @media (max-width: 575.98px) {
+
+
   .travel3{
     display: block;
     width: 100%;

@@ -10,6 +10,249 @@
   src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
 }
 
+.CheckDeter{
+  width: 23.5%;
+}
+
+
+.BackButton h2 svg{
+  width: 22px;
+  height: 22px;
+  margin: 0 10px 0 0;
+}
+
+.selected{
+  color: #000;
+  background-color: #8c8c8c;
+}
+
+
+.MakePaymentOP{
+  border-radius: 10px;
+border: 2px solid #000;
+background: #000;
+height: 63px;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+width: 280px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 47px 0 0 0;
+
+
+}
+
+.MakePaymentOP a{
+  color: #FFF;
+  text-align: center;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+
+.arrowUp .flickityButtonIcon1 {
+  transform: rotate(90deg);
+  width: 14px;
+}
+
+.arrowUp .flickityButtonIcon {
+  transform: rotate(270deg);
+  width: 14px;
+}
+
+/* CustomDropdown.module.css */
+
+.customDropdown {
+  position: relative;
+  width: 200px;
+  cursor: pointer;
+}
+
+.dropdownHeader {
+  padding: 10px 20px 10px 10px;
+  border: 1px solid #E4E4E4;
+  display: flex;
+  justify-content: space-between;
+  width: 342px;
+height: 52px;
+}
+
+.dropdownHeader span{
+  color: #000;
+text-align: justify;
+font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+
+.dropdownOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.PaymentMain2 .PaymentSelect{
+  margin-bottom: 30px;
+}
+
+.PaymentMain2{
+  grid-template-columns: repeat(3, auto) !important;
+  gap: 30px ;
+}
+
+.DigitalMode .UPIFlex input{
+  border: 1px solid #E4E4E4;
+background: #FFF;
+height: 48px;
+padding: 0 0px 0 15px;
+color: #000;
+text-align: justify;
+font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+outline: none;
+}
+
+.DigitalMode .UPIFlex input::placeholder {
+  color: #c7c7c7;
+  opacity: 1; 
+} 
+
+.DigitalMode .UPIFlex span {
+  margin: 0 20px;
+  color: #C7C7C7;
+  text-align: justify;
+  font-family:"NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.DigitalMode .UPIFlex{
+  display: flex;
+  align-items: center;
+  // gap: 10px;
+}
+.DigitalMode h2{
+  color: #222;
+text-align: justify;
+font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+margin: 0 0 20px 0;
+}
+
+
+.PaymentMain .PaymentSelect  input[type=radio]:checked:after {
+  border: 5px solid #000;
+  transition: 0.5s;
+
+}
+
+.PaymentMain .PaymentSelect  input[type=radio]:checked:after, .Style_title__qFJxm input[type=radio]:not(:checked):before {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #f3f4f4;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.PaymentMain .PaymentSelect input[type=radio], .PaymentSelect input[type=radio]:checked:after {
+  width: 15px;
+  height: 15px;
+  border: 8px solid #8C8C8C;
+  background-color: transparent;
+}
+
+
+
+.PaymentSelect input[type=radio]:not(:checked):before {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 3px solid #8C8C8C;
+
+}
+
+
+.PaymentOptions h2, .PaymentSelect h2{
+  color: #222;
+  text-align: justify;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+margin: 7px 0 20px 0;
+}
+
+.PaymentSelect img{
+  margin: 0 10px 0 0;
+}
+
+
+.PaymentOptions .PaymentSelect label{
+  color: #8C8C8C;
+text-align: justify;
+font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+display: flex;
+    align-items: center;
+}
+
+.PaymentOptions .PaymentSelect input{
+  margin: 0 15px 0 0;
+}
+
+.PaymentMain{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px;
+  align-items: center;
+}
+
+
 .ConfirmMail, .title, .title .content p, .title .content, .Dropo label, .creditInput label, .creditInput input {
   font-family: "NeueHaasUnica" !important;
 }
@@ -180,7 +423,7 @@
   position: absolute;
   right: 30px;
   font-size: 25px;
-  transform: rotate(316deg);
+  transform: rotate(360deg);
 }
 .arrowIcon {
   display: inline-block;
@@ -247,8 +490,13 @@
 }
 
 @media (max-width: 1024.98px) {
+  .CheckDeter {
+    width: 100%;
+}
+
   .travel2a {
     margin: 0 0 30px 0;
+    padding: 0 0 20px 0;
   }
   .travel2 {
     width: 100%;
@@ -266,16 +514,21 @@
 
 @media (max-width: 991.98px) {
   .travel2a {
-    padding: 17px 17px 62px 17px;
+    // padding: 17px 17px 62px 17px;
   }
 }
 
 @media (max-width: 767.98px) {
+  .PaymentMain2 {
+    grid-template-columns: repeat(1, auto) !important;
+   
+}
+
   .creditOut {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: center;
-    margin: 47px 0 0 0;
+    margin: 47px auto 0 auto;
     padding: 0px 0 0 0px;
   }
 
@@ -296,6 +549,48 @@
 }
 
 @media (max-width: 575.98px) {
+
+  .title {
+   
+    padding: 10px 0 10px 16px;
+   
+    font-size: 23px;
+   
+}
+  .DigitalMode .UPIFlex{
+    display: block;
+    align-items: center;
+      }
+
+      .DigitalMode .UPIFlex span{
+text-align: center;
+          }
+
+          .DigitalMode svg{
+            width: 18px;
+            height: 18px;
+            margin: 0 10px 0 0;
+          }
+
+
+  .dropdownHeader {
+    max-width: 342px;
+    width: 100%;
+    }
+
+    .MakePaymentOP {
+      
+      width: 200px;
+      
+      margin: 47px 0 0 0;
+  }
+
+  .PaymentMain {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 25px;
+
+}
+
   .creditInput {
     width: 96%;
     padding: 0 0 0 15px;
@@ -347,4 +642,15 @@
   .dropDown img {
     margin: 0 2px 0 0px;
   }
+
+  .dropDown img {
+    width: 20px;
+}
+// .Dropo label {
+//   font-size: 12px;
+// }
+
+.arrowIcon svg {
+  width: 10px;
+}
 }

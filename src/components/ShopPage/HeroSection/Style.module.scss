@@ -51,3 +51,21 @@ text-transform: uppercase;
   }
 
 
+  @media (max-width: 600.98px) {
+    .HeroImg h3 {
+      top: 20%;
+      font-size: 20px;
+  }
+  }
+
+  @media (max-width: 400.98px) {
+    .HeroImg h3 {
+      top: 20%;
+      font-size: 15px;
+  }
+  }
+
+
+
+
+

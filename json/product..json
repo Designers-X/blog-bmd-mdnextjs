@@ -1,0 +1,347 @@
+
+{
+
+    
+    
+      "Products": [
+      
+        {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+  
+    {
+      "id": 2,
+      "name": "Jewellery",
+      "description": "Let your style shine",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg2.png"
+    },
+
+    {
+      "id": 3,
+      "name": "Gladiator Sandal",
+      "description": "Contanzo’s style",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg3.png"
+    },
+    {
+      "id": 4,
+      "name": "Carthusia",
+      "description": "Legends of Perfume",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg4.png"
+    },
+    {
+      "id": 6,
+      "name": "Perfume",
+      "description": "Carthusia Fragrance",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg6.png"
+    },
+    {
+      "id": 7,
+      "name": "Italian Wine",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg7.png"
+    },
+    {
+      "id": 8,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg2.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg4.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg7.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg6.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg4.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg3.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg7.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg6.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    }
+],
+
+
+
+"TopSellingProductsData": [
+  {
+    "image": "/package/TopSelling1.png",
+    "title": "GLADIATOR SANDAL",
+    "description": "The Famous da Costanzo’s Shop"
+  },
+  {
+    "image": "/package/MainImage1.png",
+    "title": "Fragrance",
+    "description": "The Essence of Capri in a bottle"
+  },
+  {
+    "image": "/package/MainImage2.png",
+    "title": "Ferragamo shoe",
+    "description": "A Dynasty “Made in Italy"
+  }
+],
+
+"DetailsArray": [
+  { "label": "Primary Guest", "value": "Test" },
+  { "label": "Mobile Number", "value": "98XXXXXXX0" },
+  { "label": "Check In", "value": "Fri, 07 Jul 2023" },
+  { "label": "Check Out", "value": "Sat, 08 Jul 2023" },
+  { "label": "Check In Time", "value": "12:00 PM" },
+  { "label": "Check Out Time", "value": "11:00 AM" },
+  { "label": "Guest", "value": "2 Guest | 1 Room | 1 Night" },
+  { "label": "Total Payable Amount", "value": "$1150.49" }
+]
+
+
+
+
+
+
+
+}
+
+  
+
+  

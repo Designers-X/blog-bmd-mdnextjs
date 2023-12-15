@@ -1,88 +1,321 @@
-/* styles/Navbar.module.css */
-.navbar {
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-  }
-  
-  .logo {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
-  }
-  
-  // .showMenu {
-  //   display: flex;
-  // }
-  
-  .menu a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .menuIcon {
-    cursor: pointer;
-    display: none;
-    flex-direction: column;
-  }
-  
-  .iconLine {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 3px 0;
-  }
-  
+.navbarIcon svg {
+	width: 26px;
+}
 
-  /* styles/Navbar.module.css */
-.navbar {
-    /* ... existing styles ... */
-    transition: background-color 0.3s;
-  }
-  
-  .menu {
-    /* ... existing styles ... */
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .menu.showMenu {
-    opacity: 1;
-  }
-  
-  .menu a {
-    /* ... existing styles ... */
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  
-  .menu.showMenu a {
-    opacity: 1;
-  }
-  
-  .menuIcon {
-    /* ... existing styles ... */
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s;
-  }
-  
-  .menuIcon.showMenu {
-    transform: rotate(90deg);
-  }
-  
+.SearchBarMain svg {
+	width: 20px;
+}
 
-  // .showMenu{
-  //   background-color: aqua;
-  // }
+.filterDropdown {
+
+	display: flex;
+	justify-content: end;
+}
+
+.SearchBarC button {
+	border-radius: 5px;
+	background: #000;
+	color: #FFF;
+	font-family: "NeueHaasUnica" !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding: 12px 0;
+	width: 100%;
+	margin: 10px 0;
+	border: unset;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.mobileNavbar {
+	// display: flex;
+	border-radius: 11px;
+	border: 1px solid #E5E5E5;
+	background: #FFF;
+
+	// border: 1px solid #000;
+	padding: 14px 20px;
+	justify-content: space-between;
+	height: 66px;
+	width: 90%;
+	margin: auto;
+	display: none;
+}
+
+.SearchSection img {
+	margin: 0 20px 0 0;
+}
+
+.mobileNavbarLeft {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobFlex {
+	display: flex;
+}
+
+@font-face {
+	font-family: "NeueHaasUnica";
+	font-display: swap;
+	src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
+}
+
+@font-face {
+	font-family: "NeueHaasUnicaM";
+	font-display: swap;
+	src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
+}
+
+
+
+
+
+
+.dropdownContainer {
+	background-color: #EDEDF5;
+	width: 200px;
+	position: relative;
+	top: -5px;
+	left: 21px;
+	z-index: 1;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.dropdownHeader .dropdownList {
+	background-color: #939393;
+	position: absolute;
+	// top: 10px;
+}
+
+.dropdownHeader {
+	color: #000;
+	font-family: "NeueHaasUnica" !important;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+	/* 150% */
+	// display: flex;
+	// justify-content: space-evenly;
+	align-items: end;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.DropDraw {
+	// position: relative;
+	// display: flex;
+	text-align: end;
+}
+
+.DropDraw .dropdownList {
+	// position: absolute;
+	width: 100%;
+
+	background-color: #fff;
+	text-align: end;
+	margin: 3px 0 0 0;
+}
+
+.dropdownItem {
+	padding: 0 10px;
+	color: #000;
+	font-family: "NeueHaasUnica" !important;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 200% */
+}
+
+.dropdownHeader {
+	// background-color: #EDEDF5;
+}
+
+
+
+.DropDraw {
+	padding: 0 0 0 0px;
+	font-family: "NeueHaasUnica" !important;
+	;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	/* 150% */
+	color: #000;
+	width: 100%;
+	text-align: end;
+	// border: 1px solid #000;
+}
+
+.dropdownItem:hover {
+	background-color: #d9d9d9;
+}
+
+.dropdownItem {
+	// border-bottom: 1px solid #d9d9d9;
+}
+
+.SearchBarMain {
+	border-radius: 25px;
+	border: 1px solid #E5E5E5;
+	;
+	background: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 20px;
+	width: 100%;
+	position: relative;
+	top: -52px;
+
+}
+
+.SearchBarMain input {
+	border-left: 1px solid #d9d9d9;
+	border-right: 0px solid #d9d9d9;
+	border-top: 0px solid #d9d9d9;
+	border-bottom: 0px solid #d9d9d9;
+	outline: none;
+	// border: 0px solid;
+}
+
+.SearchBarMain input[type="text"] {
+	color: #939393;
+	font-family: "NeueHaasUnica" !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	/* 150% */
+}
+
+.dropdownBorder {
+	// border: none;
+}
+
+
+.SearchBarA {
+	width: 90%;
+	// display: flex;
+	justify-content: start;
+
+}
+
+
+
+.SearchSection input {
+	left:
+		17px;
+	position: relative;
+	width: 75%;
+}
+
+.arrow {
+	margin: 0 0 0 8px;
+	width: 20px;
+	font-size: 20px;
+}
+
+.arrowUp .flickityButtonIcon {
+	transform: rotate(270deg);
+	width: 10px;
+}
+
+.arrowUp .flickityButtonIcon1 {
+	transform: rotate(90deg);
+	width: 10px;
+}
+
+.SearchBarMain input[type="text"] {
+	color: #939393;
+	font-family: Neue Haas Unica;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1024.98px) {
+
+
+
+	.SearchBarMain input[type=text] {
+		font-size: 12px;
+	}
+
+	.SearchSection input {
+		left: 5px;
+		position: relative;
+		width: 75%;
+		border-bottom: 0px;
+		border-top: 0px;
+		border-left: 1px solid #E5E5E5;
+		border-right: 0px solid #E5E5E5;
+	}
+
+	.navbarIcon {
+		border-left: 1px solid #E5E5E5;
+	}
+
+	.navbarIcon svg {
+		margin: 0 0 0 20px;
+	}
+
+
+	.dropdownContainer {
+		margin: 10px 0;
+		padding: 10px 24px;
+		;
+		border: 1px solid #E5E5E5;
+	}
+
+	.DropDraw {
+		// padding: 0 0 0 5px;
+	}
+
+	.arrowUp .flickityButtonIcon {
+		width: 10px;
+	}
+
+
+
+
+
+}
+
+
+@media (max-width:991.98px) {
+	.container {
+		width: 90%;
+	}
+
+	.SearchBarMain {
+		top: -37px;
+	}
+}
+
+
+
+@media (max-width:767.98px) {
+	.mobileNavbar {
+		display: block;
+		margin: 20px auto;
+	}
+
+	.SearchBarMain {
+		display: none;
+	}
+
+
+}
