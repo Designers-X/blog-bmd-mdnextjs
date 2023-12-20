@@ -197,10 +197,7 @@ export default function Post({ post, socialImage, related }) {
               <img src={mastheadBanner.node.link} className="imgBanner" alt="" />
             </div>
           )}
-          <div
-            className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4'}
-            style={{ maxWidth: '60rem', margin: '0 auto' }}
-          >
+          <div className={(mastheadWistiaVideoId || mastheadBanner) && 'mt-4 PostTitleContainer'}>
             <h1
               className={styles.title}
               dangerouslySetInnerHTML={{

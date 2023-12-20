@@ -11,7 +11,7 @@ const Contact = () => {
 
     script.addEventListener('load', () => {
       if (window.hbspt) {
-        document.getElementById('formContact').style.height = '400px';
+        document.getElementById('formContact').style.height = 'auto';
         window.hbspt.forms.create({
           portalId: '19647191',
           formId: 'fe5925db-40b4-48ee-b150-3cdde78a0a41',

@@ -100,10 +100,13 @@ export default function Home({
                     <div className="text-center">
                       <div className={styles.pLR75}>
                         {nodes.categories.map((ele, index) => {
+                          const categoryslug = '/categories/' + ele.slug;
                           return (
-                            <div className={styles.ShoppingText} key={index}>
-                              {ele.name}
-                            </div>
+                            <Link href={categoryslug} key={index}>
+                              <a href={categoryslug} className={styles.ShoppingText}>
+                                {ele.name}
+                              </a>
+                            </Link>
                           );
                         })}
                         <Link href={postslug}>

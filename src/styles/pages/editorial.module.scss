@@ -11,7 +11,7 @@
 .width20{
     width: 30%;
     float: left;
-    height: 382px;
+    height: 400px;
 }
 
 .m4Rem{
@@ -69,14 +69,16 @@
     .width20 {
         width: 35%;
         float: left;
-        height: 382px;
+        height: 400px;
+    }
+    .authorBoxText h3{
+    font-size: 22px;
     }
 
     .authorBox {
         position: relative;
         height: 340px;
         width: 300px;
-
         img {
             height: 340px;
             width: 300px;
@@ -89,7 +91,6 @@
     .width20 {
         width: 50%;
         float: left;
-        height: 382px;
     }
 
     .authorBox {
@@ -109,17 +110,19 @@
     .width20 {
         width: 100%;
         float: left;
-        height: 382px;
+        height: 410px;
     }
-
+    .authorBoxText{
+    width: 90%;
+    }
     .authorBox {
         position: relative;
         height: 340px;
-        width: 300px;
+        width: 100%;
 
         img {
             height: 340px;
-            width: 300px;
+            width: 100%;
             object-fit: cover;
         }
     }

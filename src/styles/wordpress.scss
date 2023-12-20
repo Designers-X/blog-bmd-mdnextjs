@@ -89,6 +89,10 @@
 .Container_container__jY5v0 {
   max-width: 1320px !important;
 }
+.PostTitleContainer{
+  max-width: 60rem;
+  margin: 0px auto;
+}
 
 //first Latter
 // .temp::first-letter {
@@ -887,6 +891,21 @@ figcaption {
   }
 }
 @media (max-width:426px) {
+  .PostTitleContainer{
+    max-width: 99%;
+  }
+  .mobResMB-2{
+    margin-bottom: 2rem!important;
+  }
+  .MobResTranslate50{
+    top: 50%;
+  }
+  .Hover-Effect p {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3% 3%;
+    margin: 0px !important;
+  }
   .headingContainer h2{
     
     font-size: 38px;
@@ -907,17 +926,10 @@ figcaption {
     margin: 0 auto;
   }
 
-  .Hover-Effect {
-    top: 4%;
-    margin: 0 4%;
-  }
-
-  .Hover-Effect p {
-    font-size: 24px;
-    line-height: 24px;
-    padding: 3% 3%;
-    margin: 0px !important;
-  }
+  // .Hover-Effect {
+  //   top: 4%;
+  //   margin: 0 4%;
+  // }
 }
 
 // red

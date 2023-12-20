@@ -8,7 +8,7 @@ const Footer = () => {
         <div className={styles.footerSpicl}>
           <div className={styles.middelSection}>
             <div className={styles.InRow}>
-              <Link href="">
+              <Link href="/">
                 <a className={styles.LogoSection}>
                   <img src="/logo-white-v2.png" width={250} height={'auto'} alt="themditerraneanlifeIcon" />
                 </a>
