@@ -748,6 +748,18 @@ figcaption {
     height: 280px;
   }
 }
+@media (max-width: 769px) {
+.justifyCenterV2 {
+  display: block !important;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  padding: 0 15px;
+}
+.categoryLink img {
+  width: 100%;
+  height: auto;
+}
+}
 
 // 22-05-2023 Add media Query
 @media (max-width: 767px) {

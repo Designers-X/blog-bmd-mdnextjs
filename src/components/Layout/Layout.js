@@ -9,6 +9,7 @@ import Nav from 'components/Nav';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
+import FixedBottomBar from 'components/Footer/FixedBottomBar';
 
 const Layout = ({ children, newsLetterShow }) => {
   if (!newsLetterShow) newsLetterShow = true;
@@ -79,6 +80,7 @@ const Layout = ({ children, newsLetterShow }) => {
           />
         </div>
       )}
+      <FixedBottomBar />
       <Footer />
     </div>
   );

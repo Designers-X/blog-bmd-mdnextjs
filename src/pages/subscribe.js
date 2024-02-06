@@ -10,16 +10,15 @@ const Subscribe = () => {
     document.body.appendChild(script);
 
     script.addEventListener('load', () => {
-      if (window.hbspt) {
-        document.getElementById('formSubscribe').style.height = 'auto';
-        window.hbspt.forms.create({
-          portalId: '19647191',
-          formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
-          target: '#formSubscribe',
-        });
-      }
+      document.getElementById('formSubscribe').style.height = 'auto';
+      window.hbspt.forms.create({
+        portalId: '19647191',
+        formId: '2dc7982a-20de-40e5-acaf-ee19d2bcea93',
+        target: '#formSubscribe',
+      });
     });
   }, []);
+
   const SubscribeRaw = () => {
     return (
       <section class="mb-5" id="subscribe">

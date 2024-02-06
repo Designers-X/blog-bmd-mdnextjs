@@ -67,12 +67,12 @@ const Nav = () => {
                   </a>
                 </Link>
                 <Link href="/package/travel-experience">
-                  <a className={styles.subscribeBtn} style={{ margin: '0 5px' }}>
+                  <a className={`${styles.subscribeBtn} ${styles.hide}`} style={{ margin: '0 5px' }}>
                     <span>Signature Experiences</span>
                   </a>
                 </Link>
                 <Link href="/shop">
-                  <a className={styles.subscribeBtn}>
+                  <a className={`${styles.subscribeBtn} ${styles.hide}`}>
                     <span>Shop</span>
                   </a>
                 </Link>

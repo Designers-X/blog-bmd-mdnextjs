@@ -442,8 +442,27 @@
   height: 0 !important;
   color: #000 !important;
 }
-
-@media (max-width: 767px) {
+// @media (max-width: 1041px) {
+//   .navSection{
+//     display: block;
+//   }
+//   .MobileScroll{
+//     width: fit-content;
+//       display: flex;
+//   }
+//   .navName {
+ 
+//     justify-content: flex-start;
+    
+//   }
+//   .topnav {
+//     overflow: scroll;
+//     background-color: #fff;
+//     width: 100%;
+    
+//   }
+// }
+@media (max-width: 1025px) {
   .navSection{
     display: block;
   }
@@ -459,7 +478,7 @@
   
 }
 .openbtn {
-  
+  margin: 0.4rem 0;
   padding: 0.5rem 0.625rem 0.5rem 0.625rem;
  
 }
@@ -474,8 +493,9 @@
   
 }
 .MobileScroll{
-  width: 530px;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .nav {
@@ -484,6 +504,18 @@
   
 }
 
+}
+@media (max-width: 650px){
+  .MobileScroll{
+    width: 530px;
+      display: flex;
+      justify-content: unset;
+  }
+}
+@media (max-width: 600px){
+  .hide{
+    display: none;
+  }
 }
 @media (max-width: 350px){
   .topnavright a {
