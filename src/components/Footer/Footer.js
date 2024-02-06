@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className={styles.footerContainer}>
         <div className={styles.footerSpicl}>
           <div className={styles.middelSection}>
             <div className={styles.InRow}>

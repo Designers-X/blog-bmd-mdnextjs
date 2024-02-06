@@ -12,6 +12,7 @@
     @media (max-width: 600px){
     &{
         display: flex;
+        z-index: 111;
     }
     }
     & a{
