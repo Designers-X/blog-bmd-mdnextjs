@@ -1,0 +1,698 @@
+@font-face {
+  font-family: "NeueHaasUnica";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NeueHaasUnicaM";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
+}
+
+
+.ShopBanner h2, .SecondParent h3, .SecondParent h5
+{
+  font-family: "NeueHaasUnicaM" !important;
+
+}
+
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.ShopBanner {
+  text-align: center;
+  background-color: #E8E8E8;
+  padding: 20px 0;
+
+}
+
+.ShopBanner h2 {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  /* 60% */
+  margin: 0 0 0px 0;
+}
+
+.ShopBanner p {
+  font-family: "NeueHaasUnica" !important;
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 184.615% */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
+.galleryThumbs img {
+  width: 75px;
+  height: 75px;
+}
+
+.galleryThumbs {
+  display: flex;
+  gap: 7px;
+  border: 1px solid #EDEDED;
+  background: #FFF;
+  padding: 10px;
+  margin: 30px 0 0 0;
+}
+
+.ParentClass {
+  display: flex;
+  width: 100%;
+  gap: 60px;
+  margin: 30px 0;
+}
+
+.ParentClass .FirstClass {
+  width: 50%;
+}
+
+.SecondParent {
+  width: 50%;
+}
+
+.SecondParent img {
+  // width: 100%;
+}
+
+.SecondParent h3 {
+  color: #000;
+ 
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  /* 60% */
+  margin: 0 0 20px 0;
+}
+
+.galleryTop {
+  width: 100%;
+}
+
+.galleryTop img {
+  width: 100%;
+}
+
+.SecondParent h5 {
+  margin: 14px 0;
+  color: #000;
+  // text-align: center;
+  
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  /* 70% */
+}
+
+.SizeArea h5{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  font-family: "NeueHaasUnica" !important;
+  margin: 0 0 15px 0;
+
+}
+
+.SecondContent {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 150% */
+}
+
+.SecondParent .lineContent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+
+.SvgImg {
+  display: flex;
+  gap: 3px;
+}
+
+.rating {
+  color: #000;
+  text-align: center;
+  font-family: "NeueHaasUnicaM" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  /* 150% */
+}
+
+.review {
+  color: #999;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.Second {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 150% */
+}
+
+.SizeRadio {}
+
+
+
+
+.SizeRadio input[type="radio"],
+.SizeRadio input[type="radio"]:checked {
+  width: 25px;
+  height: 25px;
+  top: 30%;
+}
+
+.SizeRadio input[type="radio"] {
+  padding: 0;
+  border: 5px solid #000000;
+  margin-right: 16px;
+}
+
+.SizeRadio input[type="radio"]:checked {
+  border: 8px solid #003b5f;
+}
+
+.SizeRadio.borderRad {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.active {
+  color: #fff;
+}
+
+.SizeRadio .active {
+  color: #000 !important;
+}
+
+.SizeRadio .content {
+  padding: 28px 28px 58px 28px;
+  font-size: 16px;
+}
+
+.SizeRadio .content p {
+  font-size: 16px;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 20px;
+}
+
+.SizeRadio input[type="radio"]:checked:after,
+.SizeRadio input[type="radio"]:not(:checked):before {
+  width: 66px;
+  height: 34px;
+  // border-radius: 15px;
+  background-color: #ffff;
+  ;
+
+  content: "";
+  display: inline-block;
+  visibility: visible;
+}
+
+.SizeRadio input[type="radio"]:checked:after {
+  border: 1px solid #000;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.SizeRadio input[type="radio"]:not(:checked):before {
+  border: 1px solid #D9D9D9;
+  transition: 0.5s;
+}
+
+.SizeRadio {
+  position: relative;
+  width: 66px;
+}
+
+.ChangeSize {
+  position: absolute;
+  left: 30%;
+  top: 17%;
+}
+
+.SizeRadio input[type="radio"]:checked+span {
+  color: #fff;
+}
+
+
+.SizeRadio span {
+  color: #000;
+  text-align: center;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 150% */
+}
+
+.boxControl {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.Quantity input {
+  width: 67px;
+  height: 34px;
+  text-align: center;
+}
+
+
+.QBoxee {
+  margin: 30px 0 0 0;
+  display: flex;
+  gap: 30px;
+}
+
+.BuyButton {
+  background-color: #000;
+  width: 118px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BuyButton a {
+  color: #FFF;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  /* 200% */
+  text-transform: uppercase;
+}
+
+.SafePament {
+  border: 1px solid #000;
+  width: 50%;
+  min-width: 250px;
+  // margin: 40px 0 0 0;
+  height: 57px;
+  display: flex;
+    padding: 10px;
+}
+
+.controlparag p {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 150% */
+  position: relative;
+  top: 14px;
+  background: #fff;
+  display: inline-block;
+  left: 20px;
+  padding: 5px;
+  margin: 40px 0 0 0;
+}
+
+.SkuProduct {
+  border-top: 1px Dashed #000;
+  margin: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
+}
+
+.SkuProduct p {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  /* 150% */
+  margin: 0;
+}
+
+.SkuProduct p span {
+  font-family: "NeueHaasUnicaM" !important;
+
+  font-weight: 500;
+
+}
+
+.tabContainer {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0 15px 0;
+  padding: 0 0 0 0;
+}
+
+.Letter {
+  color: #BDBDBD;
+  font-family: "NeueHaasUnicaM" !important;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  /* 70% */
+}
+
+.TabsMain {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.TabsMainOne {
+  width: 100%;
+  // border: 1px solid;
+}
+
+.TabsTwo {
+  width: 40%;
+}
+
+
+
+.tabsInner h3 {
+  color: #000;
+  font-family: "NeueHaasUnicaM" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 222.222% */
+  margin: 0;
+  display: flex;
+  // align-items: center;
+  gap: 10px;
+}
+
+.tabsInner h3 span {
+  color: #999;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tabsInner p {
+  color: #999;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+  margin: 0;
+}
+
+.ReplyStatus p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 200% */
+}
+
+
+
+
+
+.tabsInner {
+
+  // margin: 0 00 20px 0;
+  // width: 90%;
+  // float: inline-end;
+  margin: auto;
+
+  padding: 0 20px 20px 0px;
+
+}
+
+.UseFlexA {
+  border-bottom: 1px solid #EAEAEA;
+  display: flex;
+  gap: 20px;
+  padding: 0px 0 20px 15px;
+}
+
+.UseFlexA span {
+  display: flex;
+  gap: 10px;
+  margin: 0px 0;
+}
+
+.SpanSvgCon{
+  margin: 5px 0 !important;
+}
+
+.TabsTwo .box1 {
+  border-radius: 10px;
+  background: #D7D2BF;
+  padding: 26px;
+}
+
+.TabsTwo .box1 .box1Para {
+  color: #000;
+  font-family: "NeueHaasUnicaM" !important;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: unset;
+  line-height: 40px;
+  /* 133.333% */
+}
+
+.TabsTwo .box1 .ButnBlock a {
+  color: #FFF;
+  font-family: "Neue Haas Unica";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  /* 200% */
+  text-transform: uppercase;
+}
+
+.FlexCode {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.Tabcode {
+  width: 70%;
+  border-right: 1px solid #E5E5E5;
+  padding: 0 30px 0 0;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.ReviewGoal {
+  font-family: "NeueHaasUnica" !important;
+  color: #999;
+  font-family: "Neue Haas Unica";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.ImgMainE {
+  display: contents;
+}
+
+.ImgMainE img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+
+.ratingNumber {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  /* 222.222% */
+}
+
+.ratingSvg {
+  display: flex;
+  gap: 3px;
+}
+
+.TabsTwo {
+  width: 30%;
+}
+
+.ButnBlock {
+  background: #000;
+  width: 118px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingGoal {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.TabsMainOne hr {
+  margin: 0 0 40px 0;
+
+}
+
+
+
+
+.tab.Letter.Letter::after {
+  background-color: #000;
+
+}
+
+@media(max-width:1024.98px) {
+  .container {
+    width: 90%;
+  }
+
+  .ParentClass {
+
+    gap: 30px;
+
+  }
+}
+
+
+
+@media(max-width:1199.98px) {
+  .galleryThumbs img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media(max-width:767.98px) {
+
+  .FlexCode {
+    display: block;
+  }
+
+  .Tabcode {
+    width: 100%;
+    border-right: 0px solid #E5E5E5;
+    // padding: 0 30px 0 0;
+  }
+
+  .ratingGoal {
+    display: flex;
+    justify-content: start;
+
+
+  }
+
+  .TabsTwo {
+    width: 320px;
+    margin: 0 0 40px 0;
+  }
+
+  .Tabcode {
+    padding: 0 0px 0 0;
+  }
+
+  .FlexCode {
+
+    gap: 10px;
+  }
+
+  .TabsTwo .box1 .box1Para {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .ParentClass {
+    display: block;
+  }
+
+  .ParentClass .FirstClass {
+    width: 100%;
+    margin: auto;
+  }
+
+
+  .galleryTop {
+    width: 85%;
+    margin: auto;
+  }
+
+  .SecondParent {
+    width: 100%;
+    margin: 40px 0 0 0;
+  }
+}
+
+
+
+
+@media(max-width:510px) {
+  .TabsTwo {
+    width: 267px;
+  }
+
+  .Letter {
+
+    font-size: 20px;
+
+  }
+
+  .TabsMainOne hr {
+    position: relative;
+    top: -9px;
+
+  }
+
+  .galleryThumbs img {
+    width: 45px;
+    height: 45px;
+  }
+}

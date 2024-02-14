@@ -76,10 +76,220 @@
       "locationRating": 8.9,
       "parking": "FREE"
         }
+  ],
+
+
+ "ShopDetailData" :[
+    {
+      "name": "Ferragamo Shoe",
+      "images": ["/package/Fergamo-shoe1.png",
+       "/package/Fergamo-shoe2.png",
+       "/package/Fergamo-shoe3.png",
+      "/package/Fergamo-shoe4.png",
+       "/package/Fergamo-shoe1.png"],
+      "rating": 4.6,
+      "reviews": 1852,
+      "price": 540.00,
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.",
+      "sizes": ["40.5", "41", "41.5", "42.5", "43.5", "44.5", "45"],
+      "quantity": 1,
+      "paymentMethods": ["Visa", "MasterCard", "PayPal"],
+      "sku": "5 left",
+      "categories": ["Shoe"],
+      "tags": ["Party", "All Season"]
+    }
+  ],
+
+  "ShopTabData" :[
+
+
+    {
+      "id": 1,
+      "image" : "/package/RewivMen1.png",
+      "date": "yesterday",
+      "name": "Rohit Sharma  ",
+      "rating":4,
+      "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
+      "like": 42,
+      "dislike": 0
+      
+    },
+    {
+      "id": 2,
+      "image" : "/package/RewivMen2.png",
+      "date": "yesterday",
+      "name": "Carminia  ",
+      "rating":4,
+      "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
+      "like": 42,
+      "dislike": 0
+      
+    },
+    {
+      "id": 3,
+      "image" : "/package/RewivMen3.png",
+      "date": "yesterday",
+      "name": "Rohit Sharma  ",
+      "rating":4,
+      "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
+      "like": 42,
+      "dislike": 0
+      
+    }
+  ],
+
+  "cardTabData" :[
+{
+  "rating":4,
+  "ratingNum": 4.8,
+  "review": 7,
+  "parag":"Popular brands with discounts over 25%" 
+}
+
+
+  ],
+
+
+  "ShopStoreData" :[
+{
+  "id": 1,
+"image":"/package/MyBagShoe.png",
+"name":"Ferragamo shoe",
+"madeIN":"Made in Italy",
+"price":"540"
+},
+{
+  "id": 2,
+"image":"/package/jewerimg12.png",
+"name":"Jewellery",
+"madeIN":"Let your style shine",
+"price":"540"
+},
+{
+  "id": 3,
+"image":"/package/gladiator12.png",
+"name":"Gladiator Sandal",
+"madeIN":"Contanzo’s style",
+"price":"540"
+}
+
+,
+{
+  "id": 4,
+"image":"/package/gladiator12.png",
+"name":"Gladiator Sandal",
+"madeIN":"Contanzo’s style",
+"price":"540"
+}
+,
+{
+  "id": 5,
+"image":"/package/gladiator12.png",
+"name":"Gladiator Sandal",
+"madeIN":"Contanzo’s style",
+"price":"540"
+}
+
+  ],
+
+  "orderSummary":[
+{
+  "totalOrder":1620.00
+}
+
+  ],
+
+
+  "deliveryTime":[
+    {
+      "OrderCorfirm":"25 Dec 2023",
+      "ShippedOrder":"08 Jan 2024"
+    }
+  ],
+
+
+  "deliveryData":[
+
+    {
+      "id":1,
+      "image": "/package/CheckProductImage1.png",
+      "name":"Ferragamo Shoe",
+      "rating": "4",
+      "MadeIN" : "Made in Italy",
+      "PriceTag":"540.00"
+    
+    },
+
+    {
+      "id":1,
+      "image": "/package/CheckProductImage1.png",
+      "name":"Ferragamo Shoe",
+      "rating": "4",
+      "MadeIN" : "Made in Italy",
+      "PriceTag":"540.00"
+    
+    },
+    {
+      "id":1,
+      "image": "/package/CheckProductImage1.png",
+      "name":"Ferragamo Shoe",
+      "rating": "4",
+      "MadeIN" : "Made in Italy",
+      "PriceTag":"540.00"
+    
+    }
+
+  ],
+
+  "deliveryTotal":[
+    {
+      "totalPrice":"1620.00",
+      "taxFees":"Included in price: Taxes and fees",
+      "YouSaved":"YOU SAVED $ 32.21 ON THIS BUY!"
+    }
+  ],
+
+  "deliveryExcelent":[
+
+    {
+      "ratingNum":"4.8 Excellent",
+      "review":"1852 reviews",
+      "rating":5
+    }
+  ],
+
+
+  "ModalData":[
+
+    {
+      "id":1,
+      "image":"/package/ShopCart1.png",
+      "name":"Ferragamo shoe",
+      "madeIN":"Made in Italy",
+      "rank":"#1 Best Seller",
+      "price":"540"
+    },
+
+    {
+      "id":1,
+      "image":"/package/jewwlwrt.png",
+      "name":"Ferragamo shoe",
+      "madeIN":"Made in Italy",
+      "rank":"#1 Best Seller",
+      "price":"540"
+    }
+    
+
+    
+  ],
+
+  "ModalSubtotalData":[
+
+    {
+      "subTotal":"4 items",
+      "subtotalAmmount":"2160.00"
+    }
   ]
-
-
-
 
 
 

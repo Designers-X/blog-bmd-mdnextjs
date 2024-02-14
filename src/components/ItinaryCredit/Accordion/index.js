@@ -88,10 +88,10 @@ const Accordion = () => {
         <div className={styles.Content}>
           <p className={styles.ConfirmMail}>
             <OnlineBankingCustomDropdownBankName></OnlineBankingCustomDropdownBankName>
-
+            {/* 
             <div className={styles.MakePaymentOP}>
               <a href="#">Make Payment</a>
-            </div>
+            </div> */}
           </p>
         </div>
       )}

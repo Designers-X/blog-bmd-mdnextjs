@@ -440,3 +440,42 @@ ul.contactSocialIcons li {
   }
  
 }
+
+.tab.Styles_Letter__u3_7b.active-tab {
+  font-family: "NeueHaasUnicaM" !important;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  /* 70% */
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+}
+
+
+
+.tab.Styles_Letter__u3_7b::after.active-tab {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 10px;
+}
+
+.tab.Styles_Letter__u3_7b.active-tab::after {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+
+}
+
+@media(max-width:510px) {
+  .tab.Styles_Letter__u3_7b.active-tab {
+
+    font-size: 20px;
+
+    text-underline-offset: 10px;
+  }
+}
