@@ -17,6 +17,14 @@ const Cart = () => {
 
       <p>This is third paragraph Three</p>
       <p>This is third paragraph Fourth</p>
+
+      <table>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+      </table>
     </Layout>
   );
 };
