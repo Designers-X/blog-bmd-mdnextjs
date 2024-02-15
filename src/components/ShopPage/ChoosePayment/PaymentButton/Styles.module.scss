@@ -44,9 +44,12 @@
     width: 100%;
     text-align: center;
   }
-  
-  .buttonItinery .buttonBlack a {
+  .buttonItinery .buttonBlack a:hover{
     color: #fff;
+  }
+
+  .buttonItinery .buttonBlack a {
+    color: #fff !important;
   }
   .buttonItinery .buttonWhite a{
     color: #000;

@@ -58,7 +58,7 @@ margin: 0;
     align-items: center;
     border-bottom: 1px solid #d9d9d9;
     // margin: 0 0 20px 0;
-    padding: 0 0 20px 0;
+    padding: 0 0 10px 0;
   }
   .ItemsAll p{
     color: #6B6B6B;
@@ -76,7 +76,7 @@ text-align: right;
 font-family: "NeueHaasUnica" !important ;
 font-size: 12px;
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 line-height: normal;
 margin: 0;
   }
@@ -204,6 +204,8 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin: 0;
+padding: 15px 0;
 }
 
 .viewCart p span{
@@ -235,12 +237,12 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 text-transform: uppercase;
-padding: 10px 0;
+padding: 6px 0;
 }
 
 .viewCart{
-  max-height: 70vh;
-  overflow: auto;
+  // max-height: 70vh;
+  // overflow: auto;
 }
 
 .ModalSet{
@@ -250,6 +252,11 @@ padding: 10px 0;
 .CheckBoxSet{
   display: flex;
   gap: 20px;
+}
+
+.btnBlack a{
+  color: #FFF;
+  
 }
 
 
