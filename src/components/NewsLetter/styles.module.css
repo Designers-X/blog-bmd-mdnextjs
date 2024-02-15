@@ -15,6 +15,7 @@
 .imageContainer {
   height: 100%;
   width: 100%;
+  display: flex;
 }
 
 .desktop_banner {
@@ -31,10 +32,14 @@
   background: #eeeeeed1;
   display: grid;
   /* grid-template-rows: auto 1fr; */
-  padding: 0 5rem;
+  padding: 0 4rem;
   min-height: 345px;
   height: 100%;
   align-content: center;
+  @media (max-width: 1410px) {
+    padding: 0 3rem;
+  }
+
   @media (max-width: 1024px) {
     padding: 0 2rem;
   }
@@ -46,9 +51,13 @@
   line-height: 1.1;
   padding-bottom: 1rem;
   color: var(--bmd-black);
-  font-family: "SaolDisplay", Georgia, Times, serif !important;
-  @media (max-width: 769px) {
-    font-size: 29px;
+  font-family: 'SaolDisplay', Georgia, Times, serif !important;
+  @media (max-width: 1315px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 30px;
   }
 }
 
@@ -61,7 +70,7 @@
   flex-direction: column;
 }
 
-iframe .hs-submit>.actions {
+iframe .hs-submit > .actions {
   text-align: center !important;
 }
 
@@ -75,14 +84,13 @@ iframe .hs-submit>.actions {
 @media (max-width: 500px) {
   .headingContainer {
     font-size: 40px !important;
-
   }
 }
 
 @media screen and (max-width: 768px) {
   .homeGalleryContainer p {
     font-size: 28px;
-    max-width: 275px
+    max-width: 275px;
   }
 
   .styles_grid {
@@ -106,7 +114,6 @@ iframe .hs-submit>.actions {
     position: absolute;
     width: 100%;
   }
-
 }
 
 @media (max-width: 420px) {

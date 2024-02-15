@@ -1,0 +1,333 @@
+@font-face {
+	font-family: "NeueHaasUnica";
+	font-display: swap;
+	src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
+  }
+  
+  @font-face {
+	font-family: "NeueHaasUnicaM";
+	font-display: swap;
+	src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
+  }
+
+
+.container{
+	width: 75%;
+	margin: auto;
+}
+
+
+
+
+.container{
+	width: 75%;
+	margin: auto;
+}
+
+.ShopBanner{
+    text-align: center;
+    background-color: #E8E8E8;
+    padding: 20px 0;
+
+}
+
+.ShopBanner h2{
+    color: #000;
+	font-family: "NeueHaasUnicaM" !important;
+font-size: 40px;
+font-style: normal;
+font-weight: 800;
+line-height: 40px; /* 60% */
+margin: 0 0 0px 0;
+}
+
+.ShopBanner p{
+    font-family: "NeueHaasUnica" !important;
+    color: #000;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 184.615% */
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+}
+
+.keepBackIcon{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:34px 0;
+}
+
+.keepBackIcon p{
+    margin: 0;
+    color: #000;
+    font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-transform: uppercase;
+}
+
+.DebitMain111{
+  width: 70%;
+}
+
+.DebitMain1{
+  // width: 70%;
+margin: 0 0 20px 0;
+  
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  
+background: #FFF;
+box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.DebitMain2{
+  // display: flex;
+  width: 30%;
+}
+
+.DebitMainDiv{
+  display: flex;
+  gap: 20px;
+}
+
+.SideProduct{
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25); 
+  padding:25px 23px ;
+  margin: 0 0 25px 0;
+}
+
+.Quantity{
+  display: flex;
+  justify-content: space-between;
+}
+
+.SideProduct h6{
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+padding: 0 0 0px 0;
+}
+
+.SideProduct .Delivery{
+  color: #9D9D9D;
+  font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-bottom: 1px solid #D9D9D9;
+padding: 0 0 11px 0;
+margin: 0;
+}
+.SideFullDiv{
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #D9D9D9 ;
+  padding: 20px 0;
+}
+.SideImg{
+  width: 30%;
+}
+
+.SideContent{
+  width: 70%;
+}
+
+.SideContent h3{
+  margin: 0;
+  color: #000;
+  font-family: "NeueHaasUnicaM" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 19px; /* 118.75% */
+}
+
+.SideContent p{
+  color: #9D9D9D;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+padding: 0 0 6px 0;
+}
+
+.Quantity select{
+  border: none;
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 175% */
+
+}
+.PriceTag p{
+color: #000;
+text-align: right;
+font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.allTotal{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0px 0;
+}
+
+.allTotal1 h6{
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.allTota2 p{
+  color: #000;
+text-align: right;
+font-family: "NeueHaasUnica" !important;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin: 0;
+}
+
+.TotalPara{
+color: #9D9D9D;
+font-family: "NeueHaasUnica" !important;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0 0 8px 0;
+}
+
+.TotalHead{
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin: 0;
+}
+
+.Exxeclant{
+  color: #000;
+  font-family: "NeueHaasUnicaM" !important;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 10px 0;
+}
+
+.Exreview{
+  color: #9D9D9D;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.SpanStar{
+  display: flex;
+  gap: 4px;
+}
+
+.SpanStar svg{
+  width: 20px;
+  height: 20px;
+}
+
+.StarSvg{
+  // width: 13px;
+  height: 13px;
+  display: flex;
+  gap: 3px;
+  margin: 5px 0 ;
+  
+}
+
+
+
+
+@media(max-width:1024.98px){
+  .container{
+    width:90%;
+      }
+    }
+
+    @media(max-width:991.98px){
+      .SideImg{
+        width: auto;
+      }
+      
+      .SideContent{
+        width: 100%;
+      }
+
+
+      .SideFullDiv{
+        gap: 10px;
+        display: grid;
+    }
+    .SideProduct h6 {
+        font-size: 13px;
+      }
+      .SideProduct .Delivery {
+         font-size: 13px;
+        }
+        .SideFullDiv {    
+          padding: 12px 0;
+      }
+    }
+    
+
+
+    @media(max-width:767.98px){
+      .DebitMain111{
+        width: 100%;
+      }
+      .DebitMain1 {
+        width: 100%;
+        }
+    
+      .DebitMainDiv {
+         display: block;
+        gap: 20px;
+    }
+
+    .SideFullDiv{
+      gap: 10px;
+      display: flex;
+  }
+
+  .DebitMain2 {
+    width: 100%;
+}
+        }

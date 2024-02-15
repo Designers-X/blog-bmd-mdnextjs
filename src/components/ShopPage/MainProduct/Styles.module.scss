@@ -239,6 +239,38 @@ font-weight: 300 !important;
 line-height: 21px; /* 150% */
 }
 
+.cartBox{
+width: 71px;
+height: 68px;
+border-radius: 10px 0px 0px 10px;
+border: 2px solid #000;
+background: #000;
+// float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 50%;
+right: 0%;
+z-index: 1;
+
+}
+
+
+.cartBox h5{
+    color: #fff;
+    position: absolute;
+    top: -24px;
+    left: 25px;
+}
+
+.arrowblack{
+    position: absolute;
+    right: 66px;
+    top: 30%;
+    // display: none;
+  }
+
 @media(max-width:1299.98px){
     .ImgContent {
       
@@ -351,7 +383,38 @@ line-height: 21px; /* 150% */
     }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 450px) {
+   
+
+    .cartBox h5 {
+        color: #fff;
+        position: absolute;
+        top: -16px;
+        left: 17px;
+        font-size: 14px;
+    }
+
+    .svgCart{
+    padding: 3px;
+    position: relative;
+    top: 4px;
+    }
+
+    .arrowblack{
+        position: absolute;
+        right: 46px;
+        top: 14%;
+    }
+
+    .cartBox{
+        width: 50px;
+        height: 46px;
+          top: 43%;
+          
+        }
+
+
+
     .MainProductListAA .HTwoClass {
         
         font-size: 20px;

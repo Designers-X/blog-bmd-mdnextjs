@@ -11,7 +11,8 @@
       "description": "Made in Italy",
       "price": 540,
       "rating": 4.6,
-      "imageUrl": "/package/MainImg1.png"
+      "imageUrl": "/package/MainImg1.png",
+      "detailUrl":"/shop/ferragamo-shoe"
     },
 
   
