@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Styles.module.scss';
 import deliverProduct from '/json/Itinerary.json';
+import Link from 'next/link';
 
 const Modal = ({ isOpen, children }) => {
   const modalStyle = {
@@ -10,11 +11,13 @@ const Modal = ({ isOpen, children }) => {
     right: '90px',
     // left: '50%',
     // transform: 'translate(-50%, -50%)',
-    padding: '20px',
+    padding: '25px',
     background: 'white',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     zIndex: 1000,
+    maxHeight: '70vh',
+    overflow: 'auto',
     // maxWidth: '500px',
   };
 
@@ -24,6 +27,11 @@ const Modal = ({ isOpen, children }) => {
     setQuantity(parseInt(event.target.value, 10));
   };
 
+  const [isChecked, setIsChecked] = useState(true);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
   return (
     <div className={styles.ModalWidth} style={modalStyle}>
       <div className={styles.viewCart}>
@@ -38,7 +46,7 @@ const Modal = ({ isOpen, children }) => {
           <div className={styles.ProductTotal} key={index}>
             <div className={styles.ProductBox}>
               <div className={styles.CheckBoxSet}>
-                <input type="checkbox" />
+                <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange} />
                 <div className={styles.ImageWidhtControl}>
                   <img src={product.image} />
                 </div>
@@ -79,12 +87,12 @@ const Modal = ({ isOpen, children }) => {
         {deliverProduct.ModalSubtotalData.map((product, index) => (
           <p key={index} className={styles.locolo}>
             Subtotal ({product.subTotal}) : <span className={styles.dollor}>$</span>
-            <span> {product.subtotalAmmount}</span>{' '}
+            <span>{product.subtotalAmmount}</span>
           </p>
         ))}
 
         <div className={styles.btnBlack}>
-          <a>Process to Buy</a>
+          <Link href="/shop/cart">Process to Buy</Link>
         </div>
       </div>
 
