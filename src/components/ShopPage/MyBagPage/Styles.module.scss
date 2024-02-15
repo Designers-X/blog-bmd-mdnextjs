@@ -71,22 +71,29 @@ text-transform: uppercase;
 
 .Share{
     display: flex;
-    gap: 14px;
+    gap: 6px;
     align-items: center;
 }
 
 .Share select{
-    height: 21px;
-    width: 70px;
+    // height: 21px;
+    // width: 70px;
     color: #000;
     font-family: "NeueHaasUnica" !important;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
 border: 1px solid #000;
+padding: 0 2px;
 
 background: #FFF;
 line-height: 21px; /* 175% */
+}
+
+.Share label{
+    font-size: 12px;
+    // line
+
 }
 
 .Share .paraControl{
@@ -100,7 +107,7 @@ margin: 0;
 }
 
 .DeleteButton button{
-    padding: 1px 30px;
+    padding: 3px 30px;
     color: #FFF;
     font-family: "NeueHaasUnica" !important;
 font-size: 12px;

@@ -181,20 +181,13 @@
 "madeIN":"Contanzo’s style",
 "price":"540"
 }
-,
-{
-  "id": 5,
-"image":"/package/gladiator12.png",
-"name":"Gladiator Sandal",
-"madeIN":"Contanzo’s style",
-"price":"540"
-}
+
 
   ],
 
   "orderSummary":[
 {
-  "totalOrder":1620.00
+  "totalOrder":2160.00
 }
 
   ],
@@ -271,10 +264,30 @@
     },
 
     {
-      "id":1,
+      "id":2,
       "image":"/package/jewwlwrt.png",
-      "name":"Ferragamo shoe",
-      "madeIN":"Made in Italy",
+      "name":"Jewellery",
+      "madeIN":"Let your style shine",
+      "rank":"#1 Best Seller",
+      "price":"540"
+    }
+    ,
+
+    {
+      "id":3,
+      "image":"/package/galidatio1.png",
+      "name":"Gladiator Sandal",
+      "madeIN":"Contanzo’s style",
+      "rank":"#1 Best Seller",
+      "price":"540"
+    }
+    ,
+
+    {
+      "id":4,
+      "image":"/package/purfum11.png",
+      "name":"Perfume",
+      "madeIN":"Carthusia Fragrance",
       "rank":"#1 Best Seller",
       "price":"540"
     }
