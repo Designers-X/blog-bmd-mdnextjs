@@ -11,8 +11,6 @@ import PackageLists from 'components/packageList';
 import ItinraryPages from 'components/ItineraryPages';
 import Credit from 'components/ItinaryCredit';
 import BookingDetail from 'components/BookingDetail';
-import ShopPage from 'components/ShopPage';
-import SliderTest from 'components/SliderTest';
 
 const Packege = () => {
   const router = useRouter();
@@ -80,22 +78,6 @@ const Packege = () => {
       <Layout>
         <section>
           <BookingDetail />
-        </section>
-      </Layout>
-    );
-  } else if (router.query.package.length == 8) {
-    return (
-      <Layout>
-        <section>
-          <ShopPage />
-        </section>
-      </Layout>
-    );
-  } else if (router.query.package.length == 9) {
-    return (
-      <Layout>
-        <section>
-          <SliderTest />
         </section>
       </Layout>
     );
