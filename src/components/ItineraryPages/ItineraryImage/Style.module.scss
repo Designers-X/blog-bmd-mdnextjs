@@ -1,80 +1,135 @@
-
 .container {
   width: 75%;
   margin: auto;
 }
+
 .MainBannerIti {
   display: flex;
   width: 100%;
+  margin: 30px 0 0 0;
 }
+
 .MainBannerImageConvert {
   margin: auto;
   width: 100%;
+  display: flex;
+  gap: 18px;
 }
+
+.bottom{
+  margin: 0 0 18px 0;
+}
+
 .MainBannerItiControl {
   display: flex;
+  gap: 18px;
+  // margin: 0 0 18px 0;
 }
+
 .MainBannerItiControl.bottom {
-  margin-bottom: 18px;}
-.MainBannerItiImg.Side {
-  margin: 0 18px;
-  height: 200px;
-  display: flex;
-  overflow: hidden;
-  width: 50%;}
-.MainBannerItiImg {
-  width: 50%;
-    display: flex;
-  overflow: hidden;}
-.MainBannerItiImg img {
-  width: 100%;}
-.MainBannerItiWIdth {
-  width: 50%;
-  float: left;}
-.MainBannerImg img {
-  width: 100%;}
-.MainBannerImg img {
-  border-radius: 12px 0px 0px 12px;}
-.MainBannerImg {
-  width: 50%;
-  float: left;
-  height: 418px;
-  overflow: hidden;
-  display: flex;
+  // margin-bottom: 18px;
 }
+
+.MainBannerItiImg.Side {
+  // margin: 0 18px;
+  // height: 200px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.MainBannerItiImg {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.MainBannerItiImg img {
+  width: 100%;
+}
+
+.MainBannerItiWIdth {
+  // width: 50%;
+  width: 100%;
+  float: left;
+}
+
+.MainBannerImg img {
+  width: 100%;
+}
+
+.MainBannerImg img {
+  border-radius: 12px 0px 0px 12px;
+}
+
+.MainBannerImg {
+  width: 86%;
+  // float: left;
+  // height: 418px;
+  overflow: hidden;
+  display: flex;
+  // max-height: 337px;
+}
+
 .borderRaduis {
   border-radius: 0px 12px 12px 0px;
 }
 
-@media (max-width: 1024.98px) {
+@media (max-width: 1199.98px) {
   .MainBannerImg {
-    height: 318px;
+    // height: 318px;
   }
+
   .MainBannerItiImg.Side {
-    height: 150px;
+    // height: 150px;
   }
+
   .container {
     width: 90%;
   }
 }
+
 @media (max-width: 767.98px) {
+  .MainBannerImageConvert {
+   
+    display: block;
+   
+  }
+  .MainBannerImg{
+    max-height: 337px;
+  }
+
+  .MainBannerItiControl {
+    display: flex;
+    gap: unset;
+}
+
   .MainBannerImg img {
     border-radius: 0px 0px 0px 0px;
   }
+
   .MainBannerItiWIdth {
     width: 100%;
     margin: 18px 0 0 0;
   }
+
   .MainBannerImg {
     width: 100%;
   }
+
   .MainBannerItiImg.Side {
     margin: 0 18px 0 0px;
     height: -webkit-fill-available;
   }
+
   .borderRaduis {
-    border-radius: 0px 0px 0px 0px;}}
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .MainBannerImg {
-    height: 170px;
-    border-radius: 0;}}
+    // height: 170px;
+    border-radius: 0;
+  }
+}

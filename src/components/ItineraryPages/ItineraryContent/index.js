@@ -16,8 +16,11 @@ function ItineraryContent() {
                   <div key={index}>
                     <h2>
                       {item.title} {/* Use item.stars to render the stars */}
+                      
                       {Array.from({ length: item.stars }, (_, i) => (
-                        <img key={i} src="/package/GoldenStar.svg" alt="GoldenStar" />
+                      <span>
+                      <img key={i} src="/package/GoldenStar.svg" alt="GoldenStar" /> 
+                      </span>
                       ))}
                     </h2>
                     <p className={Styles.travelP1}>{item.address}</p>
@@ -72,7 +75,7 @@ function ItineraryContent() {
                               </p>
                             </div>
                             <div className={Styles.routeAout}>
-                              <p>San Diego: Coastal Wonders and Cultural Hot Spots</p>
+                              <p>Palm Springs: Hiking, Adventure and Sports Paradise</p>
                             </div>
                           </div>
                         </div>
@@ -91,7 +94,7 @@ function ItineraryContent() {
                               </p>
                             </div>
                             <div className={Styles.routeAout}>
-                              <p>San Diego: Coastal Wonders and Cultural Hot Spots</p>
+                              <p>San Diego, California: Adventures in an Outdoor-Lovers’ Paradise</p>
                             </div>
                           </div>
                           <div className={Styles.routeAa}>
@@ -106,7 +109,7 @@ function ItineraryContent() {
                               </p>
                             </div>
                             <div className={Styles.routeAout}>
-                              <p>San Diego: Coastal Wonders and Cultural Hot Spots</p>
+                              <p>Disneyland Resort in California: A World of Enchantment Awaits</p>
                             </div>
                           </div>
                         </div>

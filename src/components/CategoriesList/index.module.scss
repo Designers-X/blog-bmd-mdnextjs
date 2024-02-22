@@ -1,13 +1,14 @@
 .CategoryListContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 35%);
+  grid-template-columns: repeat(auto-fill, 40%);
   justify-content: center;
-  grid-gap: 1rem;
-  margin: 4rem auto;
+  grid-gap: 40px;
+  // gap: 40px;
+  margin: 40px auto;
   @media (max-width: 1025px) {
       grid-template-columns: repeat(auto-fill, 40%);
   }
-  @media (max-width: 600px) {
+  @media (max-width:767px) {
     grid-template-columns: unset;
   }
   .alignLeft {
@@ -17,13 +18,14 @@
     margin-right: 0;
   }
   .cardContainer {
-    max-width: 90%;
-    padding: 1rem 0;
+    max-width: 100%;
+    padding: 0rem 0;
     @media (max-width: 1025px) {
-        max-width: 95%;
+        max-width: 100%;
     }
     @media (max-width: 600px) {
        margin: auto;
+       max-width: 95%;
     }
     .linkHolder {
       text-decoration: none;
@@ -42,6 +44,9 @@
         display: grid;
         place-content: center;
         border-radius: 50%;
+        @media (max-width:1024px){
+                        bottom: -60%;
+                 }
       }
       .titleHeadHolder {
         padding: 0.5rem 2rem;
@@ -59,14 +64,19 @@
             color: #fff;
             font-size: 15px;
             line-height: 28px;
+            text-transform: capitalize;
             font-family: "NeueHaasUnica", Arial, sans-serif;
-            @media (max-width: 769px) {
-                font-size: 12px;
-                line-height: 14px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+                line-height: 30px;
             }
           }
         }
         .titleHolder {
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;  
+          overflow: hidden;
           color: #fff;
           text-transform: uppercase;
           font-size: 30px;
@@ -80,12 +90,14 @@
               font-size: 22px;
               line-height: 24px;
             }
-            @media (max-width: 769px) {
-                font-size: 16px;
-                line-height: 18px;
+            @media (max-width: 767px) {
+                font-size: 25px;
+                line-height: 30px;
             }
         }
       }
     }
   }
 }
+
+

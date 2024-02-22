@@ -80,7 +80,7 @@ const Footer = () => {
                       </a>
                     </Link>
                   </li>
-                  {/* <li>
+                   <li>
                     <Link href={'https://www.tiktok.com/@brunomdofficial'}>
                       <a>
                         <div
@@ -107,8 +107,8 @@ const Footer = () => {
                         </div>
                       </a>
                     </Link>
-                  </li> */}
-                  {/* <li>
+                  </li> 
+                  <li>
                     <Link href={'https://www.tiktok.com/@brunomdofficial'}>
                       <a>
                         <svg
@@ -125,7 +125,7 @@ const Footer = () => {
                         </svg>
                       </a>
                     </Link>
-                  </li> */}
+                  </li> 
                 </ul>
               </div>
             </div>

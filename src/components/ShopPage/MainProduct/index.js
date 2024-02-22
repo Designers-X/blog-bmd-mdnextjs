@@ -83,7 +83,7 @@ function MainProduct() {
           />
         </svg>
 
-        <h5>00</h5>
+        <h5>04</h5>
       </div>
 
       <div className={Styles.container}>
@@ -145,16 +145,18 @@ function MainProduct() {
                       transform="translate(100, 100) rotate(90deg) "
                     ></path>
                   </svg>
+
+                  
                 </button>
 
                 <div className={Styles.PageNumbers}>
-                  {Array.from({ length: totalPages > 4 ? 3 : totalPages }, (_, index) => (
+                  {Array.from({ length: totalPages > 5 ? 4 : totalPages }, (_, index) => (
                     <button
                       key={index + 1}
                       onClick={() => handlePageChange(index + 1)}
                       className={currentPage === index + 1 ? Styles.ActivePage : null}
                       style={{
-                        backgroundColor: currentPage === index + 1 ? '#10182f' : '#fff',
+                        backgroundColor: currentPage === index + 1 ? '#000' : '#fff',
                         color: currentPage === index + 1 ? '#fff' : '#10182f',
                       }}
                     >
@@ -162,7 +164,7 @@ function MainProduct() {
                     </button>
                   ))}
 
-                  {totalPages > 4 && <span>....</span>}
+                  {totalPages > 5 && <span>....</span>}
 
                   <button
                     onClick={() => handlePageChange(totalPages)}
