@@ -8,7 +8,7 @@ const topSellingProductsData = [
   {
     image: '/package/TopSelling1.png',
     title: 'GLADIATOR SANDAL',
-    description: 'The Famous da Costanzo’s Shop',
+    description: 'The Famouse da Costanzo’s Shop',
   },
   {
     image: '/package/MainImage1.png',

@@ -1,6 +1,6 @@
 .mastHeadContainerAvail {
   position: relative;
-  height: 700px;
+  height: 623px;
   @media (max-width: 1025px) {
     height: 450px;
   }
@@ -10,7 +10,7 @@
   @media (max-width: 500px) {
     height: 600px;
   }
-  .titleHolder {
+  .titleHolder  {
     font-family: "SaolDisplay" !important;
     position: absolute;
     text-transform: uppercase;
@@ -56,11 +56,11 @@
     justify-content: space-around;
     align-items: center;
     // width: 1000px;
-    width: 60%;
+    width: 75%;
     height: 175px;
     padding: 2rem;
     @media (max-width: 1441px) {
-      bottom: 20%;
+      bottom: 18%;
     }
     @media (max-width: 1025px) {
       bottom: 15%;
@@ -108,6 +108,7 @@
     .availabilyButton {
       width: max-content;
       height: auto;
+      font-size: 25px;
       background: #000;
       color: #fff;
       display: grid;
@@ -117,7 +118,7 @@
       font-family: "NeueHaasUnica", Arial, sans-serif;
       position: absolute;
       bottom: -15%;
-      padding: .35rem 1rem;
+      padding: 10px 20px;
       text-decoration: none;
       cursor: pointer;
       &:hover{
@@ -144,16 +145,21 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left: 5px;
+        margin-left: 10px;
         font-size: 16px;
         line-height: 22px;
         .dropDownTitle{
         }
         .dropDownSubTitle{
           color: rgba(156, 156, 156, 1);
+          line-height: 21px;
         }
       }
   
+    }
+    .dropdownContainer img{
+      width: 31px;
+      height: 27px;
     }
     .arrow{
       bottom: -27px;
@@ -169,7 +175,8 @@
     }
     .modalContainer{
       position: absolute;
-      bottom: -245px;
+      // bottom: -245px;
+      top: 137%;
       right: 0;
       width:490px;
       height: max-content;
@@ -218,14 +225,14 @@
 }
 .mastHeadContainer {
   position: relative;
-  .titleHolder {
+  .titleHolder  {
     font-family: "SaolDisplay" !important;
     position: absolute;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 2rem;
     background-color: black;
     color: #fff;
     font-size: 40px;

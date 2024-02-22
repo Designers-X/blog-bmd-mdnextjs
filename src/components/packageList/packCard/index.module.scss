@@ -19,6 +19,7 @@
     display: flex;
     width: 100%;
     gap: 20px;
+    align-items: center;
     // justify-content: space-between;
   }
   @media (max-width: 769px) {
@@ -157,16 +158,16 @@
         color: rgba(157, 157, 157, 1);
         background: rgba(217, 217, 217, 0);
         padding: 4px 6px;
-        border: 1px solid rgba(157, 157, 157, 1);
+        border: 1px solid #9D9D9D;
         margin: 0 0 11px 0;
         border-radius: 2px;
       }
     }
     .termHolder {
-      font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
-      font-size: 13px;
+      font-family: "NeueHaasUnica", "Arial", "sans-serif" !important;
+      font-size: 14px;
       line-height: 18px;
-      color: rgba(34, 34, 34, 1);
+      color: #222222;;
       margin: 0 0 11px 0;
       @media (max-width: 769px) {
         display: none;
@@ -232,6 +233,7 @@
         font-size: 15px;
         line-height: 18px;
         margin: 0 0 11px 0;
+        text-decoration: line-through;
         font-family: "NeueHaasUnicaM", "Arial", "sans-serif" !important;
       }
       .bookNowBox {
