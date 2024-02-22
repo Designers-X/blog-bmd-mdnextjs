@@ -55,7 +55,6 @@ const PriceDropDownMob = () => {
                         transform="translate(100, 100) rotate(90deg) "
                       ></path>
                     </svg>
-                    
                   ) : (
                     <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
                       <path

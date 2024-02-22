@@ -145,8 +145,6 @@ function MainProduct() {
                       transform="translate(100, 100) rotate(90deg) "
                     ></path>
                   </svg>
-
-                  
                 </button>
 
                 <div className={Styles.PageNumbers}>
