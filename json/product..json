@@ -301,6 +301,55 @@
       "price": 540,
       "rating": 4.6,
       "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
+    },
+    {
+      "id": 1,
+      "name": "Ferragamo shoe",
+      "description": "Made in Italy",
+      "price": 540,
+      "rating": 4.6,
+      "imageUrl": "/package/MainImg1.png"
     }
 ],
 
@@ -310,7 +359,7 @@
   {
     "image": "/package/TopSelling1.png",
     "title": "GLADIATOR SANDAL",
-    "description": "The Famous da Costanzo’s Shop"
+    "description": "The Famouse da Costanzo’s Shop"
   },
   {
     "image": "/package/MainImage1.png",
@@ -320,18 +369,18 @@
   {
     "image": "/package/MainImage2.png",
     "title": "Ferragamo shoe",
-    "description": "A Dynasty “Made in Italy"
+    "description": "A Dynastly “Made in Italy”"
   }
 ],
 
 "DetailsArray": [
   { "label": "Primary Guest", "value": "Test" },
-  { "label": "Mobile Number", "value": "98XXXXXXX0" },
   { "label": "Check In", "value": "Fri, 07 Jul 2023" },
-  { "label": "Check Out", "value": "Sat, 08 Jul 2023" },
   { "label": "Check In Time", "value": "12:00 PM" },
-  { "label": "Check Out Time", "value": "11:00 AM" },
   { "label": "Guest", "value": "2 Guest | 1 Room | 1 Night" },
+  { "label": "Mobile Number", "value": "98XXXXXXX0" },
+  { "label": "Check Out", "value": "Sat, 08 Jul 2023" },
+  { "label": "Check Out Time", "value": "11:00 AM" },
   { "label": "Total Payable Amount", "value": "$1150.49" }
 ]
 

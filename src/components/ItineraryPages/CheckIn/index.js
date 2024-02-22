@@ -23,6 +23,7 @@ function CheckIn() {
                 <div className={`${Styles.checkDate} ${Styles.BorderNoneCheckDate}`}>
                   <span>Guest</span>
                   <h6>{data.guestInfo}</h6>
+                  <h5>{data.guestSedule}</h5>
                 </div>
               </div>
               <div className={`${Styles.travel3a} ${Styles.TravHeight}`}>
