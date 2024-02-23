@@ -1,38 +1,39 @@
 .mastHeadContainerAvail {
   position: relative;
-  height: 623px;
+  // height: 700px;
   @media (max-width: 1025px) {
-    height: 450px;
+    // height: 450px;
   }
   @media (max-width: 769px) {
-    height: 900px;
+    // height: 900px;
   }
   @media (max-width: 500px) {
-    height: 600px;
+    // height: 600px;
   }
   .titleHolder  {
     font-family: "SaolDisplay" !important;
     position: absolute;
     text-transform: uppercase;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    right: 0%;
+    transform: translate(-0%, -50%);
     padding: 1.5rem 5rem;
-    background-color: black;
+    // background-color: black;
     color: #fff;
     font-size: 40px;
     line-height: 44px;
     display: grid;
     place-content: center;
     @media (max-width: 1441px) {
-      top: 40%;
+      top: 30%;
     }
     @media (max-width: 1025px) {
       top: 25%;
       font-size: 26px;
     }
     @media (max-width: 769px) {
-      top: 60%;
+      top: 50%;
       font-size: 30px;
       line-height: 34px;
     }
@@ -42,11 +43,14 @@
       font-size: 25px;
       line-height: 28px;
     }
+    @media (max-width: 411px) {
+      padding: 1.5rem 0.5rem;
+    }
   }
   .availabilyContainer {
-    position: absolute;
-    transform: translate(-50%, 15%);
-    bottom: 10%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    // bottom: 10%;
     left: 50%;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -56,26 +60,28 @@
     justify-content: space-around;
     align-items: center;
     // width: 1000px;
-    width: 75%;
+    width: 60%;
     height: 175px;
     padding: 2rem;
     @media (max-width: 1441px) {
-      bottom: 18%;
+      // bottom: 20%;
     }
     @media (max-width: 1025px) {
-      bottom: 15%;
+      bottom: 0%;
       width: 80%;
     }
-    @media (max-width: 769px) {
-      bottom: 8%;
+    @media (max-width: 767px) {
+      height: auto;
+      // bottom: 8%;
+      // position: unset;
     }
     @media (max-width: 500px) {
-      bottom: 20%;
+      // bottom: 20%;
       width: 95%;
       padding: 10px;
     }
     @media (max-width: 321px) {
-      bottom: 35%;
+      // bottom: 35%;
     }
     .formContainer {
       width: 100%;
@@ -86,6 +92,7 @@
         overflow: hidden;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         border: none;
+      
         & > input {
           border: none;
           width: 50%;
@@ -101,10 +108,24 @@
         .dateRangeHolder2 {
         }
         background: rgba(255, 255, 255, 1);
-        width: 450px;
+        // width: 450px;
+        width: 100%;
         height: 60px;
       }
     }
+
+    @media(max-width: 768px){
+      .formContainer {
+        display: grid;
+        gap: 20px;
+      }
+      
+    }
+
+
+
+
+
     .availabilyButton {
       width: max-content;
       height: auto;
@@ -128,9 +149,15 @@
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       }
     }
+
+    .dropdownContainer img{
+      width: 31px;
+      height: 27px;
+    }
     .dropdownContainer{
       background: #fff;
-      width: 500px;
+      // width: 500px;
+      width:100%;
       height: 60px;
       border-radius: 10px;
       border: none;
@@ -141,25 +168,23 @@
       justify-content: start;
       align-items: center;
       padding: 1rem;
+      @media(max-width: 768px){
+        margin-left: 0rem;
+      }
       .dropDownTitleHolder{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left: 10px;
+        margin-left: 5px;
         font-size: 16px;
         line-height: 22px;
         .dropDownTitle{
         }
         .dropDownSubTitle{
           color: rgba(156, 156, 156, 1);
-          line-height: 21px;
         }
       }
   
-    }
-    .dropdownContainer img{
-      width: 31px;
-      height: 27px;
     }
     .arrow{
       bottom: -27px;
@@ -175,8 +200,7 @@
     }
     .modalContainer{
       position: absolute;
-      // bottom: -245px;
-      top: 137%;
+      bottom: -245px;
       right: 0;
       width:490px;
       height: max-content;
@@ -223,6 +247,26 @@
     }
   }
 }
+.titleHolder h3{
+  color: #fff;
+  font-size: 40px;
+  line-height: 44px;
+  background-color: #000;
+  padding: 16px 45px;
+  @media(max-width:1025px){
+    font-size: 30px;
+  }
+  @media(max-width:767px){
+    font-size: 25px;
+    padding: 16px 25px;
+  }
+
+  @media(max-width:500px){
+    font-size: 20px;
+    padding: 16px 10px;
+  }
+}
+
 .mastHeadContainer {
   position: relative;
   .titleHolder  {
@@ -233,7 +277,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1.5rem 2rem;
-    background-color: black;
+    // background-color: black;
     color: #fff;
     font-size: 40px;
     line-height: 44px;
