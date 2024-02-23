@@ -216,8 +216,8 @@
 
     {
       "id":1,
-      "image": "/package/CheckProductImage1.png",
-      "name":"Ferragamo Shoe",
+      "image": "/package/gladiator2.png",
+      "name":"Jewellery",
       "rating": "4",
       "MadeIN" : "Made in Italy",
       "PriceTag":"540.00"
@@ -225,8 +225,8 @@
     },
     {
       "id":1,
-      "image": "/package/CheckProductImage1.png",
-      "name":"Ferragamo Shoe",
+      "image": "/package/gladiator3.png",
+      "name":"Gladiator Sandal",
       "rating": "4",
       "MadeIN" : "Made in Italy",
       "PriceTag":"540.00"

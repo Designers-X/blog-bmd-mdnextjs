@@ -489,6 +489,12 @@ display: flex;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.lastParaWri{
+  font-size: 14px;
+  // margin-top: 15px;
+  padding: 15px 0 15px 37px;
+}
+
 @media(max-width:1199.98px){
   .container {
     width: 90%;

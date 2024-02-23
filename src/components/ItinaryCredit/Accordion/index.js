@@ -95,6 +95,7 @@ const Accordion = () => {
           </p>
         </div>
       )}
+      <p className={styles.lastParaWri}>We will send confirmation of your booking to Test@gmail.com</p>
     </div>
   );
 };

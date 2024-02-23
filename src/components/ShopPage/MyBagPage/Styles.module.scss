@@ -106,8 +106,14 @@ line-height: 21px; /* 175% */
 margin: 0;
 }
 
+.ProductImage img{
+    min-width: 152px;
+    min-width: 134px;
+
+}
+
 .DeleteButton button{
-    padding: 3px 30px;
+    padding: 5px 30px;
     color: #FFF;
     font-family: "NeueHaasUnica" !important;
 font-size: 12px;
@@ -131,6 +137,7 @@ border: none;
 .Quantity{
     display: flex;
     justify-content: space-between;
+    margin: 15px 0 0 0;
 }
 
 .ProductContent h3{
