@@ -241,3 +241,11 @@ ul.contactSocialIcons {
     width: 50%;
   }
 }
+
+
+@media(max-width:600px){
+  ul.contactSocialIcons {
+    position: relative;
+    top: -16px;
+  }
+}

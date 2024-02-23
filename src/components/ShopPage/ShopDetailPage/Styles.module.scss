@@ -95,7 +95,7 @@
   font-size: 35px;
   font-style: normal;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 30px;
   /* 60% */
   margin: 0 0 20px 0;
 }
@@ -613,6 +613,8 @@
 }
 
 @media(max-width:767.98px) {
+  .SecondParent h3 {
+    font-size: 25px;}
 
   .FlexCode {
     display: block;
