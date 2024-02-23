@@ -9,6 +9,9 @@
     gap: 15px;
     margin: 40px 0 0px 0;
     grid-template-columns: repeat(auto-fill, 250px);
+    @media (max-width: 1000px) {
+      justify-content: center;
+    }
     .imgHolder {
       width: 250px;
       height: 250px;
@@ -43,4 +46,11 @@
   font-size: 18px;
   font-weight: 300;
   margin: 20px 0 0 0;
+}
+
+@media(max-width:767px){
+  .packageDetailContainer h2{
+    font-size: 30px;
+      margin: 0px 0 0 0;
+  }
 }
