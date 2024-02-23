@@ -61,8 +61,14 @@
       }
     }
     .NOBorder h2 {
-      padding: 0 0 10px 0 !important;
-    }
+      padding:  0 0 10px 0;
+    
+    @media(max-width:1024px){
+        
+          padding:  15px 0 10px 0;
+        }
+      }
+      
     .PackFlex .NOBorder {
       border-top: 0px solid #e6e6e6 !important;
     }

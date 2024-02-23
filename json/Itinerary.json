@@ -118,7 +118,7 @@
     {
       "id": 2,
       "image" : "/package/RewivMen2.png",
-      "date": "yesterday",
+      "date": "20/12/2023",
       "name": "Carminia  ",
       "rating":4,
       "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
@@ -129,7 +129,7 @@
     {
       "id": 3,
       "image" : "/package/RewivMen3.png",
-      "date": "yesterday",
+      "date": "18/12/2023",
       "name": "Rohit Sharma  ",
       "rating":4,
       "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
@@ -137,7 +137,9 @@
       "dislike": 0
       
     }
+    
   ],
+
 
   "cardTabData" :[
 {

@@ -25,7 +25,7 @@
 
 .ShopBanner {
   text-align: center;
-  background-color: #E8E8E8;
+  background-image: linear-gradient(to right, rgba(232,232,232,100), rgba(237,237,245,100));
   padding: 20px 0;
 
 }
@@ -419,7 +419,7 @@
 
 .tabsInner h3 span {
   color: #999;
-
+  font-family: "NeueHaasUnica"!important;
   font-size: 12px;
   font-weight: 400;
 }
