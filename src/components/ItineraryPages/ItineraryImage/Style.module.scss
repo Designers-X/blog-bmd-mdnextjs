@@ -132,4 +132,14 @@
     // height: 170px;
     border-radius: 0;
   }
+
+
 }
+
+@media (max-width: 420.98px) {
+  .MainBannerItiControl {
+    display: grid;
+    gap: 20px;
+}
+}
+

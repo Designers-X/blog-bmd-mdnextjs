@@ -21,7 +21,11 @@ const MastHead = ({ source, v2 = false }) => {
       <div className={styles.mastHeadContainerAvail}>
         <img src={source?.desk?.src} alt={source?.desk?.alt || '...'} className={styles.MastHeadDeskImg} />
         <img src={source?.mob?.src} alt={source?.mob?.alt || '...'} className={styles.MastHeadMobImg} />
-        {source?.title && <div className={styles.titleHolder}>{source.title}</div>}
+        {source?.title && (
+          <div className={styles.titleHolder}>
+            <h3>{source.title}</h3>
+          </div>
+        )}
         {source.avail && (
           <div className={styles.availabilyContainer}>
             <div className={styles.formContainer}>
@@ -29,12 +33,12 @@ const MastHead = ({ source, v2 = false }) => {
                 <input id="date1" type="date" />
                 <label for="date1" className={styles.dateRangeHolder1}>
                   <img src="/package/calender.png" width={35} height={35} />
-                  07 Jul 2023 Friday
+                  {/* 07 Jul 2023 Friday */}
                 </label>
                 <input id="date2" type="date" className={styles.inputHolder} />
                 <label for="date2" className={styles.dateRangeHolder2}>
                   <img src="/package/calender.png" width={35} height={35} />
-                  07 Jul 2023 Friday
+                  {/* 07 Jul 2023 Friday */}
                 </label>
               </div>
               <div className={styles.dropdownContainer} onClick={() => setModal(!modal)}>
@@ -164,7 +168,11 @@ const MastHead = ({ source, v2 = false }) => {
       <div className={styles.mastHeadContainer}>
         <img src={source?.desk?.src} alt={source?.desk?.alt || '...'} className={styles.MastHeadDeskImg} />
         <img src={source?.mob?.src} alt={source?.mob?.alt || '...'} className={styles.MastHeadMobImg} />
-        {source?.title && <div className={styles.titleHolder}>{source.title}</div>}
+        {source?.title && (
+          <div className={styles.titleHolder}>
+            <h3>{source.title}</h3>
+          </div>
+        )}
       </div>
     );
   }
