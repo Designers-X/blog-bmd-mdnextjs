@@ -140,7 +140,8 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-padding:9px 22px;
+padding:0px 22px;
+height: 48px;
 }
 
 .SearchBarA{
@@ -192,15 +193,8 @@ padding:9px 22px;
 
 @media (max-width: 1399.98px) {
 	.SearchBarC button {
-		border-radius: 12px;
-		background: #000;
-		color: #FFF;
-		font-family: "NeueHaasUnica" !important;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		padding: 7px 15px;
+		font-size: 15px;
+			padding: 7px 15px;
 	}
 
 }
@@ -230,7 +224,8 @@ padding:9px 22px;
 	.SearchBarC button {
 		border-radius: 10px;
 			font-size: 12px;
-			padding: 6px 10px;
+			height: 40px;
+			padding: 0px 16px;
 	}
 
 	.dropdownContainer {
