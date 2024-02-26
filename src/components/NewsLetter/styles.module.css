@@ -33,7 +33,7 @@
   background: #eeeeeed1;
   display: grid;
   /* grid-template-rows: auto 1fr; */
-  padding: 29px 4rem;
+  padding: 59px 4rem;
   min-height: 345px;
   height: 100%;
   align-content: center;
@@ -47,7 +47,7 @@
 }
 
 .headingContainer {
-  font-size: 52px;
+  font-size: 35px;
   font-weight: 400;
   line-height: 1.1;
   padding-bottom: 1rem;

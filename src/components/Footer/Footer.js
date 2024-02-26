@@ -44,7 +44,7 @@ const Footer = () => {
               </div>
               <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 p-0">
                 <ul className={styles.contactSocialIcons}>
-                  {/* <li>
+                  <li>
                     <Link href={'https://www.facebook.com/BrunoMDofficial/'}>
                       <a>
                         <svg
@@ -61,7 +61,7 @@ const Footer = () => {
                         </svg>
                       </a>
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link href={'https://www.instagram.com/brunomdofficial/'} aria-label="instagramLink">
                       <a href={'https://www.instagram.com/brunomdofficial/'} aria-label="instagramLink">
@@ -108,7 +108,7 @@ const Footer = () => {
                       </a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href={'https://www.tiktok.com/@brunomdofficial'}>
                       <a>
                         <svg
@@ -125,7 +125,7 @@ const Footer = () => {
                         </svg>
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

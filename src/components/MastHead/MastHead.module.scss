@@ -47,6 +47,10 @@
       top: 25%;
       padding: 1.5rem 0.5rem;
     }
+    @media (max-width: 325px) {
+      top: 17%;
+      padding: 1rem 0.5rem;
+    }
   }
   .availabilyContainer {
     position: relative;
@@ -61,11 +65,14 @@
     justify-content: space-around;
     align-items: center;
     // width: 1000px;
-    width: 60%;
+    width: 75%;
     height: 175px;
     padding: 2rem;
     @media (max-width: 1441px) {
       // bottom: 20%;
+    }
+    @media (max-width: 1210.98px) {
+      width: 90%;
     }
     @media (max-width: 1025px) {
       bottom: 0%;
@@ -78,7 +85,7 @@
     }
     @media (max-width: 500px) {
       // bottom: 20%;
-      width: 95%;
+      width: 90%;
       padding: 41px 30px;
     }
     @media (max-width: 321px) {
@@ -96,6 +103,11 @@
         display: flex;
         align-items: center;
         height: 60px;
+        @media(max-width:420px){
+          display: grid;
+          height: auto;
+          padding: 10px ;
+        }
       
         & > input {
           border: none;
@@ -121,16 +133,17 @@
       }
     }
 
-    // .dateRangeContainer{
-    //   display: flex;
-    //   justify-content: space-between;
-    // }
+    .dateRangeContainer{
+      display: flex;
+      justify-content: space-between;
+    }
 
-    // .dateRangeContainer span{
-    //   border-right: 1px solid #9C9C9C;
-    //   height: 30px;
-    //   width: 1px;
-    // }
+    .dateRangeContainer span{
+      border-right: 1px solid #9C9C9C;
+      height: 30px;
+      width: 1px;
+      
+    }
 
     input::-webkit-calendar-picker-indicator {
       background-image: url(../../../public//package/calender.png);
@@ -214,7 +227,7 @@
       height: 60px;
       border-radius: 10px;
       border: none;
-      overflow: hidden;
+      // overflow: hidden;
       margin-left: 2rem;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       display: flex;
@@ -242,9 +255,9 @@
   
     }
     .arrow{
-      bottom: 29px;
+      bottom: -31px;
       position: absolute;
-      right: 45%;
+      left: 32px;
       transform: rotate(-90deg);
       z-index: 1;
       background:unset;
@@ -255,8 +268,8 @@
     }
      .modalContainer{
       position: absolute;
-      bottom: -187px;
-      right: 19%;
+      bottom: -246px;
+      left: 0%;
       width:270px;
       height: max-content;
       background: #fff;
@@ -277,10 +290,14 @@
         border-bottom: 1px solid #ccc;
         .rowTitle{
           font-size: 16px;
+        font-family: "NeueHaasUnica", Arial, sans-serif;
+
         }
         .rowDesc{
           font-size: 14px;
           color: rgba(156, 156, 156, 1);
+        font-family: "NeueHaasUnica", Arial, sans-serif;
+
         }
       }
       .selectorHolder{
