@@ -6,6 +6,26 @@ const MastHead = ({ source, v2 = false }) => {
   const [room, setRoom] = useState(1);
   const [adults, setAdult] = useState(2);
   const [children, setChildren] = useState(0);
+  const [selectedDay, setSelectedDay] = useState('');
+  const [selectedDay1, setSelectedDay1] = useState('');
+  const handleDateChange = (event) => {
+    const selectedDate = event.target.value;
+    const dateObject = new Date(selectedDate);
+    const day = dateObject.getDay();
+    const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const selectedDay = dayNames[day];
+    setSelectedDay(selectedDay);
+  };
+
+  const handleDateChange1 = (event) => {
+    const selectedDate1 = event.target.value;
+    const dateObject1 = new Date(selectedDate1);
+    const day1 = dateObject1.getDay();
+    const dayNames1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const selectedDay1 = dayNames1[day1];
+    setSelectedDay1(selectedDay1);
+  };
+
   useEffect(() => {
     // document.getElementById('button1').addEventListener('click', function() {
     //     document.getElementById('date1').show();
@@ -14,6 +34,12 @@ const MastHead = ({ source, v2 = false }) => {
     //     orientation: "top right",
     //     showOnFocus: "false"
     // });
+    const dateObject1 = new Date();
+    const day1 = dateObject1.getDay();
+    const dayNames1 = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const selectedDay1 = dayNames1[day1];
+    setSelectedDay1(selectedDay1);
+    setSelectedDay(selectedDay1);
   }, []);
   if (!source) return null;
   if (v2) {
@@ -30,16 +56,20 @@ const MastHead = ({ source, v2 = false }) => {
           <div className={styles.availabilyContainer}>
             <div className={styles.formContainer}>
               <div className={styles.dateRangeContainer}>
-                <input id="date1" type="date" />
-                <label for="date1" className={styles.dateRangeHolder1}>
-                  <img src="/package/calender.png" width={35} height={35} />
-                  {/* 07 Jul 2023 Friday */}
-                </label>
-                <input id="date2" type="date" className={styles.inputHolder} />
-                <label for="date2" className={styles.dateRangeHolder2}>
-                  <img src="/package/calender.png" width={35} height={35} />
-                  {/* 07 Jul 2023 Friday */}
-                </label>
+                {/* <input id="date1" type="date" onChange={handleDateChange}/> */}
+
+                <div className={styles.dateRangeInput}>
+                  <input type="date" onChange={handleDateChange} />
+                  <br />
+                  <p> {selectedDay}</p>
+                </div>
+
+                <div className={styles.dateRangeInput}>
+                  <input type="date" onChange={handleDateChange1} /> <br />
+                  <p> {selectedDay1}</p>
+                </div>
+
+                {/* <input id="date2" type="date" className={styles.inputHolder} /> */}
               </div>
               <div className={styles.dropdownContainer} onClick={() => setModal(!modal)}>
                 <img src="/package/Group.png" width={35} height={35} />

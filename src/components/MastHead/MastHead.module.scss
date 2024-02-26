@@ -87,18 +87,24 @@
     .formContainer {
       width: 100%;
       display: flex;
-      position: relative;
+      // position: relative;
       .dateRangeContainer {
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         border: none;
+        display: flex;
+        align-items: center;
+        height: 60px;
       
         & > input {
           border: none;
           width: 50%;
-          height: 100%;
-          padding: 10px;
+          // height: 100%;
+          padding: 0 10px;
+          flex-direction: row-reverse;
+          font-size: 16px;
+
         }
         & > label{
           display: none;
@@ -111,9 +117,52 @@
         background: rgba(255, 255, 255, 1);
         // width: 450px;
         width: 100%;
-        height: 60px;
+        // height: 60px;
       }
     }
+
+    // .dateRangeContainer{
+    //   display: flex;
+    //   justify-content: space-between;
+    // }
+
+    // .dateRangeContainer span{
+    //   border-right: 1px solid #9C9C9C;
+    //   height: 30px;
+    //   width: 1px;
+    // }
+
+    input::-webkit-calendar-picker-indicator {
+      background-image: url(../../../public//package/calender.png);
+      width: 28px;
+      height: 28px;
+      position: relative;
+      top: 10px;
+      margin: 0 5px 0 0;
+    
+    
+    }
+
+
+
+    .dateRangeInput input{
+      padding: 0 10px;
+      flex-direction: row-reverse;
+      border: none;
+      font-size: 16px;
+      font-family: "NeueHaasUnica", Arial, sans-serif !important;
+      outline: none;
+    }
+
+    .dateRangeInput p{
+      font-size: 14px;
+      font-family: "NeueHaasUnica", Arial, sans-serif !important;
+      color: #9C9C9C;
+  
+      line-height: 15px;
+      margin: -10px 0 0 47px !important;    
+    }
+
 
     @media(max-width: 768px){
       .formContainer {
@@ -172,6 +221,7 @@
       justify-content: start;
       align-items: center;
       padding: 1rem;
+      position: relative !important;
       @media(max-width: 768px){
         margin-left: 0rem;
       }
@@ -186,12 +236,13 @@
         }
         .dropDownSubTitle{
           color: rgba(156, 156, 156, 1);
+          line-height: 13px;
         }
       }
   
     }
     .arrow{
-      bottom: -27px;
+      bottom: 29px;
       position: absolute;
       right: 45%;
       transform: rotate(-90deg);
@@ -202,16 +253,19 @@
         // box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       }
     }
-    .modalContainer{
+     .modalContainer{
       position: absolute;
-      bottom: -245px;
-      right: 0;
-      width:490px;
+      bottom: -187px;
+      right: 19%;
+      width:270px;
       height: max-content;
       background: #fff;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       z-index: 1;
+      @media (max-width: 767px) {
+        right: 0%;
+      }
       @media (max-width: 500px) {
         width:100%;
       }
