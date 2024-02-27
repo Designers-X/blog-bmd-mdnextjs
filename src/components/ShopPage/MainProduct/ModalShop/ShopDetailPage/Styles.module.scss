@@ -474,6 +474,7 @@
   display: flex;
   gap: 10px;
   margin: 0px 0;
+  color: #999999;
 }
 
 .SpanSvgCon{
@@ -551,6 +552,11 @@
   line-height: 40px;
   /* 222.222% */
 }
+.ratingNumber span{
+  display: flex;
+  gap: 10px;
+}
+
 
 .ratingSvg {
   display: flex;
