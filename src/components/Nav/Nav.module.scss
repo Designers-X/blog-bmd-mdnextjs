@@ -306,9 +306,10 @@
   color: #444;
 }
 .sidebarcontainer {
+  max-width: 75rem;
   // width: 75rem;
   margin: auto;
-  width: 100%;
+  // width: 100%;
   @media (max-width: 1025px) {
       width: 100%;
       margin: auto;
@@ -475,8 +476,11 @@
 
 @media (max-width: 1350px) {
   .topnav {
-   
-      gap: 20px;
+       gap: 20px;
+      border-bottom: thin solid #F5F5F5;
+      border-top: thin solid #F5F5F5;
+      padding: 0;
+      margin: 6px 0 0 0;
     
   }
   }
@@ -490,13 +494,13 @@
     
     position: absolute;
     right: 12px;
-    top: 8px;
+    top: 15px;
 }
 .MobileScroll {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  margin: 10px 0;
+  justify-content: space-between;
+  margin: 5px 0;
 }
 }
 
@@ -533,9 +537,9 @@
   
 }
 .MobileScroll{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+    // width: 100%;
+    // display: flex;
+    // justify-content: space-evenly;
 }
 
 .nav {
