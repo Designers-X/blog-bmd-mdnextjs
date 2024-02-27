@@ -196,12 +196,10 @@
 .SizeRadio input[type="radio"] {
   padding: 0;
   border: 5px solid #000000;
-  width: 100%;
-  // display: flex;
-  align-items: center;
+  visibility: hidden;
+  
+  // margin-right: 16px;
 }
-
-
 
 .SizeRadio input[type="radio"]:checked {
   border: 8px solid #003b5f;
@@ -235,7 +233,7 @@
   width: 66px;
   height: 34px;
   // border-radius: 15px;
-  background-color: #ffff;
+  // background-color: #ffff;
   ;
 
   content: "";
