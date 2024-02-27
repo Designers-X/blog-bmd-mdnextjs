@@ -13,7 +13,7 @@
   .titleHolder  {
     font-family: "SaolDisplay" !important;
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 50%;
     left: 0%;
     right: 0%;
@@ -246,10 +246,13 @@
         font-size: 16px;
         line-height: 22px;
         .dropDownTitle{
+          font-size: 16px;
+          line-height: 21px;
         }
         .dropDownSubTitle{
           color: rgba(156, 156, 156, 1);
           line-height: 13px;
+          font-size: 14px;
         }
       }
   
@@ -268,7 +271,7 @@
     }
      .modalContainer{
       position: absolute;
-      bottom: -246px;
+      bottom: -233px;
       left: 0%;
       width:270px;
       height: max-content;
@@ -288,6 +291,8 @@
         align-content: center;
         padding: .5rem 1rem;
         border-bottom: 1px solid #ccc;
+        align-items: center;
+        background-color: #fff;
         .rowTitle{
           font-size: 16px;
         font-family: "NeueHaasUnica", Arial, sans-serif;
@@ -339,6 +344,10 @@
   @media(max-width:500px){
     font-size: 20px;
     padding: 16px 10px;
+  }
+  @media(max-width:400px){
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }
 

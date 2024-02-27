@@ -17,7 +17,7 @@ function ItineraryContent() {
                     <h2>
                       {item.title} {/* Use item.stars to render the stars */}
                       {Array.from({ length: item.stars }, (_, i) => (
-                        <span key={i}>
+                        <span className={Styles.TravSvg} key={i}>
                           <img key={i} src="/package/GoldenStar.svg" alt="GoldenStar" />
                         </span>
                       ))}
