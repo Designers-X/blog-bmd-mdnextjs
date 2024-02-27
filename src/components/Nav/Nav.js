@@ -44,8 +44,8 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles.sidebarcontainer}>
         <Section className={styles.navSection}>
-          <Leftsidebar />
           <div className={styles.navName}>
+            <Leftsidebar />
             <Link href="/" aria-label="themditerraneanlifeIcon">
               <a aria-label="themditerraneanlifeIcon">
                 <img src="/logo-black-v2.png" width={180} height={'auto'} alt="themditerraneanlifeIcon" />

@@ -308,6 +308,7 @@
 .sidebarcontainer {
   // width: 75rem;
   margin: auto;
+  width: 100%;
   @media (max-width: 1025px) {
       width: 100%;
       margin: auto;
@@ -320,6 +321,8 @@
   display: flex;
     align-items: center;
     gap: 50px;
+    justify-content: space-between;
+    padding: 13px 0 0 0;
   
 }
 
@@ -404,8 +407,8 @@
 
 // 22-05-2023 Add New Csss
 .topnavright {
-  float: right;
-  margin: 10px auto;
+  // float: right;
+  // margin: 10px auto;
   
 }
 .topnavright a{
