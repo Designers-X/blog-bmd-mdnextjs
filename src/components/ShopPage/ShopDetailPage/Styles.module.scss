@@ -188,9 +188,9 @@
 
 .SizeRadio input[type="radio"],
 .SizeRadio input[type="radio"]:checked {
-  width: 25px;
+  width: 0px;
   height: 25px;
-  top: 30%;
+  // top: 30%;
 }
 
 .SizeRadio input[type="radio"] {
