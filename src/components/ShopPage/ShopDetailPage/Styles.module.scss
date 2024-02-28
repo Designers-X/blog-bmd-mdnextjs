@@ -415,7 +415,12 @@
   /* 222.222% */
   margin: 0;
   display: flex;
-  // align-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingSvg{
+  display: flex;
   gap: 10px;
 }
 
@@ -448,6 +453,10 @@
   font-weight: 400;
   line-height: 24px;
   /* 200% */
+}
+
+.ReplyStatus p span{
+  color: #999999;
 }
 
 
@@ -549,7 +558,7 @@
   font-family: "NeueHaasUnica" !important;
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 40px;
   /* 222.222% */
 }

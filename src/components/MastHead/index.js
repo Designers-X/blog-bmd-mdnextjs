@@ -104,7 +104,7 @@ const MastHead = ({ source, v2 = false }) => {
                       <div className={styles.row}>
                         <div>
                           <div className={styles.rowTitle}>Room</div>
-                          <div className={styles.rowDesc}>&nbsp;</div>
+                          {/* <div className={styles.rowDesc}>&nbsp;</div> */}
                         </div>{' '}
                         <div className={styles.selectorHolder}>
                           <span
