@@ -122,15 +122,27 @@
   text-align: right;
   font-size: 14px;
 }
-@media (max-width: 1199.98px) {
-  .ExecllentTravel {
-    display: block;
+@media (max-width: 1430.98px) {
+   .ExecllentTravel span {
+    // margin: 0 4px 5px 0;
   }
-  .ExecllentTravel span {
-    margin: 0 4px 5px 0;
+  .ExecllentTravel {
+    display: grid;
+    gap: 10px;
   }
 }
+
+@media (max-width: 1199.98px) {
+  // .ExecllentTravel {
+  //   display: block;
+  // }
+ 
+}
 @media (max-width: 1024.98px) {
+  .ExecllentTravel {
+    display: flex;
+    gap: 10px;
+  }
 
   .TravHeight {
     margin: 0px 0 0 0;

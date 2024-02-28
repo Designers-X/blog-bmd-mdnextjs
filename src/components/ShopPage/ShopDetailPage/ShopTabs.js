@@ -94,7 +94,7 @@ function ShopTabs() {
                   <div key={index} className={Styles.TabsTwo}>
                     <div className={Styles.ratingGoal}>
                       <span className={Styles.ratingNumber}> {product.ratingNum}</span>
-                      <span>
+                      <span className={Styles.ratingSvg}>
                         {Array.from({ length: Math.floor(product.rating) }).map((_, index) => (
                           <svg
                             key={index}

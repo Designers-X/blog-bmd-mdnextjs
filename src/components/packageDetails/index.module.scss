@@ -40,7 +40,7 @@
 .packageDetailContainer h2{
   font-size: 36px;
   font-weight: 600;
-  margin: 58px 0 0 0;
+  margin: 8px 0 0 0;
 }
 .packageDetailContainer p{
   font-size: 18px;
@@ -52,5 +52,12 @@
   .packageDetailContainer h2{
     font-size: 30px;
       margin: 0px 0 0 0;
+  }
+}
+
+@media(max-width:500px){
+  .packageDetailContainer h2{
+    font-size: 25px;
+      margin: -30px 0 0 0;
   }
 }

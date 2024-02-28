@@ -21,7 +21,7 @@
     justify-content: space-between;
   }
   .travel2a img {
-    margin: 0 3px;
+    // margin: 0 3px;
   }
   .travel2 {
     width: 75%;
@@ -115,6 +115,13 @@
     // justify-content: center;
    
   }
+
+// .TravSvg{
+//   display: flex;
+//   gap: 5px;
+//   margin-left: 10px;
+// }
+
   .routeAin .RoutSpan {
     color: #fff;
         font-size: 15px;
@@ -126,7 +133,7 @@
     justify-content: center;
   }
   .routeAin {
-    width: 150px;
+    // width: 150px;
   }
   .routeAin p::before, .routeAin p::after{
     position: absolute;
@@ -160,6 +167,7 @@
     line-height: 17px;
     position: relative;
     text-align: center;
+    width: 85px;
     display: flex;
     justify-content: center;
   }
@@ -168,7 +176,7 @@
   }
   @media (max-width: 1299.98px) {
     .routeAin p::before {
-        top: 55px;
+        // top: 55px;
       }
     .route1 .routeAa {
       margin: 35px 0 36px 0;
@@ -213,6 +221,7 @@
         width: 50%;
         padding: 1px 0 0 0;
         border-left: 0px solid #d9d9d9;
+        margin: -39px 0 0 0;
       }
     .travel2a {
       padding: 17px 17px 62px 17px;
