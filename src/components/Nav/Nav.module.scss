@@ -297,7 +297,7 @@
   cursor: pointer;
   background-color: #fff;
   color: #000;
-  padding: 16px 15px 0;
+  padding: 5px 8px 0 1px;
   border: none;
   float: left;
 }
@@ -539,8 +539,8 @@
   .topnavright {
     
     position: absolute;
-    right: 52px;
-    top: 8px;
+    right: 34px;
+    top: 14px;
 }
 }
 
@@ -553,8 +553,8 @@
  .topnavright {
     
     position: absolute;
-    right: 12px;
-    top: 8px;
+    right: 25px;
+    top: 14px;
 }
 .navName {
  
@@ -562,8 +562,8 @@
   
 }
 .openbtn {
-  margin: 0.4rem 0;
-  padding: 0.5rem 0.625rem 0.5rem 0.625rem;
+  // margin: 0.4rem 0;
+
  
 }
 .topnavright a {
