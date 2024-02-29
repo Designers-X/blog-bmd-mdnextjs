@@ -64,6 +64,8 @@ const MastHead = ({ source, v2 = false }) => {
                   <p> {selectedDay}</p>
                 </div>
 
+                <span></span>
+
                 <div className={styles.dateRangeInput}>
                   <input type="date" onChange={handleDateChange1} /> <br />
                   <p> {selectedDay1}</p>
