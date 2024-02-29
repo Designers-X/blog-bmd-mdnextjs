@@ -76,7 +76,7 @@
     }
     @media (max-width: 1025px) {
       bottom: 0%;
-      width: 80%;
+      width: 90%;
     }
     @media (max-width: 767px) {
       height: auto;
@@ -235,8 +235,14 @@
       align-items: center;
       padding: 1rem;
       position: relative !important;
+      @media(max-width: 880px){
+        // margin-left: 0rem;
+        width: 75%;
+      }
       @media(max-width: 768px){
         margin-left: 0rem;
+      width:100%;
+
       }
       .dropDownTitleHolder{
         display: flex;
