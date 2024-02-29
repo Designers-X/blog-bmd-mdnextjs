@@ -257,11 +257,11 @@
   width: 66px;
 }
 
-.ChangeSize {
-  position: absolute;
-  left: 19px;
-    top: 6px;
-}
+// .ChangeSize {
+//   position: absolute;
+//   left: 19px;
+//     top: 6px;
+// }
 
 .SizeRadio input[type="radio"]:checked+span {
   color: #fff;
@@ -708,4 +708,23 @@
     width: 45px;
     height: 45px;
   }
+}
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  /* Safari and Chrome */
+  .ChangeSize {
+    position: absolute;
+    left: 19px;
+    top: 6px;
+  }
+
+  /* Safari only override */
+  .ChangeSize::i-block-chrome {
+    position: absolute;
+    left: 24px;
+    top: 8px;
+  } 
 }
