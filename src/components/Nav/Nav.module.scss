@@ -597,10 +597,30 @@
   }
 }
 @media (max-width: 600px){
+  .topnavright {
+        right: 15px;
+    }
+
   .hide{
     display: none;
   }
+
+  .nav {
+    padding: 0 1rem;
 }
+}
+@media (max-width: 480.98px) {
+  .topnav{
+    // margin: 19px 0 0 0;
+
+  }
+
+  .navName a {
+    padding: 0.5em;
+    margin-left: -0.5em;
+}
+}
+
 @media (max-width: 350px){
   .topnavright a {
     padding: 0px 4px;
