@@ -518,3 +518,21 @@
     object-fit: unset;
   }
 }
+
+
+
+@supports (-webkit-touch-callout: none) {
+  .dateRangeInput input::-webkit-calendar-picker-indicator {
+    background-image: url(../../../public//package/calender.png);
+    position: relative;
+    // display: none;
+    width: 28px;
+    height: 28px;
+    top: 10px;
+    margin: 0 5px 0 0;
+  } 
+
+  .dateRangeInput input{
+    flex-direction: row-reverse;
+  }
+}

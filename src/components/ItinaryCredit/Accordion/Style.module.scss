@@ -196,6 +196,8 @@ margin: 0 0 20px 0;
   height: 15px;
   border: 8px solid #8C8C8C;
   background-color: transparent;
+  visibility: hidden;
+
 }
 
 
@@ -284,12 +286,14 @@ display: flex;
   font-weight: 500;
 }
 
-
+.title input{
+position: relative;
+}
 
 .title input[type="radio"], .title input[type="radio"]:checked{
   width: 25px;
   height: 25px;
-  top: 30%;
+  // top: 0%;
   visibility: hidden;
 }
 
@@ -688,3 +692,6 @@ text-align: center;
   width: 10px;
 }
 }
+
+
+
