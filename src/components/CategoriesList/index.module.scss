@@ -18,6 +18,7 @@
     margin-right: 0;
   }
   .cardContainer {
+    position: relative;
     max-width: 100%;
     padding: 0rem 0;
     @media (max-width: 1025px) {
@@ -29,16 +30,19 @@
     }
     .linkHolder {
       text-decoration: none;
-      position: relative;
       .imgHolder {
+
+
         width: 100%;
         height: auto;
       }
       .linkIconHolder {
         background: #fff;
         position: absolute;
-        bottom: -65%;
-        right: 5%;
+        bottom: 22px;
+        right: 33px;
+        // bottom: -65%;
+        // right: 5%;
         width: 35px;
         height: 35px;
         display: grid;
