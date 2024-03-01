@@ -80,6 +80,14 @@ const MastHead = ({ source, v2 = false }) => {
                     {adults} adults{children > 0 && ', ' + children + ' Childrens'}
                   </div>
                   <div className={styles.dropDownSubTitle}>{room} rooms</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9" viewBox="0 0 17 9" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M14.6366 8.73696L8.50755 2.49024L2.34466 8.73696C1.53197 9.58111 0.143622 8.1967 0.990173 7.35255L7.93189 0.22792C8.23665 -0.0759745 8.74458 -0.0759745 9.01548 0.22792L16.0249 7.35255C16.8376 8.19671 15.4493 9.58111 14.6366 8.73696Z"
+                      fill="#9C9C9C"
+                    />
+                  </svg>
                 </div>
 
                 {modal && (
