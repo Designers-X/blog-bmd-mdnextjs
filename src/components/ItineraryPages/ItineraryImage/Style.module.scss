@@ -119,11 +119,14 @@
 
   .MainBannerItiImg.Side {
     margin: 0 18px 0 0px;
-    height: -webkit-fill-available;
+    max-height: 159px;
+    max-width: 272px;
   }
 
   .borderRaduis {
     border-radius: 0px 0px 0px 0px;
+    max-height: 159px;
+    max-width: 272px;
   }
 }
 
