@@ -300,6 +300,7 @@ display: flex;
 
 .title input[type="radio"]:checked {
   border: 8px solid #003b5f;
+  visibility: hidden;
 }
 
 .title.borderRad {
