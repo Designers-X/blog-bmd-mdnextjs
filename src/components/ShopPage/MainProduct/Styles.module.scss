@@ -94,11 +94,11 @@ line-height: 28px; /* 155.556% */
 
 
 .ImgcontentAA{
-    background-color: #EDEDF5; 
-    margin: 0 0 0px 0;  
-    height: 70px;
+    // background-color: #EDEDF5; 
+    // margin: 0 0 0px 0;  
+    // height: 70px;
     // padding: 10px;
-    border-radius: 0 0 10px 10px;
+    // border-radius: 0 0 10px 10px;
     
 }
 
@@ -197,7 +197,12 @@ border-radius: 10px;
 }
 
 .Control1{
-    margin: 0px 0;
+    margin: 0px 0 -28px 0;
+    // background-color: #000;
+    height: 100%;
+    border-radius:  10px;
+    background-color: #EDEDF5; 
+
 }
 
 .Pagination{
@@ -284,7 +289,7 @@ z-index: 1;
 @media(max-width:1299.98px){
     .ImgContent {
       
-        padding: 15px;
+        padding: 10px;
         width: 90%;
     }
 
@@ -305,9 +310,9 @@ z-index: 1;
         display: block;   
     }
 
-    .ImgcontentAA {
-          height: 110px;
-            }
+    // .ImgcontentAA {
+    //       height: 110px;
+    //         }
 }
 
 @media (max-width: 1024.98px) {
@@ -317,9 +322,9 @@ z-index: 1;
         display: flex;   
     }
 
-    .ImgcontentAA {
-          height: 90px;
-            }
+    // .ImgcontentAA {
+    //       height: 90px;
+    //         }
 
 
 
@@ -335,7 +340,7 @@ z-index: 1;
     .ImgContent {
                 padding: 20px 20px 10px 20px ;
                 width: 90%;     
-        top: -44px;
+        top: -63px;
        }
 
     .InnerB button {
@@ -411,11 +416,11 @@ z-index: 1;
         line-height: 35px;
         
         }
-    .ImgcontentAA{
-               margin: 0 0 0px 0;  
-        height: 90px;
+    // .ImgcontentAA{
+    //            margin: 0 0 0px 0;  
+    //     height: 90px;
                
-    }
+    // }
     .MainProductListAA h2 {
         font-size: 30px;
     }
@@ -437,7 +442,7 @@ z-index: 1;
         font-size: 14px;
     }
 
-    .cartBox .svgCart{
+    .cartBox.svgCart{
     padding: 3px;
     position: relative;
     top: 4px;
