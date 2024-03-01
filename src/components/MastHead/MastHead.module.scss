@@ -15,11 +15,17 @@
   position: relative;
 }
 
-
-
-.dropDownTitleHolder svg {
+.dropTitleHoldesvg {
   position: absolute;
   transform: rotate(180deg);
+  right: 26px;
+  bottom: 23px;
+
+}
+
+.dropDownTitleSvg1 {
+  position: absolute;
+  transform: rotate(360deg);
   right: 26px;
   bottom: 23px;
 
@@ -61,6 +67,7 @@
 .mastHeadContainerAvail {
   position: relative;
   z-index: 2;
+  
 
   // height: 700px;
   @media (max-width: 1025px) {
@@ -71,8 +78,9 @@
     // height: 900px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 424px) {
     // height: 600px;
+    margin: 0 0 -40px 0;
   }
 
   .titleHolder {
@@ -90,6 +98,7 @@
     line-height: 44px;
     display: grid;
     place-content: center;
+    // fdiehf
 
     @media (max-width: 1441px) {
       top: 30%;
@@ -422,7 +431,7 @@
   }
 
   @media(max-width:400px) {
-    font-size: 12px;
+    font-size: 20px;
     padding: 5px 10px;
   }
 }
@@ -433,11 +442,12 @@
   .titleHolder {
     font-family: "SaolDisplay" !important;
     position: absolute;
-    // text-transform: uppercase;
+    text-transform: capitalize;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1.5rem 2rem;
+    left: 0%;
+    right: 0%;
+    transform: translate(-0%, -50%);
+    padding: 1.5rem 5rem;
     // background-color: black;
     color: #fff;
     font-size: 40px;
@@ -445,15 +455,36 @@
     display: grid;
     place-content: center;
 
+    @media (max-width: 1441px) {
+      top: 30%;
+    }
+
+    @media (max-width: 1025px) {
+      top: 25%;
+      font-size: 26px;
+    }
+
     @media (max-width: 769px) {
+      top: 40%;
       font-size: 30px;
       line-height: 34px;
     }
 
     @media (max-width: 500px) {
+      top: 40%;
       padding: 1.5rem 2rem;
       font-size: 25px;
       line-height: 28px;
+    }
+
+    @media (max-width: 411px) {
+      top: 25%;
+      padding: 1.5rem 0.5rem;
+    }
+
+    @media (max-width: 325px) {
+      top: 17%;
+      padding: 1rem 0.5rem;
     }
   }
 }

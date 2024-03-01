@@ -8,6 +8,8 @@ const MastHead = ({ source, v2 = false }) => {
   const [children, setChildren] = useState(0);
   const [selectedDay, setSelectedDay] = useState('');
   const [selectedDay1, setSelectedDay1] = useState('');
+  const [display, setDisplay] = useState(false);
+
   const handleDateChange = (event) => {
     const selectedDate = event.target.value;
     const dateObject = new Date(selectedDate);
@@ -26,6 +28,10 @@ const MastHead = ({ source, v2 = false }) => {
     setSelectedDay1(selectedDay1);
   };
 
+  const openModal = () => {
+    setModal(!modal);
+    setDisplay((prevDisplay) => !prevDisplay);
+  };
   useEffect(() => {
     // document.getElementById('button1').addEventListener('click', function() {
     //     document.getElementById('date1').show();
@@ -73,14 +79,21 @@ const MastHead = ({ source, v2 = false }) => {
 
                 {/* <input id="date2" type="date" className={styles.inputHolder} /> */}
               </div>
-              <div className={styles.dropdownContainer} onClick={() => setModal(!modal)}>
+              <div className={styles.dropdownContainer} onClick={() => openModal()}>
                 <img src="/package/Group.png" width={35} height={35} />
                 <div className={styles.dropDownTitleHolder}>
                   <div className={styles.dropDownTitle}>
                     {adults} adults{children > 0 && ', ' + children + ' Childrens'}
                   </div>
                   <div className={styles.dropDownSubTitle}>{room} rooms</div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9" viewBox="0 0 17 9" fill="none">
+                  <svg
+                    className={display ? styles.dropDownTitleSvg1 : styles.dropTitleHoldesvg}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="17"
+                    height="9"
+                    viewBox="0 0 17 9"
+                    fill="none"
+                  >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"

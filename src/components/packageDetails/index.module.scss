@@ -42,9 +42,7 @@
   }
 }
 
-// .packageHeading{
-//   margin: -21px 0 0 0 !important;
-// }
+
 
 
 
@@ -63,6 +61,10 @@
   margin: 20px 0 0 0;
 }
 
+.packageDetailContainer h2.packageHeading{
+  margin: -21px 0 0 0 !important;
+}
+
 @media(max-width:767px){
   .packageDetailContainer h2{
     font-size: 30px;
@@ -73,6 +75,6 @@
 @media(max-width:500px){
   .packageDetailContainer h2{
     font-size: 22px;
-    margin: -72px 0 0 0;
+    margin: 0px 0 0 0;
 }
 }
