@@ -6,6 +6,7 @@
   margin-bottom: 40px;
   @media (max-width: 590px) {
     flex-direction: column;
+    display: grid;
   }
 
  
@@ -415,10 +416,10 @@
   }
 }
 
-// @media(max-width:590px){
-//   .categoryBoxContainer:nth-child(2){
-//     flex-direction: row-reverse;
-//   }
-// }
+@media(max-width:590px){
+  .categoryBoxContainer:nth-child(2){
+    flex-direction: row-reverse;
+  }
+}
 
 
