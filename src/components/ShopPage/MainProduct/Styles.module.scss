@@ -202,6 +202,9 @@ border-radius: 10px;
     height: 100%;
     border-radius:  10px;
     background-color: #EDEDF5; 
+    @media(max-width:1199px){
+
+    }
 
 }
 
@@ -477,6 +480,16 @@ z-index: 1;
     .MainProductListA{
              grid-template-columns: repeat(1, auto);
         gap: 30px;
+    }
+}
+
+
+@media(max-width:500px){
+    svg.svgCart {
+        width: 34px;
+        height: 27px;
+        margin: 1px 3px -12px 0px;
+    
     }
 }
 
