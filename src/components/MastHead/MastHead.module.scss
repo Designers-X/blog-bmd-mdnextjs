@@ -7,6 +7,12 @@
   border-right: 1px solid #9C9C9C;
   height: 30px;
   width: 1px;
+  @media(max-width:420px){
+      border-bottom: 1px solid #9C9C9C;
+      border-right: none;
+      height: 30px;
+      width: 100%;
+  }
 
 }
 
@@ -34,6 +40,8 @@
   // display: flex;
   // align-items: center;
   padding: 0 0 0 20px;
+  display: flex;
+  align-items: flex-start;
   
 }
 .dateRangeInput input::-webkit-calendar-picker-indicator {
@@ -216,7 +224,7 @@
         height: 60px;
 
         @media(max-width:420px) {
-          display: grid;
+          display: block;
           height: auto;
           padding: 10px;
         }
@@ -247,6 +255,13 @@
         width: 100%;
         // height: 60px;
       }
+    }
+
+    .dateborder{
+      border-bottom: 1px solid #9C9C9C;
+      width: 100%;
+      margin: 0 0 10px 0;
+      padding: 0 0 10px 0;
     }
 
 
@@ -545,16 +560,7 @@
 
 @supports (-webkit-touch-callout: none) {
   .dateRangeInput input::-webkit-calendar-picker-indicator {
-    background-image: url(../../../public//package/calender.png);
-    position: relative;
-    // display: none;
-    width: 28px;
-    height: 28px;
-    top: 10px;
-    margin: 0 5px 0 0;
+   background-color: transparent;
+   color: #000;
   } 
-
-  .dateRangeInput input{
-    flex-direction: row-reverse;
-  }
 }

@@ -64,12 +64,12 @@ const MastHead = ({ source, v2 = false }) => {
               <div className={styles.dateRangeContainer}>
                 {/* <input id="date1" type="date" onChange={handleDateChange}/> */}
 
-                <div className={styles.dateRangeInput}>
+                <div className={` ${styles.dateRangeInput} ${styles.dateborder}`}>
                   <label>
                     <img src="/package/calender.png" width={28} height={28} />
                     <input type="date" onChange={handleDateChange} />
                   </label>
-                  <br />
+
                   <p> {selectedDay}</p>
                 </div>
 
