@@ -44,7 +44,7 @@
 
 
 .dateRangeInput input{
-  background-color: transparent;
+  color: #000;
   // display: flex;
 }
 .dateRangeInput input::-webkit-calendar-picker-indicator {
@@ -58,7 +58,6 @@
   // visibility:;
   color: transparent;
   // background-color: #9C9C9C;
-  accent-color:  #9C9C9C;
   margin: 0 5px 0 0;
 }
 
@@ -76,6 +75,7 @@
 .dateRangeInput{
   width: 50%;
   position: relative;
+  min-width: 183px;
 }
 
 .dateRangeInput p {
