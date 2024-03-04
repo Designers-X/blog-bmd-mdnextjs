@@ -30,16 +30,35 @@
   bottom: 23px;
 
 }
-
-
-
+.dateRangeInput label{
+  // display: flex;
+  // align-items: center;
+  padding: 0 0 0 20px;
+  
+}
 .dateRangeInput input::-webkit-calendar-picker-indicator {
-  background-image: url(../../../public//package/calender.png);
-  position: relative;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+.dateRangeInput input{
+  background-color: transparent;
+  // display: flex;
+}
+.dateRangeInput input::-webkit-calendar-picker-indicator {
+  // background-image: url(../../../public//package/calender.png);
+  position: absolute;
   // display: none;
   width: 28px;
   height: 28px;
-  top: 10px;
+  top: 0px;
+  left: 16px;
+  // visibility:;
+  color: transparent;
+  // background-color: #9C9C9C;
+  accent-color:  #9C9C9C;
   margin: 0 5px 0 0;
 }
 
@@ -54,14 +73,17 @@
   outline: none;
 }
 
-
+.dateRangeInput{
+  width: 50%;
+  position: relative;
+}
 
 .dateRangeInput p {
   font-size: 14px;
   font-family: "NeueHaasUnica", Arial, sans-serif !important;
   color: #9C9C9C;
   line-height: 15px;
-  margin: -6px 0 0 11px !important;
+  margin: -6px 0 0 57px !important;
 }
 
 .mastHeadContainerAvail {

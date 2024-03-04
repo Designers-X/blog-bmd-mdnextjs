@@ -65,7 +65,10 @@ const MastHead = ({ source, v2 = false }) => {
                 {/* <input id="date1" type="date" onChange={handleDateChange}/> */}
 
                 <div className={styles.dateRangeInput}>
-                  <input type="date" onChange={handleDateChange} />
+                  <label>
+                    <img src="/package/calender.png" width={28} height={28} />
+                    <input type="date" onChange={handleDateChange} />
+                  </label>
                   <br />
                   <p> {selectedDay}</p>
                 </div>
@@ -73,7 +76,10 @@ const MastHead = ({ source, v2 = false }) => {
                 <span></span>
 
                 <div className={styles.dateRangeInput}>
-                  <input type="date" onChange={handleDateChange1} /> <br />
+                  <label>
+                    <img src="/package/calender.png" width={28} height={28} />
+                    <input type="date" onChange={handleDateChange1} />
+                  </label>
                   <p> {selectedDay1}</p>
                 </div>
 
