@@ -84,6 +84,9 @@
   width: 50%;
   position: relative;
   min-width: 183px;
+  @media(max-width:420px){
+    width: 100%;
+  }
 }
 
 .dateRangeInput p {
@@ -257,12 +260,7 @@
       }
     }
 
-    .dateborder{
-      border-bottom: 1px solid #9C9C9C;
-      width: 100%;
-      margin: 0 0 10px 0;
-      padding: 0 0 10px 0;
-    }
+
 
 
 
@@ -555,6 +553,18 @@
     object-fit: unset;
   }
 }
+
+@media (max-width: 420px) {
+  .dateborder{
+    border-bottom: 1px solid #9C9C9C;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+  }
+}
+
+
+
 
 
 
