@@ -302,6 +302,27 @@ z-index: 1;
 }
 
 @media (max-width:1225.98px){
+   
+    .cartBox h5 {
+        top: -25px;
+        left: 20px;
+        font-size: 21px;
+    }
+    .arrowblack {
+
+        right: 53px;
+        top: 22%;
+    }
+
+    .cartBox{
+        width: 58px;
+        padding: 5px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+        }
+
     .MainProductListAA h2 {
         font-size: 30px;
     }
@@ -433,38 +454,57 @@ z-index: 1;
 }
 
 @media (max-width: 450px) {
+
+    
+    .cartBox h5 {
+        top: -25px;
+        left: 13px;
+        font-size: 16px;
+    }
+    .arrowblack {
+
+        right: 53px;
+        top: 22%;
+    }
+
+    .cartBox{
+        width: 40px;
+        padding: 2px;
+        height: 40px;
+            
+        }
    
     .MainProductListA {
         width: 100%;
          }
-    .cartBox h5 {
-        color: #fff;
-        position: absolute;
-        top: -16px;
-        left: 17px;
-        font-size: 14px;
-    }
+    // .cartBox h5 {
+    //     color: #fff;
+    //     position: absolute;
+    //     top: -16px;
+    //     left: 17px;
+    //     font-size: 14px;
+    // }
 
-    .cartBox.svgCart{
-    padding: 3px;
-    position: relative;
-    top: 4px;
-    width: 47px;
-    height: 32px;
-    }
+    // .cartBox.svgCart{
+    // padding: 3px;
+    // position: relative;
+    // top: 4px;
+    // width: 47px;
+    // height: 32px;
+    // }
 
     .arrowblack{
         position: absolute;
-        right: 46px;
-        top: 14%;
+        right: 36px;
+        top: 9%;
     }
 
-    .cartBox{
-        width: 50px;
-        height: 46px;
-          top: 43%;
+    // .cartBox{
+    //     width: 50px;
+    //     height: 46px;
+    //       top: 43%;
           
-        }
+    //     }
 
 
 
@@ -485,11 +525,11 @@ z-index: 1;
 
 
 @media(max-width:500px){
-    svg.svgCart {
-        width: 34px;
-        height: 27px;
-        margin: 1px 3px -12px 0px;
+    // svg.svgCart {
+    //     width: 34px;
+    //     height: 27px;
+    //     margin: 1px 3px -12px 0px;
     
-    }
+    // }
 }
 
