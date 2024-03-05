@@ -65,11 +65,14 @@ align-items: center;
 	z-index: 1;
 	transition: 0.5s;
 	padding: 5px 2px;
+	min-width: 166px;
+
 
 }
 .dropdownItem{
 	text-align: end;
 	padding: 0 15px 0 0px;
+	border-bottom: 1px solid #ececec;
 }
 
 .dropdownItem{
@@ -253,6 +256,9 @@ border: none;
 	
 		margin: auto 2%;
 			padding: 4px;
+			@media(max-width:780px){
+				gap: 0px;
+			}
 		}
 		.DropDraw {
 			padding: 0 0 0 5px;
