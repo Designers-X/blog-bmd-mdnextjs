@@ -57,12 +57,29 @@ align-items: center;
 .DropDraw .dropdownList{
 	position: absolute;
 	width: 100%;
-    background-color: #fff;
+    background-color: #f4f4f4;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
     text-align: center;
 	margin: 11px 0 0 0;
-	border: 1px solid #d9d9d9;
+    border: 1px solid #dedede75;
 	z-index: 1;
+	transition: 0.5s;
+	padding: 5px 2px;
 
+}
+.dropdownItem{
+	text-align: end;
+	padding: 0 15px 0 0;
+}
+
+.dropdownItem{
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.dropdownItem img{
+	margin: 0 3px;
 }
 
 .dropdownHeader{
@@ -242,6 +259,10 @@ border: none;
 					}
 
 					.arrowUp .flickityButtonIcon {
+						width: 10px;
+					}
+
+					.arrowUp .flickityButtonIcon1{
 						width: 10px;
 					}
 
