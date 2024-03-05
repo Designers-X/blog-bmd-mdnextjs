@@ -50,11 +50,12 @@
         border-radius: 50%;
         @media (max-width:500px){
           bottom: 12px;
-          right: 14px;    
+          right: 14px;  
+            
                  }
       }
       .titleHeadHolder {
-        padding: 0.5rem 2rem;
+        padding: 1rem 1rem;
         background-color: #000;
         .subTitleContainer {
           margin-top: 8px;
@@ -64,6 +65,9 @@
             width: auto;
             height: 22px;
             margin-right: 10px;
+            @media (max-width: 767px) {
+              height: 18px;
+          }
           }
           .subTitleHolder {
             color: #fff;
@@ -75,6 +79,10 @@
                 font-size: 16px;
                 line-height: 20px;
             }
+            @media (max-width: 500px) {
+              font-size: 12px;
+              line-height: 20px;
+          }
           }
         }
         .titleHolder {
