@@ -7,10 +7,10 @@ const PriceDropDownMob = () => {
   const [selectedOptionC, setSelectedOptionC] = useState(null);
   const [selectedOptionD, setSelectedOptionD] = useState(null);
 
-  const [dropdownVisibleA, setDropdownVisibleA] = useState(false);
-  const [dropdownVisibleB, setDropdownVisibleB] = useState(false);
-  const [dropdownVisibleC, setDropdownVisibleC] = useState(false);
-  const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
+  // const [dropdownVisibleA, setDropdownVisibleA] = useState(false);
+  // const [dropdownVisibleB, setDropdownVisibleB] = useState(false);
+  // const [dropdownVisibleC, setDropdownVisibleC] = useState(false);
+  // const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
 
   const optionsA = ['$10 to $500', '$500 to $1000', '$1000 to $1500', '$1500 to $2000'];
   const optionsB = [
