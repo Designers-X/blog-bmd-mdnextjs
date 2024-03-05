@@ -12,10 +12,16 @@ const SimpleDropdown = () => {
   const [dropdownVisibleC, setDropdownVisibleC] = useState(false);
   const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
 
-  const optionsA = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsB = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsC = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsD = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
+  const optionsA = ['$10 to $500', '$500 to $1000', '$1000 to $1500', '$1500 to $2000'];
+  const optionsB = [' Shoe', 'Jewellery', 'Sandal', 'Fragrance'];
+  const optionsC = [
+    { label: '', image: '/package/starfilterReview.svg', count: 5 },
+    { label: '', image: '/package/starfilterReview.svg', count: 4 },
+    { label: '', image: '/package/starfilterReview.svg', count: 3 },
+    { label: '', image: '/package/starfilterReview.svg', count: 2 },
+    { label: '', image: '/package/starfilterReview.svg', count: 1 },
+  ];
+  const optionsD = ['10% Discount', '20% Discount', '40% Discount', '50% Discount'];
 
   const handleOptionSelectA = (option) => {
     setSelectedOptionA(option);
@@ -148,8 +154,20 @@ const SimpleDropdown = () => {
                   {dropdownVisibleC && (
                     <div className={Styles.dropdownList}>
                       {optionsC.map((option) => (
-                        <div key={option} className={Styles.dropdownItem} onClick={() => handleOptionSelectC(option)}>
-                          {option}
+                        <div
+                          key={option.label}
+                          className={Styles.dropdownItem}
+                          onClick={() => handleOptionSelectC(option.label)}
+                        >
+                          {[...Array(option.count)].map((_, index) => (
+                            <img
+                              key={index}
+                              src={option.image}
+                              alt={`${option.label} Star`}
+                              className={Styles.dropdownItemImage}
+                            />
+                          ))}
+                          {option.label}
                         </div>
                       ))}
                     </div>
