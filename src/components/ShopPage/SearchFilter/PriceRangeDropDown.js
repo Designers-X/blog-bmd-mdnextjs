@@ -13,7 +13,15 @@ const SimpleDropdown = () => {
   const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
 
   const optionsA = ['$10 to $500', '$500 to $1000', '$1000 to $1500', '$1500 to $2000'];
-  const optionsB = [' Shoe', 'Jewellery', 'Sandal', 'Fragrance'];
+  const optionsB = [
+    'Fashion & Beauty',
+    'Culture',
+    'Science',
+    'Travel & Leisure',
+    'Food & Wine',
+    'Health & Wellness',
+    'Art & History',
+  ];
   const optionsC = [
     { label: '', image: '/package/starfilterReview.svg', count: 5 },
     { label: '', image: '/package/starfilterReview.svg', count: 4 },
