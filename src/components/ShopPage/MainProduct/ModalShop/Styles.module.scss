@@ -134,6 +134,7 @@ margin: 0 0 0px 0;
 clip-path: polygon(0 1%, 100% 0%, 91% 100%, 0% 100%);
 // display: block;
 display: inline-block;
+max-width: 108px;
 // padding: 5px 10px 5px 0;
   }
 
@@ -144,7 +145,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 21px; /* 175% */
-display: flex;
+// display: flex;
 gap: 5px;
 margin: 0;
   }
@@ -153,7 +154,7 @@ margin: 0;
     border-left: 1px solid #000;
     display: inline-block;
     line-height: 15px;
-    padding: 0 0px 0 5px;
+    padding: 0 3px 0 3px;
     margin: 7px 0px 0 1px;
   }
 
@@ -250,10 +251,13 @@ padding: 6px 0;
 .ModalSet{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 .CheckBoxSet{
   display: flex;
   gap: 20px;
+  align-items: center;
+  // margin: auto;
 }
 
 .btnBlack a{
@@ -311,10 +315,10 @@ padding: 6px 0;
 }
 
 
-@media(max-width:450px){
+@media(max-width:480px){
 
   .priceAll {
-    padding: 10px 0 0 0px;
+    padding: 0px 0 0 0px;
   }
 
   .ModalWidth{
@@ -342,6 +346,7 @@ padding: 6px 0;
 .CheckBoxSet{
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .contentInner .spanControl {
   gap: 0px;
@@ -353,6 +358,14 @@ padding: 6px 0;
 }
 
 @media(max-width:320px){
+
+  .contentInner .spanControl{
+    width: 159px;
+  }
+
+    .priceAll {
+      padding: 10px 0 0 0px;
+    }
 
   .contentInner h3 {
  
