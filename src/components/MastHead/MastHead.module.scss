@@ -53,7 +53,7 @@
 
 .dateRangeInput input{
   color: #000;
-  text-align: start;
+  text-align: -webkit-left;
   // display: flex;
 }
 .dateRangeInput input::-webkit-calendar-picker-indicator {
@@ -373,6 +373,9 @@
       transform: rotate(-90deg);
       z-index: 1;
       background-color: #fff;
+      @media(max-width:500px){
+        bottom: -25px;
+      }
       .svgWrapper{
         // border: 1px solid rgba(0, 0, 0, 0.25);
         // box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -396,6 +399,7 @@
 
       @media (max-width: 500px) {
         width: 100%;
+        bottom: -222px;
       }
 
       .row {
@@ -448,7 +452,7 @@
 .titleHolder h3 {
   color: #fff;
   font-size: 40px;
-  line-height: 44px;
+  line-height: 24px;
   background-color: #000;
   padding: 16px 45px;
 
