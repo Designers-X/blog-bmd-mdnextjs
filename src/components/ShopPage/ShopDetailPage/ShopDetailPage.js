@@ -86,7 +86,7 @@ const YourProductPageComponent = () => {
                 <div className={Styles.QBoxee}>
                   <form className={Styles.Quantity} action="/action_page.php">
                     <div className={Styles.selectDiv}>
-                      <div className={Styles.quntity}>Qty :</div>
+                      <div className={Styles.quntity}>QTY :</div>
                       <select className={Styles.selectNon}>
                         <option value="1">1</option>
                         <option value="2">2</option>
