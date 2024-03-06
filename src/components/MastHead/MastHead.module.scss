@@ -496,34 +496,34 @@
     place-content: center;
 
     @media (max-width: 1441px) {
-      top: 30%;
+      // top: 30%;
     }
 
     @media (max-width: 1025px) {
-      top: 25%;
+      // top: 25%;
       font-size: 26px;
     }
 
     @media (max-width: 769px) {
-      top: 40%;
+      // top: 40%;
       font-size: 30px;
       line-height: 34px;
     }
 
     @media (max-width: 500px) {
-      top: 40%;
+      // top: 40%;
       padding: 1.5rem 2rem;
       font-size: 25px;
       line-height: 28px;
     }
 
     @media (max-width: 411px) {
-      top: 25%;
+      // top: 25%;
       padding: 1.5rem 0.5rem;
     }
 
     @media (max-width: 325px) {
-      top: 17%;
+      // top: 17%;
       padding: 1rem 0.5rem;
     }
   }
