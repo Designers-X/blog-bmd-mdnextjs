@@ -291,6 +291,17 @@
   width: 67px;
   height: 34px;
   text-align: center;
+  border: 1px solid #D9D9D9;
+  outline: none;
+}
+
+.Quantity label{
+ font-size: 14px;
+ margin: 0 10px 0 0;
+ font-family: "NeueHaasUnica" !important;
+
+//  display: flex;
+  
 }
 
 
@@ -339,12 +350,18 @@
   line-height: 21px;
   /* 150% */
   position: relative;
-  top: 32px;
+  top: 15px;
   background: #fff;
   display: inline-block;
   left: 20px;
   padding: 5px;
+  margin: 0 0 0 0;
+
   // margin: 40px 0 0 0;
+}
+
+.controlparag{
+  margin: 20px 0 0 0;
 }
 
 .SkuProduct {
