@@ -6,10 +6,6 @@ import Itinerary from '/json/Itinerary.json';
 import Link from 'next/link';
 
 const YourProductPageComponent = () => {
-  const min = 1;
-  const max = 10;
-  const [quantity, setQuantity] = useState(1);
-
   const [currentImage, setCurrentImage] = useState(0);
 
   const handleThumbnailClick = (index) => {
@@ -89,21 +85,21 @@ const YourProductPageComponent = () => {
 
                 <div className={Styles.QBoxee}>
                   <form className={Styles.Quantity} action="/action_page.php">
-                    <label>QTY</label>
-                    <input
-                      type="number"
-                      id="quantity"
-                      name="quantity"
-                      inputProps={{ min, max }}
-                      value={quantity} // Assuming quantity is defined somewhere in your component state
-                      defaultValue={product.quantity}
-                      onChange={(e) => {
-                        var value = parseInt(e.target.value, 10);
-                        if (value > max) value = max;
-                        if (value < min) value = min;
-                        setQuantity(value); // Update the quantity instead of the product
-                      }}
-                    />
+                    <div className={Styles.selectDiv}>
+                      <div className={Styles.quntity}>Qty :</div>
+                      <select className={Styles.selectNon}>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
                   </form>
 
                   <div className={Styles.BuyButton}>
