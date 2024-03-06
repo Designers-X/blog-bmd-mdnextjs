@@ -8,7 +8,7 @@ import Link from 'next/link';
 const YourProductPageComponent = () => {
   const min = 1;
   const max = 10;
-  const [quantity, setProduct] = useState(1);
+  const [quantity, setQuantity] = useState(1);
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -89,18 +89,19 @@ const YourProductPageComponent = () => {
 
                 <div className={Styles.QBoxee}>
                   <form className={Styles.Quantity} action="/action_page.php">
+                    <label>QTY</label>
                     <input
                       type="number"
                       id="quantity"
                       name="quantity"
                       inputProps={{ min, max }}
-                      value={quantity}
+                      value={quantity} // Assuming quantity is defined somewhere in your component state
                       defaultValue={product.quantity}
                       onChange={(e) => {
                         var value = parseInt(e.target.value, 10);
                         if (value > max) value = max;
                         if (value < min) value = min;
-                        setProduct(value);
+                        setQuantity(value); // Update the quantity instead of the product
                       }}
                     />
                   </form>
