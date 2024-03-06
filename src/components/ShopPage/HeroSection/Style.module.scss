@@ -19,6 +19,9 @@ position: relative;
   .HeroImg img{
     width: 100%;
     margin: auto;
+    min-height: 137px;
+    object-fit: cover;
+
   }
 
   .HeroImg h3{
@@ -40,13 +43,13 @@ text-transform: uppercase;
 
   @media (max-width: 1024.98px) {
     .HeroImg h3{
-        font-size: 4vw;
-        line-height: 5vw;
+        // font-size: 4vw;
+        line-height: 3vw;
     }
 
     .HeroImg h3 {
-      top: 25%;
-      font-size: 30px;
+      top: 35%;
+      font-size: 20px;
   }
   }
 
@@ -61,6 +64,7 @@ text-transform: uppercase;
   @media (max-width: 400.98px) {
     .HeroImg h3 {
       top: 20%;
+      line-height: 18px;
       font-size: 15px;
   }
   }

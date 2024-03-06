@@ -196,6 +196,8 @@ margin: 0 0 20px 0;
   height: 15px;
   border: 8px solid #8C8C8C;
   background-color: transparent;
+  visibility: hidden;
+
 }
 
 
@@ -284,12 +286,15 @@ display: flex;
   font-weight: 500;
 }
 
-
+.title input{
+position: relative;
+}
 
 .title input[type="radio"], .title input[type="radio"]:checked{
   width: 25px;
   height: 25px;
-  top: 30%;
+  // top: 0%;
+  visibility: hidden;
 }
 
 .title input[type="radio"] {
@@ -300,6 +305,7 @@ display: flex;
 
 .title input[type="radio"]:checked {
   border: 8px solid #003b5f;
+  visibility: hidden;
 }
 
 .title.borderRad {
@@ -354,6 +360,25 @@ display: flex;
   text-align: left;
 }
 
+.dropTitleHoldesvg {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 26px;
+  bottom: -23px;
+
+}
+
+.dropDownTitleSvg1 {
+  position: absolute;
+  transform: rotate(360deg);
+  right: 26px;
+  bottom: -23px;
+
+}
+
+.dropDown11{
+  display: flex;
+}
 .Dropo .dropDown {
   position: relative;
 }
@@ -403,7 +428,7 @@ display: flex;
   font-size: 16px;
   
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 
@@ -487,6 +512,19 @@ display: flex;
   background: #fff;
   margin-right: 20px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.lastParaWri{
+  font-size: 14px;
+  // margin-top: 15px;
+  padding: 15px 0 15px 37px;
+}
+
+@media(max-width:1199.98px){
+  .container {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1024.98px) {
@@ -654,3 +692,6 @@ text-align: center;
   width: 10px;
 }
 }
+
+
+

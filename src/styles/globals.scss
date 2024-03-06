@@ -86,16 +86,19 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 h3 {
   font-size: 1.25em;
   font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 h4 {
   font-size: 0.95em;
   font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 li {
@@ -110,8 +113,9 @@ p {
   line-height: 1.6;
   font-weight: initial;
   letter-spacing: normal;
-  text-align: justify;
+  // text-align: justify;
   word-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 ul {
@@ -486,6 +490,14 @@ ul.contactSocialIcons li {
 
 }
 
+.react-multi-carousel-dot button {
+   border: none !important;
+ }
+
+ input{
+background-color: transparent;
+ }
+
 @media(max-width:510px) {
   .tab.Styles_Letter__u3_7b.active-tab {
 
@@ -494,3 +506,4 @@ ul.contactSocialIcons li {
     text-underline-offset: 10px;
   }
 }
+

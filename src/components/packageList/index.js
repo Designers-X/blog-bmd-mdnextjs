@@ -35,15 +35,20 @@ const PackageLists = ({ data }) => {
                 <h2>Price Range</h2>
                 <div>
                   <input id="price1" type="checkbox" className={styles.inputBox} />
-                  <label for="price1">Free Cancellation Available</label>
+                  <label for="price1">upto $999</label>
                 </div>
                 <div>
                   <input id="price2" type="checkbox" className={styles.inputBox} />
-                  <label for="price2">Free Breakfast Included</label>
+                  <label for="price2">$1000 - $2499</label>
                 </div>
                 <div>
                   <input id="price3" type="checkbox" className={styles.inputBox} />
-                  <label for="price3">Book @ $1</label>
+                  <label for="price3">$2500 - $3999</label>
+                </div>
+
+                <div>
+                  <input id="price3" type="checkbox" className={styles.inputBox} />
+                  <label for="price3">$4000 +</label>
                 </div>
               </div>
             </div>
@@ -54,31 +59,31 @@ const PackageLists = ({ data }) => {
                 <div>
                   <input id="star5" type="checkbox" className={styles.inputBox} />
                   <label for="star5">
-                    <StarGroup star={5} width={10} height={10} />
+                    <StarGroup star={5} width={13} height={13} />
                   </label>
                 </div>
                 <div>
                   <input id="star4" type="checkbox" className={styles.inputBox} />
                   <label for="star4">
-                    <StarGroup star={4} width={10} height={10} />
+                    <StarGroup star={4} width={13} height={13} />
                   </label>
                 </div>
                 <div>
                   <input id="star3" type="checkbox" className={styles.inputBox} />
                   <label for="star3">
-                    <StarGroup star={3} width={10} height={10} />
+                    <StarGroup star={3} width={13} height={13} />
                   </label>
                 </div>
                 <div>
                   <input id="star2" type="checkbox" className={styles.inputBox} />
                   <label for="star2">
-                    <StarGroup star={2} width={10} height={10} />
+                    <StarGroup star={2} width={13} height={13} />
                   </label>
                 </div>
                 <div>
                   <input id="star1" type="checkbox" className={styles.inputBox} />
                   <label for="star1">
-                    <StarGroup star={1} width={10} height={10} />
+                    <StarGroup star={1} width={13} height={13} />
                   </label>
                 </div>
               </div>

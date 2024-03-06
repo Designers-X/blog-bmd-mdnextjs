@@ -7,34 +7,54 @@ const SimpleDropdown = () => {
   const [selectedOptionC, setSelectedOptionC] = useState(null);
   const [selectedOptionD, setSelectedOptionD] = useState(null);
 
-  const [dropdownVisibleA, setDropdownVisibleA] = useState(false);
-  const [dropdownVisibleB, setDropdownVisibleB] = useState(false);
-  const [dropdownVisibleC, setDropdownVisibleC] = useState(false);
-  const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
+  // const [dropdownVisibleA, setDropdownVisibleA] = useState(false);
+  // const [dropdownVisibleB, setDropdownVisibleB] = useState(false);
+  // const [dropdownVisibleC, setDropdownVisibleC] = useState(false);
+  // const [dropdownVisibleD, setDropdownVisibleD] = useState(false);
 
-  const optionsA = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsB = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsC = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
-  const optionsD = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
+  const optionsA = ['$10 to $500', '$500 to $1000', '$1000 to $1500', '$1500 to $2000'];
+  const optionsB = [
+    'Fashion & Beauty',
+    'Culture',
+    'Science',
+    'Travel & Leisure',
+    'Food & Wine',
+    'Health & Wellness',
+    'Art & History',
+  ];
+  const optionsC = [
+    { label: '', image: '/package/starfilterReview.svg', count: 5 },
+    { label: '', image: '/package/starfilterReview.svg', count: 4 },
+    { label: '', image: '/package/starfilterReview.svg', count: 3 },
+    { label: '', image: '/package/starfilterReview.svg', count: 2 },
+    { label: '', image: '/package/starfilterReview.svg', count: 1 },
+  ];
+  const optionsD = ['10% Discount', '20% Discount', '40% Discount', '50% Discount'];
+
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleDropdown = (dropdown) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
 
   const handleOptionSelectA = (option) => {
     setSelectedOptionA(option);
-    setDropdownVisibleA(false);
+    toggleDropdown(null);
   };
 
   const handleOptionSelectB = (option) => {
     setSelectedOptionB(option);
-    setDropdownVisibleB(false);
+    toggleDropdown(null);
   };
 
   const handleOptionSelectC = (option) => {
     setSelectedOptionC(option);
-    setDropdownVisibleC(false);
+    toggleDropdown(null);
   };
 
   const handleOptionSelectD = (option) => {
     setSelectedOptionD(option);
-    setDropdownVisibleD(false);
+    toggleDropdown(null);
   };
 
   return (
@@ -52,11 +72,11 @@ const SimpleDropdown = () => {
             <div className={Styles.SearchBarB}>
               <div className={Styles.dropdownContainer}>
                 <div className={`${Styles.DropDraw} ${Styles.dropdownBorder}`}>
-                  <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleA(!dropdownVisibleA)}>
+                  <div className={Styles.dropdownHeader} onClick={() => toggleDropdown('A')}>
                     {selectedOptionA || 'Price Range '}
                     {''}
                     <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
-                      {dropdownVisibleA ? (
+                      {activeDropdown === 'A' ? (
                         <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
@@ -75,7 +95,7 @@ const SimpleDropdown = () => {
                       )}
                     </span>
                   </div>
-                  {dropdownVisibleA && (
+                  {activeDropdown === 'A' && (
                     <div className={Styles.dropdownList}>
                       {optionsA.map((option) => (
                         <div key={option} className={Styles.dropdownItem} onClick={() => handleOptionSelectA(option)}>
@@ -87,11 +107,11 @@ const SimpleDropdown = () => {
                 </div>
 
                 <div className={Styles.DropDraw}>
-                  <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleB(!dropdownVisibleB)}>
+                  <div className={Styles.dropdownHeader} onClick={() => toggleDropdown('B')}>
                     {selectedOptionB || 'Category'}
                     {''}
                     <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
-                      {dropdownVisibleB ? (
+                      {activeDropdown === 'B' ? (
                         <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
@@ -110,7 +130,7 @@ const SimpleDropdown = () => {
                       )}
                     </span>
                   </div>
-                  {dropdownVisibleB && (
+                  {activeDropdown === 'B' && (
                     <div className={Styles.dropdownList}>
                       {optionsB.map((option) => (
                         <div key={option} className={Styles.dropdownItem} onClick={() => handleOptionSelectB(option)}>
@@ -122,11 +142,11 @@ const SimpleDropdown = () => {
                 </div>
 
                 <div className={Styles.DropDraw}>
-                  <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleC(!dropdownVisibleC)}>
+                  <div className={Styles.dropdownHeader} onClick={() => toggleDropdown('C')}>
                     {selectedOptionC || 'Review'}
                     {''}
                     <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
-                      {dropdownVisibleC ? (
+                      {activeDropdown === 'C' ? (
                         <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
@@ -145,11 +165,23 @@ const SimpleDropdown = () => {
                       )}
                     </span>
                   </div>
-                  {dropdownVisibleC && (
+                  {activeDropdown === 'C' && (
                     <div className={Styles.dropdownList}>
                       {optionsC.map((option) => (
-                        <div key={option} className={Styles.dropdownItem} onClick={() => handleOptionSelectC(option)}>
-                          {option}
+                        <div
+                          key={option.label}
+                          className={Styles.dropdownItem}
+                          onClick={() => handleOptionSelectC(option.label)}
+                        >
+                          {[...Array(option.count)].map((_, index) => (
+                            <img
+                              key={index}
+                              src={option.image}
+                              alt={`${option.label} Star`}
+                              className={Styles.dropdownItemImage}
+                            />
+                          ))}
+                          {option.label}
                         </div>
                       ))}
                     </div>
@@ -157,11 +189,11 @@ const SimpleDropdown = () => {
                 </div>
 
                 <div className={Styles.DropDraw}>
-                  <div className={Styles.dropdownHeader} onClick={() => setDropdownVisibleD(!dropdownVisibleD)}>
+                  <div className={Styles.dropdownHeader} onClick={() => toggleDropdown('D')}>
                     {selectedOptionD || 'Discount'}
                     {''}
                     <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
-                      {dropdownVisibleD ? (
+                      {activeDropdown === 'D' ? (
                         <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
@@ -180,7 +212,7 @@ const SimpleDropdown = () => {
                       )}
                     </span>
                   </div>
-                  {dropdownVisibleD && (
+                  {activeDropdown === 'D' && (
                     <div className={Styles.dropdownList}>
                       {optionsD.map((option) => (
                         <div key={option} className={Styles.dropdownItem} onClick={() => handleOptionSelectD(option)}>

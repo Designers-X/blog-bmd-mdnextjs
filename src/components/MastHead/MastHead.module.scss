@@ -1,52 +1,176 @@
+.dateRangeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateRangeContainer span {
+  border-right: 1px solid #9C9C9C;
+  height: 30px;
+  width: 1px;
+  @media(max-width:420px){
+      border-bottom: 1px solid #9C9C9C;
+      border-right: none;
+      height: 30px;
+      width: 100%;
+  }
+
+}
+
+
+.dropdownContainer {
+  position: relative;
+}
+
+.dropTitleHoldesvg {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 26px;
+  bottom: 23px;
+
+}
+
+.dropDownTitleSvg1 {
+  position: absolute;
+  transform: rotate(360deg);
+  right: 26px;
+  bottom: 23px;
+
+}
+.dateRangeInput label{
+  // display: flex;
+  // align-items: center;
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: flex-start;
+  
+}
+.dateRangeInput input::-webkit-calendar-picker-indicator {
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+.dateRangeInput input{
+  color: #000;
+  text-align: -webkit-left;
+  // display: flex;
+}
+.dateRangeInput input::-webkit-calendar-picker-indicator {
+  // background-image: url(../../../public//package/calender.png);
+  position: absolute;
+  // display: none;
+  width: 28px;
+  height: 28px;
+  top: 0px;
+  left: 16px;
+  // visibility:;
+  color: transparent;
+  // background-color: #9C9C9C;
+  margin: 0 5px 0 0;
+}
+
+
+
+.formContainer .dateRangeContainer .dateRangeInput input {
+  padding: 0 10px;
+  flex-direction: row-reverse;
+  border: none;
+  font-size: 16px;
+  font-family: "NeueHaasUnica", Arial, sans-serif !important;
+  outline: none;
+}
+
+.dateRangeInput{
+  width: 50%;
+  position: relative;
+  min-width: 183px;
+  @media(max-width:420px){
+    width: 100%;
+  }
+}
+
+.dateRangeInput p {
+  font-size: 14px;
+  font-family: "NeueHaasUnica", Arial, sans-serif !important;
+  color: #9C9C9C;
+  line-height: 15px;
+  margin: -6px 0 0 57px !important;
+}
+
 .mastHeadContainerAvail {
   position: relative;
-  height: 700px;
+  z-index: 2;
+  
+
+  // height: 700px;
   @media (max-width: 1025px) {
-    height: 450px;
+    // height: 450px;
   }
+
   @media (max-width: 769px) {
-    height: 900px;
+    // height: 900px;
   }
-  @media (max-width: 500px) {
-    height: 600px;
+
+  @media (max-width: 424px) {
+    // height: 600px;
+    margin: 0 0 -40px 0;
   }
+
   .titleHolder {
     font-family: "SaolDisplay" !important;
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    right: 0%;
+    transform: translate(-0%, -50%);
     padding: 1.5rem 5rem;
-    background-color: black;
+    // background-color: black;
     color: #fff;
     font-size: 40px;
     line-height: 44px;
     display: grid;
     place-content: center;
+    // fdiehf
+
     @media (max-width: 1441px) {
-      top: 40%;
+      top: 30%;
     }
+
     @media (max-width: 1025px) {
       top: 25%;
       font-size: 26px;
     }
+
     @media (max-width: 769px) {
-      top: 60%;
+      top: 40%;
       font-size: 30px;
       line-height: 34px;
     }
+
     @media (max-width: 500px) {
-      top: 20%;
+      top: 40%;
       padding: 1.5rem 2rem;
       font-size: 25px;
       line-height: 28px;
     }
+
+    @media (max-width: 411px) {
+      top: 25%;
+      padding: 1.5rem 0.5rem;
+    }
+
+    @media (max-width: 325px) {
+      top: 17%;
+      padding: 1rem 0.5rem;
+    }
   }
+
   .availabilyContainer {
-    position: absolute;
-    transform: translate(-50%, 15%);
-    bottom: 10%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    // bottom: 10%;
     left: 50%;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -56,58 +180,107 @@
     justify-content: space-around;
     align-items: center;
     // width: 1000px;
-    width: 60%;
+    width: 80%;
     height: 175px;
     padding: 2rem;
+
     @media (max-width: 1441px) {
-      bottom: 20%;
+      // bottom: 20%;
     }
+
+    @media (max-width: 1210.98px) {
+      width: 90%;
+    }
+
     @media (max-width: 1025px) {
-      bottom: 15%;
-      width: 80%;
+      bottom: 0%;
+      width: 90%;
     }
-    @media (max-width: 769px) {
-      bottom: 8%;
+
+    @media (max-width: 767px) {
+      height: auto;
+      // bottom: 8%;
+      // position: unset;
     }
+
     @media (max-width: 500px) {
-      bottom: 20%;
-      width: 95%;
-      padding: 10px;
+      // bottom: 20%;
+      width: 90%;
+      padding: 41px 30px;
     }
+
     @media (max-width: 321px) {
-      bottom: 35%;
+      // bottom: 35%;
     }
+
     .formContainer {
       width: 100%;
       display: flex;
-      position: relative;
+
+      // position: relative;
       .dateRangeContainer {
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
         border: none;
-        & > input {
-          border: none;
-          width: 50%;
-          height: 100%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+
+        @media(max-width:420px) {
+          display: block;
+          height: auto;
           padding: 10px;
         }
-        & > label{
+
+        &>input {
+          border: none;
+          width: 50%;
+          // height: 100%;
+          padding: 0 10px;
+          flex-direction: row-reverse;
+          font-size: 16px;
+
+
+        }
+
+        &>label {
           display: none;
         }
+
         .dateRangeHolder1 {
           border-right: 1px solid rgba(156, 156, 156, 1);
         }
-        .dateRangeHolder2 {
-        }
+
+        .dateRangeHolder2 {}
+
         background: rgba(255, 255, 255, 1);
-        width: 450px;
-        height: 60px;
+        // width: 450px;
+        width: 100%;
+        // height: 60px;
       }
     }
+
+
+
+
+
+    @media(max-width: 768px) {
+      .formContainer {
+        display: grid;
+        gap: 20px;
+      }
+
+    }
+
+
+
+
+
     .availabilyButton {
       width: max-content;
       height: auto;
+      font-size: 25px;
       background: #000;
       color: #fff;
       display: grid;
@@ -117,90 +290,149 @@
       font-family: "NeueHaasUnica", Arial, sans-serif;
       position: absolute;
       bottom: -15%;
-      padding: .35rem 1rem;
+      padding: 10px 20px;
       text-decoration: none;
       cursor: pointer;
-      &:hover{
+      
+      @media(max-width:700px) {
+        // bottom: -11%;
+        font-size: 20px;
+      }
+
+      @media(max-width:500px) {
+        bottom: -11%;
+      }
+
+      &:hover {
         background: #fff;
         border: 1px solid #000;
         color: #000;
         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       }
     }
-    .dropdownContainer{
+
+    .dropdownContainer img {
+      width: 31px;
+      height: 27px;
+    }
+
+    .dropdownContainer {
+
       background: #fff;
-      width: 500px;
+      // width: 500px;
+      width: 100%;
       height: 60px;
       border-radius: 10px;
       border: none;
-      overflow: hidden;
+      // overflow: hidden;
       margin-left: 2rem;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       display: flex;
       justify-content: start;
       align-items: center;
       padding: 1rem;
-      .dropDownTitleHolder{
+      position: relative !important;
+
+      @media(max-width: 880px) {
+        // margin-left: 0rem;
+        width: 75%;
+      }
+
+      @media(max-width: 768px) {
+        margin-left: 0rem;
+        width: 100%;
+
+      }
+
+      .dropDownTitleHolder {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-left: 5px;
         font-size: 16px;
         line-height: 22px;
-        .dropDownTitle{
+
+        .dropDownTitle {
+          font-size: 16px;
+          line-height: 21px;
         }
-        .dropDownSubTitle{
+
+        .dropDownSubTitle {
           color: rgba(156, 156, 156, 1);
+          line-height: 13px;
+          font-size: 14px;
         }
       }
-  
+
     }
-    .arrow{
-      bottom: -27px;
+
+    .arrow {
+      bottom: -31px;
       position: absolute;
-      right: 45%;
+      left: 32px;
       transform: rotate(-90deg);
       z-index: 1;
-      background:unset;
+      background-color: #fff;
+      @media(max-width:500px){
+        bottom: -25px;
+      }
       .svgWrapper{
         // border: 1px solid rgba(0, 0, 0, 0.25);
         // box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       }
     }
-    .modalContainer{
+
+    .modalContainer {
       position: absolute;
-      bottom: -245px;
-      right: 0;
-      width:490px;
+      bottom: -233px;
+      left: 0%;
+      width: 270px;
       height: max-content;
-      background: #fff;
+      background-color: #fff;
       box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       z-index: 1;
-      @media (max-width: 500px) {
-        width:100%;
+
+      @media (max-width: 767px) {
+        right: 0%;
       }
-      .row{
+
+      @media (max-width: 500px) {
+        width: 100%;
+        bottom: -222px;
+      }
+
+      .row {
         display: flex;
         justify-content: space-between;
         align-content: center;
         padding: .5rem 1rem;
         border-bottom: 1px solid #ccc;
-        .rowTitle{
+        align-items: center;
+        background-color: #fff;
+
+        .rowTitle {
           font-size: 16px;
+          font-family: "NeueHaasUnica", Arial, sans-serif;
+
         }
-        .rowDesc{
+
+        .rowDesc {
           font-size: 14px;
           color: rgba(156, 156, 156, 1);
+          font-family: "NeueHaasUnica", Arial, sans-serif;
+
         }
       }
-      .selectorHolder{
+
+      .selectorHolder {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 25%;
         font-family: "NeueHaasUnica", Arial, sans-serif;
-        .selectorBtn{
+
+        .selectorBtn {
           border: 1px solid rgba(156, 156, 156, 1);
           border-radius: 50%;
           width: 25px;
@@ -216,54 +448,134 @@
     }
   }
 }
+
+.titleHolder h3 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 24px;
+  background-color: #000;
+  padding: 16px 45px;
+
+  @media(max-width:1025px) {
+    font-size: 30px;
+  }
+
+  @media(max-width:767px) {
+    font-size: 25px;
+    padding: 16px 25px;
+  }
+
+  @media(max-width:500px) {
+    font-size: 20px;
+    padding: 16px 10px;
+  }
+
+  @media(max-width:400px) {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+}
+
 .mastHeadContainer {
   position: relative;
+
   .titleHolder {
     font-family: "SaolDisplay" !important;
     position: absolute;
-    text-transform: uppercase;
+    text-transform: capitalize;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 0%;
+    right: 0%;
+    transform: translate(-0%, -50%);
     padding: 1.5rem 5rem;
-    background-color: black;
+    // background-color: black;
     color: #fff;
     font-size: 40px;
     line-height: 44px;
     display: grid;
     place-content: center;
+
+    @media (max-width: 1441px) {
+      top: 30%;
+    }
+
+    @media (max-width: 1025px) {
+      top: 25%;
+      font-size: 26px;
+    }
+
     @media (max-width: 769px) {
+      top: 40%;
       font-size: 30px;
       line-height: 34px;
     }
+
     @media (max-width: 500px) {
+      top: 40%;
       padding: 1.5rem 2rem;
       font-size: 25px;
       line-height: 28px;
     }
+
+    @media (max-width: 411px) {
+      top: 25%;
+      padding: 1.5rem 0.5rem;
+    }
+
+    @media (max-width: 325px) {
+      top: 17%;
+      padding: 1rem 0.5rem;
+    }
   }
 }
+
 .MastHeadMobImg {
   width: 100%;
   height: auto;
   display: none;
+
   @media (max-width: 1440px) {
     object-fit: scale-down;
   }
+
   @media (max-width: 769px) {
     display: block;
     object-fit: unset;
   }
 }
+
 .MastHeadDeskImg {
   width: 100%;
   height: auto;
   display: block;
+
   @media (max-width: 1440px) {
     object-fit: scale-down;
   }
+
   @media (max-width: 769px) {
     display: none;
     object-fit: unset;
   }
+}
+
+@media (max-width: 420px) {
+  .dateborder{
+    border-bottom: 1px solid #9C9C9C;
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+  }
+}
+
+
+
+
+
+
+@supports (-webkit-touch-callout: none) {
+  .dateRangeInput input::-webkit-calendar-picker-indicator {
+   background-color: transparent;
+   color: #000;
+  } 
 }

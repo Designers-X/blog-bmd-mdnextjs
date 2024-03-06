@@ -13,17 +13,21 @@
   .flickityButtonIcon{
 	transform: rotate(360deg);
 	width: 14px;
+    fill: #10182F;
 }
+
+
 
 .flickityButtonIcon1{
 	transform: rotate(180deg);
 	width: 14px;
+    fill: #10182F;
 }
 
 
 
 .container{
-    width: 75%;
+    width: 85%;
     margin: auto;
     // border: 1px solid;
 }
@@ -34,7 +38,7 @@
     // display: grid;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 52px 0; 
+    margin: -5px 0 15px 0; 
     
 }
 
@@ -44,6 +48,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 30px;
+    margin: 65px 0 0 0;
 }
 
 .MainProductListAA{
@@ -60,8 +65,8 @@ font-family:"NeueHaasUnica"!important;
 font-size: 35px;
 font-style: normal;
 font-weight: 700;
-line-height: 24px; /* 68.571% */
-margin: 0 0 30px 0;
+line-height: 40px; /* 68.571% */
+margin: -10px 0 30px 0;
 }
 
 .MainProductListAA p{
@@ -72,6 +77,7 @@ font-size: 18px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 155.556% */
+// margin-bottom: 65px;
 }
 
 
@@ -88,17 +94,17 @@ line-height: 28px; /* 155.556% */
 
 
 .ImgcontentAA{
-    background-color: #EDEDF5; 
-    margin: 0 0 0px 0;  
-    height: 110px;
+    // background-color: #EDEDF5; 
+    // margin: 0 0 0px 0;  
+    // height: 70px;
     // padding: 10px;
-    border-radius: 0 0 10px 10px;
+    // border-radius: 0 0 10px 10px;
     
 }
 
 .ImgContent{
     position: relative;
-        padding: 25px;
+        padding:10px 20px;
     display: flex;
     background-color: #fff;
     width: 85%;
@@ -110,7 +116,7 @@ line-height: 28px; /* 155.556% */
     
 }
 
-.ImgContent h2{
+.ImgContent .InnerA h2{
     color: #000;
 font-family: "NeueHaasUnica"!important;
 font-size: 18px;
@@ -149,7 +155,7 @@ line-height: 21px;
 
 .InnerB p img{
     margin: 0 8px 0 0;
-    width: 16px;
+    width: 12px;
     // height: 20px;
 }
 
@@ -191,14 +197,25 @@ border-radius: 10px;
 }
 
 .Control1{
-    margin: 0px 0;
+    margin: 0px 0 -28px 0;
+    // background-color: #000;
+    height: 100%;
+    border-radius:  10px;
+    background-color: #EDEDF5; 
+    @media(max-width:1199px){
+
+    }
+
 }
 
 .Pagination{
     display: flex;
     justify-content: center;
-    margin: 60px 0 50px 0;
+    margin: 60px 0 13px 0;
     
+}
+.PageNumbers{
+    display: flex;
 }
 
 .disabled{
@@ -219,6 +236,7 @@ border-radius: 4px;
 width: 36px;
 height: 36px;
 background-color: #FFF;
+border: 1px solid #000;
 }
 
 .Pagination .BtnBorderNone{
@@ -274,7 +292,7 @@ z-index: 1;
 @media(max-width:1299.98px){
     .ImgContent {
       
-        padding: 15px;
+        padding: 10px;
         width: 90%;
     }
 
@@ -284,17 +302,60 @@ z-index: 1;
 }
 
 @media (max-width:1225.98px){
-    .MainProductListAA h2 {
-        font-size: 18px;
+   
+    .cartBox h5 {
+        top: -25px;
+        left: 20px;
+        font-size: 21px;
     }
+    .arrowblack {
+
+        right: 53px;
+        top: 22%;
+    }
+
+    .cartBox{
+        width: 58px;
+        padding: 5px;
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+        }
+
+    .MainProductListAA h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:1199px){
+    .ImgContent{
+      
+        display: block;   
+    }
+
+    // .ImgcontentAA {
+    //       height: 110px;
+    //         }
 }
 
 @media (max-width: 1024.98px) {
 
+    .ImgContent{
+      
+        display: flex;   
+    }
+
+    // .ImgcontentAA {
+    //       height: 90px;
+    //         }
+
+
+
     .MainProductListAA .HTwoClass {
     
     font-size: 35px;
-        margin: 30px 0 30px 0;
+        margin: 20px 0 20px 0;
     }
     .MainProductListA{
                gap: 30px;
@@ -303,12 +364,12 @@ z-index: 1;
     .ImgContent {
                 padding: 20px 20px 10px 20px ;
                 width: 90%;     
-        top: -44px;
+        top: -63px;
        }
 
     .InnerB button {
          font-size: 9px;
-        padding: 2px 5px;
+        padding: 4px 11px;
          }
 
     .MainImgFive img{
@@ -359,6 +420,15 @@ z-index: 1;
 
 
 @media (max-width: 767.98px) {
+    .MainProductListA {
+        width: 80%;
+     
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 20px;
+        gap: 20px;
+        margin: 65px auto 0 ;
+    }
+
     .ImgContent {
         padding: 10px 10px 10px 10px;
         
@@ -370,11 +440,11 @@ z-index: 1;
         line-height: 35px;
         
         }
-    .ImgcontentAA{
-               margin: 0 0 0px 0;  
-        height: 90px;
+    // .ImgcontentAA{
+    //            margin: 0 0 0px 0;  
+    //     height: 90px;
                
-    }
+    // }
     .MainProductListAA h2 {
         font-size: 30px;
     }
@@ -384,34 +454,57 @@ z-index: 1;
 }
 
 @media (max-width: 450px) {
-   
 
+    
     .cartBox h5 {
-        color: #fff;
-        position: absolute;
-        top: -16px;
-        left: 17px;
-        font-size: 14px;
+        top: -25px;
+        left: 13px;
+        font-size: 16px;
     }
+    .arrowblack {
 
-    .svgCart{
-    padding: 3px;
-    position: relative;
-    top: 4px;
-    }
-
-    .arrowblack{
-        position: absolute;
-        right: 46px;
-        top: 14%;
+        right: 53px;
+        top: 22%;
     }
 
     .cartBox{
-        width: 50px;
-        height: 46px;
-          top: 43%;
-          
+        width: 40px;
+        padding: 2px;
+        height: 40px;
+            
         }
+   
+    .MainProductListA {
+        width: 100%;
+         }
+    // .cartBox h5 {
+    //     color: #fff;
+    //     position: absolute;
+    //     top: -16px;
+    //     left: 17px;
+    //     font-size: 14px;
+    // }
+
+    // .cartBox.svgCart{
+    // padding: 3px;
+    // position: relative;
+    // top: 4px;
+    // width: 47px;
+    // height: 32px;
+    // }
+
+    .arrowblack{
+        position: absolute;
+        right: 36px;
+        top: 9%;
+    }
+
+    // .cartBox{
+    //     width: 50px;
+    //     height: 46px;
+    //       top: 43%;
+          
+    //     }
 
 
 
@@ -428,5 +521,15 @@ z-index: 1;
              grid-template-columns: repeat(1, auto);
         gap: 30px;
     }
+}
+
+
+@media(max-width:500px){
+    // svg.svgCart {
+    //     width: 34px;
+    //     height: 27px;
+    //     margin: 1px 3px -12px 0px;
+    
+    // }
 }
 

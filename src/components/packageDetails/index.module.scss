@@ -1,34 +1,80 @@
 .packageDetailContainer {
-  max-width: 75%;
+  max-width: 80%;
   margin: auto;
   .imgConatiner {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, 250px);
+    // flex-wrap:wrap;
+    // justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    margin: 40px 0 40px 0;
+    // grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(4, auto);
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    @media (max-width: 400px) {
+      grid-template-columns: repeat(1, auto);
+    }
+
     .imgHolder {
-      width: 250px;
-      height: 250px;
-      border-radius: 12px;
-      margin: 1rem 0;
+      width: 100%;
+            border-radius: 12px;
+      
       @media (max-width: 1350px) {
-          width: 200px;
-          height: 200px;
+      
         }
         @media (max-width: 1000px) {
-          padding: 1rem;
+      
           margin: 0;
-        width: 50%;
-        height: auto;  
+        
       }
+   
         @media (max-width: 550px) {
-        width: 100%;
-        height: auto;  
+       
     }
     }
     @media (max-width: 1350px) {
-        grid-template-columns: repeat(auto-fill, 200px);
+     
+
     }
   }
+}
+
+
+
+
+
+
+
+
+
+.packageDetailContainer h2{
+  font-size: 36px;
+  font-weight: 600;
+  margin: -21px 0 0 0;
+}
+.packageDetailContainer p{
+  font-size: 18px;
+  font-weight: 300;
+  margin: 20px 0 0 0;
+}
+
+.packageDetailContainer h2.packageHeading{
+  margin: -21px 0 0 0 !important;
+}
+
+@media(max-width:767px){
+  .packageDetailContainer h2{
+    font-size: 30px;
+      // margin: 0px 0 0 0;
+  }
+}
+
+@media(max-width:500px){
+  .packageDetailContainer h2{
+    font-size: 22px;
+    margin: 0px 0 0 0;
+}
 }

@@ -12,7 +12,7 @@
 
 
 .container{
-	width: 75%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -57,12 +57,32 @@ align-items: center;
 .DropDraw .dropdownList{
 	position: absolute;
 	width: 100%;
-    background-color: #fff;
+    background-color: #f4f4f4;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
     text-align: center;
 	margin: 11px 0 0 0;
-	border: 1px solid #d9d9d9;
+    border: 1px solid #dedede75;
 	z-index: 1;
+	transition: 0.5s;
+	padding: 5px 2px;
+	min-width: 166px;
 
+
+}
+.dropdownItem{
+	text-align: end;
+	padding: 0 15px 0 0px;
+	border-bottom: 1px solid #ececec;
+}
+
+.dropdownItem{
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.dropdownItem img{
+	margin: 0 3px;
 }
 
 .dropdownHeader{
@@ -140,18 +160,22 @@ font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-padding:9px 22px;
+padding:0px 22px;
+height: 48px;
+letter-spacing: 0.5px;
+border: none;
+
 }
 
 .SearchBarA{
-	width: 18%;
+	width: 20%;
 	display: flex;
 	justify-content: start;
 	
 }
 
 .SearchBarB{
-	width: 70%;
+	width: 65%;
 	display: flex;
 	// justify-content: center;
 	justify-content: space-between;
@@ -161,7 +185,7 @@ padding:9px 22px;
 }
 
 .SearchBarC{
-	width: 12%;
+	width: 15%;
 	display: flex;
 	justify-content: center;
 	padding: 0 0px 0 20px;
@@ -192,20 +216,18 @@ padding:9px 22px;
 
 @media (max-width: 1399.98px) {
 	.SearchBarC button {
-		border-radius: 12px;
-		background: #000;
-		color: #FFF;
-		font-family: "NeueHaasUnica" !important;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		padding: 9px 10px;
+		font-size: 15px;
+			padding: 7px 15px;
 	}
 
 }
 
 @media (max-width: 1024.98px) {
+	.container{
+		width: 90%;
+		margin: auto;
+	}
+	
 
 	.dropdownHeader {
 			font-size: 12px;
@@ -225,7 +247,8 @@ padding:9px 22px;
 	.SearchBarC button {
 		border-radius: 10px;
 			font-size: 12px;
-			padding: 6px 10px;
+			height: 40px;
+			padding: 0px 16px;
 	}
 
 	.dropdownContainer {
@@ -233,12 +256,19 @@ padding:9px 22px;
 	
 		margin: auto 2%;
 			padding: 4px;
+			@media(max-width:780px){
+				gap: 0px;
+			}
 		}
 		.DropDraw {
 			padding: 0 0 0 5px;
 					}
 
 					.arrowUp .flickityButtonIcon {
+						width: 10px;
+					}
+
+					.arrowUp .flickityButtonIcon1{
 						width: 10px;
 					}
 

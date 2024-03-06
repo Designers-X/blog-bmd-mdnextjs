@@ -26,8 +26,8 @@ const CategoriesBox = ({ category, index }) => {
   );
   const Box2 = ({ title, href = null }) => (
     <div className={styles.categoryTitleContainer2}>
-      <span className={styles.layout2Border1}></span>
-      <span className={styles.layout2Border2}></span>
+      <span className={styles.layout2Border1}>csdaccascascsa</span>
+      <span className={styles.layout2Border2}>sadsdac</span>
       {href ? (
         <a href={href} className={styles.titleHolder}>
           {title}
