@@ -293,15 +293,18 @@
   text-align: center;
   border: 1px solid #D9D9D9;
   outline: none;
+  word-spacing: normal;
 }
 
 .Quantity label{
  font-size: 14px;
  margin: 0 10px 0 0;
  font-family: "NeueHaasUnica" !important;
+}
 
-//  display: flex;
-  
+.vinodDemo{
+  width: 10px;
+  visibility: hidden;
 }
 
 
