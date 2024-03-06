@@ -43,7 +43,7 @@
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 28px;
+  padding: 15px 28px;
   margin: 0 0 0px 0;
 }
 .travel3a h5 {
@@ -58,12 +58,20 @@
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 28px;
+  padding: 15px 28px;
   margin: 0 0 0px 0;
 }
 
+.BorderNoneCheckDate h5{
+  font-size: 16px;
+  color: #A3A3A3;
+  margin: 0 0 0 0;
+  font-family: "NeueHaasUnica" !important;
+
+}
+
 .TravHeight {
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .TravHeight span {
@@ -95,7 +103,7 @@
 .MapTravel h4 {
   color: #000;
     font-size: 16px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0 -2px 0;
 }
 .MapTravel span {
   color: #9d9d9d;
@@ -114,15 +122,27 @@
   text-align: right;
   font-size: 14px;
 }
-@media (max-width: 1199.98px) {
-  .ExecllentTravel {
-    display: block;
+@media (max-width: 1430.98px) {
+   .ExecllentTravel span {
+    // margin: 0 4px 5px 0;
   }
-  .ExecllentTravel span {
-    margin: 0 4px 5px 0;
+  .ExecllentTravel {
+    display: grid;
+    gap: 10px;
   }
 }
+
+@media (max-width: 1199.98px) {
+  // .ExecllentTravel {
+  //   display: block;
+  // }
+ 
+}
 @media (max-width: 1024.98px) {
+  .ExecllentTravel {
+    display: flex;
+    gap: 10px;
+  }
 
   .TravHeight {
     margin: 0px 0 0 0;

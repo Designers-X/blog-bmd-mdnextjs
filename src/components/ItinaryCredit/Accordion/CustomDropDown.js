@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './Style.module.scss';
 
 const CustomDropdown = () => {
+  const [display, setDisplay] = useState(false);
   const [selectedOption, setSelectedOption] = useState({
     img: '/package/postCard.png',
     label: 'Visa / MasterCard / Amex / JCB',
@@ -14,12 +15,19 @@ const CustomDropdown = () => {
 
   const handleElectOption = () => {
     setShowOption(!showOption);
+
+    setDisplay((prevDisplay) => !prevDisplay);
   };
 
   const getElectedOption = (item) => {
     setShowOption(!showOption);
     setSelectedOption(item);
   };
+
+  // const handleElectOption1 = () => {
+  //   setModal(!modal);
+  //   setDisplay((prevDisplay) => !prevDisplay)
+  // };
 
   const Options = [
     {
@@ -46,11 +54,18 @@ const CustomDropdown = () => {
         Select Payment Method<span className={styles.HashRed}>*</span>
       </label>
       <div className={styles.dropDown}>
-        <div onClick={handleElectOption}>
+        <div className={styles.dropDown11} onClick={handleElectOption}>
           {selectedOption.img && <img src={selectedOption.img} alt="card" />}
           <label>{selectedOption.label}</label>
           <span className={styles.arrowIcon}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="10" viewBox="0 0 17 10" fill="none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="17"
+              height="10"
+              viewBox="0 0 17 10"
+              className={display ? styles.dropDownTitleSvg1 : styles.dropTitleHoldesvg}
+              fill="none"
+            >
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"

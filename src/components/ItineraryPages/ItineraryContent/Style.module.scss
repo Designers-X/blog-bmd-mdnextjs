@@ -21,7 +21,7 @@
     justify-content: space-between;
   }
   .travel2a img {
-    margin: 0 3px;
+    // margin: 0 3px;
   }
   .travel2 {
     width: 75%;
@@ -36,6 +36,7 @@
     font-size: 25px;
     font-weight: 500;
     margin: 0 0 8px 0;
+    gap:5px
   }
   .travel2a .travelP2 {
     border-top: 1px solid #d9d9d9;
@@ -57,8 +58,9 @@
   .travel2a .travelP2, .routeAout p {
     margin: 0;
     line-height: 24px;
-    padding: 10px 0 0 0;
-    text-align: justify;
+    padding: 8px 0 0 0;
+    text-align: unset;
+    font-family: "NeueHaasUnica" !important;
     }
 
   .travel2a {
@@ -66,14 +68,14 @@
   }
   .controllUL h3,
 .route1 h3 {
-  color: #222;
+  color: #222222;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   margin: 20px 0 11px 0;
 }
 .controllUL .ul1 ul li {
-    line-height: 40px;
+    line-height: 32px;
   }
   .controllUL {
     display: flex;
@@ -113,6 +115,13 @@
     // justify-content: center;
    
   }
+
+// .TravSvg{
+//   display: flex;
+//   gap: 5px;
+//   margin-left: 10px;
+// }
+
   .routeAin .RoutSpan {
     color: #fff;
         font-size: 15px;
@@ -124,7 +133,7 @@
     justify-content: center;
   }
   .routeAin {
-    width: 150px;
+    // width: 150px;
   }
   .routeAin p::before, .routeAin p::after{
     position: absolute;
@@ -158,6 +167,7 @@
     line-height: 17px;
     position: relative;
     text-align: center;
+    width: 85px;
     display: flex;
     justify-content: center;
   }
@@ -166,7 +176,7 @@
   }
   @media (max-width: 1299.98px) {
     .routeAin p::before {
-        top: 55px;
+        // top: 55px;
       }
     .route1 .routeAa {
       margin: 35px 0 36px 0;
@@ -178,7 +188,12 @@
     .routeAout p {
       font-size: 14px;
     }
+    .container{
+      width: 90%;
+    }
 }
+
+
    @media (max-width: 1024.98px) {
     .Chekinder {
       width: 100%;
@@ -190,9 +205,7 @@
       .travel2a {
         margin: 0 0 30px 0;
       }
-    .container{
-      width: 90%;
-    }
+
         .travel1 {
           display: block;
         }
@@ -208,6 +221,7 @@
         width: 50%;
         padding: 1px 0 0 0;
         border-left: 0px solid #d9d9d9;
+        margin: -39px 0 0 0;
       }
     .travel2a {
       padding: 17px 17px 62px 17px;

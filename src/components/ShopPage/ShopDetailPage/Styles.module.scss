@@ -25,7 +25,7 @@
 
 .ShopBanner {
   text-align: center;
-  background-color: #E8E8E8;
+  background-image: linear-gradient(to right, rgba(232,232,232,100), rgba(237,237,245,100));
   padding: 20px 0;
 
 }
@@ -95,9 +95,9 @@
   font-size: 35px;
   font-style: normal;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 30px;
   /* 60% */
-  margin: 0 0 20px 0;
+  margin: 0 0 13px 0;
 }
 
 .galleryTop {
@@ -109,7 +109,7 @@
 }
 
 .SecondParent h5 {
-  margin: 14px 0;
+  margin: 17px 0 20px 0;
   color: #000;
   // text-align: center;
   
@@ -122,7 +122,7 @@
 
 .SizeArea h5{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 21px;
   font-family: "NeueHaasUnica" !important;
   margin: 0 0 15px 0;
@@ -178,6 +178,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  margin: 0 0 23px 0;
   /* 150% */
 }
 
@@ -188,15 +189,17 @@
 
 .SizeRadio input[type="radio"],
 .SizeRadio input[type="radio"]:checked {
-  width: 25px;
+  width: 10px;
   height: 25px;
-  top: 30%;
+  // top: 30%;
 }
 
 .SizeRadio input[type="radio"] {
   padding: 0;
   border: 5px solid #000000;
-  margin-right: 16px;
+  visibility: hidden;
+  
+  // margin-right: 16px;
 }
 
 .SizeRadio input[type="radio"]:checked {
@@ -231,7 +234,7 @@
   width: 66px;
   height: 34px;
   // border-radius: 15px;
-  background-color: #ffff;
+  // background-color: #ffff;
   ;
 
   content: "";
@@ -255,11 +258,11 @@
   width: 66px;
 }
 
-.ChangeSize {
-  position: absolute;
-  left: 30%;
-  top: 17%;
-}
+// .ChangeSize {
+//   position: absolute;
+//   left: 19px;
+//     top: 6px;
+// }
 
 .SizeRadio input[type="radio"]:checked+span {
   color: #fff;
@@ -279,7 +282,7 @@
 
 .boxControl {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -292,7 +295,7 @@
 
 
 .QBoxee {
-  margin: 30px 0 0 0;
+  margin: 18px 0 -17px 0;
   display: flex;
   gap: 30px;
 }
@@ -336,18 +339,18 @@
   line-height: 21px;
   /* 150% */
   position: relative;
-  top: 14px;
+  top: 32px;
   background: #fff;
   display: inline-block;
   left: 20px;
   padding: 5px;
-  margin: 40px 0 0 0;
+  // margin: 40px 0 0 0;
 }
 
 .SkuProduct {
   border-top: 1px Dashed #000;
   margin: 20px 0 20px 0;
-  padding: 10px 0 10px 0;
+  padding: 5px 0 0px 0;
 }
 
 .SkuProduct p {
@@ -413,13 +416,18 @@
   /* 222.222% */
   margin: 0;
   display: flex;
-  // align-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingSvg{
+  display: flex;
   gap: 10px;
 }
 
 .tabsInner h3 span {
   color: #999;
-
+  font-family: "NeueHaasUnica"!important;
   font-size: 12px;
   font-weight: 400;
 }
@@ -446,6 +454,10 @@
   font-weight: 400;
   line-height: 24px;
   /* 200% */
+}
+
+.ReplyStatus p span{
+  color: #999999;
 }
 
 
@@ -547,7 +559,7 @@
   font-family: "NeueHaasUnica" !important;
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 40px;
   /* 222.222% */
 }
@@ -586,6 +598,7 @@
 
 
 
+
 .tab.Letter.Letter::after {
   background-color: #000;
 
@@ -613,6 +626,8 @@
 }
 
 @media(max-width:767.98px) {
+  .SecondParent h3 {
+    font-size: 25px;}
 
   .FlexCode {
     display: block;
@@ -695,4 +710,23 @@
     width: 45px;
     height: 45px;
   }
+}
+
+
+
+
+
+  .ChangeSize {
+    position: absolute;
+    left: 19px;
+    top: 6px;
+  }
+
+
+@supports (-webkit-touch-callout: none) {
+  .ChangeSize {
+    position: absolute;
+    left: 22px;
+    top: 13px;
+  } 
 }

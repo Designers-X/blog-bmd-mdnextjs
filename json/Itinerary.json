@@ -22,7 +22,8 @@
       "checkInTime": "03:00 PM",
       "checkOutDate": "Sat, 08 Jul 2023",
       "checkOutTime": "12:00 PM",
-      "guestInfo": "2 Guest | 1 Room | 1 Night",
+      "guestInfo": "2 Guest | 1 Room",
+      "guestSedule":" 1 Night",
       "rating": "8.6",
       "reviews": "188 reviews",
       "amenities": ["Breakfast", "Housekeeping"],
@@ -69,7 +70,7 @@
       "date": "07 Jul 2023 - 08 Jul 2023",
       "nights": "1 Night",
       "title": "Travelling Capri By Boat",
-      "rating": 8.6,
+      "rating": 4.6,
       "reviews": 188,
       "price": "$1150.49",
       "savings": "$32.21",
@@ -117,7 +118,7 @@
     {
       "id": 2,
       "image" : "/package/RewivMen2.png",
-      "date": "yesterday",
+      "date": "20/12/2023",
       "name": "Carminia  ",
       "rating":4,
       "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
@@ -128,7 +129,7 @@
     {
       "id": 3,
       "image" : "/package/RewivMen3.png",
-      "date": "yesterday",
+      "date": "18/12/2023",
       "name": "Rohit Sharma  ",
       "rating":4,
       "description": "The build and materials used in shoes are top-notch. It feels durable and well-crafted, ensuring a long-lasting product life.",
@@ -136,7 +137,9 @@
       "dislike": 0
       
     }
+    
   ],
+
 
   "cardTabData" :[
 {
@@ -215,8 +218,8 @@
 
     {
       "id":1,
-      "image": "/package/CheckProductImage1.png",
-      "name":"Ferragamo Shoe",
+      "image": "/package/gladiator2.png",
+      "name":"Jewellery",
       "rating": "4",
       "MadeIN" : "Made in Italy",
       "PriceTag":"540.00"
@@ -224,8 +227,8 @@
     },
     {
       "id":1,
-      "image": "/package/CheckProductImage1.png",
-      "name":"Ferragamo Shoe",
+      "image": "/package/gladiator3.png",
+      "name":"Gladiator Sandal",
       "rating": "4",
       "MadeIN" : "Made in Italy",
       "PriceTag":"540.00"

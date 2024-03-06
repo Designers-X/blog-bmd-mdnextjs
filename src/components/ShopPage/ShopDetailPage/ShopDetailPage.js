@@ -113,7 +113,7 @@ const YourProductPageComponent = () => {
                 <div className={Styles.controlparag}>
                   <p>Safe Payment</p>
                   <div className={Styles.SafePament}>
-                    <img src="/package/paymantImg23.png" />
+                    <img src="/package/paymantImg23.svg" />
                   </div>
                 </div>
 

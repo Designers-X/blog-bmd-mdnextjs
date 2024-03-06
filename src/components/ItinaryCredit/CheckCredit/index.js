@@ -46,7 +46,7 @@ function CheckCredit() {
                 </div>
               </div>
               <div className={`${Styles.travel3a} ${Styles.TravHeight}`}>
-                <h5>{booking.rating} Excellent</h5>
+                <h5>{booking.locationRating} Excellent</h5>
                 <span>{booking.reviews} reviews</span>
                 <div className={Styles.ExecllentTravel}>
                   <span className={Styles.ExecllentMargin}>Breakfast</span>

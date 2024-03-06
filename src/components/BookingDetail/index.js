@@ -56,7 +56,7 @@ function Booking() {
               <div className={Styles.CapriContent}>
                 <h3>Travelling Capri By Boat</h3>
                 <h6>Capri By Boat</h6>
-                <p>Plot No 120, Ekta Merket ,Sector 42 , Floridaaa</p>
+                <p>Plot No 120, Ekta Merket ,Sector 42 , Florida</p>
                 <p className={Styles.BookEnd}>Trip Direction </p>
               </div>
               <div className={Styles.CapriImg}>

@@ -11,7 +11,7 @@ function CheckIn() {
             <div className={Styles.travel3}>
               <div className={Styles.SideSpaceTravel}>
                 <div className={Styles.checkDate}>
-                  <span>Check in</span>
+                  <span>Check In</span>
                   <h6>{data.checkInDate}</h6>
                   <span>{data.checkInTime}</span>
                 </div>
@@ -23,6 +23,7 @@ function CheckIn() {
                 <div className={`${Styles.checkDate} ${Styles.BorderNoneCheckDate}`}>
                   <span>Guest</span>
                   <h6>{data.guestInfo}</h6>
+                  <h5>{data.guestSedule}</h5>
                 </div>
               </div>
               <div className={`${Styles.travel3a} ${Styles.TravHeight}`}>

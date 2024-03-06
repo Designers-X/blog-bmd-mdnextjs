@@ -16,7 +16,7 @@
                     "avail": true
                 },
                 "content": {
-                    "title": "A Capri by Sea Island Tour",
+                    "title": "CAPRI, ITALY ISLAND TOUR",
                     "subTitle": "<p>A typical departure point for Capri by Sea is Marina Grande. Marina Grande is the larger of the two marinas on the island, the one most tourists are familiar with as the ferries operate from there. For landlubbers, Marina Grande offers easy access to a funicular up to the famous Piazza Umberto or grab one of the plentiful taxis up Capri’s infamous narrow and twisting roads to the main shopping area.</p><p>For those adventurous souls, it’s easy to hire a captain and their Gozzo (a spacious open boat with sun cushions that fits about six passengers) to show you Capri as only few see it. Typically your first destination is the smaller Marina called Marina Piccola, located directly across the island from Marina Grande.</p><p>But there are many sights to see before you arrive. For example, on the way out of the harbor, you’ll see a tiny statue of a young boy waving from a rock called Gennarino Scigunizzo di Capri. It depicts Gennarino, a Neapolitan boy or ascugnizzo (the colloquial name for street urchin), who found a new life on Capri. It’s a tradition to greet him as you arrive or leave the island by boat.</p>",
                     "gallery": [
                         {
@@ -43,11 +43,11 @@
                         "heading": "Travelling capri by Boat",
                         "text": "A Capri By Sea Island Tour",
                         "image": {
-                            "src": "\\package\\t-1.png",
+                            "src": "\\package\\t-2.png",
                             "alt": ".."
                         },
                         "price": 2205,
-                        "star": 5,
+                        "star": 4,
                         "ratings": "2210 Verified Rating",
                         "discount": 10,
                         "link": "#",
@@ -58,7 +58,7 @@
                             "Free Cancellation Till 27 Jul 23"
                         ],
                         "tax":10,
-                        "term": "100% Money Back Guarantee on Clean rooms with TV, AC & Free Wi-Fi",
+                        "term": "100% money back guarantee on clean rooms with tv, ac & free wi-fi",
                         "btn":true,
                         "href":{
                             "book":"travelling-capri-by-boat/book",
@@ -69,11 +69,11 @@
                         "heading": "Travelling capri by Boat",
                         "text": "A Capri By Sea Island Tour",
                         "image": {
-                            "src": "\\package\\t-1.png",
+                            "src": "\\package\\t-4.png",
                             "alt": ".."
                         },
                         "price": 2205,
-                        "star": 5,
+                        "star": 4,
                         "ratings": "2210 Verified Rating",
                         "discount": 10,
                         "link": "#",
@@ -83,7 +83,28 @@
                         "tag": [
                             "Free Cancellation Till 27 Jul 23"
                         ],
-                        "term": "100% Money Back Guarantee on Clean rooms with TV, AC & Free Wi-Fi",
+                        "term": "100% money back guarantee on clean rooms with tv, ac & free wi-fi",
+                        "btn":true
+                    },
+                    {
+                        "heading": "Travelling capri by Boat",
+                        "text": "A Capri By Sea Island Tour",
+                        "image": {
+                            "src": "\\package\\t-3.png",
+                            "alt": ".."
+                        },
+                        "price": 2833,
+                        "star": 4,
+                        "ratings": "2210 Verified Rating",
+                        "discount": 3.5,
+                        "link": "#",
+                        "categories": [
+                            "Couple Friendly"
+                        ],
+                        "tag": [
+                            "Free Cancellation Till 27 Jul 23"
+                        ],
+                        "term": "100% money back guarantee on clean rooms with tv, ac & free wi-fi",
                         "btn":true
                     },
                     {
@@ -94,7 +115,7 @@
                             "alt": ".."
                         },
                         "price": 2205,
-                        "star": 5,
+                        "star": 4,
                         "ratings": "2210 Verified Rating",
                         "discount": 10,
                         "link": "#",
@@ -104,28 +125,7 @@
                         "tag": [
                             "Free Cancellation Till 27 Jul 23"
                         ],
-                        "term": "100% Money Back Guarantee on Clean rooms with TV, AC & Free Wi-Fi",
-                        "btn":true
-                    },
-                    {
-                        "heading": "Travelling capri by Boat",
-                        "text": "A Capri By Sea Island Tour",
-                        "image": {
-                            "src": "\\package\\t-1.png",
-                            "alt": ".."
-                        },
-                        "price": 2205,
-                        "star": 5,
-                        "ratings": "2210 Verified Rating",
-                        "discount": 10,
-                        "link": "#",
-                        "categories": [
-                            "Couple Friendly"
-                        ],
-                        "tag": [
-                            "Free Cancellation Till 27 Jul 23"
-                        ],
-                        "term": "100% Money Back Guarantee on Clean rooms with TV, AC & Free Wi-Fi",
+                        "term": "100% money back guarantee on clean rooms with tv, ac & free wi-fi",
                         "btn":true
                     }
                 ]

@@ -24,7 +24,9 @@ const PackCard = ({ element, index = null }) => {
                 })}
             </div>
           </div>
-          <img src={element.image.src} alt={element.image.alt} className={styles.imgSectionHolder} />
+          <div>
+            <img src={element.image.src} alt={element.image.alt} className={styles.imgSectionHolder} />
+          </div>
         </div>
 
         <div className={styles.contentHolderFlex}>

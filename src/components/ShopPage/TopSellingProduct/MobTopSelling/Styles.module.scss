@@ -12,21 +12,27 @@
   }
 
   .CarouselStyles {
-    margin: 0 0 30px 0;
+    margin: 0 auto 30px auto;
+    // display: flex;
+    // justify-content: center;
+
 }
 
 
   .CarouselStyles button{
     display: inline-block;
     width: 32px !important;
-    height: 3px !important;
+    height: 4px !important;
  border-radius: 0% !important;
     opacity: 1;
     padding: 5px 5px 5px 5px;
     box-shadow: none;
     transition: background .5s;
-    border: 0px solid grey;
+    // border: 0px solid grey;
+    border: none;
       padding: 0;
+      background-color: #C7C7C7 ;
+
     margin: 0;
     margin-right: 6px;
     outline: 0;
@@ -48,13 +54,23 @@
     background-color: #EDEDF5;
     border-radius: 10px;
     padding:20px;
-    margin: 0 0 30px 0;
+    margin: 0 auto 30px auto;
+    max-width: 298px;
+
+    
+}
+
+.ProductTopImg{
+    max-height: 188px;
+    max-width: 298px;
+    margin: auto;
 }
 
 .ProductTop img{
     border-radius: 10px;
     position: relative;
     width: 100%;
+   
 }
 
 .TopH2{
@@ -71,24 +87,32 @@
 .ProductTop h4{
     
     color: #FFF;
-font-family:"NeueHaasUnica"!important;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 24px; /* 109.091% */
-text-transform: uppercase;
-margin:-21px 0px 0 10px;
-position: absolute;
+    font-family: "NeueHaasUnica" !important;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: -25px 0px 0 10px;
+    position: absolute;
+    text-align: unset !important;
+    
 }
 
 .ProductTop p{
     color: #000;
-font-family: "NeueHaasUnica"!important;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-margin: 10px 0 0 0;
+    font-family: "NeueHaasUnica" !important;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 0px 0 0 0;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 5px 0 4px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 
@@ -106,6 +130,20 @@ margin: 10px 0 0 0;
 }
 
 @media (max-width: 575.98px) {
+    .ProductTop {
+               padding: 10px 20px 20px;
+           }
+
+    .ProductTop h4 {
+        
+        font-size: 22px;
+        font-weight: 700;        
+    }
+    .ProductTop p {
+        
+        font-size: 14px;
+            }
+
     .container{
     display: block;
 
@@ -115,4 +153,11 @@ margin: 10px 0 0 0;
     width: 80%;
     overflow: hidden;
 }
+}
+
+
+@media(max-width:413px){
+    .ProductTop h4{   
+        font-size: 20px;
+         }
 }

@@ -17,7 +17,7 @@
   flex-direction: column;
   height: 100%;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 10px;
   margin: 0;
 
   @media (min-width: 480px) {
@@ -32,11 +32,11 @@
   align-items: center;
   flex-shrink: 0;
   flex-grow: 1;
-  margin: 0.8em 0 0;
+  margin: 0em 0 0;
 
   @media (min-width: 480px) {
     justify-content: flex-start;
-    margin-top: 0;
+    // margin-top: 0;
   }
 
   a {
@@ -297,7 +297,7 @@
   cursor: pointer;
   background-color: #fff;
   color: #000;
-  padding: 10px 15px 0;
+  padding: 5px 8px 0 1px;
   border: none;
   float: left;
 }
@@ -306,8 +306,10 @@
   color: #444;
 }
 .sidebarcontainer {
-  width: 75rem;
+  max-width: 75rem;
+  // width: 75rem;
   margin: auto;
+  // width: 100%;
   @media (max-width: 1025px) {
       width: 100%;
       margin: auto;
@@ -317,15 +319,23 @@
 .topnav {
   overflow: hidden;
   background-color: #fff;
+  display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 13px 0 0 0;
   
 }
+
+
+
 
 .topnav a,.topnavright a {
   width: max-content;
   float: left;
   color: #000;
   text-align: center;
-  padding: 22px 16px 0;
+  padding: 0px 16px 0;
   text-decoration: none;
   font-size: 12px;
   text-transform: uppercase;
@@ -398,8 +408,8 @@
 
 // 22-05-2023 Add New Csss
 .topnavright {
-  float: right;
-  margin: 10px auto;
+  // float: right;
+  // margin: 10px auto;
   
 }
 .topnavright a{
@@ -462,6 +472,80 @@
     
 //   }
 // }
+
+
+@media (max-width: 1350.98px) {
+  .nav {
+    width: 100%;
+    // border-bottom: 1px solid #cfd7de;
+    // padding: 0 2rem;
+    // margin: 0 40px;
+}
+
+  .topnav {
+       gap: 20px;
+       padding: 0;
+      margin: 6px 0 0 0;
+    
+  }
+  }
+
+
+@media (max-width: 1305.98px) {
+  .topnav {
+ gap: 20px;    
+}
+
+.topnav a,.topnavright a {
+  width: max-content;
+  float: left;
+  
+  padding: 0px 10px 0;
+  
+  span{
+    letter-spacing: 0.08em;
+    font-weight: 600
+  }
+}
+ 
+
+
+}
+
+@media (max-width: 1250px) {
+  .nav {
+ 
+    padding: 0 2rem;
+  
+}
+
+  .topnav {
+    
+      border-bottom: thin solid #D9D9D9;
+      border-top: thin solid #D9D9D9;
+        
+   }
+
+  .MobileScroll {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  .navSection{
+    display: block;
+  }
+
+  .topnavright {
+    
+    position: absolute;
+    right: 34px;
+    top: 14px;
+}
+}
+
+
+
 @media (max-width: 1025px) {
   .navSection{
     display: block;
@@ -469,8 +553,8 @@
  .topnavright {
     
     position: absolute;
-    right: 12px;
-    top: 8px;
+    right: 25px;
+    top: 14px;
 }
 .navName {
  
@@ -478,8 +562,8 @@
   
 }
 .openbtn {
-  margin: 0.4rem 0;
-  padding: 0.5rem 0.625rem 0.5rem 0.625rem;
+  // margin: 0.4rem 0;
+
  
 }
 .topnavright a {
@@ -495,7 +579,7 @@
 .MobileScroll{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+  
 }
 
 .nav {
@@ -513,10 +597,30 @@
   }
 }
 @media (max-width: 600px){
+  .topnavright {
+        right: 15px;
+    }
+
   .hide{
     display: none;
   }
+
+  .nav {
+    padding: 0 1rem;
 }
+}
+@media (max-width: 480.98px) {
+  .topnav{
+    // margin: 19px 0 0 0;
+
+  }
+
+  .navName a {
+    padding: 0.5em;
+    margin-left: -0.5em;
+}
+}
+
 @media (max-width: 350px){
   .topnavright a {
     padding: 0px 4px;

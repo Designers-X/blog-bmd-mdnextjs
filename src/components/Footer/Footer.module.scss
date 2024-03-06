@@ -234,10 +234,22 @@ ul.contactSocialIcons {
 .lastBtn {
   color: #fff;
 }
+
+.InRow{
+  padding: 0 0 10px 12px;
+}
 // 24-05-2023 Add media Query
 @media (max-width: 767px) {
   .LogoSection{
     display: block;
     width: 50%;
+  }
+}
+
+
+@media(max-width:600px){
+  ul.contactSocialIcons {
+    position: relative;
+    top: -16px;
   }
 }
