@@ -1,303 +1,269 @@
 @font-face {
-	font-family: "NeueHaasUnica";
-	font-display: swap;
-	src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
-  }
-  
-  @font-face {
-	font-family: "NeueHaasUnicaM";
-	font-display: swap;
-	src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
-  }
-
-
-.container{
-	width: 85%;
-	margin: auto;
+  font-family: "NeueHaasUnica";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Regular.ttf");
 }
 
-
-
-
-.dropdownContainer{
-	display: flex;
-	gap :10px;
-	width: 100%;
-	margin: auto 3%;
-    justify-content: space-between;
-	padding: 10px;
-	border-radius: 15px;
-background-color: #EDEDF5;
-height: 50px;
-align-items: center;
+@font-face {
+  font-family: "NeueHaasUnicaM";
+  font-display: swap;
+  src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
 }
 
-.dropdownHeader .dropdownList{
-	background-color: #939393;
-	position: absolute;
-	// top: 10px;
+.container {
+  width: 85%;
+  margin: auto;
 }
 
-.dropdownHeader{
-	color: #000;
-	font-family: "NeueHaasUnica"!important;;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 24px; /* 150% */
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+.dropdownContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin: auto 3%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #ededf5;
+  height: 50px;
+  align-items: center;
 }
 
-.DropDraw{
-	position: relative;
+.dropdownHeader .dropdownList {
+  background-color: #939393;
+  position: absolute;
+  // top: 10px;
 }
 
-.DropDraw .dropdownList{
-	position: absolute;
-	width: 100%;
-    background-color: #f4f4f4;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
-    text-align: center;
-	margin: 11px 0 0 0;
-    border: 1px solid #dedede75;
-	z-index: 1;
-	transition: 0.5s;
-	padding: 5px 2px;
-	min-width: 166px;
-
-
-}
-.dropdownItem{
-	text-align: end;
-	padding: 0 15px 0 0px;
-	border-bottom: 1px solid #ececec;
+.dropdownHeader {
+  color: #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.dropdownItem{
-	font-size: 15px;
-	font-weight: 400;
+.DropDraw {
+  position: relative;
 }
 
-
-.dropdownItem img{
-	margin: 0 3px;
+.DropDraw .dropdownList {
+  position: absolute;
+  width: 100%;
+  background-color: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  text-align: center;
+  margin: 11px 0 0 0;
+  border: 1px solid #dedede75;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 5px 2px;
+  min-width: 166px;
+}
+.dropdownItem {
+  text-align: end;
+  padding: 0 15px 0 0px;
+  border-bottom: 1px solid #ececec;
 }
 
-.dropdownHeader{
-	// background-color: #EDEDF5;
+.dropdownItem {
+  font-size: 15px;
+  font-weight: 400;
 }
 
-.DropDraw:first-child{
-	border-left: 0px solid #000;
-
+.dropdownItem img {
+  margin: 0 3px;
 }
 
-.DropDraw{
-	padding: 0 0 0 10px;
-	border-left: 1px solid #000;
-	font-family:  "NeueHaasUnica"!important;;
-	font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 150% */
-color: #000;
-width: 100%;
-text-align: center;
+.dropdownHeader {
+  // background-color: #EDEDF5;
 }
 
-.dropdownItem:hover{
-	background-color: #d9d9d9;
+.DropDraw:first-child {
+  border-left: 0px solid #000;
 }
 
-.dropdownItem{
-	// border-bottom: 1px solid #d9d9d9;
+.DropDraw {
+  padding: 0 0 0 10px;
+  border-left: 1px solid #000;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  color: #000;
+  width: 100%;
+  text-align: center;
 }
 
-.SearchBarMain{
-	border-radius: 25px;
-border: 1px solid #E5E5E5;;
-background: #FFF;
-display: flex;
-justify-content: space-between;
-align-items: center;
- padding: 0px 20px;
- width: 100%;
- position: relative;
- top: -52px;
- 
+.dropdownItem:hover {
+  background-color: #d9d9d9;
 }
 
-.SearchBarMain input{
-	border-left: 1px solid #d9d9d9;
-	border-right: 0px solid #d9d9d9;
-	border-top: 0px solid #d9d9d9;
-	border-bottom: 0px solid #d9d9d9;
-	outline: none;
-	// border: 0px solid;
+.SearchBarMain {
+  border-radius: 25px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  width: 100%;
+  position: relative;
+  top: -52px;
 }
 
-.SearchBarMain input[type="text"]{
-	color: #939393;
-font-family: "NeueHaasUnica"!important;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-background-color: transparent;
+.SearchBarMain input {
+  border-left: 1px solid #d9d9d9;
+  border-right: 0px solid #d9d9d9;
+  border-top: 0px solid #d9d9d9;
+  border-bottom: 0px solid #d9d9d9;
+  outline: none;
 }
 
-.dropdownBorder{
-	// border: none;
+.SearchBarMain input[type="text"] {
+  color: #939393;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: transparent;
 }
 
-.SearchBarC button{
-	border-radius: 12px;
-background: #000;color: #FFF;
-font-family: "NeueHaasUnica"!important;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding:0px 22px;
-height: 48px;
-letter-spacing: 0.5px;
-border: none;
-
+.SearchBarC button {
+  border-radius: 12px;
+  background: #000;
+  color: #fff;
+  font-family: "NeueHaasUnica" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 0px 22px;
+  height: 48px;
+  letter-spacing: 0.5px;
+  border: none;
 }
 
-.SearchBarA{
-	width: 20%;
-	display: flex;
-	justify-content: start;
-	
+.SearchBarA {
+  width: 20%;
+  display: flex;
+  justify-content: start;
 }
 
-.SearchBarB{
-	width: 65%;
-	display: flex;
-	// justify-content: center;
-	justify-content: space-between;
-	border-left: 1px solid #E5E5E5;
-	border-right: 1px solid #E5E5E5;
-	height: 105px;
+.SearchBarB {
+  width: 65%;
+  display: flex;
+
+  justify-content: space-between;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  height: 105px;
 }
 
-.SearchBarC{
-	width: 15%;
-	display: flex;
-	justify-content: center;
-	padding: 0 0px 0 20px;
+.SearchBarC {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0px 0 20px;
 }
 
-.SearchSection input{
-	left:
-			17px;
-		position: relative;
-		width: 75%;
+.SearchSection input {
+  left: 17px;
+  position: relative;
+  width: 75%;
 }
 
-.arrow{
-	margin: 0 0 0 8px;
-	width: 20px;
-	// font-size: 20px;
+.arrow {
+  margin: 0 0 0 8px;
+  width: 20px;
 }
 
-.arrowUp .flickityButtonIcon{
-	transform: rotate(270deg);
-	width: 14px;
+.arrowUp .flickityButtonIcon {
+  transform: rotate(270deg);
+  width: 14px;
 }
 
-.arrowUp .flickityButtonIcon1{
-	transform: rotate(90deg);
-	width: 14px;
+.arrowUp .flickityButtonIcon1 {
+  transform: rotate(90deg);
+  width: 14px;
 }
 
 @media (max-width: 1399.98px) {
-	.SearchBarC button {
-		font-size: 15px;
-			padding: 7px 15px;
-	}
-
+  .SearchBarC button {
+    font-size: 15px;
+    padding: 7px 15px;
+  }
 }
 
 @media (max-width: 1024.98px) {
-	.container{
-		width: 90%;
-		margin: auto;
-	}
-	
+  .container {
+    width: 90%;
+    margin: auto;
+  }
 
-	.dropdownHeader {
-			font-size: 12px;
-			line-height: 18px;
-	}
+  .dropdownHeader {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
-.SearchBarMain input[type=text] {
-        font-size: 12px;
+  .SearchBarMain input[type="text"] {
+    font-size: 12px;
+  }
+
+  .SearchSection input {
+    left: 5px;
+    position: relative;
+    width: 60%;
+  }
+
+  .SearchBarC button {
+    border-radius: 10px;
+    font-size: 12px;
+    height: 40px;
+    padding: 0px 16px;
+  }
+
+  .dropdownContainer {
+    gap: 5px;
+
+    margin: auto 2%;
+    padding: 4px;
+    @media (max-width: 780px) {
+      gap: 0px;
     }
+  }
+  .DropDraw {
+    padding: 0 0 0 0px;
+  }
 
-	.SearchSection input {
-		left: 5px;
-		position: relative;
-		width: 60%;
-	}
+  .arrowUp .flickityButtonIcon {
+    width: 10px;
+  }
 
-	.SearchBarC button {
-		border-radius: 10px;
-			font-size: 12px;
-			height: 40px;
-			padding: 0px 16px;
-	}
-
-	.dropdownContainer {
-			gap: 5px;
-	
-		margin: auto 2%;
-			padding: 4px;
-			@media(max-width:780px){
-				gap: 0px;
-			}
-		}
-		.DropDraw {
-			padding: 0 0 0 0px;
-					}
-
-					.arrowUp .flickityButtonIcon {
-						width: 10px;
-					}
-
-					.arrowUp .flickityButtonIcon1{
-						width: 10px;
-					}
-
-
-
-
-
+  .arrowUp .flickityButtonIcon1 {
+    width: 10px;
+  }
 }
 
-
-@media (max-width:991.98px){
-	.container {
-		width: 90%;
-			}
-			.SearchBarB {
-				height: 80px;
-			}
-			.SearchBarMain {
-			top: -37px;
-			}
+@media (max-width: 991.98px) {
+  .container {
+    width: 90%;
+  }
+  .SearchBarB {
+    height: 80px;
+  }
+  .SearchBarMain {
+    top: -37px;
+  }
 }
 
-
-
-@media (max-width:767.98px){
-	.SearchBarMain{
-		display: none;
-	}
-
-
+@media (max-width: 767.98px) {
+  .SearchBarMain {
+    display: none;
+  }
 }
-
