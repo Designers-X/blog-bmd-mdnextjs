@@ -10,13 +10,11 @@
   src: url("../../../../public/font/NeueHaasUnica-Medium.ttf");
 }
 
-
-.ShopBanner h2, .SecondParent h3, .SecondParent h5
-{
+.ShopBanner h2,
+.SecondParent h3,
+.SecondParent h5 {
   font-family: "NeueHaasUnicaM" !important;
-
 }
-
 
 .container {
   width: 75%;
@@ -25,9 +23,8 @@
 
 .ShopBanner {
   text-align: center;
-  background-image: linear-gradient(to right, rgba(232,232,232,100), rgba(237,237,245,100));
+  background-image: linear-gradient(to right, rgba(232, 232, 232, 100), rgba(237, 237, 245, 100));
   padding: 20px 0;
-
 }
 
 .ShopBanner h2 {
@@ -53,9 +50,6 @@
   margin: 0;
 }
 
-
-
-
 .galleryThumbs img {
   width: 75px;
   height: 75px;
@@ -64,8 +58,8 @@
 .galleryThumbs {
   display: flex;
   gap: 7px;
-  border: 1px solid #EDEDED;
-  background: #FFF;
+  border: 1px solid #ededed;
+  background: #fff;
   padding: 10px;
   margin: 30px 0 0 0;
 }
@@ -91,7 +85,7 @@
 
 .SecondParent h3 {
   color: #000;
- 
+
   font-size: 35px;
   font-style: normal;
   font-weight: 800;
@@ -112,7 +106,7 @@
   margin: 17px 0 20px 0;
   color: #000;
   // text-align: center;
-  
+
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
@@ -120,13 +114,12 @@
   /* 70% */
 }
 
-.SizeArea h5{
+.SizeArea h5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   font-family: "NeueHaasUnica" !important;
   margin: 0 0 15px 0;
-
 }
 
 .SecondContent {
@@ -179,27 +172,23 @@
   font-weight: 400;
   line-height: 21px;
   margin: 0 0 23px 0;
-  /* 150% */
+  
 }
-
-.SizeRadio {}
-
-
 
 
 .SizeRadio input[type="radio"],
 .SizeRadio input[type="radio"]:checked {
   width: 10px;
   height: 25px;
-  // top: 30%;
+ 
 }
 
 .SizeRadio input[type="radio"] {
   padding: 0;
   border: 5px solid #000000;
   visibility: hidden;
-  
-  // margin-right: 16px;
+
+
 }
 
 .SizeRadio input[type="radio"]:checked {
@@ -233,10 +222,7 @@
 .SizeRadio input[type="radio"]:not(:checked):before {
   width: 66px;
   height: 34px;
-  // border-radius: 15px;
-  // background-color: #ffff;
-  ;
-
+ 
   content: "";
   display: inline-block;
   visibility: visible;
@@ -249,7 +235,7 @@
 }
 
 .SizeRadio input[type="radio"]:not(:checked):before {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   transition: 0.5s;
 }
 
@@ -258,16 +244,11 @@
   width: 66px;
 }
 
-// .ChangeSize {
-//   position: absolute;
-//   left: 19px;
-//     top: 6px;
-// }
 
-.SizeRadio input[type="radio"]:checked+span {
+
+.SizeRadio input[type="radio"]:checked + span {
   color: #fff;
 }
-
 
 .SizeRadio span {
   color: #000;
@@ -286,24 +267,47 @@
   flex-wrap: wrap;
 }
 
-
 .Quantity input {
   width: 67px;
   height: 34px;
   text-align: center;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   outline: none;
+  word-spacing: normal;
 }
 
-.Quantity label{
- font-size: 14px;
- margin: 0 10px 0 0;
- font-family: "NeueHaasUnica" !important;
-
-//  display: flex;
-  
+.quntity {
+  line-height: 25px;
 }
 
+.selectDiv {
+  display: flex;
+
+  border-radius: 8px;
+  padding: 2px 7px;
+  font-size: 15px;
+  border: 1px solid #d9d9d9;
+  font-family: "NeueHaasUnica" !important;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+.selectDiv select option {
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9 !important;
+  background-color: #fff;
+  line-height: 25px;
+}
+
+.selectDiv select {
+  background-color: transparent;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  font-family: "NeueHaasUnica" !important;
+}
 
 .QBoxee {
   margin: 18px 0 -17px 0;
@@ -321,7 +325,7 @@
 }
 
 .BuyButton a {
-  color: #FFF;
+  color: #fff;
   font-family: "NeueHaasUnica" !important;
   font-size: 12px;
   font-style: normal;
@@ -335,10 +339,9 @@
   border: 1px solid #000;
   width: 50%;
   min-width: 250px;
-  // margin: 40px 0 0 0;
-  height: 57px;
+
   display: flex;
-    padding: 10px;
+  padding: 10px;
 }
 
 .controlparag p {
@@ -348,19 +351,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  /* 150% */
+
   position: relative;
   top: 15px;
   background: #fff;
   display: inline-block;
   left: 20px;
-  padding: 5px;
+  padding: 0 5px;
   margin: 0 0 0 0;
-
-  // margin: 40px 0 0 0;
 }
 
-.controlparag{
+.controlparag {
   margin: 20px 0 0 0;
 }
 
@@ -377,7 +378,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  /* 150% */
+
   margin: 0;
 }
 
@@ -385,7 +386,6 @@
   font-family: "NeueHaasUnicaM" !important;
 
   font-weight: 500;
-
 }
 
 .tabContainer {
@@ -396,7 +396,7 @@
 }
 
 .Letter {
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-family: "NeueHaasUnicaM" !important;
   font-size: 30px;
   font-style: normal;
@@ -414,14 +414,11 @@
 
 .TabsMainOne {
   width: 100%;
-  // border: 1px solid;
 }
 
 .TabsTwo {
   width: 40%;
 }
-
-
 
 .tabsInner h3 {
   color: #000;
@@ -437,14 +434,14 @@
   gap: 10px;
 }
 
-.ratingSvg{
+.ratingSvg {
   display: flex;
   gap: 10px;
 }
 
 .tabsInner h3 span {
   color: #999;
-  font-family: "NeueHaasUnica"!important;
+  font-family: "NeueHaasUnica" !important;
   font-size: 12px;
   font-weight: 400;
 }
@@ -473,27 +470,18 @@
   /* 200% */
 }
 
-.ReplyStatus p span{
+.ReplyStatus p span {
   color: #999999;
 }
 
-
-
-
-
 .tabsInner {
-
-  // margin: 0 00 20px 0;
-  // width: 90%;
-  // float: inline-end;
   margin: auto;
 
   padding: 0 20px 20px 0px;
-
 }
 
 .UseFlexA {
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #eaeaea;
   display: flex;
   gap: 20px;
   padding: 0px 0 20px 15px;
@@ -505,13 +493,13 @@
   margin: 0px 0;
 }
 
-.SpanSvgCon{
+.SpanSvgCon {
   margin: 5px 0 !important;
 }
 
 .TabsTwo .box1 {
   border-radius: 10px;
-  background: #D7D2BF;
+  background: #d7d2bf;
   padding: 26px;
 }
 
@@ -527,7 +515,7 @@
 }
 
 .TabsTwo .box1 .ButnBlock a {
-  color: #FFF;
+  color: #fff;
   font-family: "Neue Haas Unica";
   font-size: 12px;
   font-style: normal;
@@ -545,7 +533,7 @@
 
 .Tabcode {
   width: 70%;
-  border-right: 1px solid #E5E5E5;
+  border-right: 1px solid #e5e5e5;
   padding: 0 30px 0 0;
   max-height: 600px;
   overflow: auto;
@@ -609,42 +597,33 @@
 
 .TabsMainOne hr {
   margin: 0 0 40px 0;
-
 }
-
-
-
-
 
 .tab.Letter.Letter::after {
   background-color: #000;
-
 }
 
-@media(max-width:1024.98px) {
+@media (max-width: 1024.98px) {
   .container {
     width: 90%;
   }
 
   .ParentClass {
-
     gap: 30px;
-
   }
 }
 
-
-
-@media(max-width:1199.98px) {
+@media (max-width: 1199.98px) {
   .galleryThumbs img {
     width: 55px;
     height: 55px;
   }
 }
 
-@media(max-width:767.98px) {
+@media (max-width: 767.98px) {
   .SecondParent h3 {
-    font-size: 25px;}
+    font-size: 25px;
+  }
 
   .FlexCode {
     display: block;
@@ -652,15 +631,12 @@
 
   .Tabcode {
     width: 100%;
-    border-right: 0px solid #E5E5E5;
-    // padding: 0 30px 0 0;
+    border-right: 0px solid #e5e5e5;
   }
 
   .ratingGoal {
     display: flex;
     justify-content: start;
-
-
   }
 
   .TabsTwo {
@@ -673,7 +649,6 @@
   }
 
   .FlexCode {
-
     gap: 10px;
   }
 
@@ -691,7 +666,6 @@
     margin: auto;
   }
 
-
   .galleryTop {
     width: 85%;
     margin: auto;
@@ -703,24 +677,18 @@
   }
 }
 
-
-
-
-@media(max-width:510px) {
+@media (max-width: 510px) {
   .TabsTwo {
     width: 267px;
   }
 
   .Letter {
-
     font-size: 20px;
-
   }
 
   .TabsMainOne hr {
     position: relative;
     top: -9px;
-
   }
 
   .galleryThumbs img {
@@ -729,21 +697,16 @@
   }
 }
 
-
-
-
-
-  .ChangeSize {
-    position: absolute;
-    left: 19px;
-    top: 6px;
-  }
-
+.ChangeSize {
+  position: absolute;
+  left: 19px;
+  top: 6px;
+}
 
 @supports (-webkit-touch-callout: none) {
   .ChangeSize {
     position: absolute;
     left: 22px;
     top: 13px;
-  } 
+  }
 }

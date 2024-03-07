@@ -4,7 +4,7 @@ import Styles from './Styles.module.scss';
 import TabData from '/json/Itinerary.json';
 
 function ShopTabs() {
-  const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(2);
 
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);

@@ -198,8 +198,7 @@ border-radius: 10px;
 
 .Control1{
     margin: 0px 0 -28px 0;
-    // background-color: #000;
-    height: 100%;
+        height: 100%;
     border-radius:  10px;
     background-color: #EDEDF5; 
     @media(max-width:1199px){
@@ -334,9 +333,6 @@ z-index: 1;
         display: block;   
     }
 
-    // .ImgcontentAA {
-    //       height: 110px;
-    //         }
 }
 
 @media (max-width: 1024.98px) {
@@ -345,13 +341,6 @@ z-index: 1;
       
         display: flex;   
     }
-
-    // .ImgcontentAA {
-    //       height: 90px;
-    //         }
-
-
-
     .MainProductListAA .HTwoClass {
     
     font-size: 35px;
