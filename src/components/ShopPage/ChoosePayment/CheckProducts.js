@@ -45,14 +45,18 @@ function CheckProducts() {
 
                 <div className={Styles.Quantity}>
                   <div className={Styles.Share}>
-                    <select>
-                      <option value="#" selected="selected">
-                        Qty:01
-                      </option>
-                      <option value="#">Qty:02</option>
-                      {/* <!--<option disabled>2</option> */}
-                      <option value="#">Qty:03</option>
-                    </select>
+                    <form action="/action_page.php">
+                      <div className={Styles.selectDiv}>
+                        <div className={Styles.quntity}>QTY :</div>
+                        <select className={Styles.selectNon}>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </div>
+                    </form>
                   </div>
 
                   <div className={Styles.PriceTag}>
