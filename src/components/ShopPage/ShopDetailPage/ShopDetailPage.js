@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Styles from './Styles.module.scss'; // Import your styles
-import ShopTabs from './ShopTabs'; // Import ShopTabs component if it's in a separate file
-// import ShopDetailData from '/json/Itinerary.json';
+import Styles from './Styles.module.scss';
+import ShopTabs from './ShopTabs';
 import Itinerary from '/json/Itinerary.json';
 import Link from 'next/link';
 

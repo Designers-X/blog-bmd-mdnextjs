@@ -4,26 +4,6 @@ import shopdata from '/json/Itinerary.json';
 import Link from 'next/link';
 
 function MyBagPage() {
-  // const MySelect = () => {
-  //     const [options, setOptions] = useState([
-  //         { value: '#', label: '1' },
-  //         { value: '#', label: '2' },
-  //         // Add other options here
-  //     ]);
-
-  //     const updatedOptions = options.map(option => ({
-  //         ...option,
-  //         label: 'Qyt ' + option.label
-  //     }));
-
-  //     setOptions(updatedOptions);
-  // };
-
-  // const handleChange = event => {
-  //     window.location.href = event.target.value;
-  //     addQyt();
-  // };
-
   return (
     <div>
       <section>
