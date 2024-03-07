@@ -4,26 +4,6 @@ import shopdata from '/json/Itinerary.json';
 import Link from 'next/link';
 
 function MyBagPage() {
-  // const MySelect = () => {
-  //     const [options, setOptions] = useState([
-  //         { value: '#', label: '1' },
-  //         { value: '#', label: '2' },
-  //         // Add other options here
-  //     ]);
-
-  //     const updatedOptions = options.map(option => ({
-  //         ...option,
-  //         label: 'Qyt ' + option.label
-  //     }));
-
-  //     setOptions(updatedOptions);
-  // };
-
-  // const handleChange = event => {
-  //     window.location.href = event.target.value;
-  //     addQyt();
-  // };
-
   return (
     <div>
       <section>
@@ -70,15 +50,18 @@ function MyBagPage() {
 
                         <div className={Styles.Quantity}>
                           <div className={Styles.Share}>
-                            <label for="cars">Qty</label>
-                            <select>
-                              <option value="#" selected="selected">
-                                1
-                              </option>
-                              <option value="#">2</option>
-                              {/* <!--<option disabled>2</option> */}
-                              <option value="#">3</option>
-                            </select>
+                            <form action="/action_page.php">
+                              <div className={Styles.selectDiv}>
+                                <div className={Styles.quntity}>QTY :</div>
+                                <select className={Styles.selectNon}>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                </select>
+                              </div>
+                            </form>
                             |<p className={Styles.paraControl}>Share</p>
                           </div>
 

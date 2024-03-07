@@ -31,6 +31,36 @@
 
 }
 
+.selectDiv{
+  display: flex;
+  // background-color: #999;
+  border-radius: 10px;
+  padding: 2px 7px;
+  font-size: 13px;
+  border: 1px solid #D9D9D9;
+  font-family: "NeueHaasUnica" !important;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+
+}
+.selectDiv select option{
+  font-size: 13px;
+  border-radius: 5px;
+  border: 1px solid #D9D9D9 !important;
+  background-color: #fff;
+  line-height: 25px;
+}
+
+.selectDiv select{
+  background-color: transparent;
+  outline: none;
+  font-size: 13px;
+  border: none;
+  font-family: "NeueHaasUnica" !important;
+  
+}
+
 .ShopBanner h2{
     color: #000;
 	font-family: "NeueHaasUnicaM" !important;
@@ -109,6 +139,7 @@ box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 .Quantity{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .SideProduct h6{
