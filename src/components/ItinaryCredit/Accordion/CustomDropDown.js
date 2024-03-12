@@ -53,7 +53,7 @@ const CustomDropdown = () => {
       <label>
         Select Payment Method<span className={styles.HashRed}>*</span>
       </label>
-      <div className={styles.dropDown} onClick={handleElectOption}>
+      <div className={styles.dropDown}>
         <div className={styles.dropDown11} onClick={handleElectOption}>
           {selectedOption.img && <img src={selectedOption.img} alt="card" />}
           <label>{selectedOption.label}</label>

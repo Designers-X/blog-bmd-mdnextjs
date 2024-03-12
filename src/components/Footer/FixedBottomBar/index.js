@@ -1,5 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import styles from './index.module.scss';
+// import { useRouter } from 'next/router';
 
 const FixedBottomBar = () => {
   return (
@@ -9,6 +11,7 @@ const FixedBottomBar = () => {
           <span>Signature Experiences</span>
         </a>
       </Link>
+
       <span className={styles.border}></span>
       <Link href="/shop">
         <a>
