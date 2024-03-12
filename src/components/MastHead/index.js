@@ -51,13 +51,15 @@ const MastHead = ({ source, v2 = false }) => {
   if (v2) {
     return (
       <div className={styles.mastHeadContainerAvail}>
-        <img src={source?.desk?.src} alt={source?.desk?.alt || '...'} className={styles.MastHeadDeskImg} />
-        <img src={source?.mob?.src} alt={source?.mob?.alt || '...'} className={styles.MastHeadMobImg} />
-        {source?.title && (
-          <div className={styles.titleHolder}>
-            <h3>{source.title}</h3>
-          </div>
-        )}
+        <div className={styles.mastHeadContainerdes}>
+          <img src={source?.desk?.src} alt={source?.desk?.alt || '...'} className={styles.MastHeadDeskImg} />
+          <img src={source?.mob?.src} alt={source?.mob?.alt || '...'} className={styles.MastHeadMobImg} />
+          {source?.title && (
+            <div className={styles.titleHolder}>
+              <h3>{source.title}</h3>
+            </div>
+          )}
+        </div>
         {source.avail && (
           <div className={styles.availabilyContainer}>
             <div className={styles.formContainer}>
