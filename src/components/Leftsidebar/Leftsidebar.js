@@ -70,7 +70,7 @@ function Leftsidebar() {
 
     {
       id: 'cG9zdDoxMTdefg',
-      label: 'Real Estate',
+      label: 'Luxury Real Estate',
       path: '/categories/luxury-real-estate/',
     },
     {
