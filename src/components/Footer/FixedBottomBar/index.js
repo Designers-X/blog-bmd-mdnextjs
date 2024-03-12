@@ -17,24 +17,24 @@ const FixedBottomBar = () => {
         </a>
       </Link>
 
-      <Link href="/shop">
-        <a className={router.pathname === '/shop' ? styles.active : ''}>
+      <Link href="/subscribe">
+        <a className={router.pathname === '/subscribe' ? styles.active : ''}>
           <span>
             <img src="/package/NotificationIcon.svg" />
           </span>
         </a>
       </Link>
 
-      <Link href="/shop/ferragamo-shoe">
-        <a className={router.pathname === '/shop/ferragamo-shoe' ? styles.active : ''}>
+      <Link href="/shop">
+        <a className={router.pathname === '/shop' ? styles.active : ''}>
           <span>
             <img src="/package/AddCartIcon.svg" />
           </span>
         </a>
       </Link>
 
-      <Link href="/shop/cart">
-        <a className={router.pathname === '/shop/cart' ? styles.active : ''}>
+      <Link href="/luxury-real-estate">
+        <a className={router.pathname === '/[slugParent]/[[...slugChild]]' ? styles.active : ''}>
           <span>
             <img src="/package/RealEstateIcon.svg" />
           </span>
