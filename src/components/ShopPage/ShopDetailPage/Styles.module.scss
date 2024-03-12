@@ -19,6 +19,7 @@
 .container {
   width: 75%;
   margin: auto;
+  max-width: 70rem;
 }
 
 .ShopBanner {
@@ -280,6 +281,7 @@
   line-height: 25px;
 }
 
+
 .selectDiv {
   display: flex;
 
@@ -307,6 +309,9 @@
   font-size: 15px;
   border: none;
   font-family: "NeueHaasUnica" !important;
+    //   width: 100px;
+    // display: flex;
+    // text-align: center;
 }
 
 .QBoxee {
