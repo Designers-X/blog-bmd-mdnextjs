@@ -67,6 +67,12 @@ function Leftsidebar() {
       label: 'Art & History',
       path: '/categories/art-and-history/',
     },
+
+    {
+      id: 'cG9zdDoxMTdefg',
+      label: 'Real Estate',
+      path: '/categories/luxury-real-estate/',
+    },
     {
       id: 'rgtyjdgfgg',
       label: 'Subscribe',
