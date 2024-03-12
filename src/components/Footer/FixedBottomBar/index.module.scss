@@ -3,12 +3,12 @@
     height: 50px;
     background: #000;
     color: #fff;
-    border-top: 0.5px solid ;
+    // border-top: 0.5px solid ;
     position: fixed;
     bottom: 0;
     font-size: 12px;
     display: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     @media (max-width: 600px){
     &{
@@ -41,3 +41,25 @@
 
     }
 }
+
+
+
+
+
+.container a{
+    position: relative;
+}
+
+.container a.active:after{
+    position: absolute;
+       content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 10px;
+    bottom: -4px;
+    border: 3.5px solid #fff;
+    // background-color: #fff;
+    left: 96%;
+}
+
+
