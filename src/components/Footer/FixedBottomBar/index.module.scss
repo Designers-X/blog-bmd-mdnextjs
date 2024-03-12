@@ -3,6 +3,7 @@
     height: 50px;
     background: #000;
     color: #fff;
+    border-top: 0.5px solid ;
     position: fixed;
     bottom: 0;
     font-size: 12px;
@@ -19,13 +20,24 @@
         color: #fff;
         font-family: "NeueHaasUnica", Arial, sans-serif;
         text-decoration: none;
+        display: flex;
+        gap: 10px;
+        align-items: center;
         & span{
             color: #fff;
+          
         }
     }
     & .border{
         border-right: 1px solid rgba(68, 68, 68, 1);
         content: "";
         height: 100%;
+    }
+    & p{
+        color: #fff;
+        font-size: 12px;
+        font-family: "NeueHaasUnica", Arial, sans-serif;
+        margin: 0;
+
     }
 }
