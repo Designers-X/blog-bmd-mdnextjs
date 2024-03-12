@@ -62,7 +62,7 @@ const Nav = () => {
 
               <div className={styles.topnavright}>
                 <Link href="/subscribe">
-                  <a className={styles.subscribeBtn}>
+                  <a className={`${styles.subscribeBtn} ${styles.hide}`}>
                     <span>Subscribe</span>
                   </a>
                 </Link>

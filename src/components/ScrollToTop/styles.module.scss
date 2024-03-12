@@ -10,13 +10,21 @@
     height: 50px;
     border: 1px solid #000;
     border-radius: 50px;
-  
-    cursor: pointer;
+      cursor: pointer;
+      @media (max-width:600px){
+        width: 30px;
+        height: 30px;
+        bottom: 81px;
+      }
     &:hover{
         background-color: #000;
         color: #fff;
         svg{
             fill: #fff;
+            @media(max-width:600px){
+                width: 20px;
+height: 20px;
+}
+            }
         }
     }
-}
