@@ -80,7 +80,7 @@
 }
 
 .SecondParent {
-  width: 50%;
+  // width: 50%;
   
 }
 
@@ -614,6 +614,9 @@ height: 57px;
 }
 
 @media (max-width: 1024.98px) {
+  .SecondParent{
+    width: 60%;
+  }
   .container {
     width: 90%;
   }
