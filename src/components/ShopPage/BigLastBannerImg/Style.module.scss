@@ -1,7 +1,11 @@
 .container{
-    width: 90%;
+    width: 100%;
     margin: auto;
     max-width: 70rem;
+    margin-bottom: 50px !important;
+    @media(max-width: 1299px) {
+        width: 90%;  
+      }
 }
 
 .BigImg{

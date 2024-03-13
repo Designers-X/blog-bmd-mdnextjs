@@ -1,11 +1,12 @@
 .listContainer {
-  width: 80%;
+  width: 100%;
   margin: auto;
   display: flex;
   max-width: 70rem;
   font-family: "NeueHaasUnica", Arial, sans-serif;
-  @media (max-width: 1025px) {
-    width: 95%;
+  // margin-bottom: 60px;
+  @media (max-width: 1299px) {
+    width: 90%;
   }
 
   .columns h2 {
@@ -102,6 +103,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     @media (max-width: 769px) {
       width: 65%;
     }
@@ -131,7 +133,7 @@
   }
 
   .listContainer .filterContainer {
-    width: 95%;
+    width: 100%;
     margin: 0 auto 30px auto;
     padding: 0 0 25px 0;
   }
@@ -154,7 +156,10 @@
     align-items: center;
   }
   .listContainer .listContainer {
-    width: 95%;
+    width: 100%;
+    
+    margin-left: 0%;
+
   }
 }
 
@@ -176,12 +181,7 @@
     font-size: 14px;
   }
 
-  .listContainer {
-    width: 90%;
-    margin: auto;
 
-    font-family: "NeueHaasUnica", Arial, sans-serif;
-  }
 }
 @media (max-width: 426px) {
   .listContainer .listContainer {
