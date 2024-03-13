@@ -48,6 +48,10 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .DropDraw {
