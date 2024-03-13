@@ -1,7 +1,11 @@
 .packageDetailContainer {
-  width: 90%;
+  width: 100%;
   max-width: 70rem;
   margin: auto;
+  margin-bottom: 60px;
+  @media (max-width: 1299px) {
+    width: 90%;
+  }
   .imgConatiner {
     display: grid;
     width: 100%;

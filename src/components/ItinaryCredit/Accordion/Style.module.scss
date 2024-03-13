@@ -259,9 +259,13 @@ display: flex;
   font-family: "NeueHaasUnica" !important;
 }
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
   max-width: 70rem;
+  @media(max-width: 1299px){
+    width: 90%;
+  
+  }
 }
 .titleAccordion {
   background-color: #f4f4f4;

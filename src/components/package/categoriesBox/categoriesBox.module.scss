@@ -3,7 +3,7 @@
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   @media (max-width: 590px) {
     flex-direction: column;
     display: grid;
@@ -59,8 +59,8 @@
     }
   }
   .categoryTitleContainer1 {
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 570px;
+    min-height: 570px;
     width: 100%;
     height: auto;
     // margin: 0 0 20px 0;
@@ -374,8 +374,8 @@
   }
   img {
     // margin: 20px;
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 570px;
+    min-height: 570px;
     width: 100%;
     height: auto;
     @media (max-width: 1300px) {
