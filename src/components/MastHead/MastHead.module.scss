@@ -178,6 +178,7 @@
     height: 175px;
     padding: 2rem;
     max-width: 70rem;
+    z-index: 1;
 
     @media (max-width: 1441px) {
       // bottom: 20%;
@@ -382,7 +383,7 @@
 
     .modalContainer {
       position: absolute;
-      bottom: -233px;
+      bottom: -220px;
       left: 0%;
       width: 270px;
       height: max-content;
@@ -427,7 +428,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 25%;
+        width: 84px;
         font-family: "NeueHaasUnica", Arial, sans-serif;
 
         .selectorBtn {
@@ -439,7 +440,7 @@
           place-content: center;
           color: rgba(156, 156, 156, 1);
           font-size: 20px;
-          margin: 10px;
+          margin: 5px;
           cursor: pointer;
         }
       }
