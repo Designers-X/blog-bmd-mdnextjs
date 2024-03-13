@@ -62,7 +62,8 @@
   border: 1px solid #ededed;
   background: #fff;
   padding: 10px;
-  margin: 30px 0 0 0;
+  margin: 30px auto 0;
+  max-width: 520px;
 }
 
 .ParentClass {
@@ -74,10 +75,13 @@
 
 .ParentClass .FirstClass {
   width: 50%;
+  max-width: 520px;
+  // max-width: 520px;
 }
 
 .SecondParent {
   width: 50%;
+  
 }
 
 .SecondParent img {
@@ -101,6 +105,7 @@
 
 .galleryTop img {
   width: 100%;
+  max-height: 458px;
 }
 
 .SecondParent h5 {
@@ -344,7 +349,7 @@
   border: 1px solid #000;
   width: 50%;
   min-width: 250px;
-
+height: 57px;
   display: flex;
   padding: 10px;
 }
@@ -672,7 +677,7 @@
   }
 
   .galleryTop {
-    width: 85%;
+    width: 100%;
     margin: auto;
   }
 
