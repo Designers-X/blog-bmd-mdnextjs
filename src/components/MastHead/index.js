@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from './MastHead.module.scss';
 import { Minus, Plus } from 'components/svgIcons';
 const MastHead = ({ source, v2 = false }) => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState();
   const [room, setRoom] = useState(1);
   const [adults, setAdult] = useState(2);
   const [children, setChildren] = useState(0);
@@ -129,7 +129,7 @@ const MastHead = ({ source, v2 = false }) => {
                         />
                       </svg>
                     </div>
-                    <div className={styles.modalContainer}>
+                    <div className={styles.modalContainer} onClick={(e) => e.stopPropagation()}>
                       <div className={styles.row}>
                         <div>
                           <div className={styles.rowTitle}>Room</div>
@@ -146,7 +146,7 @@ const MastHead = ({ source, v2 = false }) => {
                           >
                             <Minus color={'rgba(169, 179, 201, 1)'} width={25} height={25} />
                           </span>
-                          {room}
+                          <span>{room}</span>
                           <span
                             className={styles.selectorBtn}
                             onClick={() => {
@@ -171,7 +171,7 @@ const MastHead = ({ source, v2 = false }) => {
                           >
                             <Minus color={'rgba(169, 179, 201, 1)'} width={25} height={25} />
                           </span>
-                          {adults}
+                          <span>{adults}</span>
                           <span
                             className={styles.selectorBtn}
                             onClick={() => {
@@ -196,7 +196,7 @@ const MastHead = ({ source, v2 = false }) => {
                           >
                             <Minus color={'rgba(169, 179, 201, 1)'} width={25} height={25} />
                           </span>
-                          {children}
+                          <span>{children}</span>
                           <span
                             className={styles.selectorBtn}
                             onClick={() => {
