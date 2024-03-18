@@ -18,11 +18,11 @@ const SimpleDropdown = () => {
     'Art & History',
   ];
   const optionsC = [
-    { label: '', image: '/package/starfilterReview.svg', count: 5 },
-    { label: '', image: '/package/starfilterReview.svg', count: 4 },
-    { label: '', image: '/package/starfilterReview.svg', count: 3 },
-    { label: '', image: '/package/starfilterReview.svg', count: 2 },
-    { label: '', image: '/package/starfilterReview.svg', count: 1 },
+    { label: '5 Star ', image: '/package/starfilterReview.svg', count: 5 },
+    { label: '4 Star', image: '/package/starfilterReview.svg', count: 4 },
+    { label: '3 Star', image: '/package/starfilterReview.svg', count: 3 },
+    { label: '2 Star', image: '/package/starfilterReview.svg', count: 2 },
+    { label: '1 Star', image: '/package/starfilterReview.svg', count: 1 },
   ];
   const optionsD = ['10% Discount', '20% Discount', '40% Discount', '50% Discount'];
 
@@ -43,7 +43,7 @@ const SimpleDropdown = () => {
   };
 
   const handleOptionSelectC = (option) => {
-    setSelectedOptionC(option);
+    setSelectedOptionC(option.label);
     toggleDropdown(null);
   };
 
@@ -139,13 +139,12 @@ const SimpleDropdown = () => {
                 <div className={Styles.DropDraw}>
                   <div className={Styles.dropdownHeader} onClick={() => toggleDropdown('C')}>
                     {selectedOptionC || 'Review'}
-                    {''}
                     <span className={`${Styles.arrow} ${Styles.arrowUp}`}>
                       {activeDropdown === 'C' ? (
                         <svg className={Styles.flickityButtonIcon1} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
-                            class="arrow"
+                            className="arrow"
                             transform="translate(100, 100) rotate(90deg) "
                           ></path>
                         </svg>
@@ -153,7 +152,7 @@ const SimpleDropdown = () => {
                         <svg className={Styles.flickityButtonIcon} viewBox="0 0 100 100">
                           <path
                             d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
-                            class="arrow"
+                            className="arrow"
                             transform="translate(100, 100) rotate(90deg) "
                           ></path>
                         </svg>
@@ -166,17 +165,17 @@ const SimpleDropdown = () => {
                         <div
                           key={option.label}
                           className={Styles.dropdownItem}
-                          onClick={() => handleOptionSelectC(option.label)}
+                          onClick={() => handleOptionSelectC(option)}
                         >
                           {[...Array(option.count)].map((_, index) => (
                             <img
                               key={index}
                               src={option.image}
-                              alt={`${option.label} Star`}
+                              alt={`${option} Star`}
                               className={Styles.dropdownItemImage}
                             />
                           ))}
-                          {option.label}
+                          {/* {option.label} */}
                         </div>
                       ))}
                     </div>
