@@ -302,13 +302,33 @@
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   color: #000;
   padding: 5px 8px 0 1px;
   border: none;
   float: left;
+  @media(max-width:767px){
+  fill: #fff;
+
+  }
+}
+.openbtn svg{
+  fill: #000;
+  // background-color: ;
+  @media(max-width:767px){
+  fill: #fff;
+
+  }
+}
+.LeftSiderBar{
+  @media(max-width: 767px){
+    // display: none;
+  }
 }
 
+.LeftSiderBar svg{
+fill: rgb(0, 0, 0) !important;
+}
 .openbtn:hover {
   color: #444;
 }
