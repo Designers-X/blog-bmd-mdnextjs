@@ -49,8 +49,8 @@ const FixedBottomBar = () => {
               </a>
             </Link>
 
-            <Link href="/luxury-real-estate">
-              <a className={router.pathname === '/[slugParent]/[[...slugChild]]' ? styles.active : ''}>
+            <Link href="/shop/ferragamo-shoe">
+              <a className={router.pathname === '/shop/ferragamo-shoe' ? styles.active : ''}>
                 <span>
                   <img src="/package/Signup.svg" />
                 </span>
